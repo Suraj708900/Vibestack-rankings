@@ -1,0 +1,61 @@
+{"updated":"2026-10-15",
+"categories":[
+{"id":"coding-agents","name":"Coding agents","q":"What should I use to write and edit code with an AI agent?","tools":[
+{"name":"Claude Code","url":"https://www.claude.com/product/claude-code","verdict":"Terminal-first agent that handles multi-file changes and long tasks well. Best if you're comfortable in a CLI.","price":"Included with Claude paid plans; see site","tags":["agent","cli"]},
+{"name":"Cursor","url":"https://cursor.com","verdict":"VS Code-style editor with strong agent mode and tab completion. The easiest daily driver for most builders.","price":"Free tier; paid plans, see site","tags":["ide","free-tier"]},
+{"name":"GitHub Copilot","url":"https://github.com/features/copilot","verdict":"Works in almost every editor and now ships a cloud coding agent. Safe default if your code is on GitHub.","price":"Free tier; paid plans, see site","tags":["ide","free-tier"]},
+{"name":"OpenAI Codex","url":"https://openai.com/codex/","verdict":"OpenAI's coding agent across CLI, IDE and cloud. Good if you already pay for ChatGPT.","price":"Included with ChatGPT plans; see site","tags":["agent","cli"]},
+{"name":"Windsurf","url":"https://windsurf.com","verdict":"Agentic IDE with a capable assistant (Cascade). A solid Cursor alternative.","price":"Free tier; see site","tags":["ide","free-tier"]}]},
+{"id":"app-builders","name":"AI app builders","q":"What should I use to go from prompt to a working app?","tools":[
+{"name":"Lovable","url":"https://lovable.dev","verdict":"Polished full-stack apps from chat, with Supabase built in. Best pick for non-coders shipping an MVP.","price":"Free tier; see site","tags":["no-code","free-tier"]},
+{"name":"Bolt","url":"https://bolt.new","verdict":"Fast in-browser builder with a real dev environment. Great for quick prototypes you can export.","price":"Free tier; see site","tags":["no-code","free-tier"]},
+{"name":"Replit","url":"https://replit.com","verdict":"Agent plus IDE plus hosting in one place. Easiest path from idea to a deployed URL.","price":"Free tier; see site","tags":["hosting","free-tier"]},
+{"name":"v0","url":"https://v0.app","verdict":"Best-in-class React/Next.js UI generation that deploys to Vercel. Strongest for front-ends.","price":"Free tier; see site","tags":["frontend","free-tier"]}]},
+{"id":"databases","name":"Databases & backends","q":"What should I use for my database, auth and backend?","tools":[
+{"name":"Supabase","url":"https://supabase.com","verdict":"Postgres plus auth, storage and realtime. The default backend for vibe-coded apps.","price":"Free tier; see site","tags":["postgres","open-source","free-tier"]},
+{"name":"Firebase","url":"https://firebase.google.com","verdict":"Google's mature backend with great mobile SDKs. NoSQL data model takes some getting used to.","price":"Free Spark plan; pay-as-you-go","tags":["free-tier"]},
+{"name":"Neon","url":"https://neon.com","verdict":"Serverless Postgres with branching. Ideal when you just need a database, not a full backend.","price":"Free tier; see site","tags":["postgres","free-tier"]},
+{"name":"Convex","url":"https://www.convex.dev","verdict":"Reactive TypeScript backend that AI agents write well. Great for realtime apps.","price":"Free tier; see site","tags":["open-source","free-tier"]}]},
+{"id":"hosting","name":"Hosting & deploy","q":"Where should I deploy my app?","tools":[
+{"name":"Vercel","url":"https://vercel.com","verdict":"Best home for Next.js, with instant preview deploys. Watch usage costs at scale.","price":"Free Hobby plan; see site","tags":["free-tier"]},
+{"name":"Netlify","url":"https://www.netlify.com","verdict":"Simple static and Jamstack hosting with built-in forms and functions. This site runs on it.","price":"Free plan; see site","tags":["free-tier"]},
+{"name":"Cloudflare Pages","url":"https://pages.cloudflare.com","verdict":"Fast global edge with a generous free tier. Pairs well with Workers.","price":"Free tier; see site","tags":["free-tier"]},
+{"name":"Render","url":"https://render.com","verdict":"Easy home for backends, workers and databases, not just static sites.","price":"Free tier; see site","tags":["free-tier"]}]},
+{"id":"ai-apis","name":"AI APIs & models","q":"Which model API should my app call?","tools":[
+{"name":"OpenAI API","url":"https://platform.openai.com","verdict":"Broadest ecosystem and tooling. A safe first choice for most apps.","price":"Pay per token; see site","tags":["api"]},
+{"name":"Anthropic API","url":"https://www.anthropic.com/api","verdict":"Claude models are top-tier for coding and agents. Strong pick for tool use.","price":"Pay per token; see site","tags":["api"]},
+{"name":"Google Gemini API","url":"https://ai.google.dev","verdict":"Long context with a free tier in AI Studio. Great value for prototyping.","price":"Free tier; paid per token","tags":["api","free-tier"]},
+{"name":"OpenRouter","url":"https://openrouter.ai","verdict":"One API key for hundreds of models. Ideal for comparing models or adding fallbacks.","price":"Pay per token; see site","tags":["api","router"]},
+{"name":"Groq","url":"https://groq.com","verdict":"Very fast inference for open models. Use it when latency matters.","price":"Free tier; see site","tags":["api","free-tier"]}]},
+{"id":"agent-frameworks","name":"Agent frameworks","q":"What should I use to build my own AI agent?","tools":[
+{"name":"OpenAI Agents SDK","url":"https://openai.github.io/openai-agents-python/","verdict":"Lightweight, well-documented primitives for tools, handoffs and tracing.","price":"Free, open-source","tags":["open-source","python"]},
+{"name":"LangGraph","url":"https://www.langchain.com/langgraph","verdict":"Stateful, controllable agent graphs. More setup, but more control.","price":"Open-source; paid platform, see site","tags":["open-source"]},
+{"name":"Vercel AI SDK","url":"https://ai-sdk.dev","verdict":"The TypeScript default for streaming chat and agents in web apps.","price":"Free, open-source","tags":["open-source","typescript"]},
+{"name":"CrewAI","url":"https://www.crewai.com","verdict":"Quick multi-agent 'crews' with roles. Easy to start with.","price":"Open-source; paid platform, see site","tags":["open-source","python"]},
+{"name":"n8n","url":"https://n8n.io","verdict":"Visual workflow automation with AI agent nodes, and you can self-host it.","price":"Self-host free; cloud, see site","tags":["no-code","open-source"]}]},
+{"id":"vibe-coding","name":"Best for vibe coding","q":"I can't code (much). What should I use to ship?","tools":[
+{"name":"Lovable","url":"https://lovable.dev","verdict":"The most beginner-friendly way to get a real app with a backend live.","price":"Free tier; see site","tags":["no-code","free-tier"]},
+{"name":"Replit","url":"https://replit.com","verdict":"Agent builds, runs and hosts it, with nothing to install.","price":"Free tier; see site","tags":["free-tier"]},
+{"name":"Cursor","url":"https://cursor.com","verdict":"The step up when you outgrow builders and want to own the code.","price":"Free tier; see site","tags":["ide","free-tier"]},
+{"name":"Bolt","url":"https://bolt.new","verdict":"Fastest prompt-to-preview loop for trying ideas.","price":"Free tier; see site","tags":["free-tier"]}]},
+{"id":"video","name":"Video","q":"What should I use to make AI video?","tools":[
+{"name":"Runway","url":"https://runwayml.com","verdict":"Pro-grade generation and editing tools. The creator favourite.","price":"Free tier; see site","tags":["free-tier"]},
+{"name":"Google Veo (Flow)","url":"https://labs.google/flow/about","verdict":"High-quality clips with native audio. Access depends on your Google AI plan.","price":"See site","tags":[]},
+{"name":"Kling AI","url":"https://klingai.com","verdict":"Strong motion quality at a good price for short clips.","price":"Free credits; see site","tags":["free-tier"]},
+{"name":"HeyGen","url":"https://www.heygen.com","verdict":"Best for talking-avatar explainers and translated videos.","price":"Free tier; see site","tags":["free-tier"]}]},
+{"id":"voice","name":"Voice","q":"What should I use for AI voice, TTS or voice agents?","tools":[
+{"name":"ElevenLabs","url":"https://elevenlabs.io","verdict":"The most natural TTS and voice cloning, plus a voice-agent platform.","price":"Free tier; see site","tags":["api","free-tier"]},
+{"name":"OpenAI Realtime API","url":"https://platform.openai.com/docs/guides/realtime","verdict":"Low-latency speech-to-speech for building voice agents.","price":"Pay per use; see site","tags":["api"]},
+{"name":"Vapi","url":"https://vapi.ai","verdict":"Developer platform to ship phone and voice agents quickly.","price":"See site","tags":["api"]},
+{"name":"Deepgram","url":"https://deepgram.com","verdict":"Fast, accurate speech-to-text and TTS APIs.","price":"Free credits; see site","tags":["api","free-tier"]}]}
+],
+"news":[
+{"date":"2026-10-15","title":"Meta releases Muse Spark Open open-weight model (816B total, 42B active, 1M context)","url":"https://research.meta.ai/blog/muse-spark-open","source":"Meta AI Research"},
+{"date":"2026-10-15","title":"NVIDIA releases Nemotron 3.5 Super VL and Nemotron 3.5 Bolt 74B-A9B","url":"https://artificialanalysis.ai/articles/nemotron-3-5-super-and-bolt","source":"Artificial Analysis"},
+{"date":"2026-10-15","title":"GitHub: AI Scan for pull requests and agentic autofix for code scanning reach GA","url":"https://github.blog/changelog/month/10-2026/","source":"GitHub Changelog"},
+{"date":"2026-10-14","title":"Vani Code Agent, a free VS Code coding-agent extension (preview)","url":"https://vani.ai/news/vani-code-agent-for-vs-code","source":"Vani AI"},
+{"date":"2026-10-13","title":"Google makes Gemini 4 Argon generally available via the Gemini API","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/","source":"Google Blog"},
+{"date":"2026-10-13","title":"Gemini 4 Argon now available in GitHub Copilot","url":"https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot/","source":"GitHub Changelog"},
+{"date":"2026-10-13","title":"Liquid AI releases LFM2.5-24B-A2B open-weight model for on-device agents","url":"https://www.liquid.ai/blog/lfm2-5-24b-a2b","source":"Liquid AI"},
+{"date":"2026-10-12","title":"Meta launches Muse Wonder and Muse Wonder Full for Muse Code","url":"https://dev.meta.ai/resources/blog/build-with-muse-wonder","source":"Meta"}
+]}
