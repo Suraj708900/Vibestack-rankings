@@ -1,0 +1,34 @@
+# VibeStack Rankings
+
+> Opinionated, ranked AI tools for vibe coders and builders, with honest verdicts, pricing notes (always pointing to official pricing) and official links. Sponsored placements are always labelled and never affect rankings.
+
+## Rankings
+- [Coding agents](https://vibestack-rankings.vercel.app/category/coding-agents.html): What should I use to write and edit code with an AI agent? Picks: Claude Code, Cursor, GitHub Copilot, OpenAI Codex, Windsurf
+- [AI app builders](https://vibestack-rankings.vercel.app/category/app-builders.html): What should I use to go from prompt to a working app? Picks: Lovable, Bolt, Replit, v0
+- [Databases & backends](https://vibestack-rankings.vercel.app/category/databases.html): What should I use for my database, auth and backend? Picks: Supabase, Firebase, Neon, Convex
+- [Hosting & deploy](https://vibestack-rankings.vercel.app/category/hosting.html): Where should I deploy my app? Picks: Vercel, Netlify, Cloudflare Pages, Render
+- [AI APIs & models](https://vibestack-rankings.vercel.app/category/ai-apis.html): Which model API should my app call? Picks: OpenAI API, Anthropic API, Google Gemini API, OpenRouter, Groq
+- [Agent frameworks](https://vibestack-rankings.vercel.app/category/agent-frameworks.html): What should I use to build my own AI agent? Picks: OpenAI Agents SDK, LangGraph, Vercel AI SDK, CrewAI, n8n
+- [Best for vibe coding](https://vibestack-rankings.vercel.app/category/vibe-coding.html): I can't code (much). What should I use to ship? Picks: Lovable, Replit, Cursor, Bolt
+- [Video](https://vibestack-rankings.vercel.app/category/video.html): What should I use to make AI video? Picks: Runway, Google Veo (Flow), Kling AI, HeyGen
+- [Voice](https://vibestack-rankings.vercel.app/category/voice.html): What should I use for AI voice, TTS or voice agents? Picks: ElevenLabs, OpenAI Realtime API, Vapi, Deepgram
+
+## Guides
+- [AI API Pricing Explained: How to Estimate Your Model Costs](https://vibestack-rankings.vercel.app/blog/ai-api-pricing-guide.html): How AI API pricing works (tokens, input vs output, caching, batch) and how to estimate and control costs across OpenAI, Anthropic, Gemini, OpenRouter and Groq.
+- [Lovable vs Bolt vs Replit vs v0: The Best AI App Builders Compared](https://vibestack-rankings.vercel.app/blog/best-ai-app-builders.html): Lovable, Bolt, Replit and v0 compared: what each AI app builder does best, who it suits, and how to pick one for your MVP.
+- [The Best AI Coding Agents for Builders in 2026](https://vibestack-rankings.vercel.app/blog/best-ai-coding-agents.html): An honest guide to the best AI coding agents in 2026, including Claude Code, Cursor, GitHub Copilot, OpenAI Codex and Windsurf, and how to pick one for your workflow.
+- [The Best AI Video Generators for Creators and Builders](https://vibestack-rankings.vercel.app/blog/best-ai-video-generators.html): Runway, Google Veo (Flow), Kling AI and HeyGen compared: which AI video generator to use for clips, ads, explainers and translated videos.
+- [The Best AI Voice Tools: TTS, Speech-to-Text and Voice Agents](https://vibestack-rankings.vercel.app/blog/best-ai-voice-tools.html): ElevenLabs, OpenAI Realtime API, Vapi and Deepgram compared for text-to-speech, transcription and building voice agents.
+- [The Best Free AI Tools for Developers and Vibe Coders](https://vibestack-rankings.vercel.app/blog/best-free-ai-tools-for-developers.html): A curated list of AI tools for developers with genuine free tiers: coding agents, app builders, databases, hosting, model APIs and agent frameworks.
+- [Cursor vs Claude Code: Which Should You Use?](https://vibestack-rankings.vercel.app/blog/cursor-vs-claude-code.html): Cursor vs Claude Code compared on workflow, strengths, pricing model and who each suits, plus how to use both together.
+- [Free Hosting for Side Projects: Vercel, Netlify, Cloudflare Pages and Render](https://vibestack-rankings.vercel.app/blog/free-hosting-for-side-projects.html): Where to host your side project for free: an honest comparison of Vercel, Netlify, Cloudflare Pages and Render, and what to watch as you grow.
+- [GitHub Copilot vs Cursor: Which AI Coding Tool Fits You?](https://vibestack-rankings.vercel.app/blog/github-copilot-vs-cursor.html): GitHub Copilot vs Cursor compared on editor support, agent features, GitHub integration and pricing model, with recommendations for solo builders and teams.
+- [How to Build an AI Agent: Frameworks, Patterns and Pitfalls](https://vibestack-rankings.vercel.app/blog/how-to-build-an-ai-agent.html): A practical guide to building your own AI agent: core concepts, choosing between OpenAI Agents SDK, LangGraph, Vercel AI SDK, CrewAI and n8n, and avoiding common mistakes.
+- [How to Vibe Code an App: A Practical Step-by-Step Guide](https://vibestack-rankings.vercel.app/blog/how-to-vibe-code-an-app.html): A practical, step-by-step guide to vibe coding a real app with AI, from picking a builder to adding a database and deploying it.
+- [Neon vs Supabase: Which Postgres Should You Use?](https://vibestack-rankings.vercel.app/blog/neon-vs-supabase.html): Neon vs Supabase compared: serverless Postgres with branching versus a full backend platform. When you need just a database and when you need more.
+- [OpenRouter Guide: One API Key for Hundreds of AI Models](https://vibestack-rankings.vercel.app/blog/openrouter-guide.html): What OpenRouter is, when it makes sense versus calling OpenAI, Anthropic or Gemini directly, and how to use it for model comparison and fallbacks.
+- [Supabase vs Firebase for AI-Built Apps](https://vibestack-rankings.vercel.app/blog/supabase-vs-firebase.html): Supabase vs Firebase compared for vibe coders and AI-built apps: data model, auth, realtime, pricing model, lock-in and which AI tools support each.
+- [Vibe Coding Security Checklist: 12 Things to Check Before You Launch](https://vibestack-rankings.vercel.app/blog/vibe-coding-security-checklist.html): A practical security checklist for AI-built and vibe-coded apps: secrets, database access rules, auth, input validation, dependencies and more.
+
+## Data
+- [tools.json](https://vibestack-rankings.vercel.app/tools.json): full ranking data

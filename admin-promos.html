@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Promo admin · VibeStack Rankings</title><link rel="stylesheet" href="/style.css">
+<style>table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:8px;border-bottom:1px solid #222838;text-align:left;vertical-align:top}th{cursor:pointer;color:#9aa1b5}
+form.ed{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}form.ed label{display:flex;flex-direction:column;font-size:12px;color:#9aa1b5;gap:4px}
+.st{font-size:11px;border-radius:6px;padding:2px 6px}.on{background:#163d2e;color:#5be3a8}.off{background:#3a1c24;color:#ff8da1}.sch{background:#2f2a14;color:#f5b942}
+button.s{background:#222838;padding:6px 10px;font-size:13px}#preview .promo{max-width:700px}</style></head>
+<body><header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/featured.html">Get featured</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a></nav></header><main>
+<h1>Promotions admin</h1><p class="sub">Edits are saved in this browser only (localStorage). When done, click <b>Export promotions.json</b>, replace the file in the repo and redeploy. Nothing is uploaded from this page.</p>
+<div class="bar"><button id="new">+ New promo</button><button class="s" id="exp">Export promotions.json</button><label class="s" style="align-self:center;cursor:pointer">Import JSON <input type="file" id="imp" accept=".json" hidden></label><button class="s" id="reset">Discard local edits (reload live file)</button><span id="msg" class="sub" style="align-self:center"></span></div>
+<div class="card" id="edwrap" hidden><h2 id="edt">Edit promo</h2><form class="ed" id="ed">
+<label>ID (unique)<input name="id" required pattern="[a-z0-9-]+"></label><label>Tool name<input name="tool" required></label><label>Logo URL<input name="logo" placeholder="https://www.google.com/s2/favicons?domain=example.com&sz=128"></label>
+<label style="grid-column:1/-1">Headline<input name="headline" required maxlength="140"></label><label>CTA text<input name="cta" value="Learn more"></label><label>Link<input name="link" required placeholder="https://..."></label>
+<label>Placement<select name="placement" id="plsel"></select></label><label>Category id (category-top only, blank = all)<select name="category" id="catsel"><option value="">All categories</option></select></label>
+<label>Start date<input type="date" name="start" required></label><label>End date<input type="date" name="end" required></label><label>Priority (higher shows first)<input type="number" name="priority" value="1"></label>
+<label>Sponsor contact (private-ish: visible in JSON)<input name="sponsor_contact"></label><label><span><input type="checkbox" name="active" checked> Active</span><span><input type="checkbox" name="example"> EXAMPLE placeholder (not a real sponsor)</span></label>
+<div style="grid-column:1/-1;display:flex;gap:8px"><button>Save</button><button type="button" class="s" id="cancel">Cancel</button></div></form><div id="preview"></div></div>
+<div class="bar"><input id="q" placeholder="Search id, tool, sponsor..."><select id="fpl"><option value="">All placements</option></select><select id="fst"><option value="">Any status</option><option value="live">Live now</option><option value="scheduled">Scheduled</option><option value="ended">Ended/inactive</option></select></div>
+<p class="sub" id="count"></p><div style="overflow-x:auto"><table><thead><tr><th data-k="id">ID</th><th data-k="tool">Tool</th><th data-k="placement">Placement</th><th data-k="start">Dates</th><th data-k="priority">Prio</th><th>Status</th><th></th></tr></thead><tbody id="tb"></tbody></table></div>
+<div class="bar" id="pager"></div></main>
+<script>
+const PL={'homepage-hero':'Homepage hero banner','category-top':'Category top slot','sidebar-card':'Sidebar card','new-this-week':'New-this-week highlight','sitewide-strip':'Sitewide strip'};
+const H=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const KEY='vs-promos-draft',PAGE=50,today=new Date().toISOString().slice(0,10);
+let doc,editing=null,page=0,sortK='priority',sortDir=-1;const $=id=>document.getElementById(id),f=$('ed'),msg=t=>{$('msg').textContent=t;setTimeout(()=>$('msg').textContent='',4000)};
+Object.entries(PL).forEach(([k,v])=>{$('plsel').insertAdjacentHTML('beforeend',`<option value="${k}">${v}</option>`);$('fpl').insertAdjacentHTML('beforeend',`<option value="${k}">${v}</option>`)});
+fetch('/tools.json').then(r=>r.json()).then(d=>d.categories.forEach(c=>$('catsel').insertAdjacentHTML('beforeend',`<option value="${c.id}">${H(c.name)}</option>`))).catch(()=>{});
+const status=p=>p.active===false||(p.end&&p.end<today)?'ended':(p.start&&p.start>today?'scheduled':'live');
+const save=()=>localStorage.setItem(KEY,JSON.stringify(doc));
+async function load(force){const l=!force&&localStorage.getItem(KEY);if(l){doc=JSON.parse(l);msg('Loaded local draft')}else{doc=await fetch('/promotions.json',{cache:'no-cache'}).then(r=>r.json());save()}draw()}
+function draw(){const q=$('q').value.toLowerCase(),fp=$('fpl').value,fs=$('fst').value;
+ let l=doc.promotions.filter(p=>(!q||[p.id,p.tool,p.sponsor_contact,p.headline].join(' ').toLowerCase().includes(q))&&(!fp||p.placement===fp)&&(!fs||status(p)===fs));
+ l.sort((a,b)=>(a[sortK]>b[sortK]?1:a[sortK]<b[sortK]?-1:0)*sortDir);
+ const pages=Math.max(1,Math.ceil(l.length/PAGE));page=Math.min(page,pages-1);
+ $('count').textContent=`${l.length} of ${doc.promotions.length} promos · ${doc.promotions.filter(p=>status(p)==='live').length} live now`;
+ $('tb').innerHTML=l.slice(page*PAGE,page*PAGE+PAGE).map(p=>{const s=status(p);return `<tr><td>${H(p.id)}${p.example?' <span class="tag">EXAMPLE</span>':''}</td><td>${H(p.tool)}</td><td>${H(PL[p.placement]||p.placement)}${p.category?' · '+H(p.category):''}</td><td>${H(p.start)} → ${H(p.end)}</td><td>${H(p.priority)}</td><td><span class="st ${s==='live'?'on':s==='scheduled'?'sch':'off'}">${s}</span></td><td style="white-space:nowrap"><button class="s" data-e="${H(p.id)}">Edit</button> <button class="s" data-c="${H(p.id)}">Copy</button> <button class="s" data-d="${H(p.id)}">Delete</button></td></tr>`}).join('');
+ $('pager').innerHTML=pages>1?Array.from({length:pages},(_,i)=>`<button class="s" data-p="${i}" ${i===page?'style="background:#7c5cff"':''}>${i+1}</button>`).join(''):''}
+function open(p,isNew){editing=isNew?null:p.id;$('edt').textContent=isNew?'New promo':'Edit '+p.id;$('edwrap').hidden=false;
+ for(const el of f.elements){if(!el.name)continue;if(el.type==='checkbox')el.checked=!!p[el.name]||(el.name==='active'&&p.active===undefined);else el.value=p[el.name]??''}
+ preview();$('edwrap').scrollIntoView({behavior:'smooth'})}
+function read(){const o={};for(const el of f.elements){if(!el.name)continue;o[el.name]=el.type==='checkbox'?el.checked:el.type==='number'?Number(el.value||0):el.value.trim()}return o}
+function preview(){const p=read();$('preview').innerHTML=`<p class="sub">Preview</p><div class="promo"><span class="promo-label">Sponsored</span>${p.example?'<span class="promo-ex">EXAMPLE</span>':''}${p.logo?`<img class="promo-logo" src="${H(p.logo)}" alt="">`:'<span class="promo-logo promo-ph">★</span>'}<div class="promo-body"><b>${H(p.tool)}</b><span>${H(p.headline)}</span></div><a class="promo-cta">${H(p.cta||'Learn more')} →</a></div>`}
+f.addEventListener('input',preview);
+f.onsubmit=e=>{e.preventDefault();const p=read();if(p.end<p.start)return alert('End date is before start date');
+ if(p.id!==editing&&doc.promotions.some(x=>x.id===p.id))return alert('ID already exists');
+ if(editing)doc.promotions[doc.promotions.findIndex(x=>x.id===editing)]=p;else doc.promotions.push(p);
+ save();$('edwrap').hidden=true;draw();msg('Saved locally. Remember to export.')};
+$('cancel').onclick=()=>$('edwrap').hidden=true;
+$('new').onclick=()=>open({id:'promo-'+Date.now().toString(36),cta:'Learn more',placement:'category-top',start:today,end:new Date(Date.now()+7*864e5).toISOString().slice(0,10),priority:1,active:true},true);
+$('tb').onclick=e=>{const b=e.target.dataset,p=id=>doc.promotions.find(x=>x.id===id);
+ if(b.e)open(p(b.e));if(b.c)open({...p(b.c),id:b.c+'-copy'},true);
+ if(b.d&&confirm('Delete '+b.d+'?')){doc.promotions=doc.promotions.filter(x=>x.id!==b.d);save();draw()}};
+$('pager').onclick=e=>{if(e.target.dataset.p){page=+e.target.dataset.p;draw()}};
+document.querySelector('thead').onclick=e=>{const k=e.target.dataset.k;if(!k)return;sortDir=sortK===k?-sortDir:1;sortK=k;draw()};
+['q','fpl','fst'].forEach(i=>$(i).addEventListener('input',()=>{page=0;draw()}));
+$('exp').onclick=()=>{doc.updated=today;const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(doc,null,2)+'\n'],{type:'application/json'}));a.download='promotions.json';a.click()};
+$('imp').onchange=async e=>{try{const d=JSON.parse(await e.target.files[0].text());if(!Array.isArray(d.promotions))throw 0;doc=d;save();draw();msg('Imported')}catch{alert('Not a valid promotions.json')}};
+$('reset').onclick=()=>{if(confirm('Discard local edits?')){localStorage.removeItem(KEY);load(true)}};
+load();
+</script></body></html>

@@ -1,0 +1,36 @@
+{
+  "redirects": [
+    {
+      "source": "/category.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "c",
+          "value": "(?<cat>[a-z0-9-]+)"
+        }
+      ],
+      "destination": "/category/:cat.html",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.(css|js)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    },
+    {
+      "source": "/(promotions|feed)\\.json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300"
+        }
+      ]
+    }
+  ]
+}

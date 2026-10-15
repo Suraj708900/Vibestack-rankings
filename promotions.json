@@ -1,0 +1,54 @@
+{
+  "updated": "2026-10-16",
+  "note": "Promotions for VibeStack Rankings. Entries with id starting 'example-' are placeholders, NOT real sponsors. See PROMOTIONS.md.",
+  "promotions": [
+    {
+      "id": "example-hero",
+      "tool": "Your tool here (EXAMPLE)",
+      "logo": "",
+      "headline": "EXAMPLE slot: put your AI tool in front of builders deciding what to use.",
+      "cta": "Book this slot",
+      "link": "/featured.html",
+      "placement": "homepage-hero",
+      "category": "",
+      "start": "2026-10-01",
+      "end": "2027-12-31",
+      "priority": 1,
+      "active": true,
+      "example": true,
+      "sponsor_contact": "kamdevsuraj03@gmail.com"
+    },
+    {
+      "id": "example-category-top",
+      "tool": "Your tool here (EXAMPLE)",
+      "logo": "",
+      "headline": "EXAMPLE slot: be the first card people see in this category.",
+      "cta": "Get featured",
+      "link": "/featured.html",
+      "placement": "category-top",
+      "category": "",
+      "start": "2026-10-01",
+      "end": "2027-12-31",
+      "priority": 1,
+      "active": true,
+      "example": true,
+      "sponsor_contact": "kamdevsuraj03@gmail.com"
+    },
+    {
+      "id": "example-strip",
+      "tool": "Your tool here (EXAMPLE)",
+      "logo": "",
+      "headline": "EXAMPLE sitewide strip: advertise on VibeStack Rankings.",
+      "cta": "See options",
+      "link": "/featured.html",
+      "placement": "sitewide-strip",
+      "category": "",
+      "start": "2026-10-01",
+      "end": "2027-12-31",
+      "priority": 1,
+      "active": true,
+      "example": true,
+      "sponsor_contact": "kamdevsuraj03@gmail.com"
+    }
+  ]
+}

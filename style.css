@@ -11,3 +11,25 @@ input,select,button,textarea{font:inherit;padding:10px 12px;border-radius:10px;b
 button{background:#7c5cff;border:0;cursor:pointer;font-weight:600}.bar{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.bar input{flex:1;min-width:200px}
 footer{border-top:1px solid #1e2230;color:#8189a0;font-size:13px;padding:24px 18px;text-align:center}
 .cat h2 a{color:#e6e8ee;text-decoration:none}
+/* promotions */
+.promo{position:relative;display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,#1a1630,#10202a);border:1px solid #3a2f73;border-radius:14px;padding:14px 16px;margin:14px 0;flex-wrap:wrap}
+.promo-body{flex:1;min-width:180px;display:flex;flex-direction:column}.promo-body span{color:#b9bfd0;font-size:14px}
+.promo-logo{width:40px;height:40px;border-radius:10px;object-fit:contain;background:#fff1}.promo-ph{display:grid;place-items:center;color:#b3a3ff}
+.promo-label{position:absolute;top:-9px;left:12px;background:#f5b942;color:#1a1300;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:6px;padding:1px 7px}
+.promo-ex{position:absolute;top:-9px;left:92px;background:#ff5c7a;color:#fff;font-size:10px;font-weight:800;border-radius:6px;padding:1px 7px}
+.promo-cta{background:#7c5cff;color:#fff;text-decoration:none;padding:8px 14px;border-radius:10px;font-weight:600;font-size:14px}
+.promo-dots{position:absolute;right:10px;top:-9px;font-size:10px;color:#9aa1b5;background:#0b0d12;padding:0 6px;border-radius:6px}
+[data-promo]{position:relative}
+.promo-homepage-hero{padding:22px;font-size:17px}.promo-homepage-hero .promo-logo{width:56px;height:56px}
+.promo-sitewide-strip{margin:0;border-radius:0;border-width:0 0 1px;padding:8px 18px;justify-content:center;font-size:14px}
+.promo-sitewide-strip .promo-logo{width:24px;height:24px}.promo-sitewide-strip .promo-label{position:static}.promo-sitewide-strip .promo-ex{position:static}
+.promo-sitewide-strip .promo-body{flex:0 1 auto;flex-direction:row;gap:8px;align-items:baseline}.promo-sitewide-strip .promo-cta{padding:4px 10px;font-size:13px}
+.promo-sidebar-card{flex-direction:column;align-items:flex-start;max-width:340px}
+@media(min-width:1400px){[data-promo="sidebar-card"]{position:fixed;right:16px;top:90px;width:240px;z-index:4}}
+/* feed */
+[data-feed]{margin:30px 0}.feed-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+.feed-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.feed-card{background:#131722;border:1px solid #222838;border-radius:12px;padding:16px;display:flex;flex-direction:column}.feed-card h3{margin:.6em 0 .3em;font-size:16px}.feed-card p{color:#c3c8d6;font-size:14px;flex:1}
+.feed-top{display:flex;gap:10px;align-items:center}.feed-top img,.feed-av{width:40px;height:40px;border-radius:50%;background:#fff;object-fit:contain}.feed-av{display:grid;place-items:center;background:linear-gradient(135deg,#7c5cff,#20d3c2);color:#fff;font-weight:800;font-size:13px}
+.feed-act{display:flex;justify-content:space-between;border-top:1px solid #222838;padding-top:10px;font-size:13px}.feed-share{background:#0a66c2;color:#fff!important;text-decoration:none;padding:4px 10px;border-radius:14px}
+.post{max-width:760px}.post h2{margin-top:1.6em}.post p,.post li{color:#d3d7e2;font-size:17px}.post a{color:#8ab4ff}

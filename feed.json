@@ -1,0 +1,404 @@
+{
+ "updated": "2026-10-15",
+ "about": "Builder tips and tool spotlights generated from tools.json verdicts. No quotes, metrics or people. Rotates client-side daily.",
+ "posts": [
+  {
+   "type": "Builder tip",
+   "category": "coding-agents",
+   "title": "What should I use to write and edit code with an AI agent?",
+   "body": "Our current ranked picks for coding agents: #1 Claude Code, #2 Cursor, #3 GitHub Copilot, #4 OpenAI Codex, #5 Windsurf. Quick take on the top pick: Terminal-first agent that handles multi-file changes and long tasks well. Best if you're comfortable in a CLI. Check pricing on each official site before committing.",
+   "link": "/category.html?c=coding-agents",
+   "tags": [
+    "Coding agents"
+   ],
+   "id": "post-01"
+  },
+  {
+   "type": "Builder tip",
+   "category": "app-builders",
+   "title": "What should I use to go from prompt to a working app?",
+   "body": "Our current ranked picks for ai app builders: #1 Lovable, #2 Bolt, #3 Replit, #4 v0. Quick take on the top pick: Polished full-stack apps from chat, with Supabase built in. Best pick for non-coders shipping an MVP. Check pricing on each official site before committing.",
+   "link": "/category.html?c=app-builders",
+   "tags": [
+    "AI app builders"
+   ],
+   "id": "post-02"
+  },
+  {
+   "type": "Builder tip",
+   "category": "databases",
+   "title": "What should I use for my database, auth and backend?",
+   "body": "Our current ranked picks for databases & backends: #1 Supabase, #2 Firebase, #3 Neon, #4 Convex. Quick take on the top pick: Postgres plus auth, storage and realtime. The default backend for vibe-coded apps. Check pricing on each official site before committing.",
+   "link": "/category.html?c=databases",
+   "tags": [
+    "Databases & backends"
+   ],
+   "id": "post-03"
+  },
+  {
+   "type": "Builder tip",
+   "category": "hosting",
+   "title": "Where should I deploy my app?",
+   "body": "Our current ranked picks for hosting & deploy: #1 Vercel, #2 Netlify, #3 Cloudflare Pages, #4 Render. Quick take on the top pick: Best home for Next.js, with instant preview deploys. Watch usage costs at scale. Check pricing on each official site before committing.",
+   "link": "/category.html?c=hosting",
+   "tags": [
+    "Hosting & deploy"
+   ],
+   "id": "post-04"
+  },
+  {
+   "type": "Builder tip",
+   "category": "ai-apis",
+   "title": "Which model API should my app call?",
+   "body": "Our current ranked picks for ai apis & models: #1 OpenAI API, #2 Anthropic API, #3 Google Gemini API, #4 OpenRouter, #5 Groq. Quick take on the top pick: Broadest ecosystem and tooling. A safe first choice for most apps. Check pricing on each official site before committing.",
+   "link": "/category.html?c=ai-apis",
+   "tags": [
+    "AI APIs & models"
+   ],
+   "id": "post-05"
+  },
+  {
+   "type": "Builder tip",
+   "category": "agent-frameworks",
+   "title": "What should I use to build my own AI agent?",
+   "body": "Our current ranked picks for agent frameworks: #1 OpenAI Agents SDK, #2 LangGraph, #3 Vercel AI SDK, #4 CrewAI, #5 n8n. Quick take on the top pick: Lightweight, well-documented primitives for tools, handoffs and tracing. Check pricing on each official site before committing.",
+   "link": "/category.html?c=agent-frameworks",
+   "tags": [
+    "Agent frameworks"
+   ],
+   "id": "post-06"
+  },
+  {
+   "type": "Builder tip",
+   "category": "vibe-coding",
+   "title": "I can't code (much). What should I use to ship?",
+   "body": "Our current ranked picks for best for vibe coding: #1 Lovable, #2 Replit, #3 Cursor, #4 Bolt. Quick take on the top pick: The most beginner-friendly way to get a real app with a backend live. Check pricing on each official site before committing.",
+   "link": "/category.html?c=vibe-coding",
+   "tags": [
+    "Best for vibe coding"
+   ],
+   "id": "post-07"
+  },
+  {
+   "type": "Builder tip",
+   "category": "video",
+   "title": "What should I use to make AI video?",
+   "body": "Our current ranked picks for video: #1 Runway, #2 Google Veo (Flow), #3 Kling AI, #4 HeyGen. Quick take on the top pick: Pro-grade generation and editing tools. The creator favourite. Check pricing on each official site before committing.",
+   "link": "/category.html?c=video",
+   "tags": [
+    "Video"
+   ],
+   "id": "post-08"
+  },
+  {
+   "type": "Builder tip",
+   "category": "voice",
+   "title": "What should I use for AI voice, TTS or voice agents?",
+   "body": "Our current ranked picks for voice: #1 ElevenLabs, #2 OpenAI Realtime API, #3 Vapi, #4 Deepgram. Quick take on the top pick: The most natural TTS and voice cloning, plus a voice-agent platform. Check pricing on each official site before committing.",
+   "link": "/category.html?c=voice",
+   "tags": [
+    "Voice"
+   ],
+   "id": "post-09"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "coding-agents",
+   "title": "Claude Code for coding agents",
+   "body": "Terminal-first agent that handles multi-file changes and long tasks well. Best if you're comfortable in a CLI. Pricing: Included with Claude paid plans; see site.",
+   "link": "https://www.claude.com/product/claude-code",
+   "logo": "https://www.google.com/s2/favicons?domain=www.claude.com&sz=128",
+   "tags": [
+    "agent",
+    "cli"
+   ],
+   "id": "post-10"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "coding-agents",
+   "title": "Cursor for coding agents",
+   "body": "VS Code-style editor with strong agent mode and tab completion. The easiest daily driver for most builders. Pricing: Free tier; paid plans, see site.",
+   "link": "https://cursor.com",
+   "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+   "tags": [
+    "ide",
+    "free-tier"
+   ],
+   "id": "post-11"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "coding-agents",
+   "title": "GitHub Copilot for coding agents",
+   "body": "Works in almost every editor and now ships a cloud coding agent. Safe default if your code is on GitHub. Pricing: Free tier; paid plans, see site.",
+   "link": "https://github.com/features/copilot",
+   "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+   "tags": [
+    "ide",
+    "free-tier"
+   ],
+   "id": "post-12"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "app-builders",
+   "title": "Lovable for ai app builders",
+   "body": "Polished full-stack apps from chat, with Supabase built in. Best pick for non-coders shipping an MVP. Pricing: Free tier; see site.",
+   "link": "https://lovable.dev",
+   "logo": "https://www.google.com/s2/favicons?domain=lovable.dev&sz=128",
+   "tags": [
+    "no-code",
+    "free-tier"
+   ],
+   "id": "post-13"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "app-builders",
+   "title": "Bolt for ai app builders",
+   "body": "Fast in-browser builder with a real dev environment. Great for quick prototypes you can export. Pricing: Free tier; see site.",
+   "link": "https://bolt.new",
+   "logo": "https://www.google.com/s2/favicons?domain=bolt.new&sz=128",
+   "tags": [
+    "no-code",
+    "free-tier"
+   ],
+   "id": "post-14"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "app-builders",
+   "title": "Replit for ai app builders",
+   "body": "Agent plus IDE plus hosting in one place. Easiest path from idea to a deployed URL. Pricing: Free tier; see site.",
+   "link": "https://replit.com",
+   "logo": "https://www.google.com/s2/favicons?domain=replit.com&sz=128",
+   "tags": [
+    "hosting",
+    "free-tier"
+   ],
+   "id": "post-15"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "databases",
+   "title": "Supabase for databases & backends",
+   "body": "Postgres plus auth, storage and realtime. The default backend for vibe-coded apps. Pricing: Free tier; see site.",
+   "link": "https://supabase.com",
+   "logo": "https://www.google.com/s2/favicons?domain=supabase.com&sz=128",
+   "tags": [
+    "postgres",
+    "open-source",
+    "free-tier"
+   ],
+   "id": "post-16"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "databases",
+   "title": "Firebase for databases & backends",
+   "body": "Google's mature backend with great mobile SDKs. NoSQL data model takes some getting used to. Pricing: Free Spark plan; pay-as-you-go.",
+   "link": "https://firebase.google.com",
+   "logo": "https://www.google.com/s2/favicons?domain=firebase.google.com&sz=128",
+   "tags": [
+    "free-tier"
+   ],
+   "id": "post-17"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "databases",
+   "title": "Neon for databases & backends",
+   "body": "Serverless Postgres with branching. Ideal when you just need a database, not a full backend. Pricing: Free tier; see site.",
+   "link": "https://neon.com",
+   "logo": "https://www.google.com/s2/favicons?domain=neon.com&sz=128",
+   "tags": [
+    "postgres",
+    "free-tier"
+   ],
+   "id": "post-18"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "hosting",
+   "title": "Vercel for hosting & deploy",
+   "body": "Best home for Next.js, with instant preview deploys. Watch usage costs at scale. Pricing: Free Hobby plan; see site.",
+   "link": "https://vercel.com",
+   "logo": "https://www.google.com/s2/favicons?domain=vercel.com&sz=128",
+   "tags": [
+    "free-tier"
+   ],
+   "id": "post-19"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "hosting",
+   "title": "Netlify for hosting & deploy",
+   "body": "Simple static and Jamstack hosting with built-in forms and functions. Pricing: Free plan; see site.",
+   "link": "https://www.netlify.com",
+   "logo": "https://www.google.com/s2/favicons?domain=www.netlify.com&sz=128",
+   "tags": [
+    "free-tier"
+   ],
+   "id": "post-20"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "hosting",
+   "title": "Cloudflare Pages for hosting & deploy",
+   "body": "Fast global edge with a generous free tier. Pairs well with Workers. Pricing: Free tier; see site.",
+   "link": "https://pages.cloudflare.com",
+   "logo": "https://www.google.com/s2/favicons?domain=pages.cloudflare.com&sz=128",
+   "tags": [
+    "free-tier"
+   ],
+   "id": "post-21"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "ai-apis",
+   "title": "OpenAI API for ai apis & models",
+   "body": "Broadest ecosystem and tooling. A safe first choice for most apps. Pricing: Pay per token; see site.",
+   "link": "https://platform.openai.com",
+   "logo": "https://www.google.com/s2/favicons?domain=platform.openai.com&sz=128",
+   "tags": [
+    "api"
+   ],
+   "id": "post-22"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "ai-apis",
+   "title": "Anthropic API for ai apis & models",
+   "body": "Claude models are top-tier for coding and agents. Strong pick for tool use. Pricing: Pay per token; see site.",
+   "link": "https://www.anthropic.com/api",
+   "logo": "https://www.google.com/s2/favicons?domain=www.anthropic.com&sz=128",
+   "tags": [
+    "api"
+   ],
+   "id": "post-23"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "ai-apis",
+   "title": "Google Gemini API for ai apis & models",
+   "body": "Long context with a free tier in AI Studio. Great value for prototyping. Pricing: Free tier; paid per token.",
+   "link": "https://ai.google.dev",
+   "logo": "https://www.google.com/s2/favicons?domain=ai.google.dev&sz=128",
+   "tags": [
+    "api",
+    "free-tier"
+   ],
+   "id": "post-24"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "agent-frameworks",
+   "title": "OpenAI Agents SDK for agent frameworks",
+   "body": "Lightweight, well-documented primitives for tools, handoffs and tracing. Pricing: Free, open-source.",
+   "link": "https://openai.github.io/openai-agents-python/",
+   "logo": "https://www.google.com/s2/favicons?domain=openai.github.io&sz=128",
+   "tags": [
+    "open-source",
+    "python"
+   ],
+   "id": "post-25"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "agent-frameworks",
+   "title": "LangGraph for agent frameworks",
+   "body": "Stateful, controllable agent graphs. More setup, but more control. Pricing: Open-source; paid platform, see site.",
+   "link": "https://www.langchain.com/langgraph",
+   "logo": "https://www.google.com/s2/favicons?domain=www.langchain.com&sz=128",
+   "tags": [
+    "open-source"
+   ],
+   "id": "post-26"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "agent-frameworks",
+   "title": "Vercel AI SDK for agent frameworks",
+   "body": "The TypeScript default for streaming chat and agents in web apps. Pricing: Free, open-source.",
+   "link": "https://ai-sdk.dev",
+   "logo": "https://www.google.com/s2/favicons?domain=ai-sdk.dev&sz=128",
+   "tags": [
+    "open-source",
+    "typescript"
+   ],
+   "id": "post-27"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "video",
+   "title": "Runway for video",
+   "body": "Pro-grade generation and editing tools. The creator favourite. Pricing: Free tier; see site.",
+   "link": "https://runwayml.com",
+   "logo": "https://www.google.com/s2/favicons?domain=runwayml.com&sz=128",
+   "tags": [
+    "free-tier"
+   ],
+   "id": "post-28"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "video",
+   "title": "Google Veo (Flow) for video",
+   "body": "High-quality clips with native audio. Access depends on your Google AI plan. Pricing: See site.",
+   "link": "https://labs.google/flow/about",
+   "logo": "https://www.google.com/s2/favicons?domain=labs.google&sz=128",
+   "tags": [],
+   "id": "post-29"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "video",
+   "title": "Kling AI for video",
+   "body": "Strong motion quality at a good price for short clips. Pricing: Free credits; see site.",
+   "link": "https://klingai.com",
+   "logo": "https://www.google.com/s2/favicons?domain=klingai.com&sz=128",
+   "tags": [
+    "free-tier"
+   ],
+   "id": "post-30"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "voice",
+   "title": "ElevenLabs for voice",
+   "body": "The most natural TTS and voice cloning, plus a voice-agent platform. Pricing: Free tier; see site.",
+   "link": "https://elevenlabs.io",
+   "logo": "https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=128",
+   "tags": [
+    "api",
+    "free-tier"
+   ],
+   "id": "post-31"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "voice",
+   "title": "OpenAI Realtime API for voice",
+   "body": "Low-latency speech-to-speech for building voice agents. Pricing: Pay per use; see site.",
+   "link": "https://platform.openai.com/docs/guides/realtime",
+   "logo": "https://www.google.com/s2/favicons?domain=platform.openai.com&sz=128",
+   "tags": [
+    "api"
+   ],
+   "id": "post-32"
+  },
+  {
+   "type": "Tool spotlight",
+   "category": "voice",
+   "title": "Vapi for voice",
+   "body": "Developer platform to ship phone and voice agents quickly. Pricing: See site.",
+   "link": "https://vapi.ai",
+   "logo": "https://www.google.com/s2/favicons?domain=vapi.ai&sz=128",
+   "tags": [
+    "api"
+   ],
+   "id": "post-33"
+  }
+ ]
+}

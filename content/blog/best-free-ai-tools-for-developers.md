@@ -1,0 +1,75 @@
+title: The Best Free AI Tools for Developers and Vibe Coders
+keyword: free AI tools for developers
+description: A curated list of AI tools for developers with genuine free tiers: coding agents, app builders, databases, hosting, model APIs and agent frameworks.
+date: 2026-10-16
+category: coding-agents
+---
+You can build and launch a serious project today without paying for any software up front. Many of the best tools in our rankings offer free tiers or are open source. This list collects them by category, so you can assemble a complete free stack. Free tiers change, so treat this as a map and check each official pricing page for the current limits.
+
+## Coding agents and editors
+
+- [Cursor](/tools/cursor.html): AI-first editor with a free tier. The easiest daily driver.
+- [GitHub Copilot](/tools/github-copilot.html): free tier, works in most editors.
+- [Windsurf](/tools/windsurf.html): agentic IDE with a free tier.
+
+More in [Coding agents](/category/coding-agents.html) and [best AI coding agents](/blog/best-ai-coding-agents.html).
+
+## AI app builders
+
+- [Lovable](/tools/lovable.html), [Bolt](/tools/bolt.html), [Replit](/tools/replit.html) and [v0](/tools/v0.html) all offer free tiers with usage limits. Good for prototypes; serious use usually needs a paid plan. Compared in [best AI app builders](/blog/best-ai-app-builders.html).
+
+## Databases and backends
+
+- [Supabase](/tools/supabase.html): free tier with Postgres, auth and storage.
+- [Firebase](/tools/firebase.html): free Spark plan.
+- [Neon](/tools/neon.html): free serverless Postgres.
+- [Convex](/tools/convex.html): free tier for a reactive TypeScript backend.
+
+## Hosting
+
+- [Vercel](/tools/vercel.html): free Hobby plan (non-commercial use).
+- [Netlify](/tools/netlify.html): free plan.
+- [Cloudflare Pages](/tools/cloudflare-pages.html): generous free tier.
+- [Render](/tools/render.html): free tier for services and databases.
+
+See [free hosting for side projects](/blog/free-hosting-for-side-projects.html).
+
+## AI model APIs
+
+- [Google Gemini API](/tools/google-gemini-api.html): free tier through Google AI Studio.
+- [Groq](/tools/groq.html): free tier for fast open-model inference.
+
+Most other providers are pay per token. Read the [AI API pricing guide](/blog/ai-api-pricing-guide.html) before you scale.
+
+## Agent frameworks (open source)
+
+- [OpenAI Agents SDK](/tools/openai-agents-sdk.html): free, open source.
+- [Vercel AI SDK](/tools/vercel-ai-sdk.html): free, open source.
+- [LangGraph](/tools/langgraph.html) and [CrewAI](/tools/crewai.html): open source, with optional paid platforms.
+- [n8n](/tools/n8n.html): free to self-host.
+
+## Media
+
+- Video: [Runway](/tools/runway.html), [Kling AI](/tools/kling-ai.html) (free credits) and [HeyGen](/tools/heygen.html) have free tiers or credits.
+- Voice: [ElevenLabs](/tools/elevenlabs.html) has a free tier; [Deepgram](/tools/deepgram.html) offers free credits.
+
+## A complete free starter stack
+
+1. Build the UI with v0 or Lovable, or code it in Cursor.
+2. Store data in Supabase.
+3. Call Gemini's free tier for AI features while prototyping.
+4. Deploy on Vercel or Cloudflare Pages.
+5. Automate glue work with self-hosted n8n.
+
+When the project starts earning, upgrade the piece that limits you first, usually hosting terms or AI usage.
+
+## FAQ
+
+### What is the best free AI coding tool?
+Cursor's free tier is the most common starting point. GitHub Copilot and Windsurf also have free tiers.
+
+### Is there a free AI API?
+The Gemini API has a free tier in Google AI Studio, and Groq has a free tier. Both have rate limits.
+
+### Can I build a whole app for free?
+Yes, for a prototype or small project, using free tiers of a builder or editor, a database, and hosting.
