@@ -51,6 +51,28 @@ Do this for two model tiers and you will quickly see whether the cheaper model i
 
 Browse all model providers in our [AI APIs & models rankings](/category/ai-apis.html), and if you are building an agent, read [how to build an AI agent](/blog/how-to-build-an-ai-agent.html), because agents make many calls per task and costs add up quickly.
 
+## A worked estimation template
+
+You do not need real prices to set up the maths; you plug them in from the provider's pricing page. Here is a template you can copy into a spreadsheet:
+
+| Input | Where it comes from |
+|---|---|
+| Input tokens per request | `usage` field in a real API response |
+| Output tokens per request | `usage` field in a real API response |
+| Price per input token | provider's official pricing page |
+| Price per output token | provider's official pricing page |
+| Requests per active user per day | your product analytics or a guess you revisit |
+| Daily active users | analytics |
+
+Cost per request = (input tokens × input price) + (output tokens × output price). Multiply up by requests and users, then add 20–50% headroom for retries and growth. Re-run the sheet whenever you change models or prompts, because a longer system prompt changes every request.
+
+## Where hidden costs come from
+
+- **Agent loops.** One user action can trigger many model calls when an agent plans, calls tools and re-reads results. Measure tokens per *task*, not per call.
+- **Retrieval context.** RAG apps often stuff many document chunks into each prompt. Retrieving fewer, better chunks is usually cheaper and more accurate.
+- **Images, audio and video.** Multimodal inputs are priced differently from text; check the provider's page for how they are counted.
+- **Embeddings.** Usually cheap per call, but re-embedding a whole corpus after every change adds up. Only embed what changed.
+
 ## FAQ
 
 ### Which AI API is cheapest?

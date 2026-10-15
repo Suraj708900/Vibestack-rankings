@@ -53,6 +53,18 @@ The [Vercel AI SDK](/tools/vercel-ai-sdk.html) is the default choice for streami
 
 If you would rather have an agent write your code than build one, see [best AI coding agents](/blog/best-ai-coding-agents.html).
 
+## Evaluating your agent
+
+Agents fail in ways that are hard to spot by trying a few examples. Build a small evaluation set: 20 to 50 realistic tasks with what a good outcome looks like. Re-run it whenever you change the model, prompts or tools, and track pass rate, cost and steps per task. Even a spreadsheet works. Without this, every change is a guess.
+
+## Deploying it
+
+Where an agent runs depends on its shape. Short request-response agents fit serverless functions; long-running or scheduled agents need a worker, queue or durable workflow. Our guide to [AI agent hosting options](/blog/ai-agent-hosting-options.html) covers the choices, and [MCP explained](/blog/mcp-explained.html) shows how to plug standard tools into agents.
+
+## Human in the loop
+
+The most reliable production agents are not fully autonomous. They draft, propose or prepare, and a person approves anything with consequences. Design this approval step from day one; it is far easier than adding it after something goes wrong.
+
 ## FAQ
 
 ### What is the easiest way to build an AI agent?

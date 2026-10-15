@@ -48,6 +48,25 @@ You do not have to choose. A popular setup is to keep Cursor as the editor and r
 
 Whichever you pick, run it on a real task from your backlog for a week before deciding. The right answer depends on how you work far more than on any leaderboard.
 
+## A one-week trial plan
+
+Rather than reading more comparisons, run both for a week on your own project:
+
+- **Day 1–2:** use Cursor for everything. Note how often you accept completions and how much agent output you have to fix.
+- **Day 3–4:** use Claude Code for your larger tasks, with your normal editor for small edits. Note how much you need to steer it.
+- **Day 5:** give both the same medium-sized task (a feature touching three or more files) from the same git commit, and compare the diffs.
+
+Judge on the review burden, how well each understood your codebase, and which one you *wanted* to keep using.
+
+## Tips that help with either tool
+
+- Keep a short project rules or instructions file explaining your stack, conventions and commands; both tools can read project-level guidance.
+- Commit before every big agent task so you can roll back cleanly.
+- Ask for a plan first on anything non-trivial, approve it, then let the agent execute.
+- Make tests runnable with one command so the agent can verify its own work.
+
+More on this in our [prompt tips for coding agents](/blog/prompt-tips-for-coding-agents.html).
+
 ## FAQ
 
 ### Is Claude Code better than Cursor?

@@ -49,6 +49,25 @@ Best for: product explainers, onboarding videos, sales outreach and localisation
 
 Read each tool's terms on commercial use. Only create avatars or voice clones of people who have given consent, and label AI-generated content where platforms or laws require it.
 
+## Writing better video prompts
+
+Most disappointing AI video comes from vague prompts. A reliable structure is: **subject + action + setting + camera + lighting + style**. For example: "A ceramic coffee mug on a wooden desk, steam rising, morning light through a window, slow push-in camera, shallow depth of field, warm cinematic look." Compare that with "a nice coffee video" and the difference in output is obvious.
+
+Other tips that hold across tools:
+
+- **One idea per clip.** Do not ask for a scene change inside a single generation.
+- **Describe motion explicitly.** Models need to be told what moves and how fast.
+- **Use negative space.** Leave room in the frame if you plan to add text later.
+- **Keep a prompt log.** Save prompts and seeds (where the tool exposes them) for shots you like, so you can produce variations.
+
+## A simple product-demo workflow
+
+For builders, the most common use is a short product video. A workable pipeline: record your real app screens (never fake the product), generate a few atmospheric b-roll clips with Runway, Veo or Kling for the intro and outro, write a tight script, voice it with a TTS tool from our [voice rankings](/category/voice.html), and cut it together in any editor. If you want a presenter, HeyGen can deliver the script on camera. Keep it under a minute for social platforms.
+
+## Budgeting your generations
+
+Most video tools meter usage in credits, and longer, higher-resolution clips cost more. Prototype at lower settings, lock the prompt and composition, then render the final at full quality. Plan for several attempts per usable shot and check the current credit costs on each official pricing page before a big project.
+
 ## FAQ
 
 ### What is the best AI video generator?

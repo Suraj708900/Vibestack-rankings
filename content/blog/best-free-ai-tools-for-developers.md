@@ -63,6 +63,29 @@ Most other providers are pay per token. Read the [AI API pricing guide](/blog/ai
 
 When the project starts earning, upgrade the piece that limits you first, usually hosting terms or AI usage.
 
+## How to stay inside free tiers
+
+Free tiers are generous enough for learning and launching, but they are designed to be outgrown. A few habits keep you there longer:
+
+- **Read the limits page once, properly.** Note rate limits, monthly quotas and what happens when you hit them (throttling, paused projects or charges).
+- **Separate experiments from production.** Use one project for messing around and another for the real app, so a test does not burn your production quota.
+- **Pause what you are not using.** Some platforms pause idle free projects anyway; know which, so a demo is not asleep when someone clicks it.
+- **Set budget alerts** anywhere you have added a card, even if you expect to stay free.
+
+## Watch the terms, not just the price
+
+Free does not always mean "free for any use". Some hosting plans are for non-commercial use; some AI free tiers may use your data differently from paid tiers. Before you put customer data or a paying product on a free tier, read the terms of service and the data-use policy. This matters most for AI APIs, where prompts may contain user information.
+
+## When paying is the right call
+
+Upgrade when a limit is costing you more than the plan would: lost users because a project paused, hours spent working around rate limits, or missing features like team access and backups. Upgrade one piece at a time, starting with whatever is actually blocking you. Our [AI API pricing guide](/blog/ai-api-pricing-guide.html) helps you estimate the costs before you commit.
+
+## Open source as a free-tier alternative
+
+When a hosted free tier is not enough, open-source tools can fill the gap if you are comfortable running them. n8n can be self-hosted, agent frameworks like LangGraph and the OpenAI Agents SDK are open source, and Postgres itself is free to run anywhere. The trade-off is your time: updates, backups and security become your responsibility. For a side project, a managed free tier is usually the better deal until you have a reason to switch.
+
+Revisit this list every few months: free tiers are adjusted regularly, and new tools appear constantly in our rankings.
+
 ## FAQ
 
 ### What is the best free AI coding tool?

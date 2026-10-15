@@ -59,6 +59,10 @@ When something breaks, give the AI the exact error message, what you clicked, wh
 
 Before real users arrive, ask the AI to review the app for security issues, exposed keys and missing access rules, and to explain any part of the code you do not understand. Vibe coding lowers the barrier to building; it does not remove responsibility for what you ship.
 
+## Knowing when to get help
+
+Vibe coding works best for the first version. If you have paying customers, sensitive data or a growing feature list, consider a short review from an experienced developer, or move the project into an AI editor where you can own the code. Our [deploying a vibe-coded app](/blog/how-to-deploy-a-vibe-coded-app.html) guide covers the next step.
+
 ## FAQ
 
 ### Can I vibe code an app with no coding experience?

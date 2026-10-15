@@ -50,6 +50,22 @@ Builders are fantastic until your project gets complex: custom integrations, unu
 3. **Not using version history.** Every builder has a way to roll back; use it before risky changes.
 4. **Ignoring credits.** Builders meter usage. Big vague prompts burn credits on rework.
 
+## A fair way to test them
+
+Builders look similar in demos, so test them on the same brief. Write one paragraph describing a small app (for example, "a habit tracker where users sign in, add habits, and tick them off daily, with a weekly streak view"). Paste the identical brief into two or three builders and compare:
+
+1. **First result:** does it run, and does it match the brief?
+2. **Follow-up edits:** ask for the same three changes in each. Which one keeps the rest of the app intact?
+3. **Data and auth:** can you sign up, log out, log back in and still see your data?
+4. **Exit route:** can you get the code into GitHub or download it?
+5. **Credits used:** note how much of your free allowance each run consumed.
+
+An hour of this tells you more than any review, including ours.
+
+## What builders are not good at (yet)
+
+Be realistic about the limits. Builders struggle with unusual integrations that need custom server code, complex permission models, heavy background processing, and large codebases where many features interact. They are also opinionated about stack choices. None of this is a reason to avoid them; it is a reason to plan the moment you might [move into an editor](/blog/cursor-vs-claude-code.html) and to keep your code in GitHub from early on.
+
 ## FAQ
 
 ### Which AI app builder is best for beginners?

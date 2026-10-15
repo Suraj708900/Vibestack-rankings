@@ -46,6 +46,16 @@ Hosting covers your code, not your data. For a free database, look at our [datab
 
 For the full beginner workflow from idea to live URL, read [how to vibe code an app](/blog/how-to-vibe-code-an-app.html).
 
+## Custom domains and HTTPS
+
+All four hosts give you free HTTPS and support custom domains. The usual flow: buy a domain from any registrar, add it in your host's dashboard, then create the DNS records the host shows you (often a CNAME for `www` and an A or ALIAS record for the root). Certificates are issued automatically once DNS resolves. Keep your registrar and host separate so you can switch hosts later without moving the domain.
+
+## Environment variables and secrets
+
+Every host has a place to store environment variables. Put API keys there, never in your repository. Remember that variables exposed to the browser (for example ones with a public prefix in some frameworks) are visible to everyone; only server-side code should see secret keys. See our [vibe coding security checklist](/blog/vibe-coding-security-checklist.html).
+
+Finally, keep your deployment configuration in the repository where the host supports it, so your setup is documented and reproducible if you ever switch platforms.
+
 ## FAQ
 
 ### What is the best free hosting for a side project?

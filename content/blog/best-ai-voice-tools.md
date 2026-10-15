@@ -46,6 +46,26 @@ Best for: transcription in apps, call analytics, captions and real-time pipeline
 
 For the general agent patterns behind voice agents, read [how to build an AI agent](/blog/how-to-build-an-ai-agent.html). For video narration, pair a TTS tool with one of the [best AI video generators](/blog/best-ai-video-generators.html).
 
+## Choosing a voice for your product
+
+If voice is part of your brand, choose deliberately. Shortlist three or four voices, render the same 30-second script with each, and listen on phone speakers as well as headphones, because that is how many users will hear it. Check pronunciation of your product name and any technical terms; most TTS tools let you adjust pronunciation or spell words phonetically. Decide on pacing too: slightly slower than conversational speech usually works better for instructions.
+
+## Transcription tips
+
+For speech-to-text, accuracy depends heavily on audio quality. Use a decent microphone, reduce background noise, and record at the sample rate the API recommends. If your domain has jargon (product names, medical or legal terms), check whether the provider supports custom vocabulary or keyword boosting. For meetings and calls, look for speaker diarisation (who said what) and punctuation features.
+
+## A minimal voice-agent architecture
+
+A typical voice agent has five parts: telephony or WebRTC to carry audio, streaming speech-to-text, a language model that decides what to say and which tools to call, text-to-speech to speak the answer, and an orchestrator that manages turn-taking and interruptions. Speech-to-speech models such as the OpenAI Realtime API collapse several of these into one, while platforms like Vapi manage the orchestration for you. Start with the managed route, measure latency and cost, and only build custom pieces where you have a clear reason.
+
+## Logging and quality
+
+Record (with consent) and review real conversations. Most problems are not model quality but missing instructions: callers asking things the agent was never told about. Turn those into prompt updates or tool additions each week.
+
+## Ethics and consent
+
+Voice cloning is powerful and easy to misuse. Only clone voices with explicit permission, keep records of that consent, and follow each platform's rules. For outbound calling, check the laws that apply where your callers are.
+
 ## FAQ
 
 ### What is the most realistic AI voice generator?

@@ -41,6 +41,25 @@ Supabase is open source and built on standard Postgres, so you can export your d
 
 Next steps: if you are building from scratch, follow [how to vibe code an app](/blog/how-to-vibe-code-an-app.html), then deploy with one of the options in [free hosting for side projects](/blog/free-hosting-for-side-projects.html).
 
+## How AI tools handle each
+
+In practice, AI coding agents and app builders tend to produce cleaner results with Supabase for web apps: they can write SQL migrations, define tables with relationships, and generate typed clients. With Firestore, agents need clear guidance on how documents are structured and denormalised, because the "right" shape depends on your read patterns. If you choose Firebase, write a short data-model document and give it to your agent at the start of each task.
+
+## Migration and backups
+
+Whichever you pick, set up backups early and test restoring at least once. Know how to export your data. For Supabase that means standard Postgres dumps; for Firebase, the managed export tooling for Firestore. A backup you have never restored is a hope, not a backup.
+
+## A quick checklist before you commit
+
+- Sketch your main entities and how they relate. Lots of relations favour SQL.
+- List your must-have features (offline sync, realtime, file uploads, auth providers) and confirm each is supported.
+- Check which option your builder or framework integrates with natively.
+- Estimate usage for your first year using official pricing.
+
+## Local development
+
+Both platforms offer local emulation so you can develop without touching production: the Supabase CLI can run a local stack, and Firebase has its Local Emulator Suite. Using them makes it safer to let AI agents experiment, since mistakes hit a local copy, and makes automated tests possible.
+
 ## FAQ
 
 ### Is Supabase better than Firebase?

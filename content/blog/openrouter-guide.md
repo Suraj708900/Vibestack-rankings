@@ -46,6 +46,20 @@ They solve different problems. OpenRouter is a router across many providers. [Gr
 
 For a deeper look at costs, read our [AI API pricing guide](/blog/ai-api-pricing-guide.html), and see every option in [AI APIs & models](/category/ai-apis.html).
 
+## A simple model-comparison routine
+
+Choosing a model is easier with a routine. Collect 15–30 real prompts from your app, including tricky ones. Run each through three candidate models via OpenRouter, then score outputs blind (hide which model produced which) on correctness and usefulness. Record cost and latency alongside. Often a smaller, cheaper model is good enough for most requests, and you can route only hard cases to a larger model.
+
+## Production hygiene
+
+If you keep OpenRouter in production, treat it like any dependency: set timeouts, retry with backoff on transient errors, log the model and token usage per request, and alert on error spikes. Pin model identifiers explicitly rather than relying on aliases that might change what they point to, so a silent upgrade does not change your app's behaviour.
+
+## Privacy and data handling
+
+Routing through a gateway adds another company to your data path. Read OpenRouter's privacy policy and check the data policies of the underlying providers you route to, especially if prompts contain personal or customer data. Some gateways let you restrict routing to providers that meet certain data-handling settings; check the current options in OpenRouter's documentation and configure them before sending sensitive data.
+
+Review your model choices every few months, since new models appear frequently.
+
 ## FAQ
 
 ### Is OpenRouter more expensive than going direct?

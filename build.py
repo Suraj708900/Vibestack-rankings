@@ -10,7 +10,7 @@ SITE='VibeStack Rankings'; ROOT=os.path.dirname(os.path.abspath(__file__)); os.c
 E=lambda s:html.escape(str(s),quote=True)
 slug=lambda s:re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
 d=json.load(open('tools.json')); cats=d['categories']; UPD=d['updated']
-NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/featured.html">Get featured</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a></nav></header>'
+NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/featured.html">Get featured</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a></nav></header>'
 FOOT=('<footer><p><b>Affiliate disclosure:</b> some links may be affiliate links, so we may earn a commission at no extra cost to you. Rankings are never sold; sponsored listings are always labeled.</p>'
  '<p><a href="/blog/">Blog</a> · '+' · '.join(f'<a href="/category/{c["id"]}.html">{E(c["name"])}</a>' for c in cats)+'</p>'
  '<p>© 2026 VibeStack Rankings by Suraj Kamdev · <a href="mailto:kamdevsuraj03@gmail.com">kamdevsuraj03@gmail.com</a></p></footer>')
@@ -85,7 +85,7 @@ for p in posts:
     more=[x for x in posts if x is not p and x['category']==p['category']]+[x for x in posts if x is not p and x['category']!=p['category']]
     c=next((c for c in cats if c['id']==p['category']),None)
     body=(f'<p class="sub"><a href="/blog/">Blog</a>{f" › <a href=/category/{c["id"]}.html>{E(c["name"])}</a>" if c else ""}</p><article class="post"><h1>{E(p["title"])}</h1><p class="sub">By Suraj Kamdev · {p["date"]} · {max(1,words//220)} min read</p>'
-      +htmlbody+'</article><div data-promo="sidebar-card"></div><h2>Keep reading</h2><ul>'+''.join(f'<li><a href="/blog/{x["slug"]}.html">{E(x["title"])}</a></li>' for x in more[:5])+'</ul>'
+      +htmlbody+'</article><div data-promo="sidebar-card"></div><h2>Related posts</h2><ul>'+''.join(f'<li><a href="/blog/{x["slug"]}.html">{E(x["title"])}</a></li>' for x in more[:5])+'</ul>'
       +(f'<p>See the full ranking: <a href="/category/{c["id"]}.html">{E(c["name"])}</a>.</p>' if c else ''))
     page(path,p['title'],p['description'],body,typ='article',extra=extra)
 urls.append('/blog/')
@@ -94,6 +94,14 @@ page('/blog/',f'Blog: guides for vibe coders and AI builders · {SITE}','Practic
   +''.join(f'<a class="card" style="text-decoration:none;color:inherit" href="/blog/{p["slug"]}.html"><span class="tag">{E(next((c["name"] for c in cats if c["id"]==p["category"]),""))}</span><h3>{E(p["title"])}</h3><p class="sub">{E(p["description"])}</p></a>' for p in sorted(posts,key=lambda x:x['title']))
   +'</div><div data-feed="/feed.json" data-count="3"></div>',
   extra=ld({"@context":"https://schema.org","@type":"Blog","name":SITE+" Blog","url":BASE+"/blog/"}))
+posts_by_new=sorted(posts,key=lambda p:(p['date'],os.path.getmtime(f"content/blog/{p['slug']}.md")),reverse=True)
+LATEST='<section class="latest"><h2>Latest from the blog</h2><div class="grid">'+''.join(f'<a class="card" style="text-decoration:none;color:inherit" href="/blog/{p["slug"]}.html"><h3 style="margin:.2em 0">{E(p["title"])}</h3><p class="sub">{E(p["description"])}</p></a>' for p in posts_by_new[:6])+'</div><p><a href="/blog/">All guides →</a></p></section>'
+urls.append('/submit.html')
+page('/submit.html',f'Submit a tool · {SITE}','Suggest an AI tool for VibeStack Rankings. Rankings are editorial and never sold.',
+ '<h1>Submit a tool</h1><p class="sub">Know an AI tool vibe coders should know about? Send it in. Every submission is reviewed; rankings are editorial and never sold. Want a paid, clearly labelled placement instead? See <a href="/featured.html">Get featured</a>.</p>'
+ '<div class="card"><h2>What to include</h2><ul><li>Tool name and official link</li><li>Which category it fits ('+', '.join(E(c['name']) for c in cats)+')</li><li>One or two sentences on what it is best for</li><li>Pricing model (free tier? link to the pricing page)</li><li>Are you the maker? (fine, just tell us)</li></ul>'
+ '<p><a class="promo-cta" style="display:inline-block" href="mailto:kamdevsuraj03@gmail.com?subject=Tool%20submission%3A%20&body=Tool%20name%3A%0AOfficial%20link%3A%0ACategory%3A%0ABest%20for%3A%0APricing%3A%0AAre%20you%20the%20maker%3F%3A">Email your submission →</a></p></div>'
+ '<h2>Popular guides</h2><ul>'+''.join(f'<li><a href="/blog/{p["slug"]}.html">{E(p["title"])}</a></li>' for p in posts_by_new[:5])+'</ul>')
 # inject meta into hand-written top-level pages + prerender homepage list
 TOP={'index.html':('/','VibeStack Rankings: AI tools for vibe coders, ranked','Ranked AI tools for vibe coders and builders: coding agents, app builders, databases, hosting, AI APIs, agents, video and voice. Honest verdicts and official links.'),
  'new.html':('/new.html','New this week in AI for builders · VibeStack Rankings','Notable AI releases for builders this week, every item linked to its source.'),
@@ -112,6 +120,8 @@ for f,(path,title,desc) in TOP.items():
             s=s.replace('</head>','<!--seo-->'+ld({"@context":"https://schema.org","@type":"WebSite","name":SITE,"url":BASE})+'<!--/seo--></head>',1)
             pre='<!--seo-->'+''.join(f'<section class="cat"><h2><a href="/category/{c["id"]}.html">{E(c["name"])} →</a></h2><p class="sub">{E(c["q"])}</p><div class="grid">'+''.join(tcard(t,i+1) for i,t in enumerate(c['tools']))+'</div></section>' for c in cats)+'<!--/seo-->'
             s=re.sub(r'<div id="app">.*?</div><div data-feed','<div id="app">'+pre+'</div><div data-feed',s,count=1,flags=re.S)
+            s=re.sub(r'<!--latest-->.*?<!--/latest-->','',s,flags=re.S)
+            s=s.replace('<div data-feed','<!--latest-->'+LATEST+'<!--/latest--><div data-feed',1)
             urls.insert(0,'/')
         elif f!='category.html': urls.append(path)
     open(f,'w').write(s)

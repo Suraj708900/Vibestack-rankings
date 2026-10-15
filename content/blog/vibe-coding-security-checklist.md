@@ -46,6 +46,30 @@ Prompt your coding agent: "Review this project for security issues: exposed secr
 
 Re-run this checklist whenever you add a feature that touches data, payments or AI calls. For the full build process, see [how to vibe code an app](/blog/how-to-vibe-code-an-app.html), and browse the [vibe coding tools](/category/vibe-coding.html).
 
+## A 15-minute pre-launch test
+
+Before launch, spend 15 minutes trying to break your own app:
+
+1. Open the browser dev tools Network tab, use the app, and look at every request. Do any responses include data that the current user should not see?
+2. Copy an API request and replay it with another user's ID. Does it succeed?
+3. Log out and call the same endpoints. Do they still return data?
+4. Search the built JavaScript for strings like "key", "secret" and "token".
+5. Submit forms with very long text, empty values and HTML tags.
+
+Anything that surprises you is a fix to make before real users arrive. Repeat after big changes. This is the same thinking a basic security review uses, just applied by you.
+
+## Keep a security notes file
+
+Create a short `SECURITY.md` (or notes page) listing where secrets live, which tables have access rules, which endpoints are rate-limited and who can deploy. Give it to your coding agent at the start of tasks that touch data or auth, and update it as the app grows. It keeps both you and the AI from accidentally undoing protections you added earlier.
+
+## Further reading
+
+For deployment-specific settings, read [how to deploy a vibe-coded app](/blog/how-to-deploy-a-vibe-coded-app.html).
+
+## Re-check after every major change
+
+Security is not a one-time task. New features add new endpoints and data.
+
 ## FAQ
 
 ### Are vibe-coded apps insecure?
