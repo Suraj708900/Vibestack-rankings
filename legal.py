@@ -5,12 +5,13 @@ NOTE=f'<p class="sub">Last updated {UPD}. This page is a plain-language summary 
 def S(h,*ps): return f'<h2>{h}</h2>'+''.join(f'<p>{p}</p>' for p in ps)
 CONTACT=S('Contact',f'Questions about this page: <a href="mailto:{EMAIL}">{EMAIL}</a>.')
 PAGES={
-'privacy':('Privacy Policy','How VibeStack Rankings handles data: newsletter emails via Resend, Vercel analytics, first-party click tracking, cookies, affiliate links and your choices.',
+'privacy':('Privacy Policy','How VibeStack Rankings handles data: newsletter emails via Resend, Vercel analytics, first-party click tracking, product waitlist, cookies, affiliate links and your choices.',
  S('Who we are','VibeStack Rankings ("we", "us") is an independent directory of AI tools for builders, run by Suraj Kamdev.')+
  S('What we collect','<b>Newsletter:</b> if you subscribe, we store your email address with our email provider, Resend, to send the newsletter. Every email includes an unsubscribe link and you can unsubscribe at any time.',
    '<b>Analytics:</b> we use Vercel Web Analytics and Vercel Speed Insights to understand aggregate traffic and page performance. These are designed to work without third-party advertising cookies.',
    '<b>Click tracking:</b> we count clicks on outbound tool links (including /go/ links), promo impressions/clicks and promo-code copy events using our own first-party endpoint. These counts are aggregated and used to improve the site and report to partners in aggregate.',
    '<b>Accounts:</b> if you create an account we store your name, email address, a salted scrypt hash of your password (never the password itself), your saved tools and sign-up date in a private Vercel Blob store. Login uses one HttpOnly session cookie (vs_session) that expires after 30 days or when you log out. You can delete your account and this data from the Account page at any time.<br>'
+  '<b>Product waitlist:</b> if you join the waitlist on our Products page, we store the product you chose, your name, email address, optional WhatsApp number and the date in a private Vercel Blob store, only to contact you about that product\'s launch and early access. We do not share it or add you to the newsletter unless you subscribe separately. Ask us by email and we will delete it.<br>'
   '<b>Submissions and email:</b> if you submit a tool or email us, we keep what you send so we can respond.')+
  S('Cookies and local storage','We do not use advertising cookies. The site may use browser storage (for example session storage) to avoid counting the same promo impression twice in one session. You can clear or block this in your browser.')+
  S('Affiliate and third-party links','Some outbound links are affiliate links. When you click through, the destination site and any affiliate network may set their own cookies and process data under their own privacy policies, which we do not control.')+

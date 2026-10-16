@@ -75,6 +75,7 @@ def dealbox(slug,name,a=None):
 def sticky(slug,name,a=None):
     return f'<div class="sticky-cta" role="region" aria-label="Quick link"><span>{E(name)}</span>{cta(slug,name,a)}</div>'
 def voteline(slug): return f'<p class="vote-line" data-vote-line="{slug}"></p>'
+PRODUCT_PHOTOS={'p-4050315','p-6693655','p-1181244','p-4144923','p-8867482','p-3756679','p-3184465'}
 def credits_rows():
-    keys=sorted({k for L in THEMES.values() for k in L}|set(BLOG.values()))
+    keys=sorted({k for L in THEMES.values() for k in L}|set(BLOG.values())|PRODUCT_PHOTOS)
     return keys

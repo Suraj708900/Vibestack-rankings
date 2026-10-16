@@ -3,7 +3,7 @@
 const { list } = require('@vercel/blob');
 module.exports = async (req, res) => {
   const days = Math.min(30, Math.max(1, parseInt((req.query && req.query.days) || '7', 10) || 7));
-  const out = { days, since: null, promos: {}, tools: {}, aff: {}, codes: {}, votes: {}, links: {}, stored: !!process.env.BLOB_READ_WRITE_TOKEN, truncated: false };
+  const out = { days, since: null, promos: {}, tools: {}, aff: {}, codes: {}, votes: {}, links: {}, interest: {}, stored: !!process.env.BLOB_READ_WRITE_TOKEN, truncated: false };
   res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=600');
   if (!out.stored) return res.status(200).json(out);
   let ops = 0;
@@ -26,6 +26,7 @@ module.exports = async (req, res) => {
         if (ops >= 40) { out.truncated = true; cursor = undefined; d = days; }
       } while (cursor);
     }
+    let ic; do { const r = await list({ prefix: 'interest/', cursor: ic, limit: 1000 }); ops++; for (const bl of r.blobs) { const id = bl.pathname.split('/')[1]; out.interest[id] = (out.interest[id] || 0) + 1; } ic = r.hasMore && ops < 60 ? r.cursor : undefined; } while (ic);
   } catch (e) { out.error = 'stats unavailable'; console.error(e.message); }
   return res.status(200).json(out);
 };

@@ -16,7 +16,7 @@ SITE='VibeStack Rankings'; ROOT=os.path.dirname(os.path.abspath(__file__)); os.c
 E=lambda s:html.escape(str(s),quote=True)
 slug=lambda s:re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
 d=json.load(open('tools.json')); cats=d['categories']; UPD=d['updated']
-NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/directory/">Directory</a><a href="/hosting/hostinger.html">Hosting</a><a href="/deals/">Deals</a><a href="/compare.html">Compare</a><a href="/featured.html">Get featured</a><a class="nav-auth" href="/login">Log in</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header>'
+NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/directory/">Directory</a><a href="/hosting/hostinger.html">Hosting</a><a href="/deals/">Deals</a><a href="/compare.html">Compare</a><a href="/products.html">Products</a><a href="/featured.html">Get featured</a><a class="nav-auth" href="/login">Log in</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header>'
 FOOT=('<footer><p><b>Affiliate disclosure:</b> some links may be affiliate links, so we may earn a commission at no extra cost to you. Rankings are never sold; sponsored listings are always labeled.</p>'
  '<p><a href="/blog/">Blog</a> · '+' · '.join(f'<a href="/category/{c["id"]}.html">{E(c["name"])}</a>' for c in cats)+'</p>'
  '<p><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/refund">Refund policy</a> · <a href="/disclaimer">Disclaimer</a></p>'
@@ -245,6 +245,7 @@ for f,(path,title,desc) in TOP.items():
     if GSCM and 'google-site-verification' not in s: s=s.replace('</head>',GSCM+'</head>',1)
     open(f,'w').write(s)
 exec(open(os.path.join(ROOT,'build_features.py')).read())  # compare, embed, features.js
+exec(open(os.path.join(ROOT,'products_build.py')).read())  # /products + homepage teaser
 import accounts_build; accounts_build.run(globals())  # /signup /login /account
 import directory_build; directory_build.run(globals())  # /directory/, /t/<slug>, /hosting/
 today=datetime.date.today().isoformat()
