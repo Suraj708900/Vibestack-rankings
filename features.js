@@ -48,3 +48,10 @@ if(location.pathname==='/admin-stats.html'){const box=document.createElement('se
  fetch('/api/stats?days=30').then(r=>r.json()).then(j=>{const e=Object.entries(j.votes||{}).sort((a,b)=>(b[1].up+b[1].down)-(a[1].up+a[1].down));
   document.getElementById('votes-tbl').innerHTML=e.length?'<table class="tbl"><tr><th>Tool</th><th>👍</th><th>👎</th><th>% helpful</th></tr>'+e.map(([k,x])=>`<tr><td><a href="/tools/${H(k)}.html">${H(k)}</a></td><td>${x.up}</td><td>${x.down}</td><td>${Math.round(100*x.up/(x.up+x.down))}%</td></tr>`).join('')+'</table>':'No votes yet.'}).catch(()=>{document.getElementById('votes-tbl').textContent='Stats unavailable.'})}
 })();
+/* staggered scroll reveal (skipped for reduced motion / no IntersectionObserver) */
+(function(){if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+document.documentElement.classList.add('js-rv');
+const io=new IntersectionObserver(es=>{let k=0;es.forEach(e=>{if(e.isIntersecting){const el=e.target;el.style.transitionDelay=(Math.min(k++,6)*70)+'ms';el.classList.add('in');io.unobserve(el)}})},{rootMargin:'0px 0px -5% 0px'});
+const scan=()=>document.querySelectorAll('main .card:not(.rv)').forEach(el=>{el.classList.add('rv');if(el.getBoundingClientRect().top<innerHeight){el.classList.add('in');el.style.transition='none'}else io.observe(el)});scan();
+new MutationObserver(scan).observe(document.querySelector('main')||document.body,{childList:true,subtree:true});
+setTimeout(()=>document.querySelectorAll('.rv:not(.in)').forEach(el=>{const r=el.getBoundingClientRect();if(r.top<innerHeight)el.classList.add('in')}),1500)})();

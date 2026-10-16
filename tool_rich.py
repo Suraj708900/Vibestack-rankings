@@ -7,12 +7,17 @@ def rich_tool(s,v,rk,alts,rel):
     t=v['t']; dom=t['url'].split('/')[2]; det=_DET.get(s,{}); a=_AFF.get(s,{})
     free='free-tier' in t.get('tags',[]) or 'free' in t.get('price','').lower()
     cta=lambda txt,cls='cta-big':f'<a class="{cls}" href="/go/{s}" data-tool="{s}" target="_blank" rel="sponsored nofollow noopener">{txt}</a>'
-    shot=f'<img class="tool-shot" src="{E(det["screenshot"])}" alt="{E(t["name"])} screenshot" loading="lazy">' if det.get('screenshot') else ''
-    hero=(f'<section class="tool-hero card"><img src="https://www.google.com/s2/favicons?domain={dom}&sz=128" width="72" height="72" alt="{E(t["name"])} logo" style="border-radius:14px">'
+    logo=f'/img/tools/{s}-logo.webp' if os.path.exists(f'img/tools/{s}-logo.webp') else f'https://www.google.com/s2/favicons?domain={dom}&sz=128'
+    sp=det.get('screenshot') or (f'/img/tools/{s}-shot.webp' if os.path.exists(f'img/tools/{s}-shot.webp') else '')
+    shot=f'<figure class="tool-shot"><img src="{E(sp)}" alt="{E(t["name"])} official preview image" loading="lazy" decoding="async" width="960" height="504"><figcaption class="sub">Official preview image from {E(dom)}</figcaption></figure>' if sp else ''
+    hero=(f'<section class="tool-hero card"><img class="tool-logo" src="{logo}" width="64" height="64" alt="{E(t["name"])} logo">'
       f'<div><h1 style="margin:.1em 0">{E(t["name"])}</h1><p class="sub">Ranked {rk}</p><p>{E(t["verdict"])}</p>{cta("Try "+E(t["name"])+" →")}</div>{shot}</section>')
     feats=det.get('features') or []
     fh='<ul>'+''.join(f'<li>{E(x)}</li>' for x in feats)+'</ul>' if feats else '<p>'+''.join(f'<span class=tag>{E(x)}</span>' for x in t.get('tags',[]))+'</p><p class="sub">Detailed feature list coming soon; see the official site for the full feature set.</p>'
-    pricing=(f'<div class="card"><h2>Pricing &amp; free plan</h2><p class="price">Pricing: {E(t["price"])}</p><p><b>Free plan:</b> {"Yes, a free tier is listed (confirm limits on the official pricing page)." if free else "No free tier listed in our data; check the official pricing page."}</p></div>')
+    fp=det.get('free_plan') or ("Yes, a free tier is listed (confirm limits on the official pricing page)." if free else "No free tier listed in our data; check the official pricing page.")
+    src=det.get('source') or []
+    pricing=(f'<div class="card"><h2>Pricing &amp; free plan</h2><p class="price">{E(det.get("pricing_summary") or t["price"])}</p><p><b>Free plan:</b> {E(fp)}</p>'
+      +(f'<p class="sub">Researched from the official site on {E(det.get("checked",""))}: '+' · '.join(f'<a href="{E(u)}" rel="noopener nofollow" target="_blank">{E(u.split("//")[1].rstrip("/"))}</a>' for u in src)+'. Prices change; always confirm on the official pricing page.</p>' if src else '<p class="sub">Always check the official pricing page.</p>')+'</div>')
     if a.get('status')=='active' and a.get('discount_code'):
         promo=f'<p>{E(a.get("discount_text",""))}</p><p><code>{E(a["discount_code"])}</code> <button data-code="{E(a["discount_code"])}" data-code-id="{s}">Copy code</button></p>'+(f'<p class="sub">Valid until {E(a["end"])}</p>' if a.get('end') else '')
     else: promo='<p><b>Verified discount code not available yet.</b> We never post unverified codes.</p>'

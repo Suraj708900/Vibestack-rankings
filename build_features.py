@@ -39,3 +39,19 @@ page('/embed.html',f'Embed a Top picks widget · {SITE}','Free embeddable widget
 urls.append('/embed.html')
 ters=shutil.which('terser') or ('/tmp/blobt/node_modules/.bin/terser' if os.path.exists('/tmp/blobt/node_modules/.bin/terser') else None)
 if not (ters and subprocess.run([ters,'features.js','-c','-m','-o','features.min.js']).returncode==0): shutil.copy('features.js','features.min.js')
+# homepage showcase: top-5 coding agents + app builders with logos/preview images
+def _sc(c):
+    out=''
+    for i,t in enumerate(c['tools'][:5]):
+        s=slug(t['name']); lg=f'/img/tools/{s}-logo.webp'; sh=f'/img/tools/{s}-shot.webp' if os.path.exists(f'img/tools/{s}-shot.webp') else ''
+        out+=(f'<article class="card sc-card"><span class="rank-badge r{i+1}">#{i+1}</span>'
+          +(f'<img class="sc-shot" src="{sh}" alt="{E(t["name"])} official preview" loading="lazy" decoding="async" width="960" height="504">' if sh else '<div class="sc-shot sc-ph"></div>')
+          +f'<h3><img src="{lg}" width="28" height="28" alt="" loading="lazy" decoding="async" class="sc-logo"><a href="/tools/{s}.html">{E(t["name"])}</a></h3><p class="sub">{E(t["verdict"])}</p>'
+          +f'<p><a class="cta-big sm" href="/go/{s}" data-tool="{s}" target="_blank" rel="sponsored nofollow noopener">Try {E(t["name"])} →</a></p></article>')
+    return f'<section class="showcase"><h2>Top 5 {E(c["name"])}</h2><div class="sc-grid">{out}</div><p><a href="/category/{c["id"]}.html">Full {E(c["name"])} ranking →</a></p></section>'
+_cm={c['id']:c for c in cats}
+SC='<!--showcase-->'+''.join(_sc(_cm[k]) for k in ['coding-agents','app-builders'] if k in _cm)+'<!--/showcase-->'
+_ix=open('index.html').read()
+_ix=re.sub(r'<!--showcase-->.*?<!--/showcase-->','',_ix,flags=re.S)
+if '<!--/trend-->' in _ix: _ix=_ix.replace('<!--/trend-->','<!--/trend-->'+SC,1)
+open('index.html','w').write(_ix)

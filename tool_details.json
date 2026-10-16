@@ -1,1 +1,793 @@
-{}
+{
+ "claude-code": {
+  "source": [
+   "https://www.claude.com/product/claude-code",
+   "https://www.claude.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Understands your codebase, edits files and runs commands",
+   "Agentic, terminal-first workflow",
+   "Also available alongside Claude apps"
+  ],
+  "pricing_summary": "Included with Claude paid plans; Pro is $17/mo billed annually ($20 monthly), with higher tiers above.",
+  "free_plan": "Claude has a free plan for chat; Claude Code itself is tied to paid plans (check pricing page).",
+  "pros": [
+   "Handles multi-file changes and long tasks well",
+   "Works directly in your terminal and repo"
+  ],
+  "cons": [
+   "Needs a paid Claude plan",
+   "CLI-first workflow is less friendly for non-developers"
+  ]
+ },
+ "cursor": {
+  "source": [
+   "https://cursor.com",
+   "https://cursor.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Agents that turn ideas into code",
+   "Tab completion and chat in a VS Code-style editor",
+   "Cloud agents and automations on higher plans",
+   "CLI and mobile apps"
+  ],
+  "pricing_summary": "Free plan, then paid individual plans (listed from $8/mo up to $200/mo) plus team plans; third-party models billed by usage on some plans.",
+  "free_plan": "Yes: free plan with limited agent and chat requests.",
+  "pros": [
+   "Familiar VS Code-style editor",
+   "Strong agent mode and tab completion"
+  ],
+  "cons": [
+   "Usage limits differ a lot between plans",
+   "Third-party model usage can be billed separately"
+  ]
+ },
+ "github-copilot": {
+  "source": [
+   "https://github.com/features/copilot",
+   "https://github.com/features/copilot/plans"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Works in your editor, terminal, desktop and on GitHub",
+   "Agent mode, code review and Copilot cloud agent",
+   "Copilot CLI",
+   "Usage measured in GitHub AI Credits"
+  ],
+  "pricing_summary": "Free $0; Pro $10/mo; Pro+ $39/mo; Max $100/mo.",
+  "free_plan": "Yes: Free plan with limited chat and agent usage (supports CLI and agent mode).",
+  "pros": [
+   "Works in almost every editor",
+   "Tight integration from issue to pull request on GitHub",
+   "Low-cost Pro plan"
+  ],
+  "cons": [
+   "Credit-based usage can be hard to predict",
+   "Best experience assumes your code is on GitHub"
+  ]
+ },
+ "openai-codex": {
+  "source": [
+   "https://openai.com/codex/",
+   "https://developers.openai.com/codex/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Codex on web, CLI, IDE extension and iOS",
+   "Cloud integrations like automatic GitHub code review and Slack",
+   "API-key mode for CI and automation",
+   "AGENTS.md custom instructions, skills, MCP, subagents"
+  ],
+  "pricing_summary": "Included in ChatGPT plans: Free $0, Go $8/mo, Plus $20/mo, Pro from $100/mo; or pay API rates with an API key.",
+  "free_plan": "Yes: limited Codex access on the ChatGPT Free plan (desktop app, subject to rollout).",
+  "pros": [
+   "Included if you already pay for ChatGPT",
+   "Runs locally, in the cloud and in CI"
+  ],
+  "cons": [
+   "Usage allowance varies by model and task size",
+   "Cloud features are not available with API-key auth"
+  ]
+ },
+ "windsurf": {
+  "source": [
+   "https://windsurf.com",
+   "https://windsurf.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Manage local and cloud agents from one surface",
+   "Unlimited Tab completions and inline edits",
+   "Access to frontier models plus SWE-2",
+   "Cloud agents (Devin Cloud) on Pro"
+  ],
+  "pricing_summary": "Free $0; Pro $20/mo; Max $200/mo; Teams $80/mo + $40/mo per full dev seat; Enterprise custom.",
+  "free_plan": "Yes: Free plan with a light agent quota and unlimited Tab completions.",
+  "pros": [
+   "Generous free tier for autocomplete",
+   "Agentic IDE that is a solid Cursor alternative"
+  ],
+  "cons": [
+   "Free plan has limited model availability",
+   "Heavier agent use needs Pro or Max"
+  ]
+ },
+ "lovable": {
+  "source": [
+   "https://lovable.dev",
+   "https://lovable.dev/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Build websites and web apps by chatting",
+   "Hosting with Lovable Cloud",
+   "Add AI features to your apps",
+   "Workspaces with unlimited members"
+  ],
+  "pricing_summary": "Credit-based plans priced by included credits, not seats (Pro, Business, Enterprise); student discount available.",
+  "free_plan": "Yes: 5 daily build credits (up to 30/month) plus 20 monthly Cloud credits.",
+  "pros": [
+   "Very beginner-friendly; no technical knowledge needed",
+   "You own your code",
+   "Unlimited workspace members on all plans"
+  ],
+  "cons": [
+   "Credit usage varies by task complexity",
+   "Monthly plan credits expire after two months"
+  ]
+ },
+ "bolt": {
+  "source": [
+   "https://bolt.new",
+   "https://bolt.new/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Build websites and apps from prompts",
+   "Website hosting and unlimited databases",
+   "Custom domains and SEO boosting on Pro",
+   "Team admin controls"
+  ],
+  "pricing_summary": "Free $0; Pro $25/mo; Teams $30/member/mo (save up to 28% yearly).",
+  "free_plan": "Yes: 1M tokens/month (300K daily), hosting, Bolt branding on sites.",
+  "pros": [
+   "Fast in-browser prototyping",
+   "Hosting and databases included",
+   "Unused tokens roll over on Pro"
+  ],
+  "cons": [
+   "Free plan shows Bolt branding",
+   "Token limits can run out on bigger projects"
+  ]
+ },
+ "replit": {
+  "source": [
+   "https://replit.com",
+   "https://replit.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Replit Agent builds apps from chat",
+   "Cloud workspaces and hosting",
+   "Database rollback (up to 28 days on higher plan)",
+   "Collaboration with up to 15 collaborators on Pro"
+  ],
+  "pricing_summary": "Core $20/mo ($18 annually) with $20 of model credit; Pro $100/mo ($90 annually) with $100 credit; Enterprise custom.",
+  "free_plan": "Yes: a free Starter tier (check pricing page for limits).",
+  "pros": [
+   "All-in-one: code, agent, database and deploy",
+   "Good for collaboration"
+  ],
+  "cons": [
+   "Agent output can be inconsistent (Replit notes it is probabilistic)",
+   "Costs grow with heavier model usage"
+  ]
+ },
+ "v0": {
+  "source": [
+   "https://v0.app",
+   "https://v0.app/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Design and build full-stack web apps with AI",
+   "Deploy apps to Vercel",
+   "Visual editing with Design Mode",
+   "GitHub sync"
+  ],
+  "pricing_summary": "Free $0; Plus $30/user/mo; Business $100/user/mo; Enterprise custom; extra credits purchasable.",
+  "free_plan": "Yes: free access with a 7 messages/day limit.",
+  "pros": [
+   "Great UI generation for React/Next.js",
+   "One-click deploy to Vercel"
+  ],
+  "cons": [
+   "Low daily message limit on free plan",
+   "Tied closely to the Vercel ecosystem"
+  ]
+ },
+ "supabase": {
+  "source": [
+   "https://supabase.com",
+   "https://supabase.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Postgres database",
+   "Authentication",
+   "Instant APIs, Realtime, Edge Functions",
+   "Storage and vector embeddings"
+  ],
+  "pricing_summary": "Free $0; Pro from $25/mo; Team from $599/mo; Enterprise custom.",
+  "free_plan": "Yes: 500 MB database, 50,000 MAU, 1 GB storage; 2 active projects; paused after 1 week inactivity.",
+  "pros": [
+   "Full backend on standard Postgres",
+   "Generous free tier",
+   "Default backend for many AI app builders"
+  ],
+  "cons": [
+   "Free projects pause when inactive",
+   "Usage-based overages on Pro"
+  ]
+ },
+ "firebase": {
+  "source": [
+   "https://firebase.google.com",
+   "https://firebase.google.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Firestore and Realtime Database",
+   "Authentication, Hosting and App Hosting",
+   "Cloud Functions and Cloud Storage",
+   "Analytics, Crashlytics, Remote Config, Firebase AI Logic"
+  ],
+  "pricing_summary": "Spark plan is no-cost; Blaze is pay-as-you-go (eligible users can get $300 free credit).",
+  "free_plan": "Yes: Spark plan with no-cost usage limits, no payment method needed.",
+  "pros": [
+   "Broad Google-backed platform for mobile and web",
+   "Many products free at small scale"
+  ],
+  "cons": [
+   "NoSQL data model differs from SQL",
+   "Pay-as-you-go bills can be hard to predict"
+  ]
+ },
+ "neon": {
+  "source": [
+   "https://neon.com",
+   "https://neon.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Serverless, branchable Postgres",
+   "Autoscaling and instant restore",
+   "Managed auth, object storage, functions",
+   "Vector, keyword and hybrid search"
+  ],
+  "pricing_summary": "Free $0; Launch and Scale are usage-based (e.g. $0.106/CU-hr on Launch).",
+  "free_plan": "Yes: 100 projects, 100 CU-hours/month per project, 1 GB storage per project, no credit card.",
+  "pros": [
+   "Database branching for safer workflows",
+   "Scales to zero; pay per usage"
+  ],
+  "cons": [
+   "Usage-based billing needs monitoring",
+   "Free storage per project is small"
+  ]
+ },
+ "convex": {
+  "source": [
+   "https://www.convex.dev",
+   "https://www.convex.dev/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Reactive database",
+   "File storage, text and vector search",
+   "Crons, auth and Node.js actions",
+   "Preview deployments"
+  ],
+  "pricing_summary": "Free & Starter $0 + pay as you go; Professional $25/developer/mo; Business from $2,500/mo minimum.",
+  "free_plan": "Yes: Free & Starter plan for 1–6 developers.",
+  "pros": [
+   "Reactive, real-time data out of the box",
+   "TypeScript-first developer experience"
+  ],
+  "cons": [
+   "Proprietary platform rather than plain SQL",
+   "Business tier has a high monthly minimum"
+  ]
+ },
+ "vercel": {
+  "source": [
+   "https://vercel.com",
+   "https://vercel.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Git import with automatic CI/CD",
+   "Global CDN and Fluid compute",
+   "Web Application Firewall and DDoS mitigation",
+   "Preview deployments and performance insights"
+  ],
+  "pricing_summary": "Hobby $0; Pro $20/mo with $20 included usage credit; Enterprise custom.",
+  "free_plan": "Yes: Hobby plan for personal projects.",
+  "pros": [
+   "Best-in-class Next.js hosting",
+   "Instant preview deploys"
+  ],
+  "cons": [
+   "Usage costs can climb at scale",
+   "Hobby plan is for non-commercial/personal use"
+  ]
+ },
+ "netlify": {
+  "source": [
+   "https://www.netlify.com",
+   "https://www.netlify.com/pricing/"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Deploy from AI, Git or API",
+   "Unlimited deploy previews",
+   "Functions, Netlify Database and Blob storage",
+   "Firewall traffic rules and global CDN"
+  ],
+  "pricing_summary": "Free $0; Personal $9/mo; Pro $20/mo (unlimited members, credit tiers); Enterprise custom.",
+  "free_plan": "Yes: free forever plan with 300 credits/month.",
+  "pros": [
+   "Simple deploys for any framework",
+   "Unlimited members on Pro"
+  ],
+  "cons": [
+   "Credit-based limits to keep an eye on",
+   "Advanced analytics need paid plans"
+  ]
+ },
+ "cloudflare-pages": {
+  "source": [
+   "https://pages.cloudflare.com",
+   "https://developers.cloudflare.com/pages/functions/pricing/"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Full-stack apps on Cloudflare's network",
+   "Pages Functions billed as Workers requests",
+   "Free, unlimited static asset requests"
+  ],
+  "pricing_summary": "Static requests free on all plans; Functions use Workers Free or Workers Paid quotas.",
+  "free_plan": "Yes: unlimited static requests; Functions share the Workers Free 100,000 requests/day limit.",
+  "pros": [
+   "Unlimited static bandwidth/requests",
+   "Huge global edge network"
+  ],
+  "cons": [
+   "Functions limits shared with Workers",
+   "Fewer framework conveniences than Vercel"
+  ]
+ },
+ "render": {
+  "source": [
+   "https://render.com",
+   "https://render.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Deploy web services, workers and databases",
+   "Custom domains, firewall and DDoS mitigation",
+   "Previews and horizontal autoscaling on Pro",
+   "Global regions and CDN"
+  ],
+  "pricing_summary": "Hobby $0 + compute; Pro $25/mo + compute; Scale $499/mo + compute; Enterprise custom.",
+  "free_plan": "Yes: Hobby plan (up to 25 services, 5 GB bandwidth) plus compute costs.",
+  "pros": [
+   "Heroku-style simplicity for full apps",
+   "Good for background workers and APIs"
+  ],
+  "cons": [
+   "Compute billed on top of plan fee",
+   "Advanced governance needs Scale plan"
+  ]
+ },
+ "openai-api": {
+  "source": [
+   "https://platform.openai.com",
+   "https://openai.com/api/pricing/"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Broad model lineup via one API",
+   "Large ecosystem of SDKs and tools",
+   "Batch, realtime and multimodal capabilities"
+  ],
+  "pricing_summary": "Pay per token; rates vary by model (see official pricing).",
+  "free_plan": "No ongoing free tier listed; pay as you go.",
+  "pros": [
+   "Broadest ecosystem and tooling",
+   "Safe default for most apps"
+  ],
+  "cons": [
+   "Costs scale with tokens",
+   "Model lineup changes often"
+  ]
+ },
+ "anthropic-api": {
+  "source": [
+   "https://www.anthropic.com/api",
+   "https://www.claude.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Frontier Claude models",
+   "Managed agent harness and context management",
+   "Infrastructure for running agents in production"
+  ],
+  "pricing_summary": "Pay per token; rates vary by model (see API tab on the pricing page).",
+  "free_plan": "No ongoing free tier listed; pay as you go.",
+  "pros": [
+   "Strong for coding and long-context work",
+   "Agent-focused tooling"
+  ],
+  "cons": [
+   "Costs scale with tokens",
+   "Fewer modalities than some rivals"
+  ]
+ },
+ "google-gemini-api": {
+  "source": [
+   "https://ai.google.dev",
+   "https://ai.google.dev/gemini-api/docs/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Gemini and Gemma models",
+   "Google AI Studio",
+   "Context caching and Batch API (50% cost reduction) on paid tier"
+  ],
+  "pricing_summary": "Free tier, then paid per-token tier with higher rate limits; Enterprise available.",
+  "free_plan": "Yes: free input and output tokens on limited models (free-tier content is used to improve Google products).",
+  "pros": [
+   "Generous free tier for prototyping",
+   "Batch API halves cost"
+  ],
+  "cons": [
+   "Free tier data may be used to improve products",
+   "Free tier has limited model access"
+  ]
+ },
+ "openrouter": {
+  "source": [
+   "https://openrouter.ai",
+   "https://openrouter.ai/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "One API for many models and providers",
+   "Auto-routing and provider preferences (paid)",
+   "Activity logs and export"
+  ],
+  "pricing_summary": "Free plan, then Standard/Business/Enterprise; pay per token by model.",
+  "free_plan": "Yes: 25+ free models across 4 free providers.",
+  "pros": [
+   "Switch models without changing code",
+   "Compare prices across providers"
+  ],
+  "cons": [
+   "Adds a middle layer between you and providers",
+   "Budgets and prompt caching need paid tiers"
+  ]
+ },
+ "groq": {
+  "source": [
+   "https://groq.com",
+   "https://groq.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Fast inference on Groq LPUs",
+   "Hosted open models via API",
+   "Integrated infrastructure and inference platform"
+  ],
+  "pricing_summary": "Free tier, then pay per token (see official pricing).",
+  "free_plan": "Yes: free tier available (check rate limits).",
+  "pros": [
+   "Very fast inference speeds",
+   "Good for latency-sensitive apps"
+  ],
+  "cons": [
+   "Model choice limited to what Groq hosts",
+   "Free tier rate limits"
+  ]
+ },
+ "openai-agents-sdk": {
+  "source": [
+   "https://openai.github.io/openai-agents-python/",
+   "https://github.com/openai/openai-agents-python"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Lightweight framework for multi-agent workflows",
+   "Tools, handoffs and tracing primitives",
+   "Open source (Python)"
+  ],
+  "pricing_summary": "Free and open source; you pay for model usage.",
+  "free_plan": "Yes: open source.",
+  "pros": [
+   "Small, well-documented API",
+   "Built-in tracing"
+  ],
+  "cons": [
+   "Best fit with OpenAI models",
+   "Less batteries-included than bigger frameworks"
+  ]
+ },
+ "langgraph": {
+  "source": [
+   "https://www.langchain.com/langgraph",
+   "https://www.langchain.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Durable execution",
+   "Memory and streaming",
+   "Human-in-the-loop control of agent workflows"
+  ],
+  "pricing_summary": "Open-source library; LangSmith platform: Developer $0/seat, Plus $39/seat/mo, Enterprise custom, plus pay as you go.",
+  "free_plan": "Yes: open source; Developer plan with up to 5k base traces/month.",
+  "pros": [
+   "Fine-grained control of agent state",
+   "Strong production features"
+  ],
+  "cons": [
+   "Steeper learning curve",
+   "Platform costs scale with traces and seats"
+  ]
+ },
+ "vercel-ai-sdk": {
+  "source": [
+   "https://ai-sdk.dev",
+   "https://github.com/vercel/ai"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Unified TypeScript SDK for many model providers",
+   "Streaming, fallbacks and multi-model support",
+   "Build AI apps and agents"
+  ],
+  "pricing_summary": "Free and open source; you pay for model usage.",
+  "free_plan": "Yes: open source.",
+  "pros": [
+   "Best DX for TypeScript/Next.js",
+   "Swap providers easily"
+  ],
+  "cons": [
+   "TypeScript only",
+   "Hosting and model costs are separate"
+  ]
+ },
+ "crewai": {
+  "source": [
+   "https://www.crewai.com",
+   "https://www.crewai.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Multi-agent workflows",
+   "Visual editor and AI copilot",
+   "GitHub integration",
+   "Deploy on CrewAI cloud, your VPC or own infra (Enterprise)"
+  ],
+  "pricing_summary": "Basic free; Enterprise custom.",
+  "free_plan": "Yes: Basic plan with 50 workflow executions/month; open-source framework.",
+  "pros": [
+   "Easy role-based multi-agent setup",
+   "Visual editor for non-coders"
+  ],
+  "cons": [
+   "Free plan executions are limited",
+   "Enterprise pricing not public"
+  ]
+ },
+ "n8n": {
+  "source": [
+   "https://n8n.io",
+   "https://n8n.io/pricing/"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Workflow automation with AI agents, MCP and AI nodes",
+   "Self-host or n8n Cloud",
+   "Unlimited steps per execution"
+  ],
+  "pricing_summary": "Self-host community edition free; Cloud Starter €20/mo and Pro €50/mo billed annually; Business/Enterprise above.",
+  "free_plan": "Self-hosting is free; Cloud plans come with a free trial (no credit card).",
+  "pros": [
+   "Self-hostable with full control",
+   "Huge library of integrations"
+  ],
+  "cons": [
+   "Cloud plans priced by executions",
+   "Self-hosting needs maintenance"
+  ]
+ },
+ "runway": {
+  "source": [
+   "https://runwayml.com",
+   "https://runwayml.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "AI video and image generation (Gen-4.5, Gen-4 Turbo)",
+   "Music, voice and sound effects generation",
+   "4K upscaling, no watermarks on paid plans"
+  ],
+  "pricing_summary": "Free $0 (125 one-time credits); Standard $12/mo annually; Pro $28/mo annually; Team & Enterprise available.",
+  "free_plan": "Yes: 125 one-time credits and 5GB storage.",
+  "pros": [
+   "Many top video models in one place",
+   "Pro-grade creative tools"
+  ],
+  "cons": [
+   "Credits get used up quickly on video",
+   "Free credits are one-time only"
+  ]
+ },
+ "google-veo-flow": {
+  "source": [
+   "https://labs.google/flow/about"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "AI creative studio for cinematic video",
+   "Image generation and custom tools",
+   "Built on Google's generative models"
+  ],
+  "pricing_summary": "See official site; availability and pricing depend on your Google plan.",
+  "free_plan": "Check official site.",
+  "pros": [
+   "Access to Google's Veo video models",
+   "Filmmaking-oriented workflow"
+  ],
+  "cons": [
+   "Pricing and availability vary by plan and region"
+  ]
+ },
+ "kling-ai": {
+  "source": [
+   "https://klingai.com",
+   "https://klingai.com/global/"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Text and image to video (Kling 4.0)",
+   "Native 4K image generation",
+   "Canvas with agent, node editing and storyboards",
+   "MCP / CLI and batch generation"
+  ],
+  "pricing_summary": "Free credits, then paid plans (see official site).",
+  "free_plan": "Yes: free credits to try.",
+  "pros": [
+   "High-quality motion and audio-visual results",
+   "Agent and batch workflows"
+  ],
+  "cons": [
+   "Credit-based pricing",
+   "Pricing details are not on the homepage"
+  ]
+ },
+ "heygen": {
+  "source": [
+   "https://www.heygen.com",
+   "https://www.heygen.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "AI avatar videos with your face and voice",
+   "Avatar IV and 500+ stock avatars",
+   "175+ languages and voice cloning on paid plans"
+  ],
+  "pricing_summary": "Free $0; Creator $29/mo; Pro $49/mo; business plans available.",
+  "free_plan": "Yes: 3 videos/month, up to 1 minute each.",
+  "pros": [
+   "Professional avatar videos without filming",
+   "Strong localization"
+  ],
+  "cons": [
+   "Free videos are short and limited",
+   "Higher quality exports need paid plans"
+  ]
+ },
+ "elevenlabs": {
+  "source": [
+   "https://elevenlabs.io",
+   "https://elevenlabs.io/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Text to speech and speech to text",
+   "Voice cloning and voice design",
+   "Dubbing, music and sound effects",
+   "Voice agents platform and APIs"
+  ],
+  "pricing_summary": "Free $0; Starter $6/mo; Creator $22/mo; Pro $99/mo; Scale $299/mo; Business $990/mo.",
+  "free_plan": "Yes: 10k credits per month.",
+  "pros": [
+   "Very natural voices",
+   "Wide range of audio tools and APIs"
+  ],
+  "cons": [
+   "Commercial license needs a paid plan",
+   "Credits run out fast for long audio"
+  ]
+ },
+ "openai-realtime-api": {
+  "source": [
+   "https://platform.openai.com/docs/guides/realtime",
+   "https://openai.com/api/pricing/"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Low-latency speech-to-speech conversations",
+   "Realtime voice agents",
+   "Part of the OpenAI API"
+  ],
+  "pricing_summary": "Pay per use; rates vary by model (see official pricing).",
+  "free_plan": "No ongoing free tier listed.",
+  "pros": [
+   "Native speech-to-speech for natural conversations",
+   "Same platform as other OpenAI APIs"
+  ],
+  "cons": [
+   "Can be costly for long calls",
+   "Requires handling realtime connections"
+  ]
+ },
+ "vapi": {
+  "source": [
+   "https://vapi.ai",
+   "https://vapi.ai/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Build, test and deploy voice AI agents",
+   "Phone numbers and concurrent calls",
+   "Choose transcriber, model and voice providers"
+  ],
+  "pricing_summary": "Pay per minute (provider costs plus Vapi fee); Core $29/mo; Pro from $999/mo; Premier custom.",
+  "free_plan": "Yes: $5 free credits to start, 1 phone number, 4 concurrent calls.",
+  "pros": [
+   "Mix and match STT, LLM and TTS providers",
+   "Fast to ship phone agents"
+  ],
+  "cons": [
+   "Per-minute costs stack across providers",
+   "Support SLAs require paid packages"
+  ]
+ },
+ "deepgram": {
+  "source": [
+   "https://deepgram.com",
+   "https://deepgram.com/pricing"
+  ],
+  "checked": "2026-10-16",
+  "features": [
+   "Speech-to-text (Nova models, 45+ languages)",
+   "Text-to-speech",
+   "Voice Agent API",
+   "Audio intelligence"
+  ],
+  "pricing_summary": "Pay as you go with no minimums; Growth from $4K+/year; Enterprise custom.",
+  "free_plan": "Yes: $200 free credit, no credit card required.",
+  "pros": [
+   "Fast, accurate real-time transcription",
+   "Generous starting credit"
+  ],
+  "cons": [
+   "Usage-based costs at scale",
+   "Concurrency limits on self-serve plans"
+  ]
+ }
+}
