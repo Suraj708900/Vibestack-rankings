@@ -136,6 +136,13 @@ for p in posts:
         for q,a in re.findall(r'### (.+?)\n(.+?)(?=\n###|\Z)',md.split('## FAQ',1)[1],re.S): faqs.append((q.strip(),a.strip()))
     htmlbody=markdown.markdown(md,extensions=['extra']) if markdown else '<p>'+E(md)+'</p>'
     words=len(md.split())
+    if p.get('youtube'):
+        yv=p['youtube'].strip(); yt=p.get('youtube_title','Video'); ych=p.get('youtube_channel','')
+        emb=(f'<figure class="post-video" style="margin:1.5em 0"><div style="position:relative;aspect-ratio:16/9;width:100%;overflow:hidden;border-radius:12px;background:#000">'
+             f'<iframe src="https://www.youtube-nocookie.com/embed/{E(yv)}" title="{E(yt)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" '
+             f'allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>'
+             f'<figcaption class="sub">Video: &ldquo;{E(yt)}&rdquo; by {E(ych)} on YouTube.</figcaption></figure>')
+        htmlbody=htmlbody.replace('<h2>FAQ</h2>',emb+'<h2>FAQ</h2>',1) if '<h2>FAQ</h2>' in htmlbody else htmlbody+emb
     art={"@context":"https://schema.org","@type":"Article","headline":p['title'],"description":p['description'],"datePublished":p['date'],"dateModified":p['date'],
          "author":{"@type":"Person","name":"Suraj Kamdev"},"publisher":{"@type":"Organization","name":SITE,"url":BASE},"mainEntityOfPage":BASE+path,"keywords":p['keyword'],"wordCount":words}
     extra=ld(art)+(ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub(r'\[(.+?)\]\(.+?\)',r'\1',a)}} for q,a in faqs]}) if faqs else '')

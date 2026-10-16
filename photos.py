@@ -4,7 +4,7 @@ import html,zlib,json,os,datetime
 E=lambda s:html.escape(str(s),quote=True)
 CREDIT={"u-1753998943918-dd2dfc4ee6ed":"Rob Wingate","u-1518933165971-611dbc9c412d":"Irvan Smith","u-1774371386885-f21e309e146d":"gaspifilms",
  "p-37880101":"Alicia Christin Gerald","p-37607989":"Rafael Minguet Delgado","p-5380584":"Tima Miroshnichenko","p-38486967":"Ann H","p-33050961":"Atahan Demir",
- "p-3165335":"Lucie Liz","p-8937358":"Thirdman","p-30494308":"Jamie Kimball"}
+ "p-3165335":"Lucie Liz","p-8937358":"Thirdman","p-30494308":"Jamie Kimball","p-8386440":"Tara Winstead","p-7387935":"Steve A Johnson","p-30111699":"Noland Live","p-8132809":"Anna Pou","p-6549865":"Tima Miroshnichenko"}
 THEMES={
  'code':['u-1753998943918-dd2dfc4ee6ed','u-1518933165971-611dbc9c412d','p-16018144','p-36571389','p-34258667'],
  'apps':['p-16313501','p-28550000','p-7180971','p-9553909'],
@@ -27,7 +27,7 @@ BLOG={'ai-agent-hosting-options':'p-11086520','ai-api-pricing-guide':'p-5466250'
  'claude-vs-gpt-for-coding':'p-33839920','cursor-rules-examples':'p-270348','cursor-vs-claude-code':'u-1753998943918-dd2dfc4ee6ed','free-ai-image-generators-for-indie-games':'p-3165335',
  'free-hosting-for-side-projects':'p-1148820','github-copilot-vs-cursor':'p-3861972','how-to-build-a-saas-with-ai':'p-30494308','how-to-build-an-ai-agent':'p-8294557',
  'how-to-deploy-a-vibe-coded-app':'p-586087','how-to-vibe-code-an-app':'p-32601817','mcp-explained':'p-39808538','neon-vs-supabase':'p-5480781','openrouter-guide':'p-7130552',
- 'prompt-tips-for-coding-agents':'p-5380584','supabase-vs-firebase':'p-4033964','vibe-coding-security-checklist':'p-38486967','vibe-coding-tools-list':'p-37607989','windsurf-vs-cursor':'p-9553909'}
+ 'prompt-tips-for-coding-agents':'p-5380584','supabase-vs-firebase':'p-4033964','vibe-coding-security-checklist':'p-38486967','vibe-coding-tools-list':'p-37607989','windsurf-vs-cursor':'p-9553909','best-ai-agent-builders-2026':'p-8386440','best-ai-image-generators-2026':'p-7387935','best-ai-tools-for-streamers-and-gamers':'p-30111699','best-ai-music-generators':'p-8132809','best-ai-research-tools':'p-6549865','best-ai-chatbots-2026':'p-15940006','best-ai-ui-design-tools':'p-3471423','best-ai-customer-support-agents':'p-7709109','best-tools-to-run-llms-locally':'p-33798621','best-ai-avatar-video-generators':'p-29708241'}
 def src_url(k):
     s,i=k.split('-',1)
     return f'https://unsplash.com/' if s=='u' else f'https://www.pexels.com/photo/{i}/'
