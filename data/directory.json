@@ -883,7 +883,7 @@
   {
    "name": "AI Dungeon",
    "slug": "ai-dungeon",
-   "url": "https://aidungeon.io/",
+   "url": "https://aidungeon.com/",
    "department": "chatbots",
    "description": "Play AI Dungeon, a free AI text adventure game where you create endless stories, explore worlds, and direct every choice online or in the app.",
    "description_source": "official meta description",
@@ -1920,7 +1920,7 @@
   {
    "name": "Anthropic API",
    "slug": "anthropic-api",
-   "url": "https://www.anthropic.com/api",
+   "url": "https://claude.com/platform/api",
    "department": "ai-apis-models",
    "description": "Everything your team needs to build AI agents and run them in production: frontier models, a managed harness, context management, and infrastructure.",
    "description_source": "official meta description",
@@ -2379,7 +2379,7 @@
   {
    "name": "Audify AI",
    "slug": "audify-ai",
-   "url": "https://audify-ai.ahmedtokyo.com",
+   "url": "https://www.audify-ai.com/",
    "department": "audio-voice",
    "description": "Audify AI converts your text into the most natural-sounding speech in any language, using the latest AI technology.",
    "description_source": "official meta description",
@@ -4952,7 +4952,7 @@
   {
    "name": "Cloudflare Pages",
    "slug": "cloudflare-pages",
-   "url": "https://pages.cloudflare.com",
+   "url": "https://www.cloudflare.com/products/pages/",
    "department": "hosting",
    "description": "Build, deploy, and deliver full-stack applications quickly with Cloudflare Pages.",
    "description_source": "official meta description",
@@ -5292,7 +5292,7 @@
   {
    "name": "Cody by Sourcegraph",
    "slug": "cody-by-sourcegraph",
-   "url": "https://docs.sourcegraph.com/cody",
+   "url": "https://sourcegraph.com/docs/cody",
    "department": "coding-agents",
    "description": "Documentation for Sourcegraph, the code intelligence platform.",
    "description_source": "official meta description",
@@ -7058,7 +7058,7 @@
   {
    "name": "Durable",
    "slug": "durable",
-   "url": "https://durable.co",
+   "url": "https://durable.com/",
    "department": "app-builders",
    "description": "Build your business with Durable.",
    "description_source": "official meta description",
@@ -7652,7 +7652,7 @@
   {
    "name": "Factory",
    "slug": "factory",
-   "url": "https://factory.ai",
+   "url": "https://factory.com/",
    "department": "coding-agents",
    "description": "Build faster with AI coding agents.",
    "description_source": "official meta description",
@@ -7771,7 +7771,7 @@
   {
    "name": "Fathom",
    "slug": "fathom",
-   "url": "https://fathom.video",
+   "url": "https://www.fathom.ai/",
    "department": "productivity",
    "description": "Fathom captures, transcribes, and summarizes Zoom, Google Meet, and Microsoft Teams calls.",
    "description_source": "official meta description",
@@ -9137,7 +9137,7 @@
   {
    "name": "Google Flow",
    "slug": "google-flow",
-   "url": "https://labs.google/fx/tools/flow",
+   "url": "https://flow.google.com/",
    "department": "video",
    "description": "Try Google Flow, the ultimate AI for creatives.",
    "description_source": "official meta description",
@@ -9160,7 +9160,7 @@
   {
    "name": "Gopher",
    "slug": "gopher",
-   "url": "https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval",
+   "url": "https://deepmind.google/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval/",
    "department": "ai-apis-models",
    "description": "Gopher by DeepMind is a 280 billion parameter language model.",
    "description_source": "awesome-list entry",
@@ -11607,7 +11607,7 @@
   {
    "name": "Kiln",
    "slug": "kiln",
-   "url": "https://getkiln.ai",
+   "url": "https://kiln.tech/",
    "department": "developer-tools",
    "description": "Build better AI systems with evals, RAG, agents, synthetic data, fine-tuning, and prompt optimization.",
    "description_source": "official meta description",
@@ -11642,7 +11642,7 @@
   {
    "name": "Kilo Code",
    "slug": "kilo-code",
-   "url": "https://kilocode.ai",
+   "url": "https://kilo.ai/",
    "department": "coding-agents",
    "description": "Open source AI coding agent for VS Code, JetBrains, CLI, and Cloud.",
    "description_source": "official meta description",
@@ -11849,7 +11849,7 @@
   {
    "name": "Kling AI",
    "slug": "kling-ai",
-   "url": "https://klingai.com",
+   "url": "https://kling.ai/",
    "department": "video",
    "description": "Create high-quality AI videos and images with Kling AI.",
    "description_source": "official meta description",
@@ -13146,7 +13146,7 @@
   {
    "name": "Magic Eraser",
    "slug": "magic-eraser",
-   "url": "https://www.magiceraser.io/",
+   "url": "https://magicstudio.com/magiceraser/",
    "department": "image",
    "description": "Edit pictures in just a few seconds to remove objects, people, text, blemishes, patterns by selecting it with a brush and erasing with AI.",
    "description_source": "official meta description",
@@ -13497,7 +13497,7 @@
   {
    "name": "Manaflow",
    "slug": "manaflow",
-   "url": "https://manaflow.ai/",
+   "url": "https://manaflow.com/",
    "department": "coding-agents",
    "description": "Open source applied AI lab building next-gen…",
    "description_source": "official meta description",
@@ -13725,7 +13725,7 @@
   {
    "name": "Mathos AI",
    "slug": "mathos-ai",
-   "url": "https://www.mathgptpro.com/",
+   "url": "https://www.mathos.ai/",
    "department": "education",
    "description": "Mathos AI (MathGPTPro) - AI Math solver, calculator & tutor helping 5M+ students solve calc, algebra, physics & engineering with photo math homework help.",
    "description_source": "official meta description",
@@ -13992,7 +13992,7 @@
   {
    "name": "Merlin",
    "slug": "merlin",
-   "url": "https://merlin.foyer.work/",
+   "url": "https://www.getmerlin.in/",
    "department": "chatbots",
    "description": "No Sign-up | No Ads, Use our AI Chat to access all top ai models from ChatGPT, Gemini and other to research, write, code and create images.",
    "description_source": "official meta description",
@@ -14122,7 +14122,7 @@
   {
    "name": "Microsoft Azure Neural TTS",
    "slug": "microsoft-azure-neural-tts",
-   "url": "https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/",
+   "url": "https://azure.microsoft.com/en-us/products/ai-services/text-to-speech/",
    "department": "audio-voice",
    "description": "Explore Azure Speech in Foundry Tools(formerly AI Speech) for voice recognition and text to speech.",
    "description_source": "official meta description",
@@ -16158,7 +16158,7 @@
   {
    "name": "OpenHands",
    "slug": "openhands",
-   "url": "https://www.all-hands.dev",
+   "url": "https://www.openhands.dev/",
    "department": "coding-agents",
    "description": "Build and run AI coding agents with OpenHands.",
    "description_source": "official meta description",
@@ -16698,7 +16698,7 @@
   {
    "name": "Phoenix",
    "slug": "phoenix",
-   "url": "https://phoenix.arize.com/",
+   "url": "https://arize.com/phoenix/",
    "department": "developer-tools",
    "description": "Trace, evaluate, and debug AI agents and LLM applications with Arize Phoenix.",
    "description_source": "official meta description",
@@ -18705,7 +18705,7 @@
   {
    "name": "Recall",
    "slug": "recall",
-   "url": "https://www.getrecall.ai/",
+   "url": "https://www.recall.it/",
    "department": "productivity",
    "description": "Recall is an AI knowledge base and summarizer.",
    "description_source": "official meta description",
@@ -19014,7 +19014,7 @@
   {
    "name": "Relume",
    "slug": "relume",
-   "url": "https://www.relume.io",
+   "url": "https://www.relume.ai/",
    "department": "design",
    "description": "Build from the human-made component system behind 2M+ websites.",
    "description_source": "official meta description",
@@ -19184,7 +19184,7 @@
   {
    "name": "Rephrase AI",
    "slug": "rephrase-ai",
-   "url": "https://www.rephrase.ai/",
+   "url": "https://www.rephraseai.com/",
    "department": "video",
    "description": "Paraphrase sentences, paragraphs, emails, and drafts with Rephrase AI.",
    "description_source": "official meta description",
@@ -19784,7 +19784,7 @@
   {
    "name": "Runway",
    "slug": "runway",
-   "url": "https://runwayml.com",
+   "url": "https://runway.com/",
    "department": "video",
    "description": "Runway is building foundational Real-World Intelligence that can understand, simulate and act in the world.",
    "description_source": "official meta description",
@@ -23094,7 +23094,7 @@
   {
    "name": "Ubersuggest",
    "slug": "ubersuggest",
-   "url": "https://neilpatel.com/ubersuggest/",
+   "url": "https://ubersuggest.com/en",
    "department": "marketing-seo",
    "description": "Ubersuggest is a FREE SEO tool that enables you to do keyword research, analyze competitors, do site audits and more!",
    "description_source": "official meta description",
@@ -23993,7 +23993,7 @@
   {
    "name": "WellSaid Labs",
    "slug": "wellsaid-labs",
-   "url": "https://www.wellsaidlabs.com/",
+   "url": "https://www.wellsaid.io/",
    "department": "audio-voice",
    "description": "Create professional-quality voice overs in any dialect or production style with our secure AI voices.",
    "description_source": "official meta description",

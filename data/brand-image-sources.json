@@ -1,0 +1,3002 @@
+{
+"10web": {
+"kind": "og",
+"src": "https://10web.io/wp-content/uploads/2025/03/OG-img4.jpg"
+},
+"ability-ai": {
+"kind": "og",
+"src": "https://www.ability.ai/og-image.png"
+},
+"activepieces": {
+"kind": "og",
+"src": "https://www.activepieces.com/og-default.jpg"
+},
+"adala": {
+"kind": "og",
+"src": "github.com/humansignal/Adala"
+},
+"adalo": {
+"kind": "og",
+"src": "https://www.adalo.com/og/default.png"
+},
+"adcreative-ai": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/661ce890f68a1d352ebbed35/6798994af847e3d5f12f2e3f_Home.png"
+},
+"adobe-firefly": {
+"kind": "logo",
+"src": "raw/adobe-firefly.fav"
+},
+"affogato": {
+"kind": "og",
+"src": "https://affogato.ai/opengraph-image?f5d6892a9685c2f7"
+},
+"agent-skills": {
+"kind": "og",
+"src": "https://agent-skills.mintlify.app/_mintlify/api/og/v2?division=Documentation&title=Agent+Skills+Overview&description=A+standardized+way+to+give+AI+agents+new+capabilities+and+expertise.&theme=4457df89154f9aac9c0b54ca&signature=9c0906980b512e1693e663310ebe92865ab3dbec77af2f7cc3b1f5fbce33a55b"
+},
+"agent4rec": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/d77e11c240d3f8678be295e3c93b423f678868442d483ce61d661c481436ad3a/LehengTHU/Agent4Rec"
+},
+"agenta": {
+"kind": "og",
+"src": "https://agenta.ai/og/default.png"
+},
+"agentdock": {
+"kind": "og",
+"src": "https://agentdock.ai/og-image"
+},
+"agentforge": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/79e16e12f8ee41f7b5fb860f8ca3ff60bbc998787fb25c4b09287bd572382daa/DataBassGit/AgentForge"
+},
+"agentgpt": {
+"kind": "og",
+"src": "https://agentgpt.reworkd.ai/banner.png"
+},
+"agentic-radar": {
+"kind": "og",
+"src": "https://framerusercontent.com/images/I7lb48gk3lKgxwKnhomkErdvymI.png"
+},
+"agentmail": {
+"kind": "og",
+"src": "https://www.agentmail.to/og-image.png"
+},
+"agentpilot": {
+"kind": "logo",
+"src": "name"
+},
+"agents": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/bf836af0e3e1ec3eca5f7bd3eb71ee7241b7521fb2002bd4771ff11b75f770d6/aiwaves-cn/agents"
+},
+"agents-inc": {
+"kind": "logo",
+"src": "raw/agents-inc.fav"
+},
+"agentscale": {
+"kind": "og",
+"src": "https://agentscale.ai/img/agentscale-hero.png"
+},
+"agentset-ai": {
+"kind": "og",
+"src": "https://agentset.ai/og/cover.png"
+},
+"agentverse": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/9c63cf29d1789a1c0d94af476bb681d60267b49a5beeb2f0a5f87081d0233f99/OpenBMB/AgentVerse"
+},
+"ahrefs": {
+"kind": "og",
+"src": "https://static.ahrefs.com/assets/img/og/ahrefs.png?v=2"
+},
+"ai-boost": {
+"kind": "logo",
+"src": "raw/ai-boost.logo"
+},
+"ai-character-for-gpt": {
+"kind": "logo",
+"src": "name"
+},
+"ai-dungeon": {
+"kind": "logo",
+"src": "raw/ai-dungeon.logo"
+},
+"ai-flow": {
+"kind": "og",
+"src": "https://ai-flow-files.net/ai-flow-home.png"
+},
+"ai-for-google-slides": {
+"kind": "hero",
+"src": "https://cdn.prod.website-files.com/66eb4b8dd39959ffdd27029a/670086ccb4f89b91b0844886_Plus%20AI%20preview.png"
+},
+"ai-i18n": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/a4a4d02bbd03c27187eaf938645f91f4d9313c4fd3d1db885255a17c258d92f9/i18n-actions/ai-i18n"
+},
+"ai-kernel-explorer": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/5e0b68245b85d2e65ba9d89c65c0b004fe224a6e0b5ce51e5e144a3642089549/mathiscode/ai-kernel-explorer"
+},
+"ai-legion": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/e5a8d63eca1b40fd032af0da2375de31cbed38c58eb675a84440daa197b3fc9b/eumemic/ai-legion"
+},
+"ai-ml-api": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/65b8f36fa600366bc7cf9a67/6a4cffaa500a039cef40010c_final_image_1200x630.png"
+},
+"ai-music-generator": {
+"kind": "og",
+"src": "https://storage.aisongmaker.io/og-image.png"
+},
+"ai-photo-forge": {
+"kind": "og",
+"src": "https://www.aiphotoforge.com/img/landing_pres_circle.webp"
+},
+"ai-poem-generator": {
+"kind": "logo",
+"src": "raw/ai-poem-generator.logo"
+},
+"ai-prompt-genius": {
+"kind": "logo",
+"src": "name"
+},
+"ai-voice-agents": {
+"kind": "og",
+"src": "https://diallink.com/images/og-images/diallink/diallink-og.webp"
+},
+"ai-watermark-remover": {
+"kind": "logo",
+"src": "raw/ai-watermark-remover.logo"
+},
+"ai-wedding-toast": {
+"kind": "logo",
+"src": "name"
+},
+"ai2-asta": {
+"kind": "logo",
+"src": "raw/ai2-asta.logo"
+},
+"ai21-labs": {
+"kind": "og",
+"src": "https://www.ai21.com/wp-content/uploads/2026/01/Website-share-1.png"
+},
+"ai2sql": {
+"kind": "og",
+"src": "https://ai2sql.io/og.jpg"
+},
+"aicamp": {
+"kind": "og",
+"src": "https://uploads-ssl.webflow.com/662f95ccea47268446f3337d/6679230f45627b3f87af6aae_opengraph-image.png"
+},
+"aidbase": {
+"kind": "og",
+"src": "https://www.aidbase.ai/images/og-image.png"
+},
+"ailaflow": {
+"kind": "og",
+"src": "https://ailaflow.com/social/ailaflow.png"
+},
+"ailice": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/094324770c82ec78a2b3ed87e86e7b39486ddabf4607195ace39fb7fed699849/myshell-ai/AIlice"
+},
+"aipdf": {
+"kind": "og",
+"src": "https://aipdf.ai/assets/og-image.jpg"
+},
+"airkit-ai": {
+"kind": "logo",
+"src": "name"
+},
+"airtable": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/hlcyrtq5/production/00c20d5108d1335f5a243ddcd70ea4a2d6d9a844-1200x630.webp"
+},
+"aisaver": {
+"kind": "og",
+"src": "https://cdn.aisaver.io/retain/ai-saver/assets/new-homes/Start-Creating-with-AISaver-Today.webp"
+},
+"aiva": {
+"kind": "logo",
+"src": "raw/aiva.logo"
+},
+"akkio": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/5c97e8c9de94e8a3480419a5/6959836988084dcbb9ac3605_Screenshot%202026-01-03%20at%2012.58.19%E2%80%AFPM.png"
+},
+"alphaxiv": {
+"kind": "og",
+"src": "https://static.alphaxiv.org/logos/alphaxiv_logo.png"
+},
+"amplitude": {
+"kind": "og",
+"src": "https://amplitude.com/nextjs-public/amplitude-default-seo.png"
+},
+"anima": {
+"kind": "og",
+"src": "https://a.storyblok.com/f/89137/1840x1142/548f935261/anima-the-ux-design-agent.png"
+},
+"ankidecks-ai": {
+"kind": "hero",
+"src": "https://anki-decks.com/static/images/image_occlusion.fca445a92c1a.png"
+},
+"anthropic-api": {
+"kind": "og",
+"src": "https://assets.claude.com/cbd2591e5af9bc49b1d7557d997cb73d4d85b068.jpg?w=1200&h=630&fit=crop"
+},
+"anyword": {
+"kind": "logo",
+"src": "raw/anyword.fav"
+},
+"aomni": {
+"kind": "logo",
+"src": "raw/aomni.fav"
+},
+"apidna": {
+"kind": "logo",
+"src": "raw/apidna.logo"
+},
+"appsmith": {
+"kind": "og",
+"src": "https://images.ctfassets.net/lpvian6u6i39/3K4hnNGrLSlQzJRF4bn32J/8da3f35480fa66fd6c439e9af35b60ab/Default_OG_image.jpg"
+},
+"appwrite": {
+"kind": "og",
+"src": "https://appwrite.io/og/image.png?title=The+open-source+cloud+for+developers+and+agents&subtitle=Auth%2C+Databases%2C+Storage%2C+Functions%2C+Messaging%2C+and+Sites+in+one+open-source+platform.&eyebrow=Appwrite"
+},
+"architecture-helper": {
+"kind": "hero",
+"src": "https://architecturehelper.com/assets/3tilesexplanation-f4d849de2f5583c822cc7c4a825d2706eef09942053237367359dff6e11f8253.png"
+},
+"artbreeder": {
+"kind": "og",
+"src": "https://www.artbreeder.com/image/grid_512.jpg"
+},
+"artisian-ai": {
+"kind": "logo",
+"src": "raw/artisian-ai.logo"
+},
+"ask-pandi": {
+"kind": "og",
+"src": "https://askpandi.com/default-social-card.png"
+},
+"askyourdatabase": {
+"kind": "hero",
+"src": "https://www.askyourdatabase.com/_next/image?url=%2Fbusiness-intelligence.png&w=3840&q=75"
+},
+"asreview": {
+"kind": "og",
+"src": "https://asreview.nl/wp-content/uploads/2021/07/ASReview-uitgelichtsocial-backgroundwhite.jpg"
+},
+"assemblyai": {
+"kind": "og",
+"src": "https://www.assemblyai.com/_aai/images/meta/og-default.jpg"
+},
+"audify-ai": {
+"kind": "og",
+"src": "https://audify-ai.com/cover.jpg"
+},
+"audiocraft": {
+"kind": "og",
+"src": "https://audiocraft.metademolab.com/thumbnail.jpg"
+},
+"augment-code": {
+"kind": "og",
+"src": "https://www.augmentcode.com/api/og?title=Augment+Code%3A+Agentic+software+development+at+organizational+scale"
+},
+"auth0": {
+"kind": "og",
+"src": "https://cdn.auth0.com/website/homepage/sharecard.png"
+},
+"autogen": {
+"kind": "logo",
+"src": "raw/autogen.fav"
+},
+"autogpt": {
+"kind": "og",
+"src": "https://agpt.co/images/og/experts-v1.png"
+},
+"automata": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/b0e6a772d08d742ae4cdf3b235bc2f7d5516dde0575c1a5a18917758c555b62b/emrgnt-cmplxty/automata"
+},
+"autonomous-hr-chatbot": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/3df2da3468c75be620041bdeb2d8adf85f7ec1fc43486f2deb2fe49839bd53cd/stepanogil/autonomous-hr-chatbot"
+},
+"autopr": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/7350a8ba8e85e122798d2a1f3b6382c648895ec34fdd6bc95b9474ac536255c3/irgolic/AutoPR"
+},
+"babyagi": {
+"kind": "logo",
+"src": "name"
+},
+"babybeeagi": {
+"kind": "hero",
+"src": "https://yoheinakajima.com/wp-content/uploads/2023/04/image-1024x767.png"
+},
+"babycommandagi": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/7b57901f63b12ebe631866d9956d37f351b4accd46b4d657fe37ad19c42726f5/saten-private/BabyCommandAGI"
+},
+"backendless": {
+"kind": "og",
+"src": "https://backendless.com/wp-content/uploads/2020/03/LinkedIn-Banner-2a.png"
+},
+"bambooai": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/0bc068796ba3deaa173ebfdd3f30c343f29dc7d34052ec080e940eaaf5facfae/pgalko/BambooAI"
+},
+"bardeen": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/67a4e756231fbcd6386ec06a/691114ccec0d8e60edae6ee4_Meta%20Image%20-%20Home.png"
+},
+"bark": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/f8cd6c46b5a076448f6e16d73667e7cbb3ec814bab38d30dc14d59a6eb35afdb/suno-ai/bark"
+},
+"base44": {
+"kind": "og",
+"src": "https://media.base44.com/images/public/marketing-site-assets/social-share-og-en.jpg?v=20260817"
+},
+"based-ai": {
+"kind": "og",
+"src": "https://www.basedlabs.ai/images/og.png"
+},
+"beam": {
+"kind": "og",
+"src": "https://framerusercontent.com/assets/K1wsaUBWV7twBiKRliuySFqiHE.png"
+},
+"beatoven-ai": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/65d772a7cbf713010f7736f6/67069ba14456f823d9d11717_website%20preview%20image.webp"
+},
+"beautiful-ai": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/59deb588800ae30001ec19c9/679345319c7f2f3d2301228b_Open%20Graph_final.jpg"
+},
+"beebot": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/564dd89abd6ab0dda6b73809a505cd295be2dbba11e388f4a5d688b42396fc07/erik-megarad/beebot"
+},
+"beehiiv": {
+"kind": "og",
+"src": "https://media.beehiiv.com/www/og-image/og-beehiiv.png"
+},
+"bifrost": {
+"kind": "logo",
+"src": "raw/bifrost.fav"
+},
+"bing-image-creator": {
+"kind": "og",
+"src": "https://www.bing.com/sa/simg/facebook_sharing_5.png"
+},
+"bitnet-cpp": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/36dabd83523e535e86c9089adc952d66c6b80162f3b93b4f0986339d0693a0a5/microsoft/BitNet"
+},
+"black-forest-labs": {
+"kind": "og",
+"src": "https://bfl.ai/opengraph-image-j8qpfc.png?47e2121a0eb4d5b0"
+},
+"black-headshots": {
+"kind": "hero",
+"src": "https://www.blackheadshots.com/_next/image?url=%2Fhero2.png&w=1200&q=75"
+},
+"blackbox-ai": {
+"kind": "og",
+"src": "https://www.blackbox.ai/blackbox/og-inference-pillars-mono.png"
+},
+"blinky": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/80922a9361241385bebeacb81d7738043f1e2b110695f5843b959b4560895bfa/seahyinghang8/blinky"
+},
+"bloom": {
+"kind": "og",
+"src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/docs/transformers/model_doc/bloom.png"
+},
+"bluehost": {
+"kind": "logo",
+"src": "name"
+},
+"bolt": {
+"kind": "og",
+"src": "https://bolt.new/static/social_preview_index.jpg"
+},
+"boomy": {
+"kind": "logo",
+"src": "raw/boomy.logo"
+},
+"botpress": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/635c4eeb78332f7971255095/6a1ded7960de29af20457f6d_f7714877d559cb98adc053a44d48870d_bp_opengraph.jpg"
+},
+"brainsoup": {
+"kind": "logo",
+"src": "raw/brainsoup.logo"
+},
+"brandmark": {
+"kind": "hero",
+"src": "https://brandmark.io/images/font-select.png"
+},
+"brevo": {
+"kind": "hero",
+"src": "https://www.brevo.com/_next/image/?url=https%3A%2F%2Fcorp-backend.brevo.com%2Fwp-content%2Fuploads%2F2025%2F12%2Fhero-image.webp&w=3840&q=75"
+},
+"bricks": {
+"kind": "og",
+"src": "https://www.thebricks.com/images/og/ai-data-analyst.png"
+},
+"broadn": {
+"kind": "og",
+"src": "https://framerusercontent.com/images/NcrpKro5CgjeWvxpLH4e6O9YoYA.png"
+},
+"browserbase": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/yd6zslid/production/150f4783739729cce34cd1a71ecbd63e0a4de5a9-1824x960.png?rect=0,4,1824,953&w=1200&h=627&fit=crop"
+},
+"bubble": {
+"kind": "og",
+"src": "https://meta-q.cdn.bubble.io/cdn-cgi/image/w=,h=,f=auto,dpr=1,fit=contain/f1762463484754x595287411041153000/Bubbleio%20opengraph.png"
+},
+"budibase": {
+"kind": "og",
+"src": "https://budibase.com/og.png"
+},
+"buffer": {
+"kind": "og",
+"src": "https://buffer.com/ogImages/homepage-og.png"
+},
+"bumpgen": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/784460496/07083a2c-7ba4-4e18-a2ce-031030c8bded"
+},
+"butternut-ai": {
+"kind": "og",
+"src": "https://s3.us-east-1.amazonaws.com/media-prod.butternut.ai/static-images/butternut-logo.png"
+},
+"cal-ai": {
+"kind": "og",
+"src": "https://cal.com/api/social/og/image?type=app&name=Cal.ai&slug=cal-ai&description=Cal.ai+is+your+AI+scheduling+assistant.+Email+your+personal+assistant+at+username%40cal.ai+from+your+own+address+to+check+your+week%2C+book%2C+cancel+or+reschedule%2C+and+keep+the+conversation+going+in+the+same+thread.&logoUrl=%2Fapp-store%2Fcal-ai%2Ficon.png&v=00a03006"
+},
+"cald-ai": {
+"kind": "og",
+"src": "https://cald.ai/wp-content/uploads/2024/01/Cald.Ai-facebook.png"
+},
+"calmo": {
+"kind": "hero",
+"src": "https://getcalmo.com/_next/image?url=%2FSlackbot.png&w=1200&q=75"
+},
+"camel": {
+"kind": "og",
+"src": "https://raw.githubusercontent.com/camel-ai/camel/master/misc/logo_light.png"
+},
+"canva": {
+"kind": "og",
+"src": "https://content-management-files.canva.com/c37135f6-6d9a-4920-b659-4f5e12698b8d/og-image-global-1200x630.jpg"
+},
+"capacity": {
+"kind": "og",
+"src": "https://cpcty.xyz/og-capacity-new.png"
+},
+"captions": {
+"kind": "og",
+"src": "https://captions.ai/mrkt-static/captions-og-image.png"
+},
+"cerebras": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/e4qjo92p/production/21fa43f6d541115e57887beb1155bddc7541ae71-2400x1260.jpg?w=1200&h=630&fit=max&auto=format"
+},
+"character-ai": {
+"kind": "logo",
+"src": "raw/character-ai.logo"
+},
+"chat-with-pdf-by-copilot-us": {
+"kind": "og",
+"src": "https://cplst01.blob.core.windows.net/static/ab_chat-pdf-logo.png"
+},
+"chatarena": {
+"kind": "logo",
+"src": "name"
+},
+"chatbase": {
+"kind": "og",
+"src": "https://www.chatbase.co/og-home.jpg"
+},
+"chatdev": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/c13fe0c375bf536d3d2b57efd3906172cf672675a707c759ddd926f1a4bc67d2/OpenBMB/ChatDev"
+},
+"chatgpt": {
+"kind": "logo",
+"src": "raw/chatgpt.fav"
+},
+"chatgpt-for-jupyter": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/64ab20fd880e839c5ac81ce9a588a3c5446489c072077f664f3774ef1245c106/TiesdeKok/chat-gpt-jupyter-extension"
+},
+"chathelp": {
+"kind": "hero",
+"src": "https://chathelp.ai/wp-content/uploads/whatsapp.png"
+},
+"chatpdf": {
+"kind": "og",
+"src": "https://www.chatpdf.com/_static/og.png"
+},
+"chatwithcloud": {
+"kind": "og",
+"src": "https://chatwithcloud.ai/wp-content/themes/chatwithcloud/assets/images/chatwithcloud-og.png"
+},
+"chemcrow": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/06f687346d1ad29e093eef054c7c147383cdd57812dc09977fe78df83eb8230a/ur-whitelab/chemcrow-public"
+},
+"chroma": {
+"kind": "og",
+"src": "https://www.trychroma.com/card.png"
+},
+"claude": {
+"kind": "og",
+"src": "https://assets.claude.com/0127845de9b30f0146d7d45c49049be8b749b158.jpg?w=2400&h=1260&fit=crop"
+},
+"claude-code": {
+"kind": "og",
+"src": "github.com/anthropics/claude-code"
+},
+"claygent": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/687e604972375496b891fe58/691d10fba096254165bbd240_ClayU-Youtube-ThumbnailOG-course-2.jpg"
+},
+"cleanlab": {
+"kind": "og",
+"src": "https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/docs-preview.png"
+},
+"clearscope": {
+"kind": "og",
+"src": "https://www.clearscope.io/assets/og-logo-7a11ea5e.png"
+},
+"clerk": {
+"kind": "og",
+"src": "https://clerk.com/opengraph-image.jpg?opengraph-image.17r31whircaqh.jpg"
+},
+"clickup": {
+"kind": "og",
+"src": "https://clickup.com/assets/brand/clickup-meta.png"
+},
+"cline": {
+"kind": "og",
+"src": "https://cline.bot/cline_og_img.png"
+},
+"clipdrop": {
+"kind": "og",
+"src": "https://static.clipdrop.co/web/homepage/og-twitter-image.webp"
+},
+"clippy": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/628956046/0a91632f-139f-41d5-a791-0b3bbd2bc96a"
+},
+"clipwing": {
+"kind": "og",
+"src": "https://cdn.clipwing.pro/clipwing-website/og-image.png"
+},
+"cloudflare-pages": {
+"kind": "og",
+"src": "https://www.cloudflare.com/preview.png"
+},
+"cloudways": {
+"kind": "og",
+"src": "https://www.cloudways.com/wp-content/uploads/2025/08/Managed-web-hosting.png"
+},
+"cockroachdb": {
+"kind": "hero",
+"src": "https://www.cockroachlabs.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F00voh0j35590%2F5sDRETXEvGqPk0542cj0c3%2F1975d47def2f7a7218682f42e86a1841%2FBlog_1920x1080__4_.jpg&w=3840&q=75"
+},
+"code-to-flow": {
+"kind": "logo",
+"src": "name"
+},
+"codecademy": {
+"kind": "og",
+"src": "https://images.codecademy.com/social/logo-codecademy-social.png"
+},
+"codeflash": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/65b115c59fc530098e54d831/677ad7f9978263d5ccd7fa93_cta%20graphic%20base.avif"
+},
+"codefuse-chatbot": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/94b121412035532d541bf37e3a3abd6b510dab815926b411e5aafdf166ee1b0c/codefuse-ai/codefuse-chatbot"
+},
+"coderabbit": {
+"kind": "og",
+"src": "https://www.coderabbit.ai/content/assets/trust-layer-og.png"
+},
+"codewp": {
+"kind": "logo",
+"src": "raw/codewp.fav"
+},
+"cody-by-ajhous44": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/6b8ecf522487add4ed818ab4085ad02b5d9578e84ffa09d142198bfc8eb57777/ajhous44/cody"
+},
+"cody-by-sourcegraph": {
+"kind": "og",
+"src": "https://sourcegraph.com/docs/api/og/cody"
+},
+"cogram": {
+"kind": "og",
+"src": "https://cogram.com/og-image-v3.png"
+},
+"cohere": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85811b8ce33b1579bac01f1fe8f4989c2749d6ba-1200x630.png?w=1200&h=630&q=80&fit=crop&auto=format"
+},
+"colossyan": {
+"kind": "og",
+"src": "https://lp-assets.colossyan.com/website-images/images/webflow/68b70a157fca96effa05b9a0-image-38.png"
+},
+"compass": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/aysyer41/production/81ef9f2077f96d26daf27038d4097e5fc273a81e-1200x627.png"
+},
+"compose-ai": {
+"kind": "logo",
+"src": "raw/compose-ai.logo"
+},
+"consensus": {
+"kind": "og",
+"src": "https://consensus.app/images/og-default.png"
+},
+"context-data": {
+"kind": "og",
+"src": "https://contextdata.ai/og.png"
+},
+"contextqa": {
+"kind": "hero",
+"src": "https://contextqa.com/wp-assets/d1ad9898faef1330-g2-badge-spring-2026-asia-high-performer-badge-1779x2048.webp"
+},
+"continue": {
+"kind": "hero",
+"src": "https://continue.dev/_next/image?url=https%3A%2F%2Fha51p4k2fb4na0qd.public.blob.vercel-storage.com%2Fblog%2Fsecurity-chores-cloud-agents%2Fhero.png&w=3840&q=75"
+},
+"convertkit-kit": {
+"kind": "og",
+"src": "https://media.kit.com/page/kit-email-marketing-that-automates-growth.jpg"
+},
+"convex": {
+"kind": "og",
+"src": "https://www.convex.dev/og-home.png"
+},
+"coolify": {
+"kind": "og",
+"src": "https://cdn.coollabs.io/og-images/coolify.png"
+},
+"copy-ai": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/628288c5cd3e8411b90a36a4/67111b6951504ebf1467be96_6708d064807b31c351b41284_share-og-image%20(1)-min.png"
+},
+"copysmith": {
+"kind": "og",
+"src": "https://copysmith.ai/og-image.png"
+},
+"cosmos": {
+"kind": "og",
+"src": "https://meetcosmos.com/cosmos-signal.png"
+},
+"coursera": {
+"kind": "og",
+"src": "https://s3.amazonaws.com/coursera/media/Grid_Coursera_Partners_updated.png"
+},
+"create-xyz": {
+"kind": "logo",
+"src": "name"
+},
+"crewai": {
+"kind": "og",
+"src": "https://images.ctfassets.net/rmv9a2eqdsyw/26ld4zbjbNkeg6KGxkyLXE/7d686ce386ed7eb61f3d0f1d3709949c/og-image__2_.png"
+},
+"cursor": {
+"kind": "og",
+"src": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/og/opengraph-default.png"
+},
+"custompod-io": {
+"kind": "hero",
+"src": "https://custompod.io/static/screenshots/ss-8.small.webp"
+},
+"cykel": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/651c24600f899185e9924930/664f24d2926f240d01335b81_cykel%20-%20share%20v2.png"
+},
+"d-id": {
+"kind": "og",
+"src": "https://www.d-id.com/wp-content/uploads/2024/01/website-preview-image-3.png"
+},
+"daruy": {
+"kind": "logo",
+"src": "name"
+},
+"data-to-paper": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/654902878/c9d32c32-7929-4a22-a041-290728d6b60a"
+},
+"databricks": {
+"kind": "og",
+"src": "https://www.databricks.com/sites/default/files/2023-11/databricks-og-universal.png"
+},
+"dataline": {
+"kind": "og",
+"src": "https://dataline.app/og_card.png"
+},
+"datapup": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/d17ee36d32eb749003fa67c964cdcf83ee454bed3be002dd7ab39ce6f036dda4/DataPupOrg/DataPup"
+},
+"davika": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/88ed1a9a08a1cbe5de536d52137cf6b0e494e1af8cfaa96ed368446dfa2b2961/stitionai/devika"
+},
+"dear-ai": {
+"kind": "logo",
+"src": "raw/dear-ai.fav"
+},
+"deepgram": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/10fppwnn/production/0418428f854c966e333d3657f13fee40a205f914-1800x945.jpg"
+},
+"deepl": {
+"kind": "og",
+"src": "https://www.deepl.com/img/favicon/automatic_social_share_deepl.png"
+},
+"deeplearning-ai": {
+"kind": "og",
+"src": "https://home-wordpress.deeplearning.ai/wp-content/uploads/2024/06/homepage-preview.png"
+},
+"deepnote": {
+"kind": "og",
+"src": "https://deepnote.com/_next/static/media/og-image.a724d03f.png"
+},
+"deepseek": {
+"kind": "og",
+"src": "https://www.deepseek.com/images/deepseek-social.jpg"
+},
+"demogpt": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/650549146/fd044704-4cab-485f-8883-041b750a2345"
+},
+"deno-deploy": {
+"kind": "og",
+"src": "https://deno.com/images/deploy/og-image.webp"
+},
+"descript": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/lsw4j9eq/production/126b70d12a747eb60c81bad5b72942f7d75041dd-1200x630.jpg?fit=max&auto=format"
+},
+"devgpt": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/132ac82d9d1fde7b49b38cddeae1bc83cc2c969669fe376916e69fecb3bdb3c7/jina-ai/dev-gpt"
+},
+"devin": {
+"kind": "og",
+"src": "https://devin.ai/assets/images/devin-og-noise.jpg"
+},
+"devon": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/190fd6053b11a7991915d7a482cc930f77b24e753cb7f407ad79ee488b8f6e29/entropy-research/Devon"
+},
+"devopsgpt": {
+"kind": "logo",
+"src": "name"
+},
+"dify": {
+"kind": "og",
+"src": "https://dify.ai/assets/og/default.png"
+},
+"digitalocean": {
+"kind": "hero",
+"src": "https://www.digitalocean.com/api/static-content/v1/images?src=%2F_do-www-marketing%2F88013a67%2F_next%2Fstatic%2Fmedia%2Fcityscape.5ad7e41e.webp&width=3840"
+},
+"dmwithme": {
+"kind": "og",
+"src": "https://cdn.dmwithme.com/static/og-card.jpg"
+},
+"docket-ai": {
+"kind": "logo",
+"src": "raw/docket-ai.fav"
+},
+"dorothy": {
+"kind": "hero",
+"src": "https://dorothyai.app/_next/image?url=%2F0.png&w=1920&q=75&dpl=dpl_H6LnyahLAGwgWsZJ8ka2e1XM88Yg"
+},
+"dosu": {
+"kind": "og",
+"src": "https://dosu.dev/og-image.png"
+},
+"dot": {
+"kind": "og",
+"src": "https://www.getdot.ai/opengraph-image?8131e3bd06dbb154"
+},
+"dotagent": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/a7c98a79b230e136a16d919480baced2e6c8b4dc49494d30f3f02c66facb158f/dot-agent/nextpy"
+},
+"draggan": {
+"kind": "hero",
+"src": "https://vcai.mpi-inf.mpg.de/projects/DragGAN/images/teasor.png"
+},
+"dreamstudio": {
+"kind": "logo",
+"src": "raw/dreamstudio.logo"
+},
+"drizzle-orm": {
+"kind": "logo",
+"src": "name"
+},
+"duckie-ai": {
+"kind": "og",
+"src": "https://duckie.ai/og-image.png"
+},
+"duolingo": {
+"kind": "og",
+"src": "https://www.duolingo.com/images/facebook/duo-08523a2.jpg"
+},
+"durable": {
+"kind": "og",
+"src": "https://rjdavx8ozyznxeyh.public.blob.vercel-storage.com/production/seo/durable-business-og-Image-hpl5Y1p98iv6R9HUClFUzRAbCbNoan.png"
+},
+"dyad": {
+"kind": "og",
+"src": "https://www.dyad.sh/opengraph-image"
+},
+"e2b": {
+"kind": "og",
+"src": "https://e2b.dev/og/homepage.png"
+},
+"ecrett-music": {
+"kind": "og",
+"src": "https://ecrettmusic.com/images/sns-cover-image-renewal.png"
+},
+"editgpt": {
+"kind": "og",
+"src": "https://editgpt.app//og.png"
+},
+"edx": {
+"kind": "hero",
+"src": "https://www.edx.org/_next/image?url=https%3A%2F%2Fimages.cdn.edx.org%2Fattachment-20208Woman-3-Tablet.jpg&w=1920&q=75"
+},
+"eidolon": {
+"kind": "og",
+"src": "https://www.eidolonai.com/_astro/default.jKAYXmpI_1AvsWV.webp"
+},
+"ekhos-ai": {
+"kind": "hero",
+"src": "https://ekhos.ai/wp-content/uploads/2025/04/infinite-1024x995.png"
+},
+"elevenlabs": {
+"kind": "og",
+"src": "https://elevenlabs.io/cover.png"
+},
+"elicit": {
+"kind": "og",
+"src": "https://framerusercontent.com/images/s7irwYwOOfdSFu6EPduaB8EDsIg.png"
+},
+"ellipsis": {
+"kind": "og",
+"src": "https://www.ellipsis.dev/opengraph-image.png?opengraph-image.0.x3-e0r_-9q8.png"
+},
+"emailtriager": {
+"kind": "og",
+"src": "https://www.emailtriager.com/cover.png"
+},
+"english-compiler": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/4f72caa7a84d0a954df343780bed8b9c09257a1aac318c7b5b5de9ec54269e0e/uilicious/english-compiler"
+},
+"exa": {
+"kind": "og",
+"src": "https://exa.imgix.net/og-image-v4.png/"
+},
+"excelmatic": {
+"kind": "logo",
+"src": "raw/excelmatic.fav"
+},
+"explainpaper": {
+"kind": "og",
+"src": "https://explainpaper.com/og-image.png"
+},
+"ezjobs": {
+"kind": "logo",
+"src": "raw/ezjobs.logo"
+},
+"fabric": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/738733003/5b35460c-2754-4e72-b14f-d8acb8cb7a5c"
+},
+"factory": {
+"kind": "og",
+"src": "https://factory.com/og-v3.png"
+},
+"fal-ai": {
+"kind": "og",
+"src": "https://fal.ai/og-thumbnail.webp"
+},
+"farsite": {
+"kind": "hero",
+"src": "https://far.site/img/fs_screenshot.webp"
+},
+"fastagency": {
+"kind": "logo",
+"src": "name"
+},
+"fathom": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/6899da9beccbdbe92be49b5d/68f20f5cd1c6d0de365b8849_Fathom-Visual_Identity_Concepts-Stage_07-Website_Thumbnail-01.jpg"
+},
+"figma": {
+"kind": "hero",
+"src": "https://cdn.sanity.io/images/599r6htc/regionalized/55e1130298788b5d059c311fcc01437142024bd5-992x1232.png?w=992&h=1232&q=75&fit=max&auto=format"
+},
+"figurelabs": {
+"kind": "hero",
+"src": "https://www.figurelabs.ai/_next/image?url=%2Fimages%2Fv2%2Fhow-it-works%2Fstep-input-multiformat.webp&w=3840&q=75"
+},
+"fine-tuner": {
+"kind": "og",
+"src": "https://e32d51af3de97804b3f8dcfcb7e70a04.cdn.bubble.io/cdn-cgi/image/w=,h=,f=auto,dpr=1,fit=contain/f1709215887458x307396733934651500/image%20%28157%29.png"
+},
+"firebase": {
+"kind": "og",
+"src": "https://firebase.google.com/images/social.png"
+},
+"firecrawl": {
+"kind": "og",
+"src": "https://www.firecrawl.dev/og.png"
+},
+"fireflies-ai": {
+"kind": "og",
+"src": "https://fireflies.ai/thumbnail.png"
+},
+"fireworks-ai": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/pv37i0yn/production/9557e447af01a9b49c5ea1393ee212c8bc0d2396-1600x900.png"
+},
+"firmos": {
+"kind": "hero",
+"src": "https://www.firmos.ai/assets/65d44d093712927e03c2ecd9/6790f47d61e3f49a4afb6692_Smartlead_ni_J-removebg-preview.png"
+},
+"fixie": {
+"kind": "logo",
+"src": "raw/fixie.fav"
+},
+"fleet": {
+"kind": "og",
+"src": "https://resources.jetbrains.com/storage/products/fleet/img/meta/preview.png"
+},
+"flexapp": {
+"kind": "logo",
+"src": "raw/flexapp.fav"
+},
+"fliki": {
+"kind": "og",
+"src": "https://cdn.fliki.ai/public/image/ogp/default.png"
+},
+"flowise": {
+"kind": "og",
+"src": "https://remarkable-smakager-ddb2b7.netlify.app/opengraph-image.png?9ccfc0cd89ea0cda"
+},
+"flutterflow": {
+"kind": "og",
+"src": "https://www.flutterflow.io/social-share.png"
+},
+"flux": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/c2f4fe439389efb993fe8a73380e8d7c708fdad825dedf91a4238beb59547660/black-forest-labs/flux"
+},
+"fly-io": {
+"kind": "og",
+"src": "https://fly.io/phx/images/og/home-3f6c47b1e214994f1e91183548f93113.jpg?vsn=d"
+},
+"forefront": {
+"kind": "logo",
+"src": "name"
+},
+"framer": {
+"kind": "og",
+"src": "https://framerusercontent.com/images/vt65Mbfi3w8ymfTyRfbmgM4Tyo.png"
+},
+"frase": {
+"kind": "og",
+"src": "https://www.frase.io/api/og?title=Rank+on+Google.&titleGreen=Get+cited+by+AI.&sub=Frase+runs+the+whole+content+loop%3A+research%2C+write%2C+optimize%2C+publish%2C+and+monitor.&pills=SEO%2CGEO%2CAI+Visibility"
+},
+"freecodecamp": {
+"kind": "og",
+"src": "https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+},
+"friday": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/050ee4851283d96bff752bd21d709889ef34e7354e921e16350b32f55870a9bb/amirrezasalimi/friday"
+},
+"fynk": {
+"kind": "og",
+"src": "https://fynk.com/images/og-image.jpg"
+},
+"gali-chat": {
+"kind": "og",
+"src": "https://raw.githubusercontent.com/creativetimofficial/public-assets/refs/heads/master/gali/galichat-thumbnail-big.jpg"
+},
+"galileo-ai": {
+"kind": "logo",
+"src": "raw/galileo-ai.fav"
+},
+"gamma": {
+"kind": "og",
+"src": "https://static.gamma.app/images/gamma-banner-8d71c455.png"
+},
+"gemini-cli": {
+"kind": "og",
+"src": "https://geminicli.com/assets/social-poster.png"
+},
+"genei": {
+"kind": "hero",
+"src": "https://cdn.prod.website-files.com/5fbbb0e57743e457bcfe097b/604c9f650c81326ec83a3894_LP%20V2%20Hero%20Image.png"
+},
+"genia": {
+"kind": "og",
+"src": "github.com/genia-dev/GeniA"
+},
+"gensbot": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/assets/logos/gensbot.png"
+},
+"gist-ai": {
+"kind": "hero",
+"src": "https://www.gistai.tech/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffeature_save_time.df646713.png&w=3840&q=75"
+},
+"github-copilot": {
+"kind": "og",
+"src": "https://images.ctfassets.net/8aevphvgewt8/4KxWJH8PVVXdqBLs1V3UJ8/8926c7d150a8b8f3bf33c1c8a133724b/github-copilot-social-img.png"
+},
+"github-pages": {
+"kind": "hero",
+"src": "https://pages.github.com/images/dashboard@2x.png"
+},
+"gitlab-duo": {
+"kind": "og",
+"src": "https://about.gitlab.com/img/og?title=GitLab%20Duo%20Agent%20Platform"
+},
+"gito": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/975457832/3765d2ed-b11c-4b3d-9c92-ba9812becd2a"
+},
+"gitwit": {
+"kind": "og",
+"src": "https://gitwit-dev-one.vercel.app/opengraph-image.png?opengraph-image.9c7d636c.png"
+},
+"glide": {
+"kind": "og",
+"src": "https://www.glideapps.com/opengraph-image-dxwb7g.jpg?opengraph-image.003b7v4xv13y2.jpg"
+},
+"glm": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/8d2701d2464c9c04cb5a52a5ebf23e287e5cb2653755d61622e85da9d29a8849/zai-org/GLM-5"
+},
+"gocodeo": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/64db40cc9b93f5b12f00b6e6/6788a13ffb051732fc6e3189_GoCodeo%20OG.jpg"
+},
+"godmode": {
+"kind": "logo",
+"src": "name"
+},
+"google-ai-studio": {
+"kind": "og",
+"src": "https://ai.google.dev/static/site-assets/images/share-ais-513315318.png"
+},
+"google-cloud-run": {
+"kind": "og",
+"src": "https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png"
+},
+"google-flow": {
+"kind": "og",
+"src": "https://www.gstatic.com/aitestkitchen/website/flow/social/og-flow-1200x627.png"
+},
+"google-gemini-api": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/img/tools/google-gemini-api-logo.webp"
+},
+"google-veo-flow": {
+"kind": "logo",
+"src": "name"
+},
+"gopher": {
+"kind": "logo",
+"src": "raw/gopher.fav"
+},
+"gpt-code-ui": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/c13579232589370a2bcb796593ced639376db66f823479f539ecf9bec5e7b585/ricklamers/gpt-code-ui"
+},
+"gpt-discord": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/2216479e4634d2498b653e8e9eb29fecf21ce46b22032249b30af6bb9610a07d/Kav-K/GPTDiscord"
+},
+"gpt-engineer": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/fd6efb28bf88c84ed7c0dddfb1627686c7f18e8097bf3c278274bd401ca3a7e1/AntonOsika/gpt-engineer"
+},
+"gpt-for-sheets-and-docs": {
+"kind": "logo",
+"src": "name"
+},
+"gpt-migrate": {
+"kind": "logo",
+"src": "raw/gpt-migrate.logo"
+},
+"gpt-pilot": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/7cb13a1190d2cef5fdcdee03a60dc46cebe0d6de0187ff9c1d8144f8b43a5520/Pythagora-io/gpt-pilot"
+},
+"gpt-prompt-engineer": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/bdcfc8ce65ad73478132b2e49e1a2f3e7abab2b75dae6a1e55ef88c7270c2421/mshumer/gpt-prompt-engineer"
+},
+"gpt-researcher": {
+"kind": "og",
+"src": "https://gptr.dev/thumbnail.png"
+},
+"gpt-runner": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/640476297/30741f73-caac-48bc-b500-1b7d6efde4c4"
+},
+"gpt4all": {
+"kind": "og",
+"src": "https://www.nomic.ai/og/gpt4all.png?title=Private+%26+Local+AI+Chatbot&eyebrow=GPT4All&description=Run+open-source+AI+models+locally+on+your+device.+GPT4All+delivers+private%2C+high-performance+AI+with+no+cloud+required%E2%80%94your+data+stays+on+your+machine.&v=1"
+},
+"gptlocalhost": {
+"kind": "logo",
+"src": "name"
+},
+"gradgpt": {
+"kind": "og",
+"src": "https://www.gradgpt.com/opengraph-image.jpg?opengraph-image.1o12o8vg4uzsq.jpg"
+},
+"grammarly": {
+"kind": "og",
+"src": "https://static-web.grammarly.com/1e6ajr2k4140/1kGiUxfxoLhCPH7wGcvknN/c218a7bbcdfc24301fbbfb6ae9892ec6/default_social_share.png"
+},
+"granola": {
+"kind": "og",
+"src": "https://www.granola.ai/og-image.png"
+},
+"graphlit": {
+"kind": "logo",
+"src": "raw/graphlit.logo"
+},
+"greptile": {
+"kind": "og",
+"src": "https://www.greptile.com/opengraph/greptile-og.png"
+},
+"grit": {
+"kind": "logo",
+"src": "name"
+},
+"grok": {
+"kind": "og",
+"src": "https://grok.com/icon-512x512.png"
+},
+"groq": {
+"kind": "og",
+"src": "https://groq.com/images/og.png"
+},
+"gumloop": {
+"kind": "og",
+"src": "https://www.gumloop.com/images/link-preview.webp"
+},
+"hailuo-ai": {
+"kind": "hero",
+"src": "https://cdn.hailuoai.video/open-hailuo-video-web/public_assets/345fa2cb-0855-4f6a-b153-4262933423c1.jpeg?x-oss-process=image/format,webp"
+},
+"harbor": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/834595923/5fa7e7cf-84df-40b3-a976-e0a29b0990bc"
+},
+"harmonai": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/assets/logos/harmonai.png"
+},
+"have-i-been-trained": {
+"kind": "logo",
+"src": "name"
+},
+"haystack": {
+"kind": "og",
+"src": "https://haystack.deepset.ai/images/haystack-ogimage.png"
+},
+"heights-platform": {
+"kind": "og",
+"src": "https://uploads.heightsplatform.com/static/Heights-Platform-Social-og.jpg"
+},
+"helicone": {
+"kind": "og",
+"src": "https://www.helicone.ai/static/new-open-graph.png"
+},
+"hemingway-editor": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/assets/logos/hemingway-editor.png"
+},
+"hermes-agent": {
+"kind": "og",
+"src": "https://hermes-agent.nousresearch.com/marketing-static/assets/hermes-agent/og-image.png"
+},
+"heroku": {
+"kind": "og",
+"src": "https://www.heroku.com/wp-content/uploads/2025/08/heroku-card-dark.png"
+},
+"hetzner": {
+"kind": "hero",
+"src": "https://cdn.hetzner.com/assets/Uploads/Hetzner-GPU-Server_gex63_big.webp"
+},
+"hex": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/e92memrj/production/c423fc65085353820503111c97d9add8c3d5ca05-1200x630.png"
+},
+"hexabot": {
+"kind": "og",
+"src": "https://hexabot.ai/assets/images/hexabot_social.png"
+},
+"heygen": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/pdhqcmb1/production/170e1d983053e0d80a0e724303ac0787efd58551-1200x630.jpg?fit=max&fm=png"
+},
+"higgsfield": {
+"kind": "og",
+"src": "https://static.higgsfield.ai/public/thumbnail/default.jpg"
+},
+"hive": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/a8d1c505471754d5c54b30f85bec68b75d890d2063a660f6f64bf3a672e7a210/aden-hive/hive"
+},
+"hootsuite": {
+"kind": "og",
+"src": "https://images.ctfassets.net/ta4ffdi8h2om/2e939I9iQUeZCq5jO7cXP3/ee5e562f3e215343daade4f303b7b5c1/Webpreview__1_.png"
+},
+"hostinger": {
+"kind": "og",
+"src": "https://www.hostinger.com/og-image.png"
+},
+"hugging-face": {
+"kind": "og",
+"src": "https://huggingface.co/front/thumbnails/v2-2.png"
+},
+"human-generator": {
+"kind": "og",
+"src": "https://static.generated.photos/vue-static/human-generator/opengraph.png"
+},
+"humanize-text": {
+"kind": "og",
+"src": "https://strapi.lynote.ai/uploads/lynote_ai_learning_platform_f44370a9db.jpg"
+},
+"hyperbrowser": {
+"kind": "og",
+"src": "https://www.hyperbrowser.ai/og-server-blueprint.png"
+},
+"hyperframes": {
+"kind": "og",
+"src": "https://hyperframes.heygen.com/hyperframes/og-studio-48ab40ec.png"
+},
+"hyperwrite": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/63fcd79d410b22ddf397e1b8/65cbc3bd3337c9f598fb1f7e_hyperwrite.png"
+},
+"hypotenuse-ai": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/5f23b456c81e6bebb921e9cb/68faf34db5cab4f4e99b0353_hypotenuseai-opengraph%20(1).webp"
+},
+"icoloring": {
+"kind": "hero",
+"src": "https://icoloring.ai/assets/imgs/index/ic-index-after-2.webp"
+},
+"ideogram": {
+"kind": "logo",
+"src": "raw/ideogram.fav"
+},
+"ifttt": {
+"kind": "og",
+"src": "https://web-assets.ifttt.com/builds/assets/ifttt-banner-BdwHPmXv.png"
+},
+"imagen": {
+"kind": "logo",
+"src": "name"
+},
+"imean-ai": {
+"kind": "hero",
+"src": "https://imean-drcyftc0ctg5g7er.a03.azurefd.net/imean/cdn/_next/static/media/bg.115d0638.webp"
+},
+"inline-help": {
+"kind": "og",
+"src": "https://inlinehelp.com/images/social/homepage-social-og.png"
+},
+"inngest": {
+"kind": "og",
+"src": "https://www.inngest.com/assets/homepage/open-graph-2026.png"
+},
+"instrukt": {
+"kind": "og",
+"src": "github.com/blob42/Instrukt"
+},
+"interview-solver": {
+"kind": "og",
+"src": "https://interviewsolver.com/og.png"
+},
+"interviews-chat": {
+"kind": "logo",
+"src": "name"
+},
+"invideo": {
+"kind": "og",
+"src": "https://pro-static-assets.invideo.io/images/large/hero_2026_v4_poster_853af0dc76.jpg"
+},
+"ix": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/623760713/b632e0fa-2261-405b-9ff6-ef58d944b665"
+},
+"jan": {
+"kind": "og",
+"src": "https://jan.ai/assets/images/general/og-image.png"
+},
+"jarvis": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/8051a9fe579a07a466a59cb9779b9fca0c66c77f1962b9fc26930bf5ae7a53a8/microsoft/JARVIS"
+},
+"jasper": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/6807ee8d73c233fb82842313/6846454bda26628fcf51d54c_9650916b48ce089735bcc21cc8e43f2f_OpenGraph%20-%20Home.png"
+},
+"jenni": {
+"kind": "og",
+"src": "https://framerusercontent.com/images/z4JrDRfRywzEnZ5jahSZEkA9dI.png"
+},
+"jetbrains": {
+"kind": "og",
+"src": "https://resources.jetbrains.com/storage/products/jetbrains/img/meta/preview.png"
+},
+"jetwriter": {
+"kind": "og",
+"src": "https://jetwriter.ai/og.jpg"
+},
+"jina-ai": {
+"kind": "og",
+"src": "https://jina.ai/og/page.png?title=Your+Search+Foundation%2C+Supercharged.&subtitle=Embeddings%2C+rerankers%2C+web+reader%2C+deepsearch%2C+small+language+models.+Search+AI+for+multilingual+and+multimodal+data."
+},
+"jules": {
+"kind": "og",
+"src": "https://jules.google/og-image.png"
+},
+"julius-ai": {
+"kind": "og",
+"src": "https://julius.ai/opengraph-image.png"
+},
+"juno": {
+"kind": "og",
+"src": "https://www.heyjuno.co/landing/seo-chatpage-default.png"
+},
+"jupyter-ai": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/ff7dd61d18495b9372b62e2fd1f534c477818875229f071d99d8d4546294de1d/jupyterlab/jupyter-ai"
+},
+"kadoa": {
+"kind": "og",
+"src": "https://www.kadoa.com/api/og?title=The%20Web%20Data%20Layer%20for%20Finance"
+},
+"kagi": {
+"kind": "og",
+"src": "https://kagi.com/_mkt/img/og-image.png"
+},
+"keploy": {
+"kind": "og",
+"src": "https://keploy-devrel.s3.us-west-2.amazonaws.com/keploy-hero.png"
+},
+"khanmigo": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/659ee90e075c502b5cc49dae/6618517343d5ef21ac0ec603_Frame%20625094.png"
+},
+"khroma": {
+"kind": "og",
+"src": "https://www.khroma.co/assets/images/social.png"
+},
+"kiln": {
+"kind": "og",
+"src": "https://kiln.tech/images/kiln_social.png"
+},
+"kilo-code": {
+"kind": "og",
+"src": "https://kilo.ai/kilocode-social.png"
+},
+"kimi": {
+"kind": "logo",
+"src": "raw/kimi.logo"
+},
+"kimi-k2": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/4a46e17fcce656d511fe300cd8f59e754e7b5a1f91a70070bce3a5f3bd1f9061/MoonshotAI/Kimi-K2"
+},
+"kinsta": {
+"kind": "og",
+"src": "https://kinsta.com/wp-content/uploads/2025/08/Kinsta-homepage-featured-image.jpg"
+},
+"kiro": {
+"kind": "og",
+"src": "https://kiro.dev/images/opengraph/home.png"
+},
+"kittl": {
+"kind": "og",
+"src": "https://www.kittl.com/images/og-image.jpg"
+},
+"kling-ai": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/img/tools/kling-ai-logo.webp"
+},
+"komo-ai": {
+"kind": "logo",
+"src": "raw/komo-ai.fav"
+},
+"kompas-ai": {
+"kind": "logo",
+"src": "raw/kompas-ai.fav"
+},
+"kosmik": {
+"kind": "og",
+"src": "https://framerusercontent.com/assets/WeKCvxN6nLReUibSg32gomK7pw.png"
+},
+"koyeb": {
+"kind": "og",
+"src": "https://www.koyeb.com/og?text=High-performance%20Infrastructure%20for%20APIs,%20Inference,%20and%20Databases"
+},
+"krea": {
+"kind": "hero",
+"src": "https://optim-images.krea.ai/https---s-krea-ai-KreaChatGPTUi-png.webp"
+},
+"krisp": {
+"kind": "og",
+"src": "https://krisp.ai/wp-content/uploads/2025/08/thumb1.jpg"
+},
+"kusho": {
+"kind": "og",
+"src": "https://framerusercontent.com/images/8lDLa9aNx93X7RMYrevDgw2254.png"
+},
+"l2mac": {
+"kind": "logo",
+"src": "raw/l2mac.fav"
+},
+"laika": {
+"kind": "logo",
+"src": "raw/laika.fav"
+},
+"langfa-st": {
+"kind": "logo",
+"src": "raw/langfa-st.logo"
+},
+"langfuse": {
+"kind": "og",
+"src": "https://langfuse.com/api/og?title=Langfuse+%E2%80%93+Open+Source+Agent+Evals+%26+Observability&description=Trace%2C+evaluate%2C+and+improve+AI+agents+with+one+open+platform.+Use+production+data+to+understand+behavior%2C+collaborate+on+fixes%2C+and+ship+better+quality+at+lower+cost+and+latency."
+},
+"langgraph": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/6a905274663537b8f4c327c8_Website%20preview-LangGraph%20product%20page.png"
+},
+"langmagic": {
+"kind": "og",
+"src": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_7vn655v6x388t9215xmqtv6sne/33223df48293211d63786ea817dfcb55_1791100423229.png"
+},
+"langroid": {
+"kind": "og",
+"src": "github.com/langroid/langroid"
+},
+"langsmith": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/69a2224227e2e682a3a49a95_Website%20preview-LangSmith%20Platform%20Page-obs.png"
+},
+"lavender": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/658433a0cbce340e298ba330/6597e6c2db66b522a9ee07ab_openGraph.jpg"
+},
+"lemon-agent": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/78875ed0fae81926428477e7988a607cc4d54288c8adbc6d1bdd5d48e012f4d4/felixbrock/lemon-agent"
+},
+"leonardo-ai": {
+"kind": "logo",
+"src": "raw/leonardo-ai.fav"
+},
+"lex": {
+"kind": "og",
+"src": "https://lex-inc-media.s3.us-west-2.amazonaws.com/lex-og-image.jpg"
+},
+"librechat": {
+"kind": "og",
+"src": "https://www.librechat.ai/api/og?v=a40e77512dc1"
+},
+"limitless": {
+"kind": "og",
+"src": "https://www.limitless.ai/media/og-preview.jpg"
+},
+"lindy": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/63e15df811f9df22b231e58f/69a20da89a23a65ce1b211c3_3ca1c8cedd19958a4fa76e3387d064a2_Lindy%20OG.jpg"
+},
+"linode": {
+"kind": "logo",
+"src": "raw/linode.fav"
+},
+"llama-cpp": {
+"kind": "og",
+"src": "https://llama.app/og-image.png"
+},
+"llamaindex": {
+"kind": "og",
+"src": "https://www.llamaindex.ai/og-image.png"
+},
+"llm": {
+"kind": "logo",
+"src": "name"
+},
+"llm-agents": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/956c3a6cf6e302ef01ff439b698640bde3c2e134475284514a821c24b96c5aa5/mpaepper/llm_agents"
+},
+"llm-app": {
+"kind": "og",
+"src": "https://pathway.com/_og/s/o_a3uugh.png"
+},
+"llm-stack": {
+"kind": "logo",
+"src": "raw/llm-stack.logo"
+},
+"lm-studio": {
+"kind": "og",
+"src": "https://files.lmstudio.ai/bionic/lm-studio-bionic-og.jpg"
+},
+"lmql": {
+"kind": "logo",
+"src": "name"
+},
+"local-deep-research": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/280cb793f091418d6f1e0813cbf4f9adeb1c9f56ea093557c988d7b34b71244d/LearningCircuit/local-deep-research"
+},
+"local-gpt": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/9ae1a70772c1e160cd6638f928c7e6c0660c8951388e1cd268fb380b4f11ac1d/PromtEngineer/localGPT"
+},
+"looka": {
+"kind": "logo",
+"src": "raw/looka.fav"
+},
+"looksmax-ai": {
+"kind": "og",
+"src": "https://framerusercontent.com/images/sZLSl6xBpk2nDCRe0xTk5pd7fVA.png"
+},
+"loop-gpt": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/e1e8543736b2d4224f23c9703337ff679df9bd1f33aa78637a2bd78cda6fb67b/vitalops/openvibe"
+},
+"loudly": {
+"kind": "og",
+"src": "https://www.loudly.com/wp-content/uploads/2024/06/loudly-ai-music-platform.png"
+},
+"lovable": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/img/tools/lovable-logo.webp"
+},
+"ludwig": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/163346054/d1465280-6a9c-11e9-9e5e-c65cb5e74c01"
+},
+"luma-ai": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/2ylxvaa2/production/ff7469d468f6f7e447ccb4a50276f1cb03c6664d-1200x630.jpg?w=1200&h=630&fm=jpg"
+},
+"luthor": {
+"kind": "og",
+"src": "https://www.luthor.ai/og-image.png?v=3"
+},
+"lutra-ai": {
+"kind": "og",
+"src": "https://storage.googleapis.com/lutra-2407-public/da93a4088a7639235cda920d82502f5701ff5d2301554db58bcecd021bca282e.png"
+},
+"magic-eraser": {
+"kind": "og",
+"src": "https://meta.magicstudio.com/assets/magiceraser-og.webp"
+},
+"magic-loops": {
+"kind": "og",
+"src": "https://magicloops.dev/images/preview.png"
+},
+"magic-patterns": {
+"kind": "og",
+"src": "https://www.magicpatterns.com/marketing/main_og.png"
+},
+"magic-potion": {
+"kind": "og",
+"src": "https://www.magicpotion.app/og_banner2.png"
+},
+"magick": {
+"kind": "hero",
+"src": "https://www.magickml.com/images/IDE-screenshot.png"
+},
+"magnific": {
+"kind": "logo",
+"src": "raw/magnific.logo"
+},
+"maige": {
+"kind": "og",
+"src": "https://maige.app/opengraph-image?509461c3705d16d7"
+},
+"mailchimp": {
+"kind": "og",
+"src": "https://mailchimp.com/ctf/images/yzco4xsimv0y/1SB1jCYU95Dh5YDdrucTh0/b8a7462001c1152ff92fef2c02b3b551/Intuit_Mailchimp_-_Wordmark_2023_-_Recirculation_.png"
+},
+"make": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/6a294495bc84130c6dd0c4fd/6a706624f7fdfc3470419256_og-img.png"
+},
+"makedraft": {
+"kind": "hero",
+"src": "https://makedraft.com/placeholder-image.webp"
+},
+"manaflow": {
+"kind": "hero",
+"src": "https://manaflow.com/cmux-screenshot.webp"
+},
+"manifest": {
+"kind": "og",
+"src": "https://manifest.build/images/og-image.png"
+},
+"manus": {
+"kind": "og",
+"src": "https://files.manuscdn.com/webapp/media/ogBanner.png"
+},
+"marblism": {
+"kind": "og",
+"src": "https://www.marblism.com/images/og.png"
+},
+"marketmuse": {
+"kind": "og",
+"src": "https://mms-app.s3.amazonaws.com/wordpress/2021/06/15120226/marketmuse-share.png"
+},
+"mastra": {
+"kind": "og",
+"src": "https://mastra.ai/api/og/page?title=TypeScript%20AI%20Framework%20for%20Agents%20and%20Apps"
+},
+"mathos-ai": {
+"kind": "og",
+"src": "https://www.mathos.ai/image/seo/mathgptpro-open-graph.png"
+},
+"maxim-ai": {
+"kind": "og",
+"src": "https://bifrost-website.getmaxim.workers.dev/marketing/TEMoNkNbpcTVKd8275wElrbTx8.png"
+},
+"maxvideoai": {
+"kind": "og",
+"src": "https://media.maxvideoai.com/renders/301cc489-d689-477f-94c4-0b051deda0bc/bdb5945e-b161-451f-b71f-2da0bd992923.jpg"
+},
+"melies": {
+"kind": "og",
+"src": "https://melies.co/og/melies.jpg"
+},
+"mem": {
+"kind": "og",
+"src": "https://mem.ai/assets/seo/mem-open-graph-card.png"
+},
+"memfree": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/773d97f5a75c2ee139fab444f5cb517fce825d928cbe8e064e9c3d8289db7caa/memfreeme/memfree"
+},
+"memgpt": {
+"kind": "og",
+"src": "https://docs.letta.com/og/index.png"
+},
+"mentat": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/adcb971420a079496586adc19cc5df976405f279bac9263018e5323b9d0bf8c5/AbanteAI/archive-old-cli-mentat"
+},
+"merlin": {
+"kind": "og",
+"src": "https://cdn.getmerlin.in/cms/merlin_og_image_7449b95dc4.webp"
+},
+"metabase": {
+"kind": "og",
+"src": "https://cdn.metabase.com/images/opengraph/home-og.webp"
+},
+"metagpt": {
+"kind": "hero",
+"src": "https://public-frontend-cos.metadl.com/nuxt-mgx/prod/assets/Adrian-AdsAgent-Avatar.D1HVIhCr.png"
+},
+"microsoft-azure-neural-tts": {
+"kind": "logo",
+"src": "raw/microsoft-azure-neural-tts.fav"
+},
+"microsoft-copilot": {
+"kind": "og",
+"src": "https://copilot.microsoft.com/static/cmc/images/meta-image.jpg"
+},
+"microsoft-designer": {
+"kind": "og",
+"src": "https://cdn.designerapp.osi.office.net/assets/public/designer-generic-social.png"
+},
+"midjourney": {
+"kind": "logo",
+"src": "raw/midjourney.fav"
+},
+"mindgrasp": {
+"kind": "logo",
+"src": "name"
+},
+"mindstudio": {
+"kind": "og",
+"src": "https://www.mindstudio.ai/OG-default.jpeg"
+},
+"mini-agi": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/975ceea311faf56c944029c89b425603d9af211b219242feddddf135e8acd388/muellerberndt/mini-agi"
+},
+"minimax": {
+"kind": "og",
+"src": "https://filecdn.minimax.chat/public/58eca777-e31f-448a-9823-e2220e49b426.png"
+},
+"minion-ai": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/assets/logos/minion-ai.png"
+},
+"mintlify": {
+"kind": "og",
+"src": "https://www.mintlify.com/_next/static/media/og.28576e75.png"
+},
+"minusx": {
+"kind": "og",
+"src": "https://minusx.ai/og.png"
+},
+"mistral-ai": {
+"kind": "og",
+"src": "https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp"
+},
+"mixpanel": {
+"kind": "og",
+"src": "https://framerusercontent.com/assets/iywMexua3eGHckvzb5jjcw8vJSQ.png"
+},
+"mlflow": {
+"kind": "logo",
+"src": "name"
+},
+"modal": {
+"kind": "og",
+"src": "https://modal.com/assets/social-image-5.jpg"
+},
+"model-context-protocol": {
+"kind": "og",
+"src": "https://raw.githubusercontent.com/modelcontextprotocol/docs/2eb6171ddbfeefde349dc3b8d5e2b87414c26250/images/og-image.png"
+},
+"moltbook": {
+"kind": "og",
+"src": "https://moltbook.com/opengraph-image?8ce55ae2e9369cab"
+},
+"mongodb-atlas": {
+"kind": "og",
+"src": "https://images.contentstack.io/v3/assets/blt7151619cb9560896/bltfe3bee7877352896/Meta_Generic.png"
+},
+"moonbeam": {
+"kind": "og",
+"src": "https://gomoonbeam.com/brand/banner.png"
+},
+"motion": {
+"kind": "og",
+"src": "https://www-cdn.usemotion.com/default-og-image-1764610536.png"
+},
+"moz": {
+"kind": "og",
+"src": "https://moz.com/images/cms/Moz-OG-Image-2024.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1705016118&s=9578fd3c293cea2bacf455a36480c7fd"
+},
+"msty": {
+"kind": "og",
+"src": "https://msty.ai/media-v4/hero-system-desktop.webp"
+},
+"mubert": {
+"kind": "og",
+"src": "https://mubert.com/thumbnail.png"
+},
+"multi-gpt": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/43a81a2a3af4d068bf12e13cdd895625cbd15f9bc40d9972c3ca0ed3b3b1494d/sidhq/Multi-GPT"
+},
+"multiagent-debate": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/be1949da2bf4c6a5d912d38ca7f5310e5c34148cd8a31d3526368b68d33229b7/composable-models/llm_multiagent_debate"
+},
+"multion": {
+"kind": "logo",
+"src": "raw/multion.fav"
+},
+"murf": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/66b3765153a8a0c399c70981/670584e2dab709883eed3793_Home.webp"
+},
+"musiclm": {
+"kind": "og",
+"src": "github.com/google-research/seanet"
+},
+"mutahunterai": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/8c4491f037fd8b736f000476ad610e83e358fca0a94eab7de344485675cbcbc8/codeintegrity-ai/mutahunter"
+},
+"myriad": {
+"kind": "og",
+"src": "https://www.namepepper.com/social-images/ai-content-prompt-generator.jpg"
+},
+"n8n": {
+"kind": "og",
+"src": "https://n8niostorageaccount.blob.core.windows.net/n8nio-strapi-blobs-stage/assets/og_image_website_3_afd66761a9.png"
+},
+"napkin": {
+"kind": "hero",
+"src": "https://www.napkin.ai/assets/v5/hero/visual-poster.webp?v=1"
+},
+"naut": {
+"kind": "logo",
+"src": "raw/naut.logo"
+},
+"nekton-ai": {
+"kind": "logo",
+"src": "raw/nekton-ai.fav"
+},
+"nemo": {
+"kind": "logo",
+"src": "raw/nemo.logo"
+},
+"neon": {
+"kind": "og",
+"src": "https://neon.com/images/social-previews/index.jpg?updated=2026-05-27"
+},
+"neovim": {
+"kind": "og",
+"src": "https://neovim.io/logos/neovim-logo-social-preview.png"
+},
+"netlify": {
+"kind": "og",
+"src": "https://www.netlify.com/images/og-image-default.png"
+},
+"nexus-ai": {
+"kind": "og",
+"src": "https://mynexusai.com/images/og-cover.jpg"
+},
+"nexusgpt": {
+"kind": "logo",
+"src": "raw/nexusgpt.logo"
+},
+"nhost": {
+"kind": "og",
+"src": "https://nhost.io/images/og-new.png"
+},
+"nlsom": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/518fff17c94354f597ae7d64d6ee91b19824d7d83ff3a00b6504120042590ea1/metauto-ai/Mindstorm"
+},
+"notebooklm": {
+"kind": "og",
+"src": "https://notebook.google/_/static/branding/v6/og/notebook_lm_share.png"
+},
+"notion": {
+"kind": "og",
+"src": "https://www.notion.com/front-static/meta/teams-and-agents.jpg"
+},
+"notte": {
+"kind": "og",
+"src": "https://www.notte.cc/images/og-image.png"
+},
+"novelai": {
+"kind": "og",
+"src": "https://novelai.net/social.png"
+},
+"nudge-ai": {
+"kind": "og",
+"src": "https://framerusercontent.com/assets/5o90sr2FglcVxYtLBsyJjCwhc.png"
+},
+"ocoya": {
+"kind": "og",
+"src": "https://www.ocoya.com/opengraph-image?a736b03bae0662bb"
+},
+"off-grid-mobile": {
+"kind": "og",
+"src": "https://getoffgridai.co/assets/cover-personal-ai.png"
+},
+"ollama": {
+"kind": "og",
+"src": "https://ollama.com/public/og.png"
+},
+"open-interpreter": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/666299222/30894a76-2a46-4988-a903-ababff8ac2fe"
+},
+"open-notebook": {
+"kind": "logo",
+"src": "name"
+},
+"open-webui": {
+"kind": "og",
+"src": "https://openwebui.com/og-image.png"
+},
+"openagents": {
+"kind": "og",
+"src": "https://openagents.org/images/og/og-card.png"
+},
+"openagi": {
+"kind": "og",
+"src": "https://docs.aios.foundation/aios-docs/~gitbook/ogimage/kzTlst3tKo255yz4YpDi"
+},
+"openai": {
+"kind": "logo",
+"src": "name"
+},
+"openai-agents-sdk": {
+"kind": "og",
+"src": "github.com/openai/openai-agents-python"
+},
+"openai-api": {
+"kind": "logo",
+"src": "raw/openai-api.fav"
+},
+"openai-codex": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/img/tools/openai-codex-logo.webp"
+},
+"openai-downtime-monitor": {
+"kind": "og",
+"src": "https://status.portkey.ai/assets/status_pages/og_wl_operational-6028a588.png"
+},
+"openai-realtime-api": {
+"kind": "og",
+"src": "https://developers.openai.com/og/api/docs/guides/realtime.png"
+},
+"openclaw": {
+"kind": "og",
+"src": "https://openclaw.ai/og-image.png"
+},
+"opencode": {
+"kind": "og",
+"src": "https://opencode.ai/social-share.png"
+},
+"openhands": {
+"kind": "og",
+"src": "https://www.openhands.dev/assets/webflow/og/69161b32abf448a2df921a73_openhands_opengraph_01.png"
+},
+"openlit": {
+"kind": "og",
+"src": "https://openlit.mintlify.app/_mintlify/api/og/v2?division=Getting+Started&title=What+is+OpenLIT%3F+Open-Source+Agent+Harness+Engineering+Platform&description=OpenLIT+is+the+open-source+agent+harness+engineering+platform%3A+agent+observability%2C+evals%2C+guardrails+and+prompt+management+on+OpenTelemetry.+Self-host+free.&theme=bf72a2d232bc98b6c0aa9d19&signature=4a65d3c3216bbe8d66d2796da5221577b64ab6b066e7101bca51a605a71f7db3"
+},
+"openrouter": {
+"kind": "og",
+"src": "https://openrouter.ai/dynamic-og?pathname=default&title=OpenRouter&description=The+unified+interface+for+every+model.+Find+the+best+models+%26+prices+for+your+prompts&v=2"
+},
+"openwork": {
+"kind": "logo",
+"src": "raw/openwork.logo"
+},
+"opik": {
+"kind": "og",
+"src": "https://www.comet.com/site/wp-content/uploads/2025/12/opik_share_image_smaller-1.png"
+},
+"opt": {
+"kind": "og",
+"src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/facebook/opt-350m.png"
+},
+"opus-clip": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/6388604483b03a9ecb34d695/6893fad68d6058a917d7f3c6_mainpage_thumbnail.jpg"
+},
+"otter-ai": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/618e9316785b3582a5178502/67dd5a945aeed07e329d4e10_fb6d82f0792801a1a0d814599859e23e_og-image-otter-optim.jpg"
+},
+"pagerly": {
+"kind": "og",
+"src": "https://www.pagerly.io/og/pagerly-default.png"
+},
+"paper2agent": {
+"kind": "logo",
+"src": "name"
+},
+"parakeet": {
+"kind": "og",
+"src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/collections/nvidia/parakeet-asr-659711f49d1469e51546e021.png"
+},
+"pearai": {
+"kind": "og",
+"src": "https://trypear.ai/images/og-image.png"
+},
+"penpot": {
+"kind": "og",
+"src": "https://site-assets.plasmic.app/bd5cdab7f749bba987c8de1f2cbdff60.webp"
+},
+"perplexity": {
+"kind": "logo",
+"src": "raw/perplexity.logo"
+},
+"perplexity-api": {
+"kind": "og",
+"src": "https://perplexity.mintlify.app/_mintlify/api/og/v2?division=Getting+Started&title=Overview&description=Perplexity+API+Platform+-+build+with+the+Orchestrator%2C+Agent%2C+Search%2C+Embeddings%2C+and+Decisions+APIs.+Real-time%2C+web-wide+research+and+Q%26A+capabilities+for+your&theme=2a30e661e07c6d55af2009cd&signature=07a68bdcf4a42f776e8d38c6881313de87cb1c7d1e6d25f2fa6e1b39bd12660b"
+},
+"persuva": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/64f8a28e10398d0db63dffb8/6864fa981cfd0b0b902d21aa_performing%20theme%20image.avif"
+},
+"petals": {
+"kind": "logo",
+"src": "name"
+},
+"phoenix": {
+"kind": "og",
+"src": "https://arize.com/wp-content/uploads/2026/05/Phoenix.jpg"
+},
+"photo-ai": {
+"kind": "og",
+"src": "https://url2og.com/?url=https%3A%2F%2Fphotoai.com%2Fai-avatars"
+},
+"photoguruai": {
+"kind": "og",
+"src": "https://photoguruai.com/opengraph-image?c73b748c8073357c"
+},
+"photoroom": {
+"kind": "og",
+"src": "https://storyblok-cdn.photoroom.com/f/191576/2400x1260/5c12e4c46c/photoroom-og-generic.webp/m/1200x0/filters:format(jpeg):quality(80):no_upscale()"
+},
+"pictory": {
+"kind": "og",
+"src": "https://pictory.ai/wp-content/uploads/2022/04/thumb-home.jpg"
+},
+"pieces": {
+"kind": "og",
+"src": "https://ik.imagekit.io/pieces/images/open-graph/home.jpg"
+},
+"pika": {
+"kind": "og",
+"src": "https://pika.art/brand/opengraph.png"
+},
+"pinecone": {
+"kind": "og",
+"src": "https://www.pinecone.io/api/og/?title=Trusted+knowledge+for&highlight=AI+in+production&alignment=center"
+},
+"pipedream": {
+"kind": "logo",
+"src": "raw/pipedream.fav"
+},
+"pitch": {
+"kind": "og",
+"src": "https://framerusercontent.com/assets/WJrArV3ktU515VCNK75vEu7SjNg.jpg"
+},
+"plandex": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/709538270/3cf84cbd-65bd-4e2f-ba94-cb181f77e14e"
+},
+"planetscale": {
+"kind": "og",
+"src": "https://planetscale.com/assets/homepage-social-Yera6DPM.png"
+},
+"plantphotoai": {
+"kind": "og",
+"src": "https://api.plantphotoai.com/storage/v1/object/public/assets/og-plants.jpg"
+},
+"planttattoosai": {
+"kind": "og",
+"src": "https://ftkvljnsscptsvmkxafn.supabase.co/storage/v1/object/public/assets/og-plants.jpg"
+},
+"plasmic": {
+"kind": "logo",
+"src": "raw/plasmic.fav"
+},
+"plausible": {
+"kind": "og",
+"src": "https://plausible.io/assets/images/plausible_promo.jpg"
+},
+"pocketbase": {
+"kind": "og",
+"src": "https://pocketbase.io/images/og.png"
+},
+"podify-io": {
+"kind": "og",
+"src": "https://framerusercontent.com/images/JbwCK2oGyVT2iwV2YxDaQMJcGw.png"
+},
+"polymer": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/6141c766b4919f865b6cb85b/66eafe210cfe53a8b2872456_OG%20Image%207.jpg"
+},
+"poorcoder": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/d01d976d6ba1f7590513db1e2f9dc11bc859c34a402b7ab6609635ff127b4fe9/Berrry-Computer/poorcoder"
+},
+"portkey": {
+"kind": "og",
+"src": "https://framerusercontent.com/assets/eUOFPrbMAOXfElIu1wQFjPESlk.png"
+},
+"posthog": {
+"kind": "og",
+"src": "https://posthog.com/images/og/default.png"
+},
+"postiz": {
+"kind": "og",
+"src": "https://cms.postiz.com/wp-content/uploads/2024/06/OG-1-1024x538.png"
+},
+"postwise": {
+"kind": "og",
+"src": "https://postwise.ai/img/header.png"
+},
+"power-bi": {
+"kind": "hero",
+"src": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/UseCases_Modal_1?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=2000&qlt=100&fit=constrain"
+},
+"powerdrill-ai": {
+"kind": "og",
+"src": "https://powerdrill.ai/images/powerdrill-bloom-og.webp"
+},
+"pr-agent": {
+"kind": "og",
+"src": "https://docs.pr-agent.ai/img/social-card.png"
+},
+"praisonai": {
+"kind": "og",
+"src": "https://praisonai.mintlify.app/_mintlify/api/og/v2?division=Documentation&title=Praison+AI&description=Build%2C+run%2C+and+manage+multi-agent+AI+systems+with+self-reflection.+Agents%2C+teams%2C+workflows%2C+and+100%2B+LLM+and+tool+integrations+on+PraisonAI.&theme=d3482760d5d8e803a96705ce&signature=92ff331f6a5580bca744050ac64818ffa36b5a561c7d058a99de04daff5029e1"
+},
+"prediction-guard": {
+"kind": "og",
+"src": "https://predictionguard.com/hubfs/Screenshot%202026-09-14%20at%2012.11.51%20PM.png"
+},
+"predis-ai": {
+"kind": "og",
+"src": "https://predis.ai/assets/img/try-out/temp-thumb/ads/ai-ad-generator.webp"
+},
+"prisma": {
+"kind": "og",
+"src": "https://www.prisma.io/og.png"
+},
+"private-gpt": {
+"kind": "hero",
+"src": "https://cdn.prod.website-files.com/6408872e49e0944a088f17c1/65d751ea89138104f31ac821_purple2.png"
+},
+"privategpt": {
+"kind": "og",
+"src": "https://framerusercontent.com/assets/eHujmY0qqWWVRELkTI4ne3fDvgU.png"
+},
+"proficient-ai": {
+"kind": "logo",
+"src": "raw/proficient-ai.fav"
+},
+"promethai": {
+"kind": "logo",
+"src": "raw/promethai.fav"
+},
+"prowritingaid": {
+"kind": "og",
+"src": "https://assets.prowritingaid.com/f/145420/1200x630/2771d6d6d1/open-graph-prowritingaid.webp"
+},
+"pulsepost": {
+"kind": "og",
+"src": "https://pulsepost.cdn.cfr2domain.com/static/social/social1.webp"
+},
+"pygpt": {
+"kind": "og",
+"src": "https://pygpt.net/v2/assets/social.jpg"
+},
+"q-chatgpt-for-slack": {
+"kind": "og",
+"src": "https://q-bot.suchica.com/images/ogp/index.png"
+},
+"qdrant": {
+"kind": "og",
+"src": "https://qdrant.tech/images/social_preview.png"
+},
+"qodo": {
+"kind": "og",
+"src": "https://www.qodo.ai/wp-content/uploads/2025/06/social-share-new.webp"
+},
+"questflow": {
+"kind": "og",
+"src": "https://assets.questflow.ai/questflow-default-54cc9859-1426-4d7e-9748-02bef0cef03c.png"
+},
+"quick-creator": {
+"kind": "og",
+"src": "https://quickcreator.io/agent/image-banner.webp"
+},
+"quivr": {
+"kind": "og",
+"src": "https://thevibecompany.mintlify.app/_mintlify/api/og/v2?division=Get+started&title=Introduction&description=What+Quivr+is%2C+what+goes+in+and+what+comes+out%2C+who+runs+what%2C+and+a+tour+of+the+demo.&theme=8d6b932923493c6882b2ed75&signature=8fa0603cb442910f47681e430fb3d07ca2d97178bf302c9103cfb067eb1f9f75"
+},
+"quizlet": {
+"kind": "logo",
+"src": "raw/quizlet.fav"
+},
+"qurate": {
+"kind": "logo",
+"src": "raw/qurate.logo"
+},
+"qwen": {
+"kind": "og",
+"src": "github.com/qwenlm/qwenlm.github.io"
+},
+"rabbitholes-ai": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/assets/logos/rabbitholes-ai.png"
+},
+"railway": {
+"kind": "og",
+"src": "https://railway.com/og.png?v=2"
+},
+"rapid-mlx": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/1166182351/188af7fe-9f74-446c-88c5-e3d864768b69"
+},
+"rapidtextai": {
+"kind": "og",
+"src": "https://app.rapidtextai.com/assets/images/banner/01.png?v=1"
+},
+"raycast": {
+"kind": "og",
+"src": "https://www.raycast.com/opengraph-image-pwu6ef.png?opengraph-image.1f-98etzkaz5s.png"
+},
+"rayyan": {
+"kind": "logo",
+"src": "raw/rayyan.logo"
+},
+"read-ai": {
+"kind": "og",
+"src": "https://readai-assets-production.s3.us-east-1.amazonaws.com/readai_images/Instant_Meeting_Summary.png"
+},
+"rebyte": {
+"kind": "og",
+"src": "https://rebyte.ai/og-image.png"
+},
+"recall": {
+"kind": "og",
+"src": "https://www.recall.it/images/recall-ai-knowledge-base-og-preview.webp"
+},
+"recast-studio": {
+"kind": "og",
+"src": "https://recast.studio/images/live-site/og-banner-live.webp"
+},
+"reclaim": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/5ec848ec2b50b6cfae06f6cc/65e2563b7c0658aed71828ac_open_graph_final.png"
+},
+"recraft": {
+"kind": "og",
+"src": "https://framerusercontent.com/images/InnBrE3jZJrEOemiTVddquLfbeg.jpg"
+},
+"redis": {
+"kind": "og",
+"src": "https://redis.io/_next/static/immutable/media/open-graph.2wot1rsqh2ybe.png"
+},
+"refinder-ai": {
+"kind": "og",
+"src": "https://refinder.ai/wp-content/uploads/2024/08/Refinder-ai-assistant-universal-search-1.webp"
+},
+"rehydra": {
+"kind": "logo",
+"src": "name"
+},
+"relevance-ai": {
+"kind": "og",
+"src": "https://cdn.relevanceai.com/images/og-image.webp"
+},
+"relume": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/6177739448baa66404ce1d9c/6a8660a8897b488119f6ed90_og-default-v1.png"
+},
+"rember": {
+"kind": "og",
+"src": "https://www.rember.com/og-image.png"
+},
+"remove-bg": {
+"kind": "og",
+"src": "https://sb.kaleidousercontent.com/67418/600x315/48eb30a742/emilia-og-image.jpg"
+},
+"remusic": {
+"kind": "og",
+"src": "https://cdn.remusic.ai/remusic/static/social_media/AI_Song_Generator.png"
+},
+"render": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/hvk0tap5/production/a3528e77b010804af14908fab79f826d66437620-1600x900.png?fit=max&auto=format"
+},
+"rephrase-ai": {
+"kind": "og",
+"src": "https://www.rephraseai.com/images/og-rephraseai.png"
+},
+"replicate": {
+"kind": "hero",
+"src": "https://static.replicateassets.com/fe/373b380c66c05afbd1b223e4dd2c6a81f2efb515/poolside-B5I5bX5V.jpg"
+},
+"replit": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/img/tools/replit-logo.webp"
+},
+"resemble-ai": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/69bc3de63d285e297507b3ef/6a7bbcc104d2d5a5bacc1d55_5ba1301cf0113d64a142156b2b7d7e2e_resemble-ai-ograph-2026.webp"
+},
+"resend": {
+"kind": "og",
+"src": "https://resend.com/static/cover.jpg"
+},
+"respeecher": {
+"kind": "og",
+"src": "https://www.respeecher.com/hubfs/OG.png"
+},
+"resumedive": {
+"kind": "og",
+"src": "https://resumedive.com/og.png"
+},
+"retool": {
+"kind": "og",
+"src": "https://retool-dot-com.s3.us-west-2.amazonaws.com/page-assets/homepage/homepage-meta-image.png"
+},
+"reve-image": {
+"kind": "og",
+"src": "https://app.reve.com/card.png"
+},
+"roo-code": {
+"kind": "logo",
+"src": "raw/roo-code.fav"
+},
+"room-reinvented": {
+"kind": "logo",
+"src": "name"
+},
+"rork": {
+"kind": "og",
+"src": "https://rork.com/og-image.png?v=2"
+},
+"rosie": {
+"kind": "og",
+"src": "https://framerusercontent.com/images/cPcUpYoAWvtbMEPKR8JYp1foW4.png"
+},
+"rows": {
+"kind": "og",
+"src": "https://rows.com/_next/static/chunks/media/images/share.b1a7b2709519894.png"
+},
+"runcell": {
+"kind": "og",
+"src": "https://www.runcell.dev/opengraph-image.png?394bce772083c99a"
+},
+"rundiffusion": {
+"kind": "og",
+"src": "https://cdn.rundiffusion.com/file/rd-web-assets/mcp-asset-library/_mcp/rd-web-og-assets/og-artwork-home-v1-415745-1200w.webp"
+},
+"runpod": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/69ce570adca53340abab8376/6abaa3be2c46313e45a8397c_home%20page%20thumbnail.png"
+},
+"runthisllm": {
+"kind": "og",
+"src": "https://runthisllm.com/og-image.png"
+},
+"runway": {
+"kind": "og",
+"src": "https://d3phaj0sisr2ct.cloudfront.net/site/assets/homepage-og-card-v3.webp"
+},
+"rytr": {
+"kind": "hero",
+"src": "https://rytr.me/_next/image?url=%2Fimages%2Ftrust-logos.png&w=3840&q=75&dpl=dpl_7oKsJ6Hdepm3UoRYW1pFBxnRSsgu"
+},
+"saga": {
+"kind": "og",
+"src": "https://saga.so/og/saga-ai-thumbnail.png"
+},
+"salesagent-chat": {
+"kind": "logo",
+"src": "name"
+},
+"sauna": {
+"kind": "og",
+"src": "https://www.sauna.ai/social-preview/home.jpg"
+},
+"scale-spellbook": {
+"kind": "og",
+"src": "https://scale.com/api/og/eyJ0aXRsZSI6IlNjYWxlIEdlbkFJIFBvcnRmb2xpbyIsInYiOiJmY2IwMmNjNyJ9.jpg"
+},
+"scenario": {
+"kind": "og",
+"src": "https://www.scenario.com/opengraph-image-pwu6ef?5d2a44ff6793c08f"
+},
+"scite": {
+"kind": "logo",
+"src": "raw/scite.logo"
+},
+"screenpipe": {
+"kind": "og",
+"src": "https://screenpipe.com/og?v=memory-brand-20260929"
+},
+"scribbl": {
+"kind": "og",
+"src": "https://scribbl.co/og/default.png"
+},
+"scrimba": {
+"kind": "og",
+"src": "https://scrimba.com/static/brand/scrimba_opengraph.jpg"
+},
+"seedance-2-0": {
+"kind": "logo",
+"src": "name"
+},
+"seede-ai": {
+"kind": "og",
+"src": "https://static.seedeai.com/static-assets/seedeAI_social_cover.png"
+},
+"selfies-with-sama": {
+"kind": "og",
+"src": "https://plmdlgayusxdnmbafbrx.supabase.co/storage/v1/object/public/tool-assets/8e6d3c49-6cc9-4fce-998d-ac70e7670b23/og_image-a31d2158-03c1-473a-b0b6-5d6aa6d624ba.png"
+},
+"semantic-scholar": {
+"kind": "og",
+"src": "https://www.semanticscholar.org/img/semantic_scholar_og.png"
+},
+"semrush": {
+"kind": "og",
+"src": "https://www.semrush.com/__static__/semrush-logo-700.43215feb8faa.jpg"
+},
+"sharegpt": {
+"kind": "og",
+"src": "https://sharegpt.com/thumbnail.png"
+},
+"shoppal": {
+"kind": "hero",
+"src": "https://shoppal.ai/asset/div-word-map.png"
+},
+"shotstack-workflows": {
+"kind": "logo",
+"src": "raw/shotstack-workflows.logo"
+},
+"shy-editor": {
+"kind": "og",
+"src": "https://www.shyeditor.com/images/social-media-preview-v6.png"
+},
+"singlebasecloud": {
+"kind": "logo",
+"src": "raw/singlebasecloud.logo"
+},
+"singlestore": {
+"kind": "og",
+"src": "https://cdn.sanity.io/images/h3bp8c98/production/699dd956d8065a81e7428432f8adab2ab8c4c20f-1200x630.png"
+},
+"sisif": {
+"kind": "og",
+"src": "https://sisif.ai/static/images/logo-sisif.2835993415ee.jpg"
+},
+"siteground": {
+"kind": "og",
+"src": "https://www.siteground.com/img/other/Meta_Image_1200x630_.jpg"
+},
+"sitespeakai": {
+"kind": "og",
+"src": "https://sitespeak.ai/images/sitespeak-og-2026.jpg"
+},
+"slideswizard": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/assets/logos/slideswizard.png"
+},
+"smmry": {
+"kind": "og",
+"src": "https://smmry.com/images/social-cards/default-og.webp"
+},
+"smol-developer": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/3815a837f067efc8c8ce2faa2e4bdd3dd3019edfcfa52754ed684661846dbc68/smol-ai/developer"
+},
+"snowflake": {
+"kind": "og",
+"src": "https://www.snowflake.com/content/dam/snowflake-site/general/technical/default-og-image/snowflake-social-share.png"
+},
+"socialsonic": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/66bc9b5ac1c7e7e42c268a48/66c0e86189cf6ef1cee909fa_og.jpg"
+},
+"softr": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/6772e8855f7859bc8df95c78/69cb9d33b244d44a7d3d428c_AI%20Launch%20Image.jpg"
+},
+"soundful": {
+"kind": "logo",
+"src": "name"
+},
+"soundraw": {
+"kind": "og",
+"src": "https://cdn.soundraw.io/soundraw_ogp_EN.png"
+},
+"sourcegraph-amp": {
+"kind": "og",
+"src": "https://ampcode.com/og-frontier.jpg"
+},
+"sourcely": {
+"kind": "og",
+"src": "https://www.sourcely.net/opengraph-image.png?c4fda2ac15184397"
+},
+"speak": {
+"kind": "logo",
+"src": "raw/speak.logo"
+},
+"spell": {
+"kind": "og",
+"src": "https://spellapp.com/images/open-graph/og-default.png"
+},
+"spline": {
+"kind": "og",
+"src": "https://spline.design/_next/static/immutable/media/spline_image_banner.2at491x3fx670.png"
+},
+"squarespace": {
+"kind": "hero",
+"src": "https://media-www.sqspcdn.com/images/pages/homepage-2025/hero/videos/sept-2026/plants-desktop-poster-500w.jpg"
+},
+"stability-ai": {
+"kind": "hero",
+"src": "https://images.squarespace-cdn.com/content/v1/6213c340453c3f502425776e/b996899a-0f16-418d-beb0-14ccde67af02/hp-bottom-blade.jpg"
+},
+"stable-audio": {
+"kind": "hero",
+"src": "https://images.squarespace-cdn.com/content/v1/6213c340453c3f502425776e/ccdcf8e1-2be7-47c5-84a7-03169209e4da/audio-hero-bg.jpg"
+},
+"stable-beluga": {
+"kind": "og",
+"src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/stabilityai/StableBeluga1-Delta.png"
+},
+"stable-beluga-2": {
+"kind": "og",
+"src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/stabilityai/StableBeluga2.png"
+},
+"stable-diffusion": {
+"kind": "og",
+"src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/CompVis/stable-diffusion-v1-4.png"
+},
+"stackwise": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/76f31f6712592acfb9b7322b2cb85291571f56a4e5c721c2a9bbfe11d4f805e6/stackwiseai/stackwise"
+},
+"steel-browser": {
+"kind": "og",
+"src": "https://steel.dev/opengraph-image.png?opengraph-image.2o2pbo9kni2n0.png"
+},
+"stenography": {
+"kind": "logo",
+"src": "name"
+},
+"storm": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/assets/logos/storm.png"
+},
+"stripe": {
+"kind": "og",
+"src": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/media/stripe.37119086.jpg"
+},
+"sublime-text": {
+"kind": "og",
+"src": "https://www.sublimetext.com/images/og-full.jpg"
+},
+"sudowrite": {
+"kind": "og",
+"src": "https://framerusercontent.com/assets/1k2TYC2YpFUOb9cH9JmDo6QyUp8.png"
+},
+"suit-me-up": {
+"kind": "og",
+"src": "https://suitmeup.pictures/og_image.png"
+},
+"suno": {
+"kind": "og",
+"src": "https://cdn-o.suno.com/meta-preview.jpg"
+},
+"supabase": {
+"kind": "og",
+"src": "https://supabase.com/images/og/supabase-og.png"
+},
+"superagent": {
+"kind": "og",
+"src": "https://www.superagent.sh/api/og?title=Make%20your%20software%0Asecure%20itself"
+},
+"superagi": {
+"kind": "logo",
+"src": "name"
+},
+"superhuman": {
+"kind": "og",
+"src": "https://superhumanstatic.com/vwfkeyj6n9ac/70d5WBekIRRrA200BtyOob/7ecef93df6ed744b4e7df600140732e1/HP-Meta-Image-8-12-2026__1_.gif"
+},
+"supermaven": {
+"kind": "og",
+"src": "https://supermaven.com/desc-image.png"
+},
+"surfer-seo": {
+"kind": "og",
+"src": "https://assets.surferseo.art/webflow-scripts/assets/og/basic.jpg"
+},
+"suspicion-agent": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/0602e1a63a3458b9fc73c4a3f89d9e0bb27c97dede748c16ae6dba8d57985310/CR-Gjx/Suspicion-Agent"
+},
+"svgstud-io": {
+"kind": "og",
+"src": "https://svgstud.io/static/screenshots/gallery.png"
+},
+"swe-agent": {
+"kind": "logo",
+"src": "name"
+},
+"sybill": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/66a3439be4f0bfad3c0dbe49/6aa9513198686f4b740561cd_home.png"
+},
+"symbolicai": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/94009c28d4c143c83baf79fce4abe911b7f61af9d93efb8da7eac298c5404031/ExtensityAI/symbolicai"
+},
+"synthesia": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/65e89895c5a4b8d764c0d710/6a69f92081e7150b43394a9f_OG-Image-EN.jpg"
+},
+"tableau": {
+"kind": "logo",
+"src": "name"
+},
+"tabnine": {
+"kind": "logo",
+"src": "raw/tabnine.fav"
+},
+"talently-ai": {
+"kind": "og",
+"src": "https://ph-files.imgix.net/4369ca62-536b-4dfd-a17b-90dbbb8ebdd8.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&fit=max&dpr=2"
+},
+"taranify": {
+"kind": "og",
+"src": "https://www.taranify.com/og-image.png"
+},
+"taskade": {
+"kind": "og",
+"src": "https://www.taskade.com/static_images/taskade-genesis-mascot-2026.png"
+},
+"tavily": {
+"kind": "og",
+"src": "https://tavily.com/opengraph-image.png"
+},
+"taxy-ai": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/adbc45806ac81773eeba861ff183394d05a90096165457dfc27294c521d02571/TaxyAI/browser-extension"
+},
+"teenage-agi": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/22e3aa12d7dad24f741430742fb344225d7413e8c9c9bb7d65d7aaac8e732096/seanpixel/Teenage-AGI"
+},
+"telborg": {
+"kind": "og",
+"src": "https://telborg.com/images/og-default.png?v=2"
+},
+"teleprompter": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/043928ac81d8e6ff495bb7fd25bcf9461de5ef19ea277435330685382f52013a/danielgross/teleprompter"
+},
+"tempo": {
+"kind": "og",
+"src": "https://www.tempo.new/og-image.png"
+},
+"tensorzero": {
+"kind": "og",
+"src": "https://www.tensorzero.com/tensorzero-1200x630.png?1773958245"
+},
+"test-driver": {
+"kind": "og",
+"src": "https://testdriver.ai/images/brand/share-image.jpg"
+},
+"text2infographic": {
+"kind": "og",
+"src": "https://text2infographic.com/opengraph-image.jpg?8528afe29342b367"
+},
+"thinkchain-ai": {
+"kind": "hero",
+"src": "https://www.thinkchain.ai/_next/image?url=%2Flogo-no-background.png&w=3840&q=75"
+},
+"this-image-does-not-exist": {
+"kind": "og",
+"src": "https://raw.githubusercontent.com/saharmor/tide/main/public/meta_thumbnail.png"
+},
+"thunkable": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/63b59ece6123439ac23e226f/6893938472a1cf43c78a4f66_open%20graph%20image%20(2).png"
+},
+"tidio": {
+"kind": "og",
+"src": "https://www.tidio.com/images/seo/tidio-og.png"
+},
+"tiledesk": {
+"kind": "og",
+"src": "https://tiledesk.com/wp-content/uploads/2024/11/2024-11-21-11.43.49.jpg"
+},
+"together-ai": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/69654e88dce9154b5f1206dd/69a49f86fc70648ca04854f6_OG-image-home.png"
+},
+"toolhive": {
+"kind": "og",
+"src": "https://stacklok.com/wp-content/uploads/2025/12/stacklok-default-social-share.jpg"
+},
+"tortoise": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/ad6a513cbc3a2e31f843346db098641b090b62fb3c46a663599b93236b770ac9/neonbjb/tortoise-tts"
+},
+"trae": {
+"kind": "logo",
+"src": "name"
+},
+"transgate": {
+"kind": "og",
+"src": "https://transgate.ai/assets/homepageThumbnail.jpg"
+},
+"trigger-dev": {
+"kind": "og",
+"src": "https://trigger.dev/assets/og-image-hAiXVmBp.jpg"
+},
+"trolly-ai": {
+"kind": "logo",
+"src": "raw/trolly-ai.fav"
+},
+"tts-webui": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/633546245/a526ed36-0dbc-4115-8922-67ed11b61339"
+},
+"turbopilot": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/a22593b416470238b1a29096aa803672fc96ade60047f9f1bf33b012999e1db1/ravenscroftj/turbopilot"
+},
+"turso": {
+"kind": "og",
+"src": "https://turso.tech/opengraph-image.png?8abb64b5fd9d7c60"
+},
+"tusk": {
+"kind": "hero",
+"src": "https://cdn.prod.website-files.com/673be64804f5ed85a91b883f/6984f491e4b7c1da96d6c945_Coverage%20Gains%20Image%20for%20Marketing%20Website.png"
+},
+"twig": {
+"kind": "og",
+"src": "https://www.twig.so/images/og-default.png"
+},
+"ubersuggest": {
+"kind": "og",
+"src": "https://cdn.neilpatelapi.com/blue/36e9173/public/images/opengraph-image.png?format=auto&width=1200&quality=75"
+},
+"udemy": {
+"kind": "logo",
+"src": "raw/udemy.fav"
+},
+"udio": {
+"kind": "og",
+"src": "https://imagedelivery.net/C9yUr1FL21Q6JwfYYh2ozQ/1647e9a2-47d6-4d95-5ae0-02bae7a44000/public"
+},
+"ufo": {
+"kind": "og",
+"src": "github.com/microsoft/UFO"
+},
+"uizard": {
+"kind": "og",
+"src": "https://uizard.io/opengraph-2021-04-26-10-35.png"
+},
+"unsloth": {
+"kind": "og",
+"src": "https://unsloth.ai/cgi/image/unsloth_new_wb_logo_vnrA8AASj-jN5wy8UIYE-.png?format=raw"
+},
+"upstash": {
+"kind": "og",
+"src": "https://upstash.com/og-home.jpg"
+},
+"v0": {
+"kind": "og",
+"src": "https://v0.app/chat/api/og"
+},
+"vanna-ai": {
+"kind": "og",
+"src": "https://vanna.ai/og/default.png"
+},
+"vapi": {
+"kind": "og",
+"src": "https://vapi.ai/opengraph-image.png?opengraph-image.0dryxzls5gf-2.png"
+},
+"vectorart-ai": {
+"kind": "og",
+"src": "https://vectorart.ai/og512.png"
+},
+"veed": {
+"kind": "og",
+"src": "https://static-assets.veed.io/images/common/og_image_2026.jpg"
+},
+"vercel": {
+"kind": "og",
+"src": "https://lishhsx6kmthaacj.public.blob.vercel-storage.com/og-home-not-x.png"
+},
+"vercel-ai-sdk": {
+"kind": "og",
+"src": "https://e742qlubrjnjqpp0.public.blob.vercel-storage.com/og.png"
+},
+"vibe-transcribe": {
+"kind": "og",
+"src": "https://thewh1teagle.github.io/vibe/og.png"
+},
+"vicuna-13b": {
+"kind": "og",
+"src": "https://www.lmsys.org/blog/2023-03-30-vicuna/opengraph-image?846984fa349aff93"
+},
+"visily": {
+"kind": "og",
+"src": "https://www.visily.ai/wp-content/uploads/2025/08/OG-1-1.png"
+},
+"visual-studio-code": {
+"kind": "og",
+"src": "https://code.visualstudio.com/opengraphimg/opengraph-home.png"
+},
+"voiceflow": {
+"kind": "og",
+"src": "https://www.voiceflow.com/voiceflow-open-graph-2026.png"
+},
+"void": {
+"kind": "og",
+"src": "https://voideditor.com/og?title=Void&description=Void%20is%20an%20open%20source%20AI%20IDE%20with%20full%20privacy."
+},
+"voltagent": {
+"kind": "og",
+"src": "https://voltagent.dev/img/social4.png"
+},
+"voyage-ai": {
+"kind": "og",
+"src": "https://www.voyageai.com/social-tile.png"
+},
+"voyager": {
+"kind": "logo",
+"src": "name"
+},
+"warp": {
+"kind": "og",
+"src": "https://www.warp.dev/og/default.png"
+},
+"weaviate": {
+"kind": "og",
+"src": "https://weaviate.io/og/website/home.jpg"
+},
+"web3-gpt": {
+"kind": "og",
+"src": "https://w3gpt.ai/opengraph-image.png?opengraph-image.1gk0eviyg6s29.png"
+},
+"webchatgpt": {
+"kind": "logo",
+"src": "name"
+},
+"webflow": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/686294e263eb7e215bd232f7/6a048234cec10a58c38e1758_webflow-og.jpg"
+},
+"wellsaid-labs": {
+"kind": "logo",
+"src": "raw/wellsaid-labs.logo"
+},
+"westworld-simulation": {
+"kind": "hero",
+"src": "https://theolvs.github.io/westworld/img/cover_hq_westworld1.jpg"
+},
+"whimsical-ai": {
+"kind": "og",
+"src": "https://whimsical.com/_next_public/cards/default-260714.png"
+},
+"whisper-api": {
+"kind": "og",
+"src": "https://whisper-api.com/og-image.png"
+},
+"whisper-cpp": {
+"kind": "og",
+"src": "https://repository-images.githubusercontent.com/541269386/2ca10f8c-2e85-4617-af0f-255330921384"
+},
+"whisper-ctranslate2": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/493fd924f84381e768e1b43de42a0554494bc3610a5c9511bc20f3582a0be124/Softcatala/whisper-ctranslate2"
+},
+"whodb": {
+"kind": "og",
+"src": "https://whodb.com/og-image.png"
+},
+"windsurf": {
+"kind": "logo",
+"src": "/workspace/ai-directory/site/img/tools/windsurf-logo.webp"
+},
+"wispr-flow": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/682f84b3838c89f8ff7667db/6a724a4fff322698a57a7d97_dictation-og%20(1).jpg"
+},
+"wix": {
+"kind": "og",
+"src": "https://static.wixstatic.com/media/343a2a_383f6393fabd4a0fa7f4732b1dd7cdb4~mv2.jpg/v1/fill/w_1200,h_630,al_c/343a2a_383f6393fabd4a0fa7f4732b1dd7cdb4~mv2.jpg"
+},
+"wordtune": {
+"kind": "og",
+"src": "https://cdn.prod.website-files.com/5f7e0f9d75fee6f6f546df46/66bc50ae0f2962888d8e06a2_OG%20-%20HOME%20PAGE%20.png"
+},
+"wordware": {
+"kind": "hero",
+"src": "https://www.wordware.ai/_next/image?url=%2Fteam-img.jpg&w=3840&q=100"
+},
+"workbot": {
+"kind": "logo",
+"src": "raw/workbot.fav"
+},
+"workgpt": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/948fb70b7fcd22e1af601b4f50acc60013b922e9fbc6665b5992866d3ad8d98f/team-openpm/workgpt"
+},
+"wp-engine": {
+"kind": "og",
+"src": "https://wpmktgatlas.wpengine.com/wp-content/uploads/2024/05/WPE-IMG-Thumbnail-1200x630-1.jpg"
+},
+"wren-ai": {
+"kind": "og",
+"src": "https://getwren.ai/site-assets/og/og-open-context-v2.png"
+},
+"writesonic": {
+"kind": "og",
+"src": "https://writesonic.com/opengraph-image"
+},
+"x-doc-ai": {
+"kind": "hero",
+"src": "https://imagedelivery.net/qLF-SXFhYVRLkgyU02_wSw/19cd989c-b2e4-4b73-a5f9-f49a1a52b000/public?keywords=Technical%20document%20page%20with%20complex%20medical%20terminology%20and%20diagrams%20in%20English%2C%20professional%20layout%2C%20white%20background%2C%20high%20resolution%20scan&width=600&height=400"
+},
+"xagent": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/6cbeff73f8f5616df0ad3ad13a4fa655b6f656e29fa29b66e2b0c8bc0b2163ff/OpenBMB/XAgent"
+},
+"xai": {
+"kind": "og",
+"src": "https://x.ai/opengraph-image-1j7jya.png?opengraph-image.2syi5no49g9nu.png?dpl=270e6ec7856a61e2e1689c74197e8f37497ebd48"
+},
+"xano": {
+"kind": "og",
+"src": "https://www.xano.com/assets/img/og/og-1200x630.jpg"
+},
+"xata": {
+"kind": "og",
+"src": "https://xata.io/api/og?title=Xata%20%E2%80%93%20the%20branch%20native%20Postgres%20platform"
+},
+"yagents": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/dc1c2a46eaf378e1bfcc63960fe9bd927cd5250a5bf53f6854b4c15c803e2302/genlayerlabs/yeagerai-agent"
+},
+"yomu": {
+"kind": "og",
+"src": "https://www.yomu.ai/opengraph-image.png?12d2b2fbf0cb7efc"
+},
+"you-com": {
+"kind": "og",
+"src": "https://cdn.you.com/marketing/og-ydc.jpg"
+},
+"yourgoal": {
+"kind": "og",
+"src": "https://opengraph.githubassets.com/15b7c646806e522769bbdbd3c25613f509c4d33bdd6e2b416adda0e21653c7b7/pj4533/yourgoal"
+},
+"youtube-summary-with-chatgpt": {
+"kind": "logo",
+"src": "name"
+},
+"z-ai": {
+"kind": "logo",
+"src": "raw/z-ai.fav"
+},
+"zapier": {
+"kind": "og",
+"src": "https://res.cloudinary.com/zapier-media/image/upload/q_auto/f_auto/v1776210705/Governance/og-image-homepage_mskeaq.png"
+},
+"zed": {
+"kind": "og",
+"src": "https://zed.dev/img/home/og.webp"
+},
+"zenmic-com": {
+"kind": "hero",
+"src": "https://zenmic.com/images/creator_male.png"
+}
+}

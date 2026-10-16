@@ -127,3 +127,4 @@ html[data-theme=light] .sticky-cta{background:#fffffff2;border-color:#dfe3ea}
 .sc-body .tag{align-self:flex-start}
 /* account save hearts */
 .vs-hc{position:relative}.vs-heart{position:absolute;top:10px;right:10px;z-index:3;width:34px;height:34px;border-radius:50%;border:1px solid #ffffff33;background:#0b0e16cc;color:#fff;font-size:18px;line-height:1;cursor:pointer;display:grid;place-items:center;backdrop-filter:blur(4px)}.vs-heart.on{color:#ff4d79;border-color:#ff4d7999}.vs-heart.inline{position:static;display:inline-grid;vertical-align:middle;margin-left:10px}.vs-heart:focus-visible{outline:2px solid #7c5cff}
+.ph-brand .ph-ov{background:linear-gradient(180deg,#0b0d1200 55%,#0b0d12b3 100%)}

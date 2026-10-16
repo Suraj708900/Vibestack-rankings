@@ -177,7 +177,7 @@
     },
     {
      "name": "Cloudflare Pages",
-     "url": "https://pages.cloudflare.com",
+     "url": "https://www.cloudflare.com/products/pages/",
      "verdict": "Fast global edge with a generous free tier. Pairs well with Workers.",
      "price": "Free tier; see site",
      "tags": [
@@ -211,7 +211,7 @@
     },
     {
      "name": "Anthropic API",
-     "url": "https://www.anthropic.com/api",
+     "url": "https://claude.com/platform/api",
      "verdict": "Claude models are top-tier for coding and agents. Strong pick for tool use.",
      "price": "Pay per token; see site",
      "tags": [
@@ -358,7 +358,7 @@
    "tools": [
     {
      "name": "Runway",
-     "url": "https://runwayml.com",
+     "url": "https://runway.com/",
      "verdict": "Pro-grade generation and editing tools. The creator favourite.",
      "price": "Free tier; see site",
      "tags": [
@@ -367,14 +367,14 @@
     },
     {
      "name": "Google Veo (Flow)",
-     "url": "https://labs.google/flow/about",
+     "url": "https://flow.google.com/",
      "verdict": "High-quality clips with native audio. Access depends on your Google AI plan.",
      "price": "See site",
      "tags": []
     },
     {
      "name": "Kling AI",
-     "url": "https://klingai.com",
+     "url": "https://kling.ai/",
      "verdict": "Strong motion quality at a good price for short clips.",
      "price": "Free credits; see site",
      "tags": [
@@ -409,7 +409,7 @@
     },
     {
      "name": "OpenAI Realtime API",
-     "url": "https://platform.openai.com/docs/guides/realtime",
+     "url": "https://developers.openai.com/api/docs/guides/realtime",
      "verdict": "Low-latency speech-to-speech for building voice agents.",
      "price": "Pay per use; see site",
      "tags": [

@@ -33,15 +33,20 @@ def src_url(k):
     return f'https://unsplash.com/' if s=='u' else f'https://www.pexels.com/photo/{i}/'
 def site(k): return 'Unsplash' if k.startswith('u-') else 'Pexels'
 def credit(k): return (f'Photo by {CREDIT[k]} on {site(k)}' if k in CREDIT else f'Photo via {site(k)}')
+import os as _os,json as _json
+try: BRAND=_json.load(open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),'data','brand-images.json')))
+except Exception: BRAND={}
 def pick(theme_key,slug):
+    if slug in BRAND and slug!=theme_key: return 'b-'+slug
     L=THEMES[MAP.get(theme_key,'ai')]; return L[zlib.crc32(slug.encode())%len(L)]
 def picture(k,alt='',eager=False,sizes='(max-width:600px) 100vw, 480px',cls='ph-img'):
     b=f'/img/photos/{k}'
     return (f'<picture><source type="image/webp" srcset="{b}-480.webp 480w, {b}-960.webp 960w, {b}-1600.webp 1600w" sizes="{sizes}">'
             f'<img class="{cls}" src="{b}-960.webp" width="960" height="540" alt="{E(alt)}" {"fetchpriority=high" if eager else "loading=lazy"} decoding="async"></picture>')
 def banner(theme_key,slug,logo,name,eager=False,sizes='(max-width:600px) 100vw, 480px',badge=''):
-    k=pick(theme_key,slug)
-    return (f'<div class="ph">{picture(k,"",eager,sizes)}<span class="ph-ov"></span>'
+    k=pick(theme_key,slug); br=BRAND.get(slug) if k.startswith('b-') else None
+    if br=='logo': logo=''
+    return (f'<div class="ph{" ph-brand" if br else ""}">{picture(k,"",eager,sizes)}<span class="ph-ov"></span>'
             +(f'<img class="ph-logo" src="{E(logo)}" width="56" height="56" alt="{E(name)} logo" loading="{"eager" if eager else "lazy"}" decoding="async">' if logo else '')
             +badge+'</div>')
 # affiliate/deal helpers
