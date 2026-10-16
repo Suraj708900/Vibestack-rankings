@@ -63,6 +63,8 @@ Local generation is most practical on a computer with a dedicated GPU and enough
 
 Whatever tool you choose, save your source files and prompts alongside the final assets so you can regenerate or revise them later.
 
+Related rankings: [AI video tools](/category/video.html) such as [Runway](/tools/runway.html), and [vibe coding tools](/category/vibe-coding.html) for building the game itself.
+
 ## FAQ
 
 ### What is the best free AI image generator for game assets?

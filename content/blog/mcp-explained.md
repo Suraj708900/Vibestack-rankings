@@ -53,6 +53,8 @@ MCP gives AI models real capabilities, so security matters:
 
 Function calling is the model-level ability to request a tool call. MCP sits a layer above it: a standard way to package and discover tools so they work across applications. If you are building one agent with three custom tools, plain function calling is fine. If you want your tools usable in many AI apps, or want to use the growing ecosystem of existing servers, MCP is the better fit. See [how to build an AI agent](/blog/how-to-build-an-ai-agent.html) for the broader picture.
 
+Next: [best MCP servers for Cursor](/blog/best-mcp-servers-for-cursor.html) and [Cursor rules examples](/blog/cursor-rules-examples.html).
+
 ## FAQ
 
 ### Who created MCP?

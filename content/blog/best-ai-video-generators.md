@@ -68,6 +68,8 @@ For builders, the most common use is a short product video. A workable pipeline:
 
 Most video tools meter usage in credits, and longer, higher-resolution clips cost more. Prototype at lower settings, lock the prompt and composition, then render the final at full quality. Plan for several attempts per usable shot and check the current credit costs on each official pricing page before a big project.
 
+See also: [best AI voice tools](/blog/best-ai-voice-tools.html) and [AI tools for solo founders](/blog/ai-tools-for-solo-founders.html).
+
 ## FAQ
 
 ### What is the best AI video generator?

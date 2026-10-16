@@ -60,6 +60,8 @@ Routing through a gateway adds another company to your data path. Read OpenRoute
 
 Review your model choices every few months, since new models appear frequently.
 
+See also: [AI API pricing guide](/blog/ai-api-pricing-guide.html) and [how to build a SaaS with AI](/blog/how-to-build-a-saas-with-ai.html).
+
 ## FAQ
 
 ### Is OpenRouter more expensive than going direct?

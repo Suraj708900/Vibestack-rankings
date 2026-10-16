@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "categories": [
   {
    "id": "coding-agents",
@@ -441,6 +441,36 @@
  "news": [
   {
    "date": "2026-10-15",
+   "title": "OpenCode 2.0: open-source AI coding agent for terminal, desktop and web",
+   "url": "https://opencode.ai",
+   "source": "Product Hunt / OpenCode"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "Buddy launches AI Sandboxes: isolated Linux machines for coding agents (MCP, CLI, SDK)",
+   "url": "https://buddy.works/docs/sandboxes",
+   "source": "Product Hunt / Buddy"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "withHuman: open-source human approval layer for AI agent tool calls (AAP)",
+   "url": "https://withhuman.ai",
+   "source": "Product Hunt / withHuman"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "Navige: sufficiency layer that routes, caches and caps AI agent spend before runs",
+   "url": "https://navige.ai",
+   "source": "Product Hunt / Navige"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "OpenUI 1.0: open standard so AI agents answer with real UI, not only text",
+   "url": "https://www.openui.com",
+   "source": "OpenUI / Thesys"
+  },
+  {
+   "date": "2026-10-15",
    "title": "Meta releases Muse Spark Open open-weight model (816B total, 42B active, 1M context)",
    "url": "https://research.meta.ai/blog/muse-spark-open",
    "source": "Meta AI Research"
@@ -480,12 +510,6 @@
    "title": "Liquid AI releases LFM2.5-24B-A2B open-weight model for on-device agents",
    "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
    "source": "Liquid AI"
-  },
-  {
-   "date": "2026-10-12",
-   "title": "Meta launches Muse Wonder and Muse Wonder Full for Muse Code",
-   "url": "https://dev.meta.ai/resources/blog/build-with-muse-wonder",
-   "source": "Meta"
   }
  ]
 }

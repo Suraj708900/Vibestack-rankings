@@ -6,6 +6,9 @@ import json,os,re,html,glob,datetime,subprocess,shutil,urllib.parse
 try: import markdown
 except ImportError: markdown=None
 BASE=os.environ.get('SITE_BASE','https://vibestack-rankings.vercel.app').rstrip('/')
+GSC_VERIFICATION=''  # paste Google Search Console token here
+GSCM=f'<meta name="google-site-verification" content="{GSC_VERIFICATION}">' if GSC_VERIFICATION else ''
+INDEXNOW_KEY='4bc94dce2e8b15bfe59f1ffa5e81787b'
 SITE='VibeStack Rankings'; ROOT=os.path.dirname(os.path.abspath(__file__)); os.chdir(ROOT)
 E=lambda s:html.escape(str(s),quote=True)
 slug=lambda s:re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
@@ -20,7 +23,7 @@ def head(title,desc,path,typ='website',extra=''):
      f'<title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}">'
      f'<meta property="og:type" content="{typ}"><meta property="og:site_name" content="{SITE}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}">'
      f'<meta name="twitter:card" content="summary"><meta name="twitter:title" content="{E(title)}"><meta name="twitter:description" content="{E(desc)}">'
-     f'<link rel="preconnect" href="https://www.google.com"><link rel="dns-prefetch" href="https://www.google.com"><link rel="stylesheet" href="/style.min.css">{extra}</head>')
+     f'<link rel="preconnect" href="https://www.google.com"><link rel="dns-prefetch" href="https://www.google.com"><link rel="stylesheet" href="/style.min.css">{GSCM}{extra}</head>')
 ld=lambda o:'<script type="application/ld+json">'+json.dumps(o,ensure_ascii=False).replace('</','<\\/')+'</script>'
 def share(path,title):
     u=urllib.parse.quote(BASE+path,safe='');t=urllib.parse.quote(title,safe='')
@@ -53,12 +56,23 @@ for c in cats:
     names=', '.join(t['name'] for t in c['tools'][:3])
     title=f'Best {c["name"]} for vibe coders ({UPD[:4]}): {names}'
     desc=f'{c["q"]} Our ranked picks: '+', '.join(t['name'] for t in c['tools'])+'. Honest verdicts, pricing notes, official links.'
-    faq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":c['q'],"acceptedAnswer":{"@type":"Answer","text":f'Our top pick is {c["tools"][0]["name"]}: {c["tools"][0]["verdict"]}'}}]}
+    top=c['tools'][0]; names=', '.join(t['name'] for t in c['tools'])
+    faq_pairs=[
+      (c['q'], f'Our ranked picks are {names}. Top pick: {top["name"]} — {top["verdict"]} Pricing note: {top["price"]}.'),
+      (f'What is the #1 pick in {c["name"]} right now?', f'{top["name"]}. {top["verdict"]} See the official site for current pricing ({top["price"]}).'),
+      (f'Which tools in {c["name"]} have a free tier?', 
+        ('These picks mention a free tier: '+', '.join(t['name'] for t in c['tools'] if 'free-tier' in t.get('tags',[]) or 'free' in t.get('price','').lower())+'. Always confirm on the official pricing page.')
+        if any('free-tier' in t.get('tags',[]) or 'free' in t.get('price','').lower() for t in c['tools'])
+        else 'Check each official pricing page — free tiers change often. We only note free when the tool tags or price field say so.'),
+    ]
+    faq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faq_pairs]}
     il={"@context":"https://schema.org","@type":"ItemList","name":c['name'],"itemListElement":[{"@type":"ListItem","position":i+1,"name":t['name'],"url":BASE+f'/tools/{slug(t["name"])}.html'} for i,t in enumerate(c['tools'])]}
     rel=''.join(f'<li><a href="/blog/{p["slug"]}.html">{E(p["title"])}</a></li>' for p in pbycat.get(c['id'],[]))
+    faq_html='<section class="faq" aria-labelledby="faq-h"><h2 id="faq-h">FAQ</h2>'+''.join(
+      f'<details class="faq-item"><summary>{E(q)}</summary><p>{E(a)}</p></details>' for q,a in faq_pairs)+'</section>'
     body=(f'<p class="sub"><a href="/">Rankings</a> › {E(c["name"])}</p><h1>{E(c["name"])}</h1><p class="sub">{E(c["q"])} Updated {UPD}.</p>'
       +share(path,title)+'<div data-promo="category-top" data-cat="'+c['id']+'"></div><div class="grid">'+''.join(tcard(t,i+1) for i,t in enumerate(c['tools']))+'</div>'
-      +(f'<h2>Guides</h2><ul>{rel}</ul>' if rel else '')+'<h2>Other categories</h2><p>'+' · '.join(f'<a href="/category/{x["id"]}.html">{E(x["name"])}</a>' for x in cats if x is not c)+'</p><aside data-promo="sidebar-card"></aside>')
+      +faq_html+(f'<h2>Guides</h2><ul>{rel}</ul>' if rel else '')+'<h2>Other categories</h2><p>'+' · '.join(f'<a href="/category/{x["id"]}.html">{E(x["name"])}</a>' for x in cats if x is not c)+'</p><aside data-promo="sidebar-card"></aside>')
     page(path,title,desc,body,extra=ld(faq)+ld(il))
 # tool pages
 for s,v in tools.items():
@@ -171,12 +185,16 @@ for f,(path,title,desc) in TOP.items():
     s=re.sub(r'<!--rt-->.*?<!--/rt-->','',s,flags=re.S)
     s=s.replace('</body>','<!--rt--><script src="/site.min.js" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script><!--/rt--></body>',1)
     if 'preconnect' not in s: s=s.replace('<link rel="stylesheet"','<link rel="preconnect" href="https://www.google.com"><link rel="stylesheet"',1)
+    if GSCM and 'google-site-verification' not in s: s=s.replace('</head>',GSCM+'</head>',1)
     open(f,'w').write(s)
 today=datetime.date.today().isoformat()
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{BASE}{u}</loc><lastmod>{today}</lastmod></url>\n' for u in urls)+'</urlset>\n')
+open(INDEXNOW_KEY+'.txt','w').write(INDEXNOW_KEY)
 open('robots.txt','w').write(f'User-agent: *\nAllow: /\nDisallow: /admin-promos.html\nDisallow: /admin-stats.html\nDisallow: /api/\n\nSitemap: {BASE}/sitemap.xml\n')
+news=d.get('news',[])
 open('llms.txt','w').write(f'# {SITE}\n\n> Opinionated, ranked AI tools for vibe coders and builders, with honest verdicts, pricing notes (always pointing to official pricing) and official links. Sponsored placements are always labelled and never affect rankings.\n\n## Rankings\n'
  +''.join(f'- [{c["name"]}]({BASE}/category/{c["id"]}.html): {c["q"]} Picks: {", ".join(t["name"] for t in c["tools"])}\n' for c in cats)
+ +('\n## New this week\n'+''.join(f'- [{n["title"]}]({n["url"]}) ({n["date"]}, via {n["source"]})\n' for n in news) if news else '')
  +'\n## Guides\n'+''.join(f'- [{p["title"]}]({BASE}/blog/{p["slug"]}.html): {p["description"]}\n' for p in posts)
- +f'\n## Data\n- [tools.json]({BASE}/tools.json): full ranking data\n')
+ +f'\n## Data\n- [tools.json]({BASE}/tools.json): full ranking data\n- [New this week page]({BASE}/new.html)\n')
 print(f'built {len(cats)} categories, {len(tools)} tools, {len(posts)} posts, {len(urls)} sitemap urls')

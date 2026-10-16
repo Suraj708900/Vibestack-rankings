@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cursor Rules Examples: Practical Templates for Better AI Code</title><meta name="description" content="Practical Cursor rules examples you can adapt: project overview, coding style, testing, framework-specific and security rules, plus how Cursor rules files work."><link rel="canonical" href="https://vibestack-rankings.vercel.app/blog/cursor-rules-examples.html"><meta property="og:type" content="article"><meta property="og:site_name" content="VibeStack Rankings"><meta property="og:title" content="Cursor Rules Examples: Practical Templates for Better AI Code"><meta property="og:description" content="Practical Cursor rules examples you can adapt: project overview, coding style, testing, framework-specific and security rules, plus how Cursor rules files work."><meta property="og:url" content="https://vibestack-rankings.vercel.app/blog/cursor-rules-examples.html"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Cursor Rules Examples: Practical Templates for Better AI Code"><meta name="twitter:description" content="Practical Cursor rules examples you can adapt: project overview, coding style, testing, framework-specific and security rules, plus how Cursor rules files work."><link rel="preconnect" href="https://www.google.com"><link rel="dns-prefetch" href="https://www.google.com"><link rel="stylesheet" href="/style.min.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cursor Rules Examples: Practical Templates for Better AI Code", "description": "Practical Cursor rules examples you can adapt: project overview, coding style, testing, framework-specific and security rules, plus how Cursor rules files work.", "datePublished": "2026-10-16", "dateModified": "2026-10-16", "author": {"@type": "Person", "name": "Suraj Kamdev"}, "publisher": {"@type": "Organization", "name": "VibeStack Rankings", "url": "https://vibestack-rankings.vercel.app"}, "mainEntityOfPage": "https://vibestack-rankings.vercel.app/blog/cursor-rules-examples.html", "keywords": "Cursor rules examples", "wordCount": 803}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where do Cursor rules go?", "acceptedAnswer": {"@type": "Answer", "text": "Project rules go in the `.cursor/rules` directory of your repository. Older projects may use a root `.cursorrules` file. Check Cursor's docs for the current format."}}, {"@type": "Question", "name": "How long should Cursor rules be?", "acceptedAnswer": {"@type": "Answer", "text": "Short. A focused page of specific instructions works better than a long essay, which dilutes the important points."}}, {"@type": "Question", "name": "Do rules work with every model in Cursor?", "acceptedAnswer": {"@type": "Answer", "text": "Rules are included as instructions to whichever model you choose, though models vary in how strictly they follow them."}}]}</script><meta property="article:published_time" content="2026-10-16"></head><body data-page="post"><header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/featured.html">Get featured</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header><main><p class="sub"><a href="/blog/">Blog</a> › <a href=/category/coding-agents.html>Coding agents</a></p><article class="post"><h1>Cursor Rules Examples: Practical Templates for Better AI Code</h1><p class="sub">By Suraj Kamdev · 2026-10-16 · 3 min read</p><div class="share" aria-label="Share"><span class="sub">Share:</span> <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fvibestack-rankings.vercel.app%2Fblog%2Fcursor-rules-examples.html&text=Cursor%20Rules%20Examples%3A%20Practical%20Templates%20for%20Better%20AI%20Code" target="_blank" rel="noopener">X</a> <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fvibestack-rankings.vercel.app%2Fblog%2Fcursor-rules-examples.html" target="_blank" rel="noopener">LinkedIn</a> <a href="https://wa.me/?text=Cursor%20Rules%20Examples%3A%20Practical%20Templates%20for%20Better%20AI%20Code%20https%3A%2F%2Fvibestack-rankings.vercel.app%2Fblog%2Fcursor-rules-examples.html" target="_blank" rel="noopener">WhatsApp</a> <button class="s" data-copy>Copy link</button></div><p>Rules are the most effective way to make <a href="/tools/cursor.html">Cursor</a>'s AI write code the way your project needs. Instead of repeating "we use TypeScript strict mode and Tailwind" in every prompt, you write it once and the agent follows it. This guide explains how Cursor rules work and gives practical examples to adapt. Formats evolve, so check Cursor's documentation for current details.</p>
+<h2>How Cursor rules work</h2>
+<p>Cursor supports project rules stored in your repository in a <code>.cursor/rules</code> directory, as separate rule files (Cursor uses an <code>.mdc</code> format with a small header). Each rule can apply always, automatically when matching files are involved (using file patterns), or only when referenced. Older projects may use a single <code>.cursorrules</code> file in the project root, which Cursor treats as legacy. There are also user-level rules in settings for personal preferences.</p>
+<p>Because project rules live in git, your whole team, and every AI session, shares them.</p>
+<h2>Principles for good rules</h2>
+<ul>
+<li><strong>Be specific and short.</strong> "Use named exports" beats "write clean code".</li>
+<li><strong>State the why when it is not obvious.</strong> It helps the model generalise.</li>
+<li><strong>Scope rules by file pattern</strong> so front-end rules do not clutter back-end work.</li>
+<li><strong>Prefer positive instructions</strong> ("use X") with a few clear "never" rules for real hazards.</li>
+<li><strong>Update rules when the AI repeats a mistake.</strong> Rules are living documentation.</li>
+</ul>
+<h2>Example 1: Project overview (always on)</h2>
+<pre><code># Project overview
+- Next.js app (App Router) with TypeScript in strict mode.
+- Styling: Tailwind CSS. No CSS modules or styled-components.
+- Data: Supabase (Postgres). Schema lives in supabase/migrations.
+- Run `npm run dev` to start, `npm test` for tests, `npm run lint` before finishing.
+- Components in src/components, server code in src/server.
+</code></pre>
+<p>This gives every session a map of your project. If you use Supabase, see <a href="/blog/supabase-vs-firebase.html">Supabase vs Firebase</a>.</p>
+<h2>Example 2: Code style</h2>
+<pre><code># Code style
+- Use named exports, not default exports.
+- Prefer small pure functions; keep components under ~150 lines.
+- Use async/await, never .then chains.
+- Handle errors explicitly; never swallow errors silently.
+- Match existing patterns in nearby files before inventing new ones.
+</code></pre>
+<h2>Example 3: Testing (auto-attached to source files)</h2>
+<pre><code># Testing
+- New functions with logic get unit tests next to them (*.test.ts).
+- Cover empty, single and many-item cases, plus one failure case.
+- Run `npm test` after changes and fix failures before declaring done.
+- Do not delete or weaken existing tests to make them pass.
+</code></pre>
+<p>The last line prevents a common failure: an agent "fixing" a failing test by changing the assertion.</p>
+<h2>Example 4: Framework-specific (Next.js)</h2>
+<pre><code># Next.js
+- Default to Server Components; add &quot;use client&quot; only when needed.
+- Fetch data on the server; never expose secret keys to client components.
+- Use the framework's Image component for images.
+</code></pre>
+<p>Adapt this for your framework: Django, Rails, Laravel, SvelteKit and so on.</p>
+<h2>Example 5: Security</h2>
+<pre><code># Security
+- Never hard-code secrets; read them from environment variables.
+- Server-only keys (service role, payment secrets) must never be imported into client code.
+- Every database table needs row-level security policies; explain any policy you add.
+- Validate all user input on the server.
+</code></pre>
+<p>See the full <a href="/blog/vibe-coding-security-checklist.html">vibe coding security checklist</a>.</p>
+<h2>Example 6: Workflow and boundaries</h2>
+<pre><code># Workflow
+- For tasks touching more than 2 files, propose a plan and wait for approval.
+- Do not change the database schema or public API without asking.
+- Do not add new dependencies without asking; prefer what is installed.
+- Summarise what you changed and why at the end.
+</code></pre>
+<h2>Example 7: Tool usage (MCP)</h2>
+<pre><code># Tools
+- Use the database MCP server to inspect the schema before writing queries.
+- Use the browser tool to verify UI changes on http://localhost:3000.
+</code></pre>
+<p>If you use MCP, see <a href="/blog/best-mcp-servers-for-cursor.html">best MCP servers for Cursor</a>.</p>
+<h2>Rules in other tools</h2>
+<p>The same idea exists elsewhere: <a href="/tools/claude-code.html">Claude Code</a> reads <code>CLAUDE.md</code> (see the <a href="/blog/claude-code-tutorial-for-beginners.html">Claude Code tutorial</a>), <a href="/tools/openai-codex.html">OpenAI Codex</a> reads <code>AGENTS.md</code>, and <a href="/tools/github-copilot.html">GitHub Copilot</a> supports repository custom instructions. Keep one source of truth and adapt it into each format.</p>
+<h2>Maintaining rules</h2>
+<p>Review rules monthly. Delete ones the AI follows naturally and add ones for recurring mistakes. Several small, scoped rule files work better than one giant file.</p>
+<h2>FAQ</h2>
+<h3>Where do Cursor rules go?</h3>
+<p>Project rules go in the <code>.cursor/rules</code> directory of your repository. Older projects may use a root <code>.cursorrules</code> file. Check Cursor's docs for the current format.</p>
+<h3>How long should Cursor rules be?</h3>
+<p>Short. A focused page of specific instructions works better than a long essay, which dilutes the important points.</p>
+<h3>Do rules work with every model in Cursor?</h3>
+<p>Rules are included as instructions to whichever model you choose, though models vary in how strictly they follow them.</p><div class="share" aria-label="Share"><span class="sub">Share:</span> <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fvibestack-rankings.vercel.app%2Fblog%2Fcursor-rules-examples.html&text=Cursor%20Rules%20Examples%3A%20Practical%20Templates%20for%20Better%20AI%20Code" target="_blank" rel="noopener">X</a> <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fvibestack-rankings.vercel.app%2Fblog%2Fcursor-rules-examples.html" target="_blank" rel="noopener">LinkedIn</a> <a href="https://wa.me/?text=Cursor%20Rules%20Examples%3A%20Practical%20Templates%20for%20Better%20AI%20Code%20https%3A%2F%2Fvibestack-rankings.vercel.app%2Fblog%2Fcursor-rules-examples.html" target="_blank" rel="noopener">WhatsApp</a> <button class="s" data-copy>Copy link</button></div></article><section id="post-newsletter" class="card nl-box"><h2>Get the weekly stack</h2><p class="sub">Rank movers and new AI tools for builders, once a week. Free, no spam, unsubscribe anytime.</p><form class="bar nlf"><input type="email" name="email" placeholder="you@example.com" required aria-label="Email"><input name="company" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><button type="submit">Subscribe</button><span class="nlmsg sub" style="align-self:center"></span></form></section><div data-promo="sidebar-card"></div><h2>Related posts</h2><ul><li><a href="/blog/best-ai-code-editor-2026.html">Best AI Code Editor in 2026: Cursor, Windsurf, Copilot and the Alternatives</a></li><li><a href="/blog/best-ai-coding-agents.html">The Best AI Coding Agents for Builders in 2026</a></li><li><a href="/blog/best-ai-tools-for-game-developers.html">Best AI Tools for Game Developers and Indie Devs</a></li><li><a href="/blog/best-free-ai-tools-for-developers.html">The Best Free AI Tools for Developers and Vibe Coders</a></li><li><a href="/blog/best-mcp-servers-for-cursor.html">Best MCP Servers for Cursor: Useful Integrations and How to Set Them Up</a></li></ul><p>See the full ranking: <a href="/category/coding-agents.html">Coding agents</a>.</p></main><footer><p><b>Affiliate disclosure:</b> some links may be affiliate links, so we may earn a commission at no extra cost to you. Rankings are never sold; sponsored listings are always labeled.</p><p><a href="/blog/">Blog</a> · <a href="/category/coding-agents.html">Coding agents</a> · <a href="/category/app-builders.html">AI app builders</a> · <a href="/category/databases.html">Databases &amp; backends</a> · <a href="/category/hosting.html">Hosting &amp; deploy</a> · <a href="/category/ai-apis.html">AI APIs &amp; models</a> · <a href="/category/agent-frameworks.html">Agent frameworks</a> · <a href="/category/vibe-coding.html">Best for vibe coding</a> · <a href="/category/video.html">Video</a> · <a href="/category/voice.html">Voice</a></p><p>© 2026 VibeStack Rankings by Suraj Kamdev · <a href="mailto:kamdevsuraj03@gmail.com">kamdevsuraj03@gmail.com</a></p></footer><script src="/site.min.js" defer></script><script src="/promos.min.js" defer></script><script src="/feed.min.js" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script></body></html>
