@@ -16,7 +16,7 @@ SITE='VibeStack Rankings'; ROOT=os.path.dirname(os.path.abspath(__file__)); os.c
 E=lambda s:html.escape(str(s),quote=True)
 slug=lambda s:re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
 d=json.load(open('tools.json')); cats=d['categories']; UPD=d['updated']
-NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/deals/">Deals</a><a href="/featured.html">Get featured</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header>'
+NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/deals/">Deals</a><a href="/compare.html">Compare</a><a href="/featured.html">Get featured</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header>'
 FOOT=('<footer><p><b>Affiliate disclosure:</b> some links may be affiliate links, so we may earn a commission at no extra cost to you. Rankings are never sold; sponsored listings are always labeled.</p>'
  '<p><a href="/blog/">Blog</a> · '+' · '.join(f'<a href="/category/{c["id"]}.html">{E(c["name"])}</a>' for c in cats)+'</p>'
  '<p><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/refund">Refund policy</a> · <a href="/disclaimer">Disclaimer</a></p>'
@@ -34,7 +34,7 @@ def share(path,title):
     return (f'<div class="share" aria-label="Share"><span class="sub">Share:</span> <a href="https://twitter.com/intent/tweet?url={u}&text={t}" target="_blank" rel="noopener">X</a> <a href="https://www.linkedin.com/sharing/share-offsite/?url={u}" target="_blank" rel="noopener">LinkedIn</a> <a href="https://wa.me/?text={t}%20{u}" target="_blank" rel="noopener">WhatsApp</a> <button class="s" data-copy>Copy link</button></div>')
 NL=('<section id="post-newsletter" class="card nl-box"><h2>Get the weekly stack</h2><p class="sub">Rank movers and new AI tools for builders, once a week. Free, no spam, unsubscribe anytime.</p>'
  '<form class="bar nlf"><input type="email" name="email" placeholder="you@example.com" required aria-label="Email"><input name="company" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><button type="submit">Subscribe</button><span class="nlmsg sub" style="align-self:center"></span></form></section>')
-SCRIPTS='<script src="/site.min.js" defer></script><script src="/promos.min.js" defer></script><script src="/feed.min.js" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script>'
+SCRIPTS='<script src="/site.min.js" defer></script><script src="/features.min.js" defer></script><script src="/promos.min.js" defer></script><script src="/feed.min.js" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script>'
 def page(path,title,desc,body,typ='website',extra='',bodyattr=''):
     full=os.path.join(ROOT,path.lstrip('/')); full=full+'index.html' if full.endswith('/') else full
     os.makedirs(os.path.dirname(full),exist_ok=True)
@@ -81,6 +81,7 @@ for c in cats:
       +faq_html+(f'<h2>Guides</h2><ul>{rel}</ul>' if rel else '')+'<h2>Other categories</h2><p>'+' · '.join(f'<a href="/category/{x["id"]}.html">{E(x["name"])}</a>' for x in cats if x is not c)+'</p><aside data-promo="sidebar-card"></aside>')
     page(path,title,desc,body,extra=ld(faq)+ld(il))
 # tool pages
+exec(open(os.path.join(ROOT,'tool_rich.py')).read())
 for s,v in tools.items():
     t=v['t']; path=f'/tools/{s}.html'; urls.append(path)
     rk=' · '.join(f'#{r} in <a href="/category/{c["id"]}.html">{E(c["name"])}</a>' for c,r in v['ranks'])
@@ -88,12 +89,7 @@ for s,v in tools.items():
     rel=[p for c,_ in v['ranks'] for p in pbycat.get(c['id'],[])][:4]
     dom=t['url'].split('/')[2]
     sw={"@context":"https://schema.org","@type":"SoftwareApplication","name":t['name'],"url":t['url'],"applicationCategory":"DeveloperApplication","description":t['verdict']}
-    body=(f'<p class="sub"><a href="/">Rankings</a> › <a href="/category/{v["ranks"][0][0]["id"]}.html">{E(v["ranks"][0][0]["name"])}</a> › {E(t["name"])}</p>'
-      f'<h1><img src="https://www.google.com/s2/favicons?domain={dom}&sz=64" width="40" height="40" alt="" style="vertical-align:middle;border-radius:8px"> {E(t["name"])}</h1>'
-      f'<p class="sub">Ranked {rk}</p>'+share(path,t["name"]+' review · '+SITE)+f'<div class="card"><h2>Verdict</h2><p>{E(t["verdict"])}</p><p class="price">Pricing: {E(t["price"])} (always check the official pricing page)</p>'
-      f'<p>{"".join(f"<span class=tag>{E(x)}</span>" for x in t["tags"])}</p><p><a href="/go/{s}" data-tool="{s}" target="_blank" rel="sponsored nofollow noopener">Visit {E(t["name"])} ↗</a></p></div>'
-      +('<h2>Alternatives</h2><ul>'+''.join(f'<li><a href="/tools/{slug(a["name"])}.html">{E(a["name"])}</a>: {E(a["verdict"])}</li>' for a in alts)+'</ul>' if alts else '')
-      +('<h2>Related guides</h2><ul>'+''.join(f'<li><a href="/blog/{p["slug"]}.html">{E(p["title"])}</a></li>' for p in rel)+'</ul>' if rel else '')+'<aside data-promo="sidebar-card"></aside>')
+    body=rich_tool(s,v,rk,alts,rel)
     page(path,f'{t["name"]}: review, pricing notes & alternatives · {SITE}',f'{t["name"]}: {t["verdict"]} Ranked {", ".join(f"#{r} in {c["name"]}" for c,r in v["ranks"])}.',body,extra=ld(sw))
 
 # deals (only real, cited offers; codes only when Suraj adds them to affiliates.json)
@@ -233,10 +229,11 @@ for f,(path,title,desc) in TOP.items():
     s=s.replace('href="/style.css"','href="/style.min.css"')
     for js in ['app','promos','feed']: s=s.replace(f'src="/{js}.js"',f'src="/{js}.min.js"')
     s=re.sub(r'<!--rt-->.*?<!--/rt-->','',s,flags=re.S)
-    s=s.replace('</body>','<!--rt--><script src="/site.min.js" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script><!--/rt--></body>',1)
+    s=s.replace('</body>','<!--rt--><script src="/site.min.js" defer></script><script src="/features.min.js" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script><!--/rt--></body>',1)
     if 'preconnect' not in s: s=s.replace('<link rel="stylesheet"','<link rel="preconnect" href="https://www.google.com"><link rel="stylesheet"',1)
     if GSCM and 'google-site-verification' not in s: s=s.replace('</head>',GSCM+'</head>',1)
     open(f,'w').write(s)
+exec(open(os.path.join(ROOT,'build_features.py')).read())  # compare, embed, features.js
 today=datetime.date.today().isoformat()
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{BASE}{u}</loc><lastmod>{today}</lastmod></url>\n' for u in urls)+'</urlset>\n')
 open(INDEXNOW_KEY+'.txt','w').write(INDEXNOW_KEY)
