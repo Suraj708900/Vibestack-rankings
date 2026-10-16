@@ -157,7 +157,7 @@ page('/blog/',f'Blog: guides for vibe coders and AI builders · {SITE}','Practic
   +'</div><div data-feed="/feed.json" data-count="3"></div>',
   extra=ld({"@context":"https://schema.org","@type":"Blog","name":SITE+" Blog","url":BASE+"/blog/"}))
 posts_by_new=sorted(posts,key=lambda p:(p['date'],os.path.getmtime(f"content/blog/{p['slug']}.md")),reverse=True)
-LATEST='<section class="latest"><h2>Latest from the blog</h2><div class="grid">'+''.join(f'<a class="card" style="text-decoration:none;color:inherit" href="/blog/{p["slug"]}.html"><h3 style="margin:.2em 0">{E(p["title"])}</h3><p class="sub">{E(p["description"])}</p></a>' for p in posts_by_new[:6])+'</div><p><a href="/blog/">All guides →</a></p></section>'
+LATEST='<section class="latest"><h2>Latest from the blog</h2><div class="sc-grid">'+''.join(f'<a class="card sc-card blog-card" style="text-decoration:none;color:inherit" href="/blog/{p["slug"]}.html"><div class="ph">'+__import__('photos').picture(p.get('cover') or __import__('photos').BLOG.get(p['slug'],'p-35445090'))+f'<span class="ph-ov"></span></div><div class="sc-body"><h3 style="margin:.2em 0">{E(p["title"])}</h3><p class="sub l1">{E(p["description"])}</p></div></a>' for p in posts_by_new[:6])+'</div><p><a href="/blog/">All guides →</a></p></section>'
 urls.append('/submit.html')
 import legal
 for k,(lt,ld_,lb) in legal.PAGES.items():
@@ -176,8 +176,11 @@ six+=[{"y":"page","t":t_,"d":d_,"u":u_} for t_,d_,u_ in [("Get featured","Sponso
 json.dump(six,open('search-index.json','w'),ensure_ascii=False,separators=(',',':'))
 # trending (editor picks fallback; site.js swaps in real click data when there is enough)
 picks=[(c,c['tools'][0]) for c in cats][:6]
-TREND=('<section id="trending" class="trending"><h2>Editor\'s picks this week</h2><p class="sub">Our current #1 pick per use-case, chosen by us (not view counts). This switches to real click-based trends once there is enough data.</p><div class="grid">'
- +''.join(f'<a class="card" style="text-decoration:none;color:inherit" href="/tools/{slug(t["name"])}.html"><span class="tag">{E(c["name"])}</span><h3 style="margin:.4em 0"><img src="https://www.google.com/s2/favicons?domain={t["url"].split("/")[2]}&sz=64" width="22" height="22" alt="" loading="lazy" decoding="async" style="vertical-align:-4px;border-radius:5px;margin-right:6px">{E(t["name"])}</h3><p class="sub">{E(t["verdict"])}</p></a>' for c,t in picks)+'</div></section>')
+import photos as _PH
+_AF=json.load(open('affiliates.json'))['tools']
+TREND=('<section id="trending" class="trending"><h2>Editor\'s picks this week</h2><p class="sub">Our current #1 pick per use-case, chosen by us (not view counts). This switches to real click-based trends once there is enough data.</p><div class="sc-grid">'
+ +''.join(f'<article class="card sc-card">'+_PH.banner(c['id'],slug(t['name']),f'/img/tools/{slug(t["name"])}-logo.webp',t['name'],badge='<span class="rank-badge r1" title="Editorial #1 pick">#1</span>')
+   +f'<div class="sc-body"><span class="tag">{E(c["name"])}</span><h3><a href="/tools/{slug(t["name"])}.html">{E(t["name"])}</a></h3><p class="sub l1">{E(t["verdict"])}</p>{_PH.cta(slug(t["name"]),t["name"],_AF.get(slug(t["name"])),"cta-aff sm")}{_PH.voteline(slug(t["name"]))}</div></article>' for c,t in picks)+'</div></section>')
 # admin stats page
 page('/admin-stats.html',f'Stats · {SITE}','Promo and tool click stats.','''<h1>Stats</h1><p class="sub">Promo impressions, clicks and CTR, plus outbound tool clicks. Data comes from <code>/api/stats</code> (free Vercel Blob store). Impressions count once per promo per browser session; bots are ignored. Cached for 5 minutes.</p>
 <div class="bar"><select id="days"><option value="1">Last 24h</option><option value="7" selected>Last 7 days</option><option value="30">Last 30 days</option></select><button id="rf">Refresh</button><span id="st" class="sub" style="align-self:center"></span></div>

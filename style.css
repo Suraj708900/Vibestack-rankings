@@ -123,3 +123,5 @@ html[data-theme=light] .deal-code{background:linear-gradient(#fff,#fff) padding-
 html[data-theme=light] .sticky-cta{background:#fffffff2;border-color:#dfe3ea}
 .vote-line{font-size:13px;color:#9aa3b8;margin:4px 0 0!important;display:flex;gap:6px;align-items:center;flex-wrap:nowrap}.vb{min-width:40px;min-height:40px;padding:0;border-radius:999px;border:1px solid #2a3042;background:none;cursor:pointer}
 @media (prefers-reduced-motion:reduce){.cta-aff,.toast{transition:none}}
+.totd-ph{padding:0;overflow:hidden}.totd-ph .ph{aspect-ratio:21/9}@media(max-width:600px){.totd-ph .ph{aspect-ratio:16/9}}.totd-ph .rank-badge{top:10px;left:10px}
+.sc-body .tag{align-self:flex-start}
