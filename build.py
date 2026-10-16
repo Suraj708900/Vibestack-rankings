@@ -245,15 +245,17 @@ for f,(path,title,desc) in TOP.items():
     if GSCM and 'google-site-verification' not in s: s=s.replace('</head>',GSCM+'</head>',1)
     open(f,'w').write(s)
 exec(open(os.path.join(ROOT,'build_features.py')).read())  # compare, embed, features.js
+exec(open(os.path.join(ROOT,'products_sync.py')).read())  # catalog -> data/products-config.json (local only)
 exec(open(os.path.join(ROOT,'products_build.py')).read())  # /products + homepage teaser
-import accounts_build; accounts_build.run(globals())  # /signup /login /account
+import accounts_build; accounts_build.run(globals())
+import payments_build; payments_build.run(globals())  # /checkout.html, /admin-orders.html  # /signup /login /account
 import directory_build; directory_build.run(globals())  # /directory/, /t/<slug>, /hosting/
 today=datetime.date.today().isoformat()
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{BASE}{u}</loc><lastmod>{today}</lastmod></url>\n' for u in urls)+'</urlset>\n')
 open(INDEXNOW_KEY+'.txt','w').write(INDEXNOW_KEY)
 # Preserve GSC HTML verification file at site root (not listed in sitemap urls)
 open(GSC_HTML_FILE,'w').write(GSC_HTML_BODY)
-open('robots.txt','w').write(f'User-agent: *\nAllow: /\nDisallow: /admin-promos.html\nDisallow: /admin-stats.html\nDisallow: /account\nDisallow: /login\nDisallow: /signup\nDisallow: /api/\n\nSitemap: {BASE}/sitemap.xml\n')
+open('robots.txt','w').write(f'User-agent: *\nAllow: /\nDisallow: /admin-promos.html\nDisallow: /admin-stats.html\nDisallow: /account\nDisallow: /checkout.html\nDisallow: /admin-orders.html\nDisallow: /login\nDisallow: /signup\nDisallow: /api/\n\nSitemap: {BASE}/sitemap.xml\n')
 news=d.get('news',[])
 open('llms.txt','w').write(f'# {SITE}\n\n> Opinionated, ranked AI tools for vibe coders and builders, with honest verdicts, pricing notes (always pointing to official pricing) and official links. Sponsored placements are always labelled and never affect rankings.\n\n## Rankings\n'
  +''.join(f'- [{c["name"]}]({BASE}/category/{c["id"]}.html): {c["q"]} Picks: {", ".join(t["name"] for t in c["tools"])}\n' for c in cats)

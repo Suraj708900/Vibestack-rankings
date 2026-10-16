@@ -53,6 +53,19 @@
           "value": "no-store"
         }
       ]
+    },
+    {
+      "source": "/(checkout|admin-orders)(\\.html)?",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
     }
   ],
   "rewrites": [

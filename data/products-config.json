@@ -1,1 +1,69 @@
-{"whatsapp": ""}
+{
+ "whatsapp": "",
+ "_note": "Prices in INR are placeholders (low end of each indicative range) until /workspace/products/catalog.json is ready; build syncs name/price/file from it when present. 'file' is the private Blob pathname under products/ delivered after payment. All products are paid; the guide book is included with each product. paypal_link is a template ({email},{item},{usd},{order}); replace with a PayPal.me link (e.g. https://paypal.me/NAME/{usd}USD) later. price_usd values are placeholders (roughly the INR placeholder converted) until the catalog's suggested prices are synced.",
+ "upi": {
+  "pa": "7260920782@kotakbank",
+  "pn": "Suraj Kamdev"
+ },
+ "download_hours": 72,
+ "products": {
+  "ai-learning-kit": {
+   "name": "AI Learning Kit",
+   "price": 199,
+   "unit": "",
+   "file": "products/ai-learning-kit.zip",
+   "includes": "Guide book included",
+   "price_usd": 2.99
+  },
+  "ai-business-toolkit": {
+   "name": "AI Business Toolkit",
+   "price": 499,
+   "unit": "",
+   "file": "products/ai-business-toolkit.zip",
+   "includes": "Guide book included",
+   "price_usd": 5.99
+  },
+  "ai-prompt-library": {
+   "name": "AI Prompt Library",
+   "price": 99,
+   "unit": "",
+   "file": "products/ai-prompt-library.zip",
+   "includes": "Guide book included",
+   "price_usd": 1.99
+  },
+  "live-ai-training": {
+   "name": "Live AI Training",
+   "price": 299,
+   "unit": "per person",
+   "file": "products/live-ai-training.zip",
+   "includes": "Guide book included",
+   "price_usd": 3.99
+  },
+  "ai-receptionist-setup": {
+   "name": "AI Receptionist Setup",
+   "price": 3000,
+   "unit": "setup fee",
+   "file": "products/ai-receptionist-setup.zip",
+   "includes": "Guide book included",
+   "price_usd": 36
+  },
+  "ai-knowledge-membership": {
+   "name": "AI Knowledge Membership",
+   "price": 99,
+   "unit": "first month",
+   "file": "products/ai-knowledge-membership.zip",
+   "includes": "Guide book included",
+   "price_usd": 1.99
+  },
+  "industry-ai-kits": {
+   "name": "Industry-Specific AI Kits",
+   "price": 999,
+   "unit": "",
+   "file": "products/industry-ai-kits.zip",
+   "includes": "Guide book included",
+   "price_usd": 11.99
+  }
+ },
+ "paypal_email": "kamdevsuraj03@gmail.com",
+ "paypal_link": "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business={email}&item_name={item}&amount={usd}&currency_code=USD&invoice={order}"
+}

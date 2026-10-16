@@ -3,6 +3,8 @@ Allow: /
 Disallow: /admin-promos.html
 Disallow: /admin-stats.html
 Disallow: /account
+Disallow: /checkout.html
+Disallow: /admin-orders.html
 Disallow: /login
 Disallow: /signup
 Disallow: /api/
