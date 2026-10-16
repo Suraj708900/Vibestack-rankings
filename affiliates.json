@@ -420,6 +420,18 @@
    "start": "",
    "end": "",
    "status": "pending"
+  },
+  "hostinger": {
+   "name": "Hostinger",
+   "official_url": "https://www.hostinger.com/web-hosting",
+   "affiliate_url": "",
+   "program": "Hostinger Affiliate Program (https://www.hostinger.com/affiliates, signup https://affiliates.hostinger.com)",
+   "commission_note": "Official page: commission starts at 40% and grows with sales volume (checked 2026-10-16)",
+   "discount_code": "",
+   "discount_text": "",
+   "start": "",
+   "end": "",
+   "status": "pending"
   }
  }
 }
