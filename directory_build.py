@@ -6,12 +6,13 @@ def run(g):
     D=json.load(open('data/directory.json')); DN=D['departments']; T=D['tools']
     A=json.load(open('affiliates.json'))['tools']
     # /go/ fallback data (affiliates.json still wins in api/go.js)
-    json.dump({t['slug']:t['url'] for t in T},open('data/go-directory.json','w'),separators=(',',':'))
+    AL=D.get('aliases',{}); U={t['slug']:t['url'] for t in T}
+    json.dump({**{a:U[b] for a,b in AL.items() if b in U},**U},open('data/go-directory.json','w'),separators=(',',':'))
     json.dump([[t['name'],t['slug'],t['department'],t['description'][:160],t['logo']] for t in T],open('data/directory-index.json','w'),separators=(',',':'),ensure_ascii=False)
     by={}
     for t in T: by.setdefault(t['department'],[]).append(t)
     order=sorted(by,key=lambda k:-len(by[k]))
-    CSS='<style>.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}.dcard{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:inherit}.dcard img{border-radius:8px;flex:none}.dcard p{margin:.3em 0 0;font-size:.9em}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.chips a,.chips button{padding:4px 10px;border:1px solid #333a4d;border-radius:99px;background:none;color:inherit;cursor:pointer;font:inherit;text-decoration:none}.chips .on{border-color:#7c5cff;background:#7c5cff33}.shot{width:100%;max-width:640px;height:auto;border-radius:12px;border:1px solid #222838}</style>'
+    CSS='<style>.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}.dcard{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:inherit}.dcard img{border-radius:8px;flex:none}.dcard p{margin:.3em 0 0;font-size:.9em}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.chips a,.chips button{padding:4px 10px;border:1px solid #333a4d;border-radius:99px;background:none;color:inherit;cursor:pointer;font:inherit;text-decoration:none}.chips .on{border-color:#7c5cff;background:#7c5cff33}</style>'
     def card(t): return (f'<a class="card dcard" href="/t/{t["slug"]}.html"><img src="{t["logo"]}" width="40" height="40" alt="" loading="lazy" decoding="async">'
                          f'<span><b>{E(t["name"])}</b><p class="sub">{E(t["description"][:140])}</p></span></a>')
     chips=lambda cur:'<nav class="chips" aria-label="Departments"><a href="/directory/"'+(' class="on"' if cur is None else '')+'>All</a>'+''.join(f'<a href="/directory/{k}.html"'+(' class="on"' if k==cur else '')+f'>{E(DN[k])} ({len(by[k])})</a>' for k in order)+'</nav>'
@@ -46,13 +47,16 @@ fetch("/data/directory-index.json").then(function(r){return r.json()}).then(func
           f'<p>{E(t["description"])}</p><p class="sub">Source: {E(t["description_source"])}. Link verified live on {t["verified"]}.</p>'
           f'<p><a class="btn" href="/go/{s}" data-tool="{s}" target="_blank" rel="sponsored nofollow noopener">Visit {E(t["name"])} ↗</a></p>'
           +(f'<p><b>Our full review:</b> <a href="{t["curated_page"]}">{E(t["name"])} ranking & verdict</a></p>' if t['curated_page'] else '')
-          +(f'<img class="shot" src="{t["screenshot"]}" alt="{E(t["name"])} preview image" loading="lazy" decoding="async">' if t['screenshot'] else '')
           +'<div class="card" style="margin-top:14px"><h2>Pricing & deals</h2>'
           +(f'<p>{E(price)}</p>' if price else '<p>Pricing not yet verified by us. Check the official site for current plans and any free tier.</p>')
           +(f'<p>Promo code: <code>{E(code)}</code></p>' if code else '<p>Verified code not available yet.</p>')+'</div>'
           +('<h2>More in '+E(DN[t['department']])+'</h2><div class="dgrid">'+''.join(card(x) for x in rel)+'</div>' if rel else ''))
         ld_={"@context":"https://schema.org","@type":"SoftwareApplication","name":t['name'],"url":t['url'],"description":t['description'],"applicationCategory":DN[t['department']]}
         page(path,f'{t["name"]}: {DN[t["department"]]} AI tool · {SITE}',t['description'][:155],body+g['ld'](ld_))
+    for a,b in AL.items():  # merged duplicates: keep old URLs working
+        if b in U:
+            os.makedirs('t',exist_ok=True)
+            open(f't/{a}.html','w').write(f'<!doctype html><meta charset="utf-8"><title>Moved</title><meta name="robots" content="noindex"><link rel="canonical" href="{BASE}/t/{b}.html"><meta http-equiv="refresh" content="0;url=/t/{b}.html"><a href="/t/{b}.html">Moved here</a>')
     hosting(g)
 def hosting(g):
     p='hosting_build.py'
