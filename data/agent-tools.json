@@ -15,7 +15,10 @@
    "stars": 33658,
    "license": "MIT",
    "url": "https://github.com/github/github-mcp-server",
-   "owner": "github"
+   "owner": "github",
+   "install": "claude mcp add github -e GITHUB_PERSONAL_ACCESS_TOKEN=$GITHUB_PAT -- docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server",
+   "config": "{\n  \"servers\": {\n    \"github\": {\n      \"type\": \"http\",\n      \"url\": \"https://api.githubcopilot.com/mcp/\"\n    }\n  }\n}",
+   "readme": "https://github.com/github/github-mcp-server/blob/main/README.md"
   },
   {
    "repo": "microsoft/playwright-mcp",
@@ -30,7 +33,10 @@
    "stars": 38219,
    "license": "Apache-2.0",
    "url": "https://github.com/microsoft/playwright-mcp",
-   "owner": "microsoft"
+   "owner": "microsoft",
+   "install": "claude mcp add playwright npx @playwright/mcp@latest",
+   "config": "{\n  \"mcpServers\": {\n    \"playwright\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"@playwright/mcp@latest\"\n      ]\n    }\n  }\n}",
+   "readme": "https://github.com/microsoft/playwright-mcp/blob/main/README.md"
   },
   {
    "repo": "upstash/context7",
@@ -45,7 +51,10 @@
    "stars": 63119,
    "license": "MIT",
    "url": "https://github.com/upstash/context7",
-   "owner": "upstash"
+   "owner": "upstash",
+   "install": "npx ctx7 setup",
+   "config": null,
+   "readme": "https://github.com/upstash/context7/blob/master/README.md"
   },
   {
    "repo": "modelcontextprotocol/servers",
@@ -60,7 +69,10 @@
    "stars": 91302,
    "license": null,
    "url": "https://github.com/modelcontextprotocol/servers",
-   "owner": "modelcontextprotocol"
+   "owner": "modelcontextprotocol",
+   "install": "npx -y @modelcontextprotocol/server-memory",
+   "config": "{\n  \"mcpServers\": {\n    \"filesystem\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-filesystem\", \"/path/to/allowed/files\"]\n    },\n    \"git\": {\n      \"command\": \"uvx\",\n      \"args\": [\"mcp-server-git\", \"--repository\", \"path/to/git/repo\"]\n    },\n    \"github\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-github\"],\n      \"env\": {\n        \"GITHUB_PERSONAL_ACCESS_TOKEN\": \"<YOUR_TOKEN>\"\n      }\n    },\n    \"postgres\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-postgres\", \"postgresql://localhost/mydb\"]\n    }\n  }\n}",
+   "readme": "https://github.com/modelcontextprotocol/servers/blob/main/README.md"
   },
   {
    "repo": "supabase/mcp",
@@ -75,7 +87,10 @@
    "stars": 2953,
    "license": "Apache-2.0",
    "url": "https://github.com/supabase/mcp",
-   "owner": "supabase"
+   "owner": "supabase",
+   "install": null,
+   "config": "{\n  \"mcpServers\": {\n    \"supabase\": {\n      \"type\": \"http\",\n      \"url\": \"https://mcp.supabase.com/mcp\"\n    }\n  }\n}",
+   "readme": "https://github.com/supabase/mcp/blob/main/README.md"
   },
   {
    "repo": "stripe/ai",
@@ -91,7 +106,10 @@
    "stars": 1952,
    "license": "MIT",
    "url": "https://github.com/stripe/ai",
-   "owner": "stripe"
+   "owner": "stripe",
+   "install": "npx skills add https://docs.stripe.com",
+   "config": null,
+   "readme": "https://github.com/stripe/ai/blob/main/README.md"
   },
   {
    "repo": "cloudflare/mcp-server-cloudflare",
@@ -106,7 +124,10 @@
    "stars": 4384,
    "license": "Apache-2.0",
    "url": "https://github.com/cloudflare/mcp-server-cloudflare",
-   "owner": "cloudflare"
+   "owner": "cloudflare",
+   "install": null,
+   "config": null,
+   "readme": "https://github.com/cloudflare/mcp-server-cloudflare/blob/main/README.md"
   },
   {
    "repo": "firecrawl/firecrawl-mcp-server",
@@ -121,7 +142,10 @@
    "stars": 7611,
    "license": "MIT",
    "url": "https://github.com/firecrawl/firecrawl-mcp-server",
-   "owner": "firecrawl"
+   "owner": "firecrawl",
+   "install": "npm install -g firecrawl-mcp",
+   "config": "{\n  \"mcpServers\": {\n    \"mcp-server-firecrawl\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"firecrawl-mcp\"],\n      \"env\": {\n        \"FIRECRAWL_API_KEY\": \"YOUR_API_KEY\"\n      }\n    }\n  }\n}",
+   "readme": "https://github.com/firecrawl/firecrawl-mcp-server/blob/main/README.md"
   },
   {
    "repo": "exa-labs/exa-mcp-server",
@@ -136,7 +160,10 @@
    "stars": 5135,
    "license": "MIT",
    "url": "https://github.com/exa-labs/exa-mcp-server",
-   "owner": "exa-labs"
+   "owner": "exa-labs",
+   "install": "codex mcp add exa --url https://mcp.exa.ai/mcp",
+   "config": "{\n  \"mcpServers\": {\n    \"exa\": {\n      \"type\": \"streamable-http\",\n      \"url\": \"https://mcp.exa.ai/mcp\",\n    }\n  }\n}",
+   "readme": "https://github.com/exa-labs/exa-mcp-server/blob/main/README.md"
   },
   {
    "repo": "makenotion/notion-mcp-server",
@@ -151,7 +178,10 @@
    "stars": 4668,
    "license": "MIT",
    "url": "https://github.com/makenotion/notion-mcp-server",
-   "owner": "makenotion"
+   "owner": "makenotion",
+   "install": null,
+   "config": "{\n  \"mcpServers\": {\n    \"notionApi\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@notionhq/notion-mcp-server\"],\n      \"env\": {\n        \"NOTION_TOKEN\": \"ntn_****\"\n      }\n    }\n  }\n}",
+   "readme": "https://github.com/makenotion/notion-mcp-server/blob/main/README.md"
   },
   {
    "repo": "korotovsky/slack-mcp-server",
@@ -165,7 +195,10 @@
    "stars": 1869,
    "license": "MIT",
    "url": "https://github.com/korotovsky/slack-mcp-server",
-   "owner": "korotovsky"
+   "owner": "korotovsky",
+   "install": null,
+   "config": null,
+   "readme": "https://github.com/korotovsky/slack-mcp-server/blob/master/README.md"
   },
   {
    "repo": "getsentry/toolkit",
@@ -181,7 +214,10 @@
    "stars": 929,
    "license": null,
    "url": "https://github.com/getsentry/toolkit",
-   "owner": "getsentry"
+   "owner": "getsentry",
+   "install": "npx @sentry/mcp-server@latest --access-token=sentry-user-token",
+   "config": "{\n  \"mcpServers\": {\n    \"sentry\": {\n      \"url\": \"https://mcp.sentry.dev/mcp\",\n      \"headers\": {\n        \"Authorization\": \"Sentry-Bearer ${SENTRY_ACCESS_TOKEN}\"\n      }\n    }\n  }\n}",
+   "readme": "https://github.com/getsentry/toolkit/blob/main/README.md"
   },
   {
    "repo": "awslabs/mcp",
@@ -196,7 +232,10 @@
    "stars": 9783,
    "license": "Apache-2.0",
    "url": "https://github.com/awslabs/mcp",
-   "owner": "awslabs"
+   "owner": "awslabs",
+   "install": null,
+   "config": "{\n  \"mcpServers\": {\n    \"awslabs-core-mcp-server\": {\n      \"command\": \"uvx\",\n      \"args\": [\n        \"awslabs.core-mcp-server@latest\"\n      ],\n      \"env\": {\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\n      }\n    }\n  }\n}",
+   "readme": "https://github.com/awslabs/mcp/blob/main/README.md"
   },
   {
    "repo": "googleapis/mcp-toolbox",
@@ -212,7 +251,10 @@
    "stars": 16668,
    "license": "Apache-2.0",
    "url": "https://github.com/googleapis/mcp-toolbox",
-   "owner": "googleapis"
+   "owner": "googleapis",
+   "install": "brew install mcp-toolbox",
+   "config": "{\n  \"mcpServers\": {\n    \"toolbox-postgres\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@toolbox-sdk/server\",\n        \"--prebuilt=postgres\",\n        \"--stdio\"\n      ]\n    }\n  }\n}",
+   "readme": "https://github.com/googleapis/mcp-toolbox/blob/main/README.md"
   },
   {
    "repo": "mongodb-js/mongodb-mcp-server",
@@ -227,7 +269,10 @@
    "stars": 1143,
    "license": "Apache-2.0",
    "url": "https://github.com/mongodb-js/mongodb-mcp-server",
-   "owner": "mongodb-js"
+   "owner": "mongodb-js",
+   "install": "npx -y mongodb-mcp-server@latest setup",
+   "config": "{\n  \"mcpServers\": {\n    \"MongoDB\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"mongodb-mcp-server@latest\", \"--readOnly\"],\n      \"env\": {\n        \"MDB_MCP_CONNECTION_STRING\": \"mongodb://localhost:27017/myDatabase\"\n      }\n    }\n  }\n}",
+   "readme": "https://github.com/mongodb-js/mongodb-mcp-server/blob/main/README.md"
   },
   {
    "repo": "neondatabase/mcp-server-neon",
@@ -242,7 +287,10 @@
    "stars": 652,
    "license": "MIT",
    "url": "https://github.com/neondatabase/mcp-server-neon",
-   "owner": "neondatabase"
+   "owner": "neondatabase",
+   "install": "npx add-mcp https://mcp.neon.tech/mcp",
+   "config": "{\n  \"mcpServers\": {\n    \"Neon\": {\n      \"type\": \"http\",\n      \"url\": \"https://mcp.neon.tech/mcp?category=projects&category=branches&category=endpoints&category=querying&category=schema\"\n    }\n  }\n}",
+   "readme": "https://github.com/neondatabase/mcp-server-neon/blob/main/README.md"
   },
   {
    "repo": "grafana/mcp-grafana",
@@ -257,7 +305,10 @@
    "stars": 3567,
    "license": "Apache-2.0",
    "url": "https://github.com/grafana/mcp-grafana",
-   "owner": "grafana"
+   "owner": "grafana",
+   "install": "uvx mcp-grafana",
+   "config": "{\n  \"mcpServers\": {\n    \"grafana\": {\n      \"command\": \"uvx\",\n      \"args\": [\"mcp-grafana\"],\n      \"env\": {\n        \"GRAFANA_URL\": \"http://localhost:3000\",\n        \"GRAFANA_SERVICE_ACCOUNT_TOKEN\": \"<your service account token>\"\n      }\n    }\n  }\n}",
+   "readme": "https://github.com/grafana/mcp-grafana/blob/main/README.md"
   },
   {
    "repo": "hashicorp/terraform-mcp-server",
@@ -272,7 +323,10 @@
    "stars": 1550,
    "license": "MPL-2.0",
    "url": "https://github.com/hashicorp/terraform-mcp-server",
-   "owner": "hashicorp"
+   "owner": "hashicorp",
+   "install": null,
+   "config": "{\n  \"mcpServers\": {\n    \"terraform\": {\n      \"command\": \"docker\",\n      \"args\": [\n        \"run\",\n        \"-i\",\n        \"--rm\",\n        \"-e\", \"TFE_ADDRESS=<<PASTE_TFE_ADDRESS_HERE>>\",\n        \"-e\", \"TFE_TOKEN=<<PASTE_TFE_TOKEN_HERE>>\",\n        \"hashicorp/terraform-mcp-server:1.3.0\"\n      ]\n    }\n  }\n}",
+   "readme": "https://github.com/hashicorp/terraform-mcp-server/blob/main/README.md"
   },
   {
    "repo": "ComposioHQ/composio",
@@ -288,7 +342,10 @@
    "stars": 30579,
    "license": "MIT",
    "url": "https://github.com/ComposioHQ/composio",
-   "owner": "ComposioHQ"
+   "owner": "ComposioHQ",
+   "install": "curl -fsSL https://composio.dev/install | sh",
+   "config": null,
+   "readme": "https://github.com/ComposioHQ/composio/blob/next/README.md"
   },
   {
    "repo": "stacklok/toolhive",
@@ -304,7 +361,10 @@
    "stars": 2286,
    "license": "Apache-2.0",
    "url": "https://github.com/stacklok/toolhive",
-   "owner": "stacklok"
+   "owner": "stacklok",
+   "install": null,
+   "config": null,
+   "readme": "https://github.com/stacklok/toolhive/blob/main/README.md"
   },
   {
    "repo": "docker/mcp-gateway",
@@ -320,7 +380,10 @@
    "stars": 1601,
    "license": "MIT",
    "url": "https://github.com/docker/mcp-gateway",
-   "owner": "docker"
+   "owner": "docker",
+   "install": "# Run the MCP gateway (stdio, using the default profile)\ndocker mcp gateway run",
+   "config": null,
+   "readme": "https://github.com/docker/mcp-gateway/blob/main/README.md"
   },
   {
    "repo": "modelcontextprotocol/inspector",
@@ -336,7 +399,10 @@
    "stars": 11084,
    "license": null,
    "url": "https://github.com/modelcontextprotocol/inspector",
-   "owner": "modelcontextprotocol"
+   "owner": "modelcontextprotocol",
+   "install": "npx @modelcontextprotocol/inspector                   # web UI (default)\nnpx @modelcontextprotocol/inspector --cli             # CLI\nnpx @modelcontextprotocol/inspector --tui             # TUI\nnpx -p @modelcontextprotocol/inspector mcpdo --help   # mcpdo",
+   "config": null,
+   "readme": "https://github.com/modelcontextprotocol/inspector/blob/main/README.md"
   },
   {
    "repo": "cli/cli",
@@ -351,7 +417,10 @@
    "stars": 46661,
    "license": "MIT",
    "url": "https://github.com/cli/cli",
-   "owner": "cli"
+   "owner": "cli",
+   "install": "# Install the skill (user scope recommended)\ngh skill install cli/cli gh --scope user\n\n# Update the skill after a `gh` release\ngh skill update gh",
+   "config": null,
+   "readme": "https://github.com/cli/cli/blob/trunk/README.md"
   },
   {
    "repo": "vercel/vercel",
@@ -366,7 +435,10 @@
    "stars": 16395,
    "license": "Apache-2.0",
    "url": "https://github.com/vercel/vercel",
-   "owner": "vercel"
+   "owner": "vercel",
+   "install": "npm i -g vercel",
+   "config": null,
+   "readme": "https://github.com/vercel/vercel/blob/main/README.md"
   },
   {
    "repo": "vercel-labs/mcp-handler",
@@ -381,7 +453,10 @@
    "stars": 686,
    "license": null,
    "url": "https://github.com/vercel-labs/mcp-handler",
-   "owner": "vercel-labs"
+   "owner": "vercel-labs",
+   "install": "npm install mcp-handler@^2 @modelcontextprotocol/server@^2 zod@^4",
+   "config": null,
+   "readme": "https://github.com/vercel-labs/mcp-handler/blob/main/README.md"
   },
   {
    "repo": "supabase/cli",
@@ -396,7 +471,10 @@
    "stars": 2437,
    "license": null,
    "url": "https://github.com/supabase/cli",
-   "owner": "supabase"
+   "owner": "supabase",
+   "install": "# YOLO\ncurl -fsSL https://raw.githubusercontent.com/supabase/cli/main/install | bash\n\n# npm\nnpm install -D supabase                   # or bun/pnpm/yarn add -D supabase\nnpm install -D supabase@beta              # beta channel\n\n# macOS and Linux\nbrew install supabase/tap/supabase        # always up to date\nbrew install supabase                     # official formula, may be delayed\nbrew install supabase/tap/supabase-beta   # beta channel\n\n# Windows\nscoop bucket add supabase https://github.com/supabase/scoop-bucket.git\nscoop install supabase\nscoop install supabase-beta               # beta channel\n\n# Linux packages\n# Download .apk, .deb, .rpm, or .pkg.tar.zst from GitHub Releases.",
+   "config": null,
+   "readme": "https://github.com/supabase/cli/blob/develop/README.md"
   },
   {
    "repo": "stripe/stripe-cli",
@@ -411,7 +489,10 @@
    "stars": 2205,
    "license": "Apache-2.0",
    "url": "https://github.com/stripe/stripe-cli",
-   "owner": "stripe"
+   "owner": "stripe",
+   "install": "npm install -g @stripe/cli",
+   "config": null,
+   "readme": "https://github.com/stripe/stripe-cli/blob/master/README.md"
   }
  ]
 }

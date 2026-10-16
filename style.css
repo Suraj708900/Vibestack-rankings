@@ -154,3 +154,11 @@ html[data-theme=light] .sticky-cta{background:#fffffff2;border-color:#dfe3ea}
 .at-kind{font-size:11px;color:#7f869a;margin-right:auto}.at-btn{font-size:12.5px;text-decoration:none;border:1px solid #2c3448;border-radius:8px;padding:6px 10px;color:#c9cede}.at-btn.pri{background:#7c5cff;border-color:#7c5cff;color:#fff}.at-btn:hover{filter:brightness(1.15)}
 .at-teaser{margin:36px 0;padding:28px 20px;border:1px solid #222838;border-radius:20px;background:radial-gradient(50% 80% at 50% 0,#7c5cff1f,transparent),#0f121a;text-align:center}.at-teaser h2{font-size:clamp(28px,5vw,40px);margin:.3em 0 .1em}.at-teaser .at-grid{text-align:left;margin-top:18px}
 @media(max-width:640px){.at-stats{grid-template-columns:repeat(2,1fr)}.at-grid{grid-template-columns:1fr}.at-hero{padding-top:28px}.at-badges span{min-width:40px}}
+.at-code{margin:0 0 14px;border:1px solid #232a3b;border-radius:12px;background:#0a0c12}.at-code summary{cursor:pointer;list-style:none;padding:9px 12px;font-size:12.5px;color:#b3a3ff;font-weight:600}.at-code summary::-webkit-details-marker{display:none}
+.at-code summary:before{content:"</>";font-family:ui-monospace,monospace;margin-right:7px;color:#20d3c2}.at-code[open] summary{border-bottom:1px solid #1c2232}
+.at-cbox{padding:8px}.at-ctabs{display:flex;gap:4px;align-items:center;margin-bottom:6px}.at-ctabs button{background:none;border:1px solid transparent;color:#7f869a;font-size:11.5px;border-radius:7px;padding:4px 9px;cursor:pointer}
+.at-ctabs button.on{background:#171c2a;border-color:#2c3448;color:#fff}.at-ctabs .at-copy{margin-left:auto;border-color:#2c3448;color:#c9cede}.at-ctabs .at-copy.ok{color:#20d3c2;border-color:#20d3c2}
+.at-cbox pre{margin:0;max-height:260px;overflow:auto;background:#06080d;border-radius:8px;padding:10px 12px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#d6dcf0;white-space:pre}.at-cbox pre[hidden]{display:none}
+.at-rsrc{font-size:11px;color:#6b7286;margin:0;padding:0 12px 9px}.at-rsrc a{color:#8ab4ff}
+.at-none{padding:9px 12px;font-size:12px;color:#7f869a;display:flex;justify-content:space-between;gap:8px}.at-none a{color:#8ab4ff;white-space:nowrap}
+.at-card{min-width:0}.at-grid{align-items:start}
