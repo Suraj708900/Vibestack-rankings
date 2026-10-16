@@ -1,0 +1,417 @@
+{
+ "fetched": "2026-10-16T07:20Z",
+ "source": "GitHub REST API /repos/{owner}/{repo}",
+ "tools": [
+  {
+   "repo": "github/github-mcp-server",
+   "name": "GitHub MCP Server",
+   "tagline": "Official GitHub control for agents",
+   "tags": [
+    "mcp",
+    "dev"
+   ],
+   "brand": "",
+   "description": "GitHub's official MCP server: lets agents read repos and code, manage issues and pull requests, inspect Actions runs and code-security alerts.",
+   "stars": 33658,
+   "license": "MIT",
+   "url": "https://github.com/github/github-mcp-server",
+   "owner": "github"
+  },
+  {
+   "repo": "microsoft/playwright-mcp",
+   "name": "Playwright MCP",
+   "tagline": "Browser automation by Microsoft",
+   "tags": [
+    "mcp",
+    "web"
+   ],
+   "brand": "",
+   "description": "Gives agents a real browser through Playwright, driven by structured accessibility snapshots instead of screenshots.",
+   "stars": 38219,
+   "license": "Apache-2.0",
+   "url": "https://github.com/microsoft/playwright-mcp",
+   "owner": "microsoft"
+  },
+  {
+   "repo": "upstash/context7",
+   "name": "Context7",
+   "tagline": "Up-to-date docs for AI agents",
+   "tags": [
+    "mcp",
+    "dev"
+   ],
+   "brand": "",
+   "description": "Pulls current, version-specific library documentation and code examples into your agent's context to cut hallucinated APIs.",
+   "stars": 63119,
+   "license": "MIT",
+   "url": "https://github.com/upstash/context7",
+   "owner": "upstash"
+  },
+  {
+   "repo": "modelcontextprotocol/servers",
+   "name": "MCP Reference Servers",
+   "tagline": "Filesystem, Git, Fetch, Memory and more",
+   "tags": [
+    "mcp",
+    "dev"
+   ],
+   "brand": "",
+   "description": "The official reference servers from the MCP project: Filesystem, Git, Fetch, Memory, Sequential Thinking, Time and Everything.",
+   "stars": 91302,
+   "license": null,
+   "url": "https://github.com/modelcontextprotocol/servers",
+   "owner": "modelcontextprotocol"
+  },
+  {
+   "repo": "supabase/mcp",
+   "name": "Supabase MCP",
+   "tagline": "Connect Supabase to your agent",
+   "tags": [
+    "mcp",
+    "data"
+   ],
+   "brand": "supabase",
+   "description": "Official Supabase server: manage projects, run SQL, apply migrations, fetch logs and generate types from your agent.",
+   "stars": 2953,
+   "license": "Apache-2.0",
+   "url": "https://github.com/supabase/mcp",
+   "owner": "supabase"
+  },
+  {
+   "repo": "stripe/ai",
+   "name": "Stripe Agent Toolkit",
+   "tagline": "Payments tools for agents",
+   "tags": [
+    "mcp",
+    "cli",
+    "dev"
+   ],
+   "brand": "stripe",
+   "description": "Stripe's official AI repo, including the agent toolkit and MCP server for creating customers, products, payment links and more.",
+   "stars": 1952,
+   "license": "MIT",
+   "url": "https://github.com/stripe/ai",
+   "owner": "stripe"
+  },
+  {
+   "repo": "cloudflare/mcp-server-cloudflare",
+   "name": "Cloudflare MCP",
+   "tagline": "Workers, logs, DNS and more",
+   "tags": [
+    "mcp",
+    "ops"
+   ],
+   "brand": "",
+   "description": "Cloudflare's official MCP servers for Workers, observability, Radar, browser rendering and other Cloudflare services.",
+   "stars": 4384,
+   "license": "Apache-2.0",
+   "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+   "owner": "cloudflare"
+  },
+  {
+   "repo": "firecrawl/firecrawl-mcp-server",
+   "name": "Firecrawl MCP",
+   "tagline": "Web scraping and search",
+   "tags": [
+    "mcp",
+    "web"
+   ],
+   "brand": "firecrawl",
+   "description": "Official Firecrawl server that adds scraping, crawling, search and structured extraction to Cursor, Claude and other clients.",
+   "stars": 7611,
+   "license": "MIT",
+   "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+   "owner": "firecrawl"
+  },
+  {
+   "repo": "exa-labs/exa-mcp-server",
+   "name": "Exa MCP",
+   "tagline": "AI-native web search",
+   "tags": [
+    "mcp",
+    "web"
+   ],
+   "brand": "exa",
+   "description": "Official Exa server for web search, crawling and code search from inside your agent.",
+   "stars": 5135,
+   "license": "MIT",
+   "url": "https://github.com/exa-labs/exa-mcp-server",
+   "owner": "exa-labs"
+  },
+  {
+   "repo": "makenotion/notion-mcp-server",
+   "name": "Notion MCP",
+   "tagline": "Official Notion workspace access",
+   "tags": [
+    "mcp",
+    "data"
+   ],
+   "brand": "notion",
+   "description": "Notion's official MCP server: search, read and update pages and databases through the Notion API.",
+   "stars": 4668,
+   "license": "MIT",
+   "url": "https://github.com/makenotion/notion-mcp-server",
+   "owner": "makenotion"
+  },
+  {
+   "repo": "korotovsky/slack-mcp-server",
+   "name": "Slack MCP Server",
+   "tagline": "Community Slack control",
+   "tags": [
+    "mcp"
+   ],
+   "brand": "",
+   "description": "Popular community Slack MCP server: read channels, threads and DMs, search messages and post, with stdio and SSE transports.",
+   "stars": 1869,
+   "license": "MIT",
+   "url": "https://github.com/korotovsky/slack-mcp-server",
+   "owner": "korotovsky"
+  },
+  {
+   "repo": "getsentry/toolkit",
+   "name": "Sentry Agent Toolkit",
+   "tagline": "Agentic tooling for Sentry",
+   "tags": [
+    "mcp",
+    "ops",
+    "security"
+   ],
+   "brand": "",
+   "description": "Sentry's agent tooling (the former sentry-mcp repo): pull issues, errors and traces into your agent to debug faster.",
+   "stars": 929,
+   "license": null,
+   "url": "https://github.com/getsentry/toolkit",
+   "owner": "getsentry"
+  },
+  {
+   "repo": "awslabs/mcp",
+   "name": "AWS MCP Servers",
+   "tagline": "Open-source MCP for AWS",
+   "tags": [
+    "mcp",
+    "ops"
+   ],
+   "brand": "",
+   "description": "A suite of AWS Labs MCP servers covering docs, CDK, cost analysis, databases, serverless and more.",
+   "stars": 9783,
+   "license": "Apache-2.0",
+   "url": "https://github.com/awslabs/mcp",
+   "owner": "awslabs"
+  },
+  {
+   "repo": "googleapis/mcp-toolbox",
+   "name": "MCP Toolbox for Databases",
+   "tagline": "Google's database MCP server",
+   "tags": [
+    "mcp",
+    "data",
+    "security"
+   ],
+   "brand": "",
+   "description": "Open-source MCP server from Google for Postgres, MySQL, BigQuery, Spanner and more, with auth and connection pooling built in.",
+   "stars": 16668,
+   "license": "Apache-2.0",
+   "url": "https://github.com/googleapis/mcp-toolbox",
+   "owner": "googleapis"
+  },
+  {
+   "repo": "mongodb-js/mongodb-mcp-server",
+   "name": "MongoDB MCP Server",
+   "tagline": "MongoDB and Atlas access",
+   "tags": [
+    "mcp",
+    "data"
+   ],
+   "brand": "",
+   "description": "Official MongoDB server to query databases and manage Atlas clusters from your agent.",
+   "stars": 1143,
+   "license": "Apache-2.0",
+   "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+   "owner": "mongodb-js"
+  },
+  {
+   "repo": "neondatabase/mcp-server-neon",
+   "name": "Neon MCP Server",
+   "tagline": "Serverless Postgres control",
+   "tags": [
+    "mcp",
+    "data"
+   ],
+   "brand": "",
+   "description": "Official Neon server for managing projects, branches and running SQL against Neon Postgres.",
+   "stars": 652,
+   "license": "MIT",
+   "url": "https://github.com/neondatabase/mcp-server-neon",
+   "owner": "neondatabase"
+  },
+  {
+   "repo": "grafana/mcp-grafana",
+   "name": "Grafana MCP",
+   "tagline": "Dashboards, alerts and queries",
+   "tags": [
+    "mcp",
+    "ops"
+   ],
+   "brand": "",
+   "description": "Grafana's official server: search dashboards, query Prometheus and Loki, and inspect alerts and incidents.",
+   "stars": 3567,
+   "license": "Apache-2.0",
+   "url": "https://github.com/grafana/mcp-grafana",
+   "owner": "grafana"
+  },
+  {
+   "repo": "hashicorp/terraform-mcp-server",
+   "name": "Terraform MCP Server",
+   "tagline": "Infrastructure as code for agents",
+   "tags": [
+    "mcp",
+    "ops"
+   ],
+   "brand": "",
+   "description": "HashiCorp's official server for Terraform Registry lookups, providers, modules and workspace operations.",
+   "stars": 1550,
+   "license": "MPL-2.0",
+   "url": "https://github.com/hashicorp/terraform-mcp-server",
+   "owner": "hashicorp"
+  },
+  {
+   "repo": "ComposioHQ/composio",
+   "name": "Composio",
+   "tagline": "1000+ toolkits with managed auth",
+   "tags": [
+    "mcp",
+    "dev",
+    "security"
+   ],
+   "brand": "",
+   "description": "Toolkits, tool search, authentication and a sandbox so agents can act across many apps.",
+   "stars": 30579,
+   "license": "MIT",
+   "url": "https://github.com/ComposioHQ/composio",
+   "owner": "ComposioHQ"
+  },
+  {
+   "repo": "stacklok/toolhive",
+   "name": "ToolHive",
+   "tagline": "Run MCP servers securely",
+   "tags": [
+    "mcp",
+    "cli",
+    "security"
+   ],
+   "brand": "toolhive",
+   "description": "Run and manage MCP servers in isolated containers with secrets handling, permission profiles and a registry.",
+   "stars": 2286,
+   "license": "Apache-2.0",
+   "url": "https://github.com/stacklok/toolhive",
+   "owner": "stacklok"
+  },
+  {
+   "repo": "docker/mcp-gateway",
+   "name": "Docker MCP Gateway",
+   "tagline": "docker mcp CLI plugin",
+   "tags": [
+    "mcp",
+    "cli",
+    "security"
+   ],
+   "brand": "",
+   "description": "Docker's MCP gateway and CLI plugin: run containerized MCP servers behind one gateway with isolation and secrets.",
+   "stars": 1601,
+   "license": "MIT",
+   "url": "https://github.com/docker/mcp-gateway",
+   "owner": "docker"
+  },
+  {
+   "repo": "modelcontextprotocol/inspector",
+   "name": "MCP Inspector",
+   "tagline": "Test and debug MCP servers",
+   "tags": [
+    "cli",
+    "dev",
+    "security"
+   ],
+   "brand": "",
+   "description": "The official visual testing tool for MCP servers: inspect tools, resources and prompts before you ship.",
+   "stars": 11084,
+   "license": null,
+   "url": "https://github.com/modelcontextprotocol/inspector",
+   "owner": "modelcontextprotocol"
+  },
+  {
+   "repo": "cli/cli",
+   "name": "GitHub CLI",
+   "tagline": "gh, GitHub from the terminal",
+   "tags": [
+    "cli",
+    "dev"
+   ],
+   "brand": "",
+   "description": "GitHub's official command line tool. Agents use gh for PRs, issues, releases, Actions and API calls.",
+   "stars": 46661,
+   "license": "MIT",
+   "url": "https://github.com/cli/cli",
+   "owner": "cli"
+  },
+  {
+   "repo": "vercel/vercel",
+   "name": "Vercel CLI",
+   "tagline": "Deploy from any agent",
+   "tags": [
+    "cli",
+    "dev"
+   ],
+   "brand": "vercel",
+   "description": "The Vercel monorepo, home of the vercel CLI for deploys, env vars, domains and logs.",
+   "stars": 16395,
+   "license": "Apache-2.0",
+   "url": "https://github.com/vercel/vercel",
+   "owner": "vercel"
+  },
+  {
+   "repo": "vercel-labs/mcp-handler",
+   "name": "Vercel MCP Handler",
+   "tagline": "Ship MCP servers on Next.js",
+   "tags": [
+    "mcp",
+    "dev"
+   ],
+   "brand": "",
+   "description": "Spin up an MCP server on Next.js, Nuxt, Svelte and more, deployable on Vercel.",
+   "stars": 686,
+   "license": null,
+   "url": "https://github.com/vercel-labs/mcp-handler",
+   "owner": "vercel-labs"
+  },
+  {
+   "repo": "supabase/cli",
+   "name": "Supabase CLI",
+   "tagline": "Migrations, local dev, edge functions",
+   "tags": [
+    "cli",
+    "data"
+   ],
+   "brand": "supabase",
+   "description": "Manage Postgres migrations, run Supabase locally, deploy edge functions and generate types.",
+   "stars": 2437,
+   "license": null,
+   "url": "https://github.com/supabase/cli",
+   "owner": "supabase"
+  },
+  {
+   "repo": "stripe/stripe-cli",
+   "name": "Stripe CLI",
+   "tagline": "Stripe from the terminal",
+   "tags": [
+    "cli",
+    "dev"
+   ],
+   "brand": "stripe",
+   "description": "Test webhooks, trigger events, tail logs and call the Stripe API from your terminal or agent.",
+   "stars": 2205,
+   "license": "Apache-2.0",
+   "url": "https://github.com/stripe/stripe-cli",
+   "owner": "stripe"
+  }
+ ]
+}

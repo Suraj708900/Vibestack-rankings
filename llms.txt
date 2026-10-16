@@ -62,6 +62,36 @@
 - [Vibe Coding Tools List: Every Tool You Need, by Stage](https://vibestack-rankings.vercel.app/blog/vibe-coding-tools-list.html): A curated vibe coding tools list organised by stage: idea and UI, app builders, AI code editors and agents, backend, AI APIs, deployment, automation and media.
 - [Windsurf vs Cursor: Which AI IDE Should You Use?](https://vibestack-rankings.vercel.app/blog/windsurf-vs-cursor.html): Windsurf vs Cursor compared for builders: editor experience, agent features, pricing model, and how to decide between the two AI-first IDEs.
 
+## Agent Tools
+- [Agent Tools](https://vibestack-rankings.vercel.app/agent-tools.html): open-source MCP servers and CLI tools for AI agents
+- [GitHub MCP Server](https://github.com/github/github-mcp-server): Official GitHub control for agents
+- [Playwright MCP](https://github.com/microsoft/playwright-mcp): Browser automation by Microsoft
+- [Context7](https://github.com/upstash/context7): Up-to-date docs for AI agents
+- [MCP Reference Servers](https://github.com/modelcontextprotocol/servers): Filesystem, Git, Fetch, Memory and more
+- [Supabase MCP](https://github.com/supabase/mcp): Connect Supabase to your agent
+- [Stripe Agent Toolkit](https://github.com/stripe/ai): Payments tools for agents
+- [Cloudflare MCP](https://github.com/cloudflare/mcp-server-cloudflare): Workers, logs, DNS and more
+- [Firecrawl MCP](https://github.com/firecrawl/firecrawl-mcp-server): Web scraping and search
+- [Exa MCP](https://github.com/exa-labs/exa-mcp-server): AI-native web search
+- [Notion MCP](https://github.com/makenotion/notion-mcp-server): Official Notion workspace access
+- [Slack MCP Server](https://github.com/korotovsky/slack-mcp-server): Community Slack control
+- [Sentry Agent Toolkit](https://github.com/getsentry/toolkit): Agentic tooling for Sentry
+- [AWS MCP Servers](https://github.com/awslabs/mcp): Open-source MCP for AWS
+- [MCP Toolbox for Databases](https://github.com/googleapis/mcp-toolbox): Google's database MCP server
+- [MongoDB MCP Server](https://github.com/mongodb-js/mongodb-mcp-server): MongoDB and Atlas access
+- [Neon MCP Server](https://github.com/neondatabase/mcp-server-neon): Serverless Postgres control
+- [Grafana MCP](https://github.com/grafana/mcp-grafana): Dashboards, alerts and queries
+- [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server): Infrastructure as code for agents
+- [Composio](https://github.com/ComposioHQ/composio): 1000+ toolkits with managed auth
+- [ToolHive](https://github.com/stacklok/toolhive): Run MCP servers securely
+- [Docker MCP Gateway](https://github.com/docker/mcp-gateway): docker mcp CLI plugin
+- [MCP Inspector](https://github.com/modelcontextprotocol/inspector): Test and debug MCP servers
+- [GitHub CLI](https://github.com/cli/cli): gh, GitHub from the terminal
+- [Vercel CLI](https://github.com/vercel/vercel): Deploy from any agent
+- [Vercel MCP Handler](https://github.com/vercel-labs/mcp-handler): Ship MCP servers on Next.js
+- [Supabase CLI](https://github.com/supabase/cli): Migrations, local dev, edge functions
+- [Stripe CLI](https://github.com/stripe/stripe-cli): Stripe from the terminal
+
 ## Data
 - [tools.json](https://vibestack-rankings.vercel.app/tools.json): full ranking data
 - [New this week page](https://vibestack-rankings.vercel.app/new.html)

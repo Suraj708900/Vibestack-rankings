@@ -16,7 +16,7 @@ SITE='VibeStack Rankings'; ROOT=os.path.dirname(os.path.abspath(__file__)); os.c
 E=lambda s:html.escape(str(s),quote=True)
 slug=lambda s:re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
 d=json.load(open('tools.json')); cats=d['categories']; UPD=d['updated']
-NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/directory/">Directory</a><a href="/hosting/hostinger.html">Hosting</a><a href="/deals/">Deals</a><a href="/compare.html">Compare</a><a href="/products.html">Products</a><a href="/featured.html">Get featured</a><a class="nav-auth" href="/login">Log in</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header>'
+NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/directory/">Directory</a><a href="/agent-tools.html">Agent Tools</a><a href="/hosting/hostinger.html">Hosting</a><a href="/deals/">Deals</a><a href="/compare.html">Compare</a><a href="/products.html">Products</a><a href="/featured.html">Get featured</a><a class="nav-auth" href="/login">Log in</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header>'
 FOOT=('<footer><p><b>Affiliate disclosure:</b> some links may be affiliate links, so we may earn a commission at no extra cost to you. Rankings are never sold; sponsored listings are always labeled.</p>'
  '<p><a href="/blog/">Blog</a> · '+' · '.join(f'<a href="/category/{c["id"]}.html">{E(c["name"])}</a>' for c in cats)+'</p>'
  '<p><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/refund">Refund policy</a> · <a href="/disclaimer">Disclaimer</a></p>'
@@ -250,6 +250,7 @@ exec(open(os.path.join(ROOT,'products_build.py')).read())  # /products + homepag
 import accounts_build; accounts_build.run(globals())
 import payments_build; payments_build.run(globals())  # /checkout.html, /admin-orders.html  # /signup /login /account
 import directory_build; directory_build.run(globals())  # /directory/, /t/<slug>, /hosting/
+exec(open(os.path.join(ROOT,'agent_tools_build.py')).read())  # /agent-tools.html + homepage teaser
 today=datetime.date.today().isoformat()
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{BASE}{u}</loc><lastmod>{today}</lastmod></url>\n' for u in urls)+'</urlset>\n')
 open(INDEXNOW_KEY+'.txt','w').write(INDEXNOW_KEY)
@@ -261,5 +262,6 @@ open('llms.txt','w').write(f'# {SITE}\n\n> Opinionated, ranked AI tools for vibe
  +''.join(f'- [{c["name"]}]({BASE}/category/{c["id"]}.html): {c["q"]} Picks: {", ".join(t["name"] for t in c["tools"])}\n' for c in cats)
  +('\n## New this week\n'+''.join(f'- [{n["title"]}]({n["url"]}) ({n["date"]}, via {n["source"]})\n' for n in news) if news else '')
  +'\n## Guides\n'+''.join(f'- [{p["title"]}]({BASE}/blog/{p["slug"]}.html): {p["description"]}\n' for p in posts)
+ +'\n## Agent Tools\n'+f'- [Agent Tools]({BASE}/agent-tools.html): open-source MCP servers and CLI tools for AI agents\n'+''.join(f'- [{t["name"]}]({t["url"]}): {t["tagline"]}\n' for t in _ATL)
  +f'\n## Data\n- [tools.json]({BASE}/tools.json): full ranking data\n- [New this week page]({BASE}/new.html)\n')
 print(f'built {len(cats)} categories, {len(tools)} tools, {len(posts)} posts, {len(urls)} sitemap urls')
