@@ -39,19 +39,39 @@ page('/embed.html',f'Embed a Top picks widget · {SITE}','Free embeddable widget
 urls.append('/embed.html')
 ters=shutil.which('terser') or ('/tmp/blobt/node_modules/.bin/terser' if os.path.exists('/tmp/blobt/node_modules/.bin/terser') else None)
 if not (ters and subprocess.run([ters,'features.js','-c','-m','-o','features.min.js']).returncode==0): shutil.copy('features.js','features.min.js')
-# homepage showcase: top-5 coding agents + app builders with logos/preview images
+# homepage showcase: every category as premium cards (photo + logo + rank badge + verdict + CTA + real vote line)
+import photos as PH
+_AFFT=json.load(open('affiliates.json'))['tools']
 def _sc(c):
     out=''
-    for i,t in enumerate(c['tools'][:5]):
-        s=slug(t['name']); lg=f'/img/tools/{s}-logo.webp'; sh=f'/img/tools/{s}-shot.webp' if os.path.exists(f'img/tools/{s}-shot.webp') else ''
-        out+=(f'<article class="card sc-card"><span class="rank-badge r{i+1}">#{i+1}</span>'
-          +(f'<img class="sc-shot" src="{sh}" alt="{E(t["name"])} official preview" loading="lazy" decoding="async" width="960" height="504">' if sh else '<div class="sc-shot sc-ph"></div>')
-          +f'<h3><img src="{lg}" width="28" height="28" alt="" loading="lazy" decoding="async" class="sc-logo"><a href="/tools/{s}.html">{E(t["name"])}</a></h3><p class="sub">{E(t["verdict"])}</p>'
-          +f'<p><a class="cta-big sm" href="/go/{s}" data-tool="{s}" target="_blank" rel="sponsored nofollow noopener">Try {E(t["name"])} →</a></p></article>')
-    return f'<section class="showcase"><h2>Top 5 {E(c["name"])}</h2><div class="sc-grid">{out}</div><p><a href="/category/{c["id"]}.html">Full {E(c["name"])} ranking →</a></p></section>'
-_cm={c['id']:c for c in cats}
-SC='<!--showcase-->'+''.join(_sc(_cm[k]) for k in ['coding-agents','app-builders'] if k in _cm)+'<!--/showcase-->'
+    for i,t in enumerate(c['tools']):
+        s=slug(t['name']); lg=f'/img/tools/{s}-logo.webp'
+        out+=(f'<article class="card sc-card">'+PH.banner(c['id'],s,lg,t['name'],badge=f'<span class="rank-badge r{i+1}" title="Editorial rank">#{i+1}</span>')
+          +f'<div class="sc-body"><h3><a href="/tools/{s}.html">{E(t["name"])}</a></h3><p class="sub">{E(t["verdict"])}</p>{PH.cta(s,t["name"],_AFFT.get(s),"cta-aff sm")}{PH.voteline(s)}</div></article>')
+    return f'<section class="showcase" id="sc-{c["id"]}"><h2>{E(c["name"])}</h2><p class="sub">{E(c["q"])}</p><div class="sc-grid">{out}</div><p><a href="/category/{c["id"]}.html">Full {E(c["name"])} ranking →</a></p></section>'
+def _sc_coding(c):
+    cur=[slug(t['name']) for t in c['tools']]; html_=''; n=0
+    for i,t in enumerate(c['tools']):
+        s=slug(t['name']); n+=1
+        html_+=(f'<article class="card sc-card">'+PH.banner(c['id'],s,f'/img/tools/{s}-logo.webp',t['name'],badge=f'<span class="rank-badge r{i+1}" title="Editorial rank">#{i+1}</span>')
+          +f'<div class="sc-body"><h3><a href="/tools/{s}.html">{E(t["name"])}</a></h3><p class="sub l1">{E(t["verdict"])}</p>{PH.cta(s,t["name"],_AFFT.get(s),"cta-aff sm")}{PH.voteline(s)}</div></article>')
+    DD=json.load(open('data/directory.json'))['tools']; seen=set(cur)|{slug(t['name']) for cc in cats for t in cc['tools'] if cc['id']=='coding-agents'}
+    extra=sorted([t for t in DD if t['department'] in ('coding-agents','ides') and t['slug'] not in seen and not t.get('curated_page')],key=lambda t:t['name'].lower())
+    for t in extra[:60-n]:
+        n+=1; s=t['slug']; hid=' sc-more' if n>12 else ''
+        html_+=(f'<article class="card sc-card{hid}">'+PH.banner('coding-agents',s,t['logo'],t['name'],badge=f'<span class="rank-badge listed" title="Listed order, not an editorial ranking">Listed #{n}</span>')
+          +f'<div class="sc-body"><h3><a href="/t/{s}.html">{E(t["name"])}</a></h3><p class="sub l1">{E(t["description"][:110])}</p>{PH.cta(s,t["name"],_AFFT.get(s),"cta-aff sm")}</div></article>')
+    return (f'<section class="showcase" id="sc-{c["id"]}"><h2>{E(c["name"])}: top 5 picks + {n-len(cur)} more listed</h2><p class="sub">{E(c["q"])} #1–#{len(cur)} are our editorial ranking; "Listed" cards are alphabetical directory listings, not ranked.</p>'
+      f'<div class="sc-grid" data-more-grid>{html_}</div><p class="sc-actions"><button class="btn-ghost" data-show-more>Show more ({n-12})</button> <a href="/directory/coding-agents.html">Browse all coding agents in the directory →</a></p></section>')
+SC='<!--showcase-->'+''.join(_sc_coding(c) if c['id']=='coding-agents' else _sc(c) for c in cats)+'<!--/showcase-->'
+json.dump({slug(t['name']):[PH.pick(c['id'],slug(t['name'])),f'/img/tools/{slug(t["name"])}-logo.webp',PH.cta(slug(t['name']),t['name'],_AFFT.get(slug(t['name'])),'cta-aff sm')] for c in cats for t in c['tools']},open('data/photo-map.json','w'),separators=(',',':'))
+json.dump({c['id']:PH.pick(c['id'],c['id']) for c in cats},open('data/cat-photos.json','w'))
 _ix=open('index.html').read()
 _ix=re.sub(r'<!--showcase-->.*?<!--/showcase-->','',_ix,flags=re.S)
 if '<!--/trend-->' in _ix: _ix=_ix.replace('<!--/trend-->','<!--/trend-->'+SC,1)
 open('index.html','w').write(_ix)
+# photo credits
+_rows=''.join(f'<li><a href="/img/photos/{k}-1600.webp">{k}</a>: {E(PH.credit(k))} · <a href="{PH.src_url(k)}" rel="noopener nofollow" target="_blank">source</a> · {"Unsplash License" if k.startswith("u-") else "Pexels License"}</li>' for k in PH.credits_rows())
+page('/credits.html',f'Photo credits · {SITE}','Credits and licenses for the stock photography used on VibeStack Rankings.',
+ '<h1>Photo credits</h1><p class="sub">Category and blog photos are free-license stock images from <a href="https://unsplash.com/license" rel="noopener nofollow">Unsplash (Unsplash License)</a> and <a href="https://www.pexels.com/license/" rel="noopener nofollow">Pexels (Pexels License)</a>, downloaded and resized locally. Tool logos belong to their respective owners. Where we know the photographer it is named; thank you to all of them.</p><ul>'+_rows+'</ul>')
+urls.append('/credits.html')

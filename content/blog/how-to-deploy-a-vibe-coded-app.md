@@ -3,6 +3,8 @@ keyword: how to deploy a vibe-coded app
 description: A practical guide to deploying an AI-built app: publishing from builders, deploying from GitHub to Vercel, Netlify, Cloudflare Pages or Render, environment variables, domains and launch checks.
 date: 2026-10-16
 category: hosting
+cover: p-586087
+cover_credit: Photo via Pexels
 ---
 You have built something with AI and it works in the preview. Now you want a real URL that you can share, ideally on your own domain, without it breaking the moment real people use it. This guide covers both routes: publishing straight from an app builder, and deploying your own code from GitHub. It links to our [Hosting & deploy rankings](/category/hosting.html) for the platforms themselves.
 

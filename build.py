@@ -95,7 +95,11 @@ for s,v in tools.items():
 # deals (only real, cited offers; codes only when Suraj adds them to affiliates.json)
 AFF=json.load(open('affiliates.json'))['tools']
 def offer_html(s,a):
-    if a.get('status')=='active' and a.get('discount_code'):
+    import photos as PH
+    o=PH.offer(a)  # skips inactive and already-expired (expires_at) offers at build time
+    if o and o['code']:
+        return PH.dealbox(s,a['name'],a)
+    if a.get('status')=='active' and a.get('discount_code') and False:
         return (f'<div class="card"><h3>{E(a["name"])}</h3><p>{E(a.get("discount_text",""))}</p><p><code>{E(a["discount_code"])}</code> <button data-code="{E(a["discount_code"])}" data-code-id="{s}">Copy code</button></p>'
           +(f'<p class="sub">Valid {E(a.get("start",""))} to {E(a.get("end",""))}</p>' if a.get('end') else '')+f'<a href="/go/{s}" data-tool="{s}" target="_blank" rel="sponsored nofollow noopener">Use on {E(a["name"])} ↗</a></div>')
     return ''
@@ -138,14 +142,18 @@ for p in posts:
     extra+=f'<meta property="article:published_time" content="{p["date"]}">'
     more=[x for x in posts if x is not p and x['category']==p['category']]+[x for x in posts if x is not p and x['category']!=p['category']]
     c=next((c for c in cats if c['id']==p['category']),None)
-    body=(f'<p class="sub"><a href="/blog/">Blog</a>{f" › <a href=/category/{c["id"]}.html>{E(c["name"])}</a>" if c else ""}</p><article class="post"><h1>{E(p["title"])}</h1><p class="sub">By Suraj Kamdev · {p["date"]} · {max(1,words//220)} min read</p>'
+    import photos as PH
+    ck=p.get('cover') or PH.BLOG.get(p['slug']) or PH.pick(p['category'],p['slug'])
+    extra+=f'<meta property="og:image" content="{BASE}/img/photos/{ck}-1600.webp"><meta name="twitter:image" content="{BASE}/img/photos/{ck}-1600.webp"><link rel="preload" as="image" imagesrcset="/img/photos/{ck}-480.webp 480w, /img/photos/{ck}-960.webp 960w, /img/photos/{ck}-1600.webp 1600w" imagesizes="(max-width:900px) 100vw, 900px">'
+    hero=f'<figure class="post-hero">'+PH.picture(ck,p['title'],eager=True,sizes='(max-width:900px) 100vw, 900px')+f'<figcaption class="sub">{E(p.get("cover_credit") or PH.credit(ck))} · <a href="/credits.html">credits</a></figcaption></figure>'
+    body=(f'<p class="sub"><a href="/blog/">Blog</a>{f" › <a href=/category/{c["id"]}.html>{E(c["name"])}</a>" if c else ""}</p><article class="post">'+hero+f'<h1>{E(p["title"])}</h1><p class="sub">By Suraj Kamdev · {p["date"]} · {max(1,words//220)} min read</p>'
       +share(path,p['title'])+htmlbody+share(path,p['title'])+'</article>'+NL+'<div data-promo="sidebar-card"></div><h2>Related posts</h2><ul>'+''.join(f'<li><a href="/blog/{x["slug"]}.html">{E(x["title"])}</a></li>' for x in more[:5])+'</ul>'
       +(f'<p>See the full ranking: <a href="/category/{c["id"]}.html">{E(c["name"])}</a>.</p>' if c else ''))
     page(path,p.get('seo_title',p['title']),p.get('seo_description',p['description']),body,typ='article',extra=extra,bodyattr=' data-page="post"')
 urls.append('/blog/')
 page('/blog/',f'Blog: guides for vibe coders and AI builders · {SITE}','Practical, honest guides on AI coding agents, app builders, databases, hosting, AI APIs, agents, video and voice tools.',
-  '<h1>Blog</h1><p class="sub">Practical guides for vibe coders and builders. No invented stats; prices always point to official pages.</p><div class="grid">'
-  +''.join(f'<a class="card" style="text-decoration:none;color:inherit" href="/blog/{p["slug"]}.html"><span class="tag">{E(next((c["name"] for c in cats if c["id"]==p["category"]),""))}</span><h3>{E(p["title"])}</h3><p class="sub">{E(p["description"])}</p></a>' for p in sorted(posts,key=lambda x:x['title']))
+  '<h1>Blog</h1><p class="sub">Practical guides for vibe coders and builders. No invented stats; prices always point to official pages.</p><div class="sc-grid">'
+  +''.join(f'<a class="card sc-card blog-card" style="text-decoration:none;color:inherit" href="/blog/{p["slug"]}.html"><div class="ph">'+__import__('photos').picture(p.get('cover') or __import__('photos').BLOG.get(p['slug'],'p-35445090'))+f'<span class="ph-ov"></span></div><div class="sc-body"><span class="tag">{E(next((c["name"] for c in cats if c["id"]==p["category"]),""))}</span><h3>{E(p["title"])}</h3><p class="sub">{E(p["description"])}</p></div></a>' for p in sorted(posts,key=lambda x:x['title']))
   +'</div><div data-feed="/feed.json" data-count="3"></div>',
   extra=ld({"@context":"https://schema.org","@type":"Blog","name":SITE+" Blog","url":BASE+"/blog/"}))
 posts_by_new=sorted(posts,key=lambda p:(p['date'],os.path.getmtime(f"content/blog/{p['slug']}.md")),reverse=True)

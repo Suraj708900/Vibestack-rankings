@@ -3,6 +3,8 @@ keyword: supabase vs firebase
 description: Supabase vs Firebase compared for vibe coders and AI-built apps: data model, auth, realtime, pricing model, lock-in and which AI tools support each.
 date: 2026-10-16
 category: databases
+cover: p-4033964
+cover_credit: Photo via Pexels
 ---
 If you are building an app with AI, sooner or later you need a backend: a database, user accounts, file storage and maybe realtime updates. The two most popular all-in-one answers are Supabase and Firebase. Both rank in our [Databases & backends category](/category/databases.html). Here is how they differ and which suits which kind of project.
 

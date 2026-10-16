@@ -3,7 +3,7 @@
 const { list } = require('@vercel/blob');
 module.exports = async (req, res) => {
   const days = Math.min(30, Math.max(1, parseInt((req.query && req.query.days) || '7', 10) || 7));
-  const out = { days, since: null, promos: {}, tools: {}, aff: {}, codes: {}, votes: {}, stored: !!process.env.BLOB_READ_WRITE_TOKEN, truncated: false };
+  const out = { days, since: null, promos: {}, tools: {}, aff: {}, codes: {}, votes: {}, links: {}, stored: !!process.env.BLOB_READ_WRITE_TOKEN, truncated: false };
   res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=600');
   if (!out.stored) return res.status(200).json(out);
   let ops = 0;
@@ -19,6 +19,7 @@ module.exports = async (req, res) => {
           else if (kind === 'tool' && type === 'click') out.tools[id] = (out.tools[id] || 0) + 1;
           else if (kind === 'aff') out.aff[id] = (out.aff[id] || 0) + 1;
           else if (kind === 'vote' && (type === 'up' || type === 'down')) { const v = out.votes[id] = out.votes[id] || { up: 0, down: 0 }; v[type]++; }
+          else if (kind === 'link') out.links[id] = (out.links[id] || 0) + 1;
           else if (kind === 'code') out.codes[id] = (out.codes[id] || 0) + 1;
         }
         cursor = r.hasMore ? r.cursor : undefined;

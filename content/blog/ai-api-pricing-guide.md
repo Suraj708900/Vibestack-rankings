@@ -3,6 +3,8 @@ keyword: AI API pricing
 description: How AI API pricing works (tokens, input vs output, caching, batch) and how to estimate and control costs across OpenAI, Anthropic, Gemini, OpenRouter and Groq.
 date: 2026-10-16
 category: ai-apis
+cover: p-5466250
+cover_credit: Photo via Pexels
 ---
 Almost every AI API, from [OpenAI](/tools/openai-api.html) to [Anthropic](/tools/anthropic-api.html) and [Google Gemini](/tools/google-gemini-api.html), charges per token. Understanding what that means is the difference between a side project that costs pocket change and one that sends you a surprise bill. This guide explains the pricing model, how to estimate your costs, and how to keep them down. We intentionally do not quote per-token prices: they change frequently and differ by model, so always use each provider's official pricing page for the numbers.
 

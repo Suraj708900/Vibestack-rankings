@@ -3,6 +3,8 @@ keyword: best AI voice tools
 description: ElevenLabs, OpenAI Realtime API, Vapi and Deepgram compared for text-to-speech, transcription and building voice agents.
 date: 2026-10-16
 category: voice
+cover: u-1774371386885-f21e309e146d
+cover_credit: Photo by gaspifilms on Unsplash
 ---
 Voice is one of the most exciting areas for builders: natural text-to-speech for content, accurate transcription for apps, and voice agents that can hold a real conversation on the phone. The tools in our [Voice rankings](/category/voice.html) cover these jobs differently. Here is how to choose.
 

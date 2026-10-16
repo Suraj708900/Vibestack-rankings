@@ -55,3 +55,38 @@ const io=new IntersectionObserver(es=>{let k=0;es.forEach(e=>{if(e.isIntersectin
 const scan=()=>document.querySelectorAll('main .card:not(.rv)').forEach(el=>{el.classList.add('rv');if(el.getBoundingClientRect().top<innerHeight){el.classList.add('in');el.style.transition='none'}else io.observe(el)});scan();
 new MutationObserver(scan).observe(document.querySelector('main')||document.body,{childList:true,subtree:true});
 setTimeout(()=>document.querySelectorAll('.rv:not(.in)').forEach(el=>{const r=el.getBoundingClientRect();if(r.top<innerHeight)el.classList.add('in')}),1500)})();
+/* deals: copy code/link with toast, countdowns, vote lines, show-more, admin per-tool table */
+(function(){
+const H=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const track=o=>{try{(window.VS_TRACK||(b=>fetch('/api/track',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b),keepalive:true})))(o)}catch(e){}};
+let tw;const toast=m=>{if(!tw){tw=document.createElement('div');tw.className='toast';tw.setAttribute('role','status');tw.setAttribute('aria-live','polite');document.body.appendChild(tw)}tw.textContent=m;tw.classList.add('on');clearTimeout(tw._t);tw._t=setTimeout(()=>tw.classList.remove('on'),1800)};
+const copy=t=>{if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t).catch(()=>fb(t));return Promise.resolve(fb(t))};
+const fb=t=>{const a=document.createElement('textarea');a.value=t;a.setAttribute('readonly','');a.style.cssText='position:fixed;top:-1000px;opacity:0';document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);let ok=false;try{ok=document.execCommand('copy')}catch(e){}a.remove();if(!ok)throw 0};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-copy-code],[data-copy-link]');if(!b)return;e.preventDefault();if(b.getAttribute('aria-disabled')==='true')return;
+ const isCode=b.hasAttribute('data-copy-code'),v=isCode?b.dataset.copyCode:b.dataset.copyLink;
+ copy(v).then(()=>{toast(isCode?'Code copied!':'Link copied!');track(isCode?{kind:'code',type:'copy',id:b.dataset.codeId||'unknown'}:{kind:'link',type:'copy',id:b.dataset.linkId||'unknown'})}).catch(()=>toast('Press and hold to copy: '+v))});
+// disabled deal CTAs (expired) shouldn't navigate
+document.addEventListener('click',e=>{const a=e.target.closest('a[aria-disabled="true"]');if(a)e.preventDefault()},true);
+// countdowns (only where a real expires_at exists)
+const pad=n=>String(n).padStart(2,'0');
+const tick=()=>document.querySelectorAll('[data-expires]').forEach(el=>{const t=Date.parse(el.dataset.expires);if(isNaN(t)){el.hidden=true;return}const d=t-Date.now(),cd=el.querySelector('.cd');
+ if(d<=0){if(el.dataset.done)return;el.dataset.done=1;el.innerHTML='<span class="badge-expired">Expired</span>';const box=el.closest('[data-deal],.promo,.card')||document;
+  box.querySelectorAll('[data-copy-code],a[data-deal-cta]').forEach(x=>{x.setAttribute('aria-disabled','true');x.classList.add('is-disabled');if(x.tagName==='BUTTON')x.disabled=true;x.removeAttribute('href')});
+  const sl=box.dataset&&box.dataset.deal;if(sl)document.querySelectorAll('.sticky-cta a[data-deal-cta]').forEach(x=>{x.setAttribute('aria-disabled','true');x.classList.add('is-disabled');x.removeAttribute('href')});return}
+ const s=Math.floor(d/1e3);if(cd)cd.textContent=`${Math.floor(s/86400)}d ${pad(Math.floor(s%86400/3600))}h ${pad(Math.floor(s%3600/60))}m ${pad(s%60)}s`});
+tick();setInterval(tick,1000);new MutationObserver(()=>{if(document.querySelector('[data-expires]:not([data-done])'))tick()}).observe(document.body,{childList:true,subtree:true});
+// vote lines on cards: real counts only, else invite
+let V=null;const paintV=()=>{document.querySelectorAll('[data-vote-line]:not([data-p])').forEach(el=>{el.dataset.p=1;const s=el.dataset.voteLine,x=(V||{})[s],key='vs-vote-'+s;
+ if(x&&(x.up+x.down)>0)el.innerHTML=`👍 ${x.up} of ${x.up+x.down} readers found this helpful`;
+ else el.innerHTML=localStorage.getItem(key)?'Thanks for rating!':`<span>Be the first to rate</span> <button class="vb" data-vb="up" aria-label="Helpful">👍</button><button class="vb" data-vb="down" aria-label="Not helpful">👎</button>`})};
+if(document.querySelector('[data-vote-line]'))fetch('/api/stats?days=30').then(r=>r.json()).then(j=>{V=j.votes||{};paintV()}).catch(()=>{V={};paintV()});
+new MutationObserver(()=>{if(V&&document.querySelector('[data-vote-line]:not([data-p])'))paintV()}).observe(document.body,{childList:true,subtree:true});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-vb]');if(!b)return;const el=b.closest('[data-vote-line]'),s=el.dataset.voteLine;localStorage.setItem('vs-vote-'+s,b.dataset.vb);
+ fetch('/api/track',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({kind:'vote',type:b.dataset.vb,id:s}),keepalive:true}).catch(()=>{});el.textContent='Thanks for rating!'});
+// show more (homepage coding agents)
+document.querySelectorAll('[data-show-more]').forEach(b=>b.addEventListener('click',()=>{const g=b.closest('section').querySelector('[data-more-grid]');g.classList.add('expanded');b.remove()}));
+// admin: per-tool clicks / copies
+if(location.pathname==='/admin-stats.html'){const box=document.createElement('section');box.innerHTML='<h2>Per-tool affiliate activity (30 days)</h2><p class="sub">/go clicks (logged server-side by /api/go), code copies and deal-link copies.</p><div id="aff-tbl" class="sub">Loading…</div>';document.querySelector('main').appendChild(box);
+ fetch('/api/stats?days=30').then(r=>r.json()).then(j=>{const ids=[...new Set([...Object.keys(j.aff||{}),...Object.keys(j.codes||{}),...Object.keys(j.links||{})])].sort((a,b)=>((j.aff||{})[b]||0)-((j.aff||{})[a]||0));
+  document.getElementById('aff-tbl').innerHTML=ids.length?'<table class="tbl"><tr><th>Tool</th><th>/go clicks</th><th>Code copies</th><th>Link copies</th></tr>'+ids.map(k=>`<tr><td>${H(k)}</td><td>${(j.aff||{})[k]||0}</td><td>${(j.codes||{})[k]||0}</td><td>${(j.links||{})[k]||0}</td></tr>`).join('')+'</table>':'No affiliate activity yet.'}).catch(()=>{document.getElementById('aff-tbl').textContent='Stats unavailable.'})}
+})();

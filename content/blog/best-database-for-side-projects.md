@@ -3,6 +3,8 @@ keyword: best database for side projects
 description: How to choose a database for your side project: Supabase, Firebase, Neon and Convex compared by use case, plus free tiers, portability and AI-tool friendliness.
 date: 2026-10-16
 category: databases
+cover: p-37730211
+cover_credit: Photo via Pexels
 ---
 Choosing a database for a side project should take an hour, not a week. The four options in our [Databases & backends rankings](/category/databases.html) cover almost every case, all have free tiers, and all work well with AI coding tools. This guide gives you a quick decision path, then explains the reasoning.
 

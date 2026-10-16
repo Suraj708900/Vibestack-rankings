@@ -3,6 +3,8 @@ keyword: AI agent hosting options
 description: Where to host AI agents: serverless functions, long-running servers, background workers and queues, durable workflows, and self-hosted automation, with trade-offs for each.
 date: 2026-10-16
 category: agent-frameworks
+cover: p-11086520
+cover_credit: Photo via Pexels
 ---
 Building an agent on your laptop is the easy part. Running it reliably for real users raises new questions: How long can a task run? What happens if it crashes halfway? How do you stop runaway costs? This guide walks through the main hosting patterns for AI agents and which tools in our rankings fit each. For building the agent itself, start with [how to build an AI agent](/blog/how-to-build-an-ai-agent.html).
 

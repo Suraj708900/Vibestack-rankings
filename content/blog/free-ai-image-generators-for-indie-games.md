@@ -3,6 +3,8 @@ keyword: free AI image generators for indie games
 description: Free and low-cost AI image generation options for indie game developers, how licences and store policies affect you, and a workflow for consistent game art.
 date: 2026-10-16
 category: video
+cover: p-3165335
+cover_credit: Photo by Lucie Liz on Pexels
 ---
 For a solo developer or small team, art is often the biggest bottleneck. AI image generation can help with concept art, placeholder sprites, textures, icons and store mockups. This guide covers the main free or free-to-start options, the licensing questions you must answer before shipping, and a workflow that gets more consistent results. Free tiers and terms change often, so always confirm the current details on each official site.
 

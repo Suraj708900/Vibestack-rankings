@@ -73,3 +73,15 @@ Also not found earlier: Cursor, Windsurf, Vapi, Render, Neon, Vercel, GitHub Cop
 2. Only add `discount_code`/`discount_text` if the program gave you a real code.
 3. Run `python3 build.py`, commit, deploy.
 4. Follow each program's disclosure rules; the footer already carries an affiliate disclosure.
+
+## How to activate an affiliate link (paste-in guide)
+
+All "Get Deal →" / "Visit Official Site →" buttons link to `/go/<slug>`. `/go/` logs every click (visible per tool in `/admin-stats.html` → "Per-tool affiliate activity") and redirects:
+
+1. Open `affiliates.json` and find the tool by slug (e.g. `"cursor"`). Directory tools not listed there can be added with the same fields.
+2. Paste the link the program gave you into `"affiliate_url"` (must start with `https://`).
+3. Set `"status": "active"`. Optional `"start"` / `"end"` dates (YYYY-MM-DD) limit when it's used.
+4. Only if the program gave you a real code/offer: fill `"discount_code"` and/or `"discount_text"`. Buttons then say **Get Deal →** and the deal box shows the code with a Copy Code button. Without a real code/offer they say **Visit Official Site →** and the box says "Verified code not available yet". Never add made-up codes.
+5. Optional `"expires_at"`: ISO 8601 datetime **with timezone**, e.g. `"2026-11-30T23:59:59+05:30"`. When set (and a real code/offer exists) tool pages, `/deals/` and `/deals/<tool>` show a live countdown; at zero it shows "Expired" and disables Copy Code / Get Deal. Already-expired offers are skipped at build time. No `expires_at` = no timer.
+6. `promotions.json` entries also accept `"expires_at"` (same format); a countdown shows only when the promo has an `offer` or `code`.
+7. Commit, push and deploy. `python3 build.py` regenerates all pages.

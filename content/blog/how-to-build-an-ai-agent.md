@@ -3,6 +3,8 @@ keyword: how to build an AI agent
 description: A practical guide to building your own AI agent: core concepts, choosing between OpenAI Agents SDK, LangGraph, Vercel AI SDK, CrewAI and n8n, and avoiding common mistakes.
 date: 2026-10-16
 category: agent-frameworks
+cover: p-8294557
+cover_credit: Photo via Pexels
 ---
 An AI agent is a program where a language model decides which actions to take, calls tools to take them, observes the results and repeats until a goal is met. Building one is easier than ever, but the framework you pick shapes how much control and complexity you get. This guide covers the essentials and maps them to the tools in our [Agent frameworks rankings](/category/agent-frameworks.html).
 

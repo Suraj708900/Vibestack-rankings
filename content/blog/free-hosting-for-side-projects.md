@@ -3,6 +3,8 @@ keyword: free hosting for side projects
 description: Where to host your side project for free: an honest comparison of Vercel, Netlify, Cloudflare Pages and Render, and what to watch as you grow.
 date: 2026-10-16
 category: hosting
+cover: p-1148820
+cover_credit: Photo via Pexels
 ---
 Every side project eventually needs a URL. The good news is that several excellent platforms offer free tiers that are more than enough for a launch, a portfolio or an MVP. The less good news is that "free" always comes with limits, and the limits differ in ways that matter. Here is how the four hosts in our [Hosting & deploy rankings](/category/hosting.html) compare, without quoting quotas that change every few months. Always check each provider's official pricing page for current limits.
 

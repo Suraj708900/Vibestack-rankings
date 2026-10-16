@@ -3,6 +3,8 @@ keyword: neon vs supabase
 description: Neon vs Supabase compared: serverless Postgres with branching versus a full backend platform. When you need just a database and when you need more.
 date: 2026-10-16
 category: databases
+cover: p-5480781
+cover_credit: Photo via Pexels
 ---
 Both Neon and Supabase give you Postgres, the most popular open-source relational database, and both rank in our [Databases & backends category](/category/databases.html). But they are different products. Neon is a database. Supabase is a backend platform built around a database. Choosing well is mostly about knowing which of those you need.
 

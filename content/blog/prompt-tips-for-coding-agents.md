@@ -3,6 +3,8 @@ keyword: prompt tips for coding agents
 description: Practical prompting techniques for AI coding agents like Cursor, Claude Code, Copilot and Codex: context, planning, scoping, testing and review habits that improve results.
 date: 2026-10-16
 category: coding-agents
+cover: p-5380584
+cover_credit: Photo by Tima Miroshnichenko on Pexels
 ---
 Two developers can use the same AI coding agent and get very different results. The difference is rarely luck; it is how they brief the agent. These techniques work across [Cursor](/tools/cursor.html), [Claude Code](/tools/claude-code.html), [GitHub Copilot](/tools/github-copilot.html), [OpenAI Codex](/tools/openai-codex.html) and [Windsurf](/tools/windsurf.html), because they address how all language-model agents work: they only know what you give them and what they can find.
 

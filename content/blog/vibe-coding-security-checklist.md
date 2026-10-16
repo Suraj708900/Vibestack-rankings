@@ -3,6 +3,8 @@ keyword: vibe coding security
 description: A practical security checklist for AI-built and vibe-coded apps: secrets, database access rules, auth, input validation, dependencies and more.
 date: 2026-10-16
 category: vibe-coding
+cover: p-38486967
+cover_credit: Photo by Ann H on Pexels
 ---
 AI makes it possible to ship an app in a weekend. It also makes it possible to ship security holes in a weekend. The good news: most problems in vibe-coded apps are the same handful of mistakes, and you can catch them with a checklist. Run through this before you invite real users. It applies whether you built with [Lovable](/tools/lovable.html), [Replit](/tools/replit.html), [Bolt](/tools/bolt.html) or an editor like [Cursor](/tools/cursor.html).
 
