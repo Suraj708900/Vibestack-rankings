@@ -41,6 +41,22 @@
     {
       "source": "/deals",
       "destination": "/deals/index.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/refund",
+      "destination": "/refund.html"
+    },
+    {
+      "source": "/disclaimer",
+      "destination": "/disclaimer.html"
     }
   ]
 }

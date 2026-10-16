@@ -19,6 +19,7 @@ d=json.load(open('tools.json')); cats=d['categories']; UPD=d['updated']
 NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/deals/">Deals</a><a href="/featured.html">Get featured</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header>'
 FOOT=('<footer><p><b>Affiliate disclosure:</b> some links may be affiliate links, so we may earn a commission at no extra cost to you. Rankings are never sold; sponsored listings are always labeled.</p>'
  '<p><a href="/blog/">Blog</a> · '+' · '.join(f'<a href="/category/{c["id"]}.html">{E(c["name"])}</a>' for c in cats)+'</p>'
+ '<p><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/refund">Refund policy</a> · <a href="/disclaimer">Disclaimer</a></p>'
  '<p>© 2026 VibeStack Rankings by Suraj Kamdev · <a href="mailto:kamdevsuraj03@gmail.com">kamdevsuraj03@gmail.com</a></p></footer>')
 def head(title,desc,path,typ='website',extra=''):
     url=BASE+path
@@ -154,6 +155,10 @@ page('/blog/',f'Blog: guides for vibe coders and AI builders · {SITE}','Practic
 posts_by_new=sorted(posts,key=lambda p:(p['date'],os.path.getmtime(f"content/blog/{p['slug']}.md")),reverse=True)
 LATEST='<section class="latest"><h2>Latest from the blog</h2><div class="grid">'+''.join(f'<a class="card" style="text-decoration:none;color:inherit" href="/blog/{p["slug"]}.html"><h3 style="margin:.2em 0">{E(p["title"])}</h3><p class="sub">{E(p["description"])}</p></a>' for p in posts_by_new[:6])+'</div><p><a href="/blog/">All guides →</a></p></section>'
 urls.append('/submit.html')
+import legal
+for k,(lt,ld_,lb) in legal.PAGES.items():
+    page(f'/{k}.html',f'{lt} · {SITE}',ld_,f'<article class="post"><h1>{lt}</h1>'+legal.NOTE+lb+'</article>'); urls.append(f'/{k}')
+    _f=open(f'{k}.html').read().replace(f'{BASE}/{k}.html',f'{BASE}/{k}'); open(f'{k}.html','w').write(_f)
 page('/submit.html',f'Submit a tool · {SITE}','Suggest an AI tool for VibeStack Rankings. Rankings are editorial and never sold.',
  '<h1>Submit a tool</h1><p class="sub">Know an AI tool vibe coders should know about? Send it in. Every submission is reviewed; rankings are editorial and never sold. Want a paid, clearly labelled placement instead? See <a href="/featured.html">Get featured</a>.</p>'
  '<div class="card"><h2>What to include</h2><ul><li>Tool name and official link</li><li>Which category it fits ('+', '.join(E(c['name']) for c in cats)+')</li><li>One or two sentences on what it is best for</li><li>Pricing model (free tier? link to the pricing page)</li><li>Are you the maker? (fine, just tell us)</li></ul>'
@@ -208,6 +213,7 @@ TOP={'index.html':('/','VibeStack Rankings: AI tools for vibe coders, ranked','R
 for f,(path,title,desc) in TOP.items():
     s=open(f).read(); s=re.sub(r'<!--seo-->.*?<!--/seo-->','',s,flags=re.S)
     s=re.sub(r'<header><nav>.*?</nav></header>',NAV,s,count=1,flags=re.S)
+    s=re.sub(r'<footer>.*?</footer>',FOOT,s,count=1,flags=re.S)
     if path:
         if f=='index.html' and 'home' in SEO: title,desc=SEO['home']
         s=re.sub(r'<meta name="description" content="[^"]*">','',s)
