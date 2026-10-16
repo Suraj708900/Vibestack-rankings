@@ -1,6 +1,7 @@
-// Admin orders API (Authorization: Bearer ADMIN_TOKEN). GET list; POST {action:'paid'|'delete', id}.
+// Admin orders API (Authorization: Bearer ADMIN_TOKEN). GET list; POST {action:'paid'|'delete', id} | {action:'upload', product, data(base64 zip)}.
 const { json } = require('./_lib/auth');
 const O = require('./_lib/orders');
+const { put } = require('@vercel/blob');
 async function email(o, link) {
   const key = process.env.RESEND_API_KEY, from = process.env.RESEND_FROM; // RESEND_FROM only set once a sending domain is verified
   if (!key || !from) return { sent: false, reason: 'No verified Resend sending domain configured (RESEND_FROM).' };
@@ -16,6 +17,12 @@ module.exports = async (req, res) => {
     if (req.method === 'GET') return json(res, 200, { orders: await O.listOrders() });
     if (req.method !== 'POST') return json(res, 405, { error: 'Method not allowed.' });
     const b = typeof req.body === 'object' && req.body ? req.body : {};
+    if (b.action === 'upload') { // admin-only: store a product zip at its configured private Blob path
+      const p = O.CFG.products[String(b.product || '')]; if (!p || !p.file) return json(res, 400, { error: 'Unknown product.' });
+      const buf = Buffer.from(String(b.data || ''), 'base64'); if (!buf.length || buf.length > 3.2e6) return json(res, 400, { error: 'Bad file.' });
+      const r = await put(p.file, buf, { access: 'private', addRandomSuffix: false, allowOverwrite: true, contentType: 'application/zip' });
+      return json(res, 200, { ok: true, pathname: r.pathname, size: buf.length });
+    }
     const o = await O.loadOrder(String(b.id || '')); if (!o) return json(res, 404, { error: 'Order not found.' });
     if (b.action === 'delete') { await O.deleteOrder(o.id); return json(res, 200, { ok: true, deleted: o.id }); }
     if (b.action === 'paid') {

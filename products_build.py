@@ -1,13 +1,6 @@
 # /products page + homepage teaser for Suraj's own paid offerings (UPI / PayPal checkout via /checkout.html; prices in data/products-config.json).
-P_LIST=[
- ('ai-learning-kit','AI Learning Kit','p-4050315',199,999,'','Learn AI in your own language','Hindi & English AI learning PDFs, videos, ready prompts and practical examples. Separate kits for students, job seekers and small business owners.'),
- ('ai-business-toolkit','AI Business Toolkit','p-6693655',499,1999,'','AI for shops and small businesses','WhatsApp reply templates, marketing prompts, quotation templates and customer follow-up systems for shops, clinics, salons and restaurants.'),
- ('ai-prompt-library','AI Prompt Library','p-1181244',99,499,'','Up to 1,000 ready-to-use prompts','500–1,000 useful prompts across jobs, study, marketing, business and content.'),
- ('live-ai-training','Live AI Training','p-4144923',299,2999,' per person','Learn live on Google Meet','Live Google Meet sessions, for example “Learn to use AI in your business in 2 hours”.'),
- ('ai-receptionist-setup','AI Receptionist Setup','p-8867482',3000,15000,'+','A 24×7 AI receptionist for your business','Website chatbot, customer FAQ, lead collection and automated replies, set up for you. Optional monthly maintenance.'),
- ('ai-knowledge-membership','AI Knowledge Membership','p-3756679',99,499,'/month','New AI tools and tutorials every week','Weekly new AI tools, tutorials, templates and updates.'),
- ('industry-ai-kits','Industry-Specific AI Kits','p-3184465',999,4999,'','Ready-made AI workflows for your profession','Ready-to-use AI workflow kits for doctors, real-estate agents, teachers, shopkeepers and agencies.'),
-]
+_PCF=json.load(open(os.path.join(ROOT,'data','products-config.json')))['products']
+P_LIST=[(k,v['name'],v.get('cover','c-'+k),v['price'],v['price'],v.get('unit',''),v.get('tagline',''),v.get('description','')) for k,v in _PCF.items()]
 _inr=lambda n:'₹'+format(n,',')
 _wa=(json.load(open(os.path.join(ROOT,'data','products-config.json'))).get('whatsapp') or '').strip()
 _wa=re.sub(r'\D','',_wa)
@@ -70,15 +63,15 @@ _TJS=r"""<script>(function(){var secs=document.querySelectorAll('.pt-sec');funct
 secs.forEach(function(sec){sec.querySelectorAll('.pt-chips button').forEach(function(b){b.onclick=function(){sec.querySelectorAll('.pt-chips button').forEach(function(x){x.classList.toggle('on',x===b)});sec.dataset.dep=b.dataset.dep;sec.dataset.lim=24;apply(sec)}});sec.querySelector('.pt-more').onclick=function(){sec.dataset.lim=(+(sec.dataset.lim||24))+24;apply(sec)};apply(sec)});
 function tab(){var h=location.hash==='#ai-plus'?'ai-plus':'ai-free';document.querySelectorAll('.pt-tabs a').forEach(function(a){a.classList.toggle('on',a.dataset.tab===h)})}window.addEventListener('hashchange',tab);tab()})();</script>"""
 
-page('/products.html',f'AI Products by Suraj Kamdev · {SITE}','AI learning kits, business toolkits, prompt libraries, live training and AI receptionist setup in Hindi & English. Pay by UPI or PayPal; guide book included.',
- '<section class="p-hero"><h1>AI products for learners and small businesses</h1><p class="p-hi">Practical AI tools and training, in Hindi and English.</p>'
+page('/products.html',f'AI Products by Suraj Kamdev · {SITE}','AI learning kits, business toolkits, prompt libraries, live training and AI receptionist setup. Pay by UPI or PayPal; guide book included.',
+ '<section class="p-hero"><h1>AI products for learners and small businesses</h1><p class="p-hi">Practical AI tools and training, in plain English.</p>'
  '<p class="sub">Our own products, built by Suraj Kamdev. All products are paid; each includes its guide book. Pay by UPI (India) or PayPal (international), then submit your transaction ID and we email your download link after confirming the payment.</p></section>'
  '<div class="sc-grid p-grid">'+''.join(_pcard(p,i<2) for i,p in enumerate(P_LIST))+'</div>'+_TOOLSEC+_TJS,extra=_LD)
 print('products: AI Free',len(_FREE),'AI Plus',len(_PLUS),'skipped-conflict',_SKIP)
 urls.append('/products.html')
-_TZ=('<!--products--><section class="showcase p-teaser"><h2>Our own AI products <span class="tag">Paid</span></h2><p class="sub">Hindi & English AI kits, toolkits and training from Suraj Kamdev. Pay by UPI or PayPal; guide book included.</p><div class="sc-grid">'
+_TZ=('<!--products--><section class="showcase p-teaser"><h2>Our own AI products <span class="tag">Paid</span></h2><p class="sub">AI kits, toolkits and guides from Suraj Kamdev. Pay by UPI or PayPal; guide book included.</p><div class="sc-grid">'
  +''.join(f'<article class="card sc-card p-card">{_PH.picture(p[2],p[1])}<div class="sc-body"><h3><a href="/products.html#{p[0]}">{E(p[1])}</a></h3><p class="p-price">{_price(p)}</p><p class="sub l1">{E(p[7])}</p></div></article>' for p in P_LIST[:4])
- +'</div><p class="sc-actions"><a class="cta-aff sm" href="/products.html">See all 7 products →</a></p></section><!--/products-->')
+ +f'</div><p class="sc-actions"><a class="cta-aff sm" href="/products.html">See all {len(P_LIST)} products →</a></p></section><!--/products-->')
 _ix=open('index.html').read(); _ix=re.sub(r'<!--products-->.*?<!--/products-->','',_ix,flags=re.S)
 if '<!--/showcase-->' in _ix: _ix=_ix.replace('<!--/showcase-->','<!--/showcase-->'+_TZ,1)
 open('index.html','w').write(_ix)
