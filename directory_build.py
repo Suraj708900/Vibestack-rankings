@@ -2,6 +2,45 @@
 Data: data/directory.json (tools verified by curl; descriptions from each site's own meta description)."""
 import json,os
 import photos as PH
+
+TRANCO='https://tranco-list.eu/list/Y8JGG/1000000'
+SRC=lambda u,E:f' <a class="src" href="{E(u)}" target="_blank" rel="nofollow noopener" title="Source: {E(u)}" aria-label="Source">&#8599;</a>' if u else ''
+def price_short(t,E):
+    p=t.get('pricing')
+    if not isinstance(p,dict): return 'Pricing: N/A'
+    bits=[]
+    if p.get('free_plan')=='yes': bits.append('Free plan')
+    if p.get('starting_price'): bits.append('From '+p['starting_price'])
+    return E(' · '.join(bits)) if bits else 'Pricing: N/A'
+def pop_short(t,E):
+    p=t.get('popularity')
+    if not isinstance(p,dict): return 'Popularity: N/A'
+    if p.get('tranco_rank'): return f'<span title="Rank of {E(p["domain"])} in the Tranco top-1M list {p["list_id"]} (research-grade site ranking, not a visitor count)">Top {p["tranco_rank"]:,} sites (Tranco)</span>'
+    return f'<span title="{E(p["domain"])} is not in the Tranco top-1M list {p["list_id"]}">Not in Tranco top 1M</span>'
+def badges(t,E): return ''.join(f'<span class="bdg">{E(b)}</span>' for b in t.get('badges',[]))
+def meta_html(t,E):
+    gh=t.get('github'); st=f' · ★ {gh["stars"]:,}' if gh else ''
+    return f'<div class="dmeta">{badges(t,E)}<p class="sub">{price_short(t,E)}</p><p class="sub">{pop_short(t,E)}{st}</p></div>'
+def detail_html(t,E):
+    p=t.get('pricing'); o='<section class="card dsec"><h2>Pricing</h2>'
+    if isinstance(p,dict):
+        o+=f'<ul class="kv"><li><b>Free plan:</b> {E(p.get("free_plan","unknown"))}</li>'
+        o+=(f'<li><b>Lowest listed paid price:</b> {E(p["starting_price"])} ({E(p["currency"])}, per {E(p["period"])})</li>' if p.get('starting_price') else '<li><b>Starting price:</b> N/A</li>')
+        o+=f'<li><b>Pricing page:</b> <a href="{E(p["url"])}" target="_blank" rel="nofollow noopener">{E(p["url"])}</a></li><li class="sub">Read from the pricing page on {E(p["checked"])}; prices change, confirm on the official site.</li></ul>'
+    else: o+='<p>N/A</p>'
+    o+='</section><section class="card dsec"><h2>Key features</h2>'
+    o+=('<ul>'+''.join(f'<li>{E(x)}</li>' for x in t['key_features'])+f'</ul><p class="sub">From the official site{SRC(t.get("key_features_source"),E)}</p>' if t.get('key_features') else '<p>N/A</p>')
+    o+='</section><section class="card dsec"><h2>Stats & trust</h2><ul class="kv">'
+    ps=t.get('published_stats')
+    o+='<li><b>Published by the tool:</b> '+(' · '.join(f'&ldquo;{E(x["text"])}&rdquo;{SRC(x["source"],E)}' for x in ps) if isinstance(ps,list) else 'N/A')+'</li>'
+    pp=t.get('popularity')
+    o+=f'<li><b>Popularity:</b> {pop_short(t,E)} <a class="src" href="{TRANCO}" target="_blank" rel="noopener" title="About the Tranco list">&#9432;</a></li>' if isinstance(pp,dict) else '<li><b>Popularity:</b> N/A</li>'
+    gh=t.get('github')
+    if gh: o+=f'<li><b>GitHub:</b> ★ {gh["stars"]:,} stars · last updated {E(gh["last_push"])}'+(f' · license {E(gh["license"])}' if gh.get('license') and gh['license']!='NOASSERTION' else '')+f'{SRC(gh["repo"],E)}</li>'
+    o+=f'<li class="vline" data-slug="{E(t["slug"])}" hidden></li>'
+    o+='</ul>'+(f'<p>{badges(t,E)}</p>' if t.get('badges') else '')+'<p class="sub">Listing stats come from each tool&rsquo;s own website, GitHub and the public Tranco list; we do not estimate traffic.</p></section>'
+    return o
+VOTEJS='<script>(function(){var l=document.querySelector(".vline");if(!l)return;fetch("/api/stats?days=30").then(function(r){return r.json()}).then(function(d){var v=d.votes&&d.votes[l.dataset.slug];if(v&&(v.up+v.down)>0){l.innerHTML="<b>Reader votes (30 days):</b> "+v.up+" of "+(v.up+v.down)+" found it helpful";l.hidden=false}}).catch(function(){})})()</script>'
 def run(g):
     E,page,urls,BASE,SITE=g['E'],g['page'],g['urls'],g['BASE'],g['SITE']
     D=json.load(open('data/directory.json')); DN=D['departments']; T=D['tools']
@@ -9,13 +48,13 @@ def run(g):
     # /go/ fallback data (affiliates.json still wins in api/go.js)
     AL=D.get('aliases',{}); U={t['slug']:t['url'] for t in T}
     json.dump({**{a:U[b] for a,b in AL.items() if b in U},**U},open('data/go-directory.json','w'),separators=(',',':'))
-    json.dump([[t['name'],t['slug'],t['department'],t['description'][:160],t['logo'],PH.pick(t['department'],t['slug']),1 if PH.offer(A.get(t['slug'])) else 0] for t in T],open('data/directory-index.json','w'),separators=(',',':'),ensure_ascii=False)
+    json.dump([[t['name'],t['slug'],t['department'],t['description'][:160],t['logo'],PH.pick(t['department'],t['slug']),1 if PH.offer(A.get(t['slug'])) else 0,meta_html(t,g['E'])] for t in T],open('data/directory-index.json','w'),separators=(',',':'),ensure_ascii=False)
     by={}
     for t in T: by.setdefault(t['department'],[]).append(t)
     order=sorted(by,key=lambda k:-len(by[k]))
-    CSS='<style>.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}.dcard{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:inherit}.dcard img{border-radius:8px;flex:none}.dcard p{margin:.3em 0 0;font-size:.9em}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.chips a,.chips button{padding:4px 10px;border:1px solid #333a4d;border-radius:99px;background:none;color:inherit;cursor:pointer;font:inherit;text-decoration:none}.chips .on{border-color:#7c5cff;background:#7c5cff33}</style>'
+    CSS='<style>.dmeta{margin:.4em 0}.dmeta p{margin:.15em 0;font-size:.82em}.bdg{display:inline-block;font-size:.72em;padding:2px 8px;margin:0 4px 4px 0;border-radius:99px;border:1px solid #7c5cff66;background:#7c5cff1a}.dsec{margin-top:14px}.dsec ul{padding-left:1.1em}.kv{list-style:none;padding-left:0!important}.kv li{margin:.35em 0;overflow-wrap:anywhere}a.src{text-decoration:none;opacity:.6;font-size:.85em}a.src:hover{opacity:1}@media(max-width:600px){.dsec{padding:12px}}.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}.dcard{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:inherit}.dcard img{border-radius:8px;flex:none}.dcard p{margin:.3em 0 0;font-size:.9em}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.chips a,.chips button{padding:4px 10px;border:1px solid #333a4d;border-radius:99px;background:none;color:inherit;cursor:pointer;font:inherit;text-decoration:none}.chips .on{border-color:#7c5cff;background:#7c5cff33}</style>'
     def card(t): return (f'<article class="card sc-card dcard2">'+PH.banner(t['department'],t['slug'],t['logo'],t['name'])
-                         +f'<div class="sc-body"><h3><a href="/t/{t["slug"]}.html">{E(t["name"])}</a></h3><p class="sub l1">{E(t["description"][:140])}</p>{PH.cta(t["slug"],t["name"],A.get(t["slug"]),"cta-aff sm")}</div></article>')
+                         +f'<div class="sc-body"><h3><a href="/t/{t["slug"]}.html">{E(t["name"])}</a></h3><p class="sub l1">{E(t["description"][:140])}</p>{meta_html(t,E)}{PH.cta(t["slug"],t["name"],A.get(t["slug"]),"cta-aff sm")}</div></article>')
     chips=lambda cur:'<nav class="chips" aria-label="Departments"><a href="/directory/"'+(' class="on"' if cur is None else '')+'>All</a>'+''.join(f'<a href="/directory/{k}.html"'+(' class="on"' if k==cur else '')+f'>{E(DN[k])} ({len(by[k])})</a>' for k in order)+'</nav>'
     # browse page (client-side filter/search/pagination over data/directory-index.json)
     js='''<script>(function(){var D=[],dep="",q="",n=48,DN=%s,g=document.getElementById("dg"),m=document.getElementById("dm"),i=document.getElementById("dq"),f=document.getElementById("df");
@@ -47,12 +86,10 @@ fetch("/data/directory-index.json").then(function(r){return r.json()}).then(func
           +'<section class="tool-hero card">'+PH.banner(t['department'],s,t['logo'],t['name'],eager=True,sizes='(max-width:900px) 100vw, 1100px')+f'<div class="tool-hero-body"><h1>{E(t["name"])}</h1>'
           f'<p>{E(t["description"])}</p><p class="sub">Source: {E(t["description_source"])}. Link verified live on {t["verified"]}.</p>'+PH.cta(s,t['name'],a)+'</div></section>'
           +(f'<p><b>Our full review:</b> <a href="{t["curated_page"]}">{E(t["name"])} ranking & verdict</a></p>' if t['curated_page'] else '')
-          +'<div class="card" style="margin-top:14px"><h2>Pricing & deals</h2>'
-          +(f'<p>{E(price)}</p>' if price else '<p>Pricing not yet verified by us. Check the official site for current plans and any free tier.</p>')
-          +'</div>'+PH.dealbox(s,t['name'],a)
+          +detail_html(t,E)+PH.dealbox(s,t['name'],a)
           +('<h2>More in '+E(DN[t['department']])+'</h2><div class="sc-grid">'+''.join(card(x) for x in rel)+'</div>' if rel else ''))
         ld_={"@context":"https://schema.org","@type":"SoftwareApplication","name":t['name'],"url":t['url'],"description":t['description'],"applicationCategory":DN[t['department']]}
-        page(path,f'{t["name"]}: {DN[t["department"]]} AI tool · {SITE}',t['description'][:155],body+PH.sticky(s,t['name'],a)+g['ld'](ld_))
+        page(path,f'{t["name"]}: {DN[t["department"]]} AI tool · {SITE}',t['description'][:155],body+PH.sticky(s,t['name'],a)+VOTEJS+g['ld'](ld_))
     for a,b in AL.items():  # merged duplicates: keep old URLs working
         if b in U:
             os.makedirs('t',exist_ok=True)

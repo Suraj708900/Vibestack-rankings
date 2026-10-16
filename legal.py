@@ -37,6 +37,7 @@ PAGES={
 'disclaimer':('Disclaimer','VibeStack Rankings disclaimer: opinions not advice, affiliate commissions, sponsored listings labelled, promo codes not guaranteed, no warranty on accuracy.',
  S('Opinions, not advice','Content on VibeStack Rankings is for general information. It reflects our opinions and is not professional, financial, legal or security advice.')+
  S('Accuracy','We try to keep information current, but AI tools change quickly. Pricing, features and availability may be out of date; check the official source before relying on it.')+
+ S('Directory listing stats','Directory listing stats (pricing, features, user counts, ratings and similar claims) are copied from each tool\'s own website, with a source link; GitHub figures come from GitHub and popularity ranks from the public Tranco list. We do not verify or estimate them.')+
  S('Affiliate disclosure','Some links are affiliate links and are tracked through /go/ redirects. We may earn a commission at no extra cost to you. Rankings are never sold.')+
  S('Sponsored and featured listings','Paid placements are always clearly labelled and do not affect editorial rankings.')+
  S('Promo codes','Promo codes and deals are not guaranteed and may expire or have conditions set by the vendor.')+
