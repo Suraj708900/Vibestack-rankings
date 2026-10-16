@@ -16,7 +16,9 @@ function mount(el,list,cls){
   // weighted-by-priority order: higher priority first, then rotate
   list.sort((a,b)=>(b.priority||0)-(a.priority||0));
   let i=Math.floor(Math.random()*Math.min(list.length,3));
-  const show=()=>{el.innerHTML=html(list[i%list.length],cls)+(list.length>1?`<span class="promo-dots">${i%list.length+1}/${list.length}</span>`:'')};
+  const seen=new Set(JSON.parse(sessionStorage.getItem('vs-imp')||'[]'));const imp=p=>{if(seen.has(p.id))return;seen.add(p.id);sessionStorage.setItem('vs-imp',JSON.stringify([...seen]));window.VS_TRACK&&VS_TRACK({kind:'promo',type:'impression',id:p.id})};
+  el.addEventListener('click',e=>{const a=e.target.closest('.promo-cta'),pid=el.querySelector('.promo')?.dataset.id;if(a&&pid&&window.VS_TRACK)VS_TRACK({kind:'promo',type:'click',id:pid})});
+  const show=()=>{imp(list[i%list.length]);el.innerHTML=html(list[i%list.length],cls)+(list.length>1?`<span class="promo-dots">${i%list.length+1}/${list.length}</span>`:'')};
   show();
   if(list.length>1){let t=setInterval(()=>{i++;show()},8000);el.addEventListener('mouseenter',()=>clearInterval(t));el.addEventListener('mouseleave',()=>{clearInterval(t);t=setInterval(()=>{i++;show()},8000)})}
 }
