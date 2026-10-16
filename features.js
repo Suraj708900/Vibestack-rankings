@@ -91,3 +91,12 @@ if(location.pathname==='/admin-stats.html'){const box=document.createElement('se
  fetch('/api/stats?days=30').then(r=>r.json()).then(j=>{const ids=[...new Set([...Object.keys(j.aff||{}),...Object.keys(j.codes||{}),...Object.keys(j.links||{})])].sort((a,b)=>((j.aff||{})[b]||0)-((j.aff||{})[a]||0));
   document.getElementById('aff-tbl').innerHTML=ids.length?'<table class="tbl"><tr><th>Tool</th><th>/go clicks</th><th>Code copies</th><th>Link copies</th></tr>'+ids.map(k=>`<tr><td>${H(k)}</td><td>${(j.aff||{})[k]||0}</td><td>${(j.codes||{})[k]||0}</td><td>${(j.links||{})[k]||0}</td></tr>`).join('')+'</table>':'No affiliate activity yet.'}).catch(()=>{document.getElementById('aff-tbl').textContent='Stats unavailable.'})}
 })();
+/* pricing pills (Free / Paid · AI Plus) under each card CTA and tool hero; data = verified pricing only */
+(function(){var PM=null;function E(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function pills(s){var d=PM[s],w=document.createElement('div');w.className='pp';var pr='/go/'+s+'?to=pricing',at=' target="_blank" rel="sponsored nofollow noopener"';
+ if(!d||(d[0]==null&&d[1]==null)){var h=d&&d[3]?pr:'/go/'+s;w.innerHTML='<a class="pp-f pp-u" href="'+h+'"'+at+'>Free: check pricing</a><a class="pp-p pp-u" href="'+h+'"'+at+'>Paid: check pricing</a>';return w}
+ var f=d[0]===1?'<a class="pp-f on" href="/go/'+s+'"'+at+' data-tool="'+s+'">✓ Free</a>':'<span class="pp-f off" title="No free plan found on the official pricing page">Free · not offered</span>';
+ var p=d[1]===1?'<a class="pp-p on" href="'+(d[3]?pr:'/go/'+s)+'"'+at+'>Paid · AI Plus'+(d[2]?' · from '+E(d[2]):'')+'</a>':(d[3]?'<a class="pp-p pp-u" href="'+pr+'"'+at+'>Paid · check pricing</a>':'<span class="pp-p off">Paid · not listed</span>');
+ w.innerHTML=f+p;return w}
+function scan(root){if(!PM)return;(root||document).querySelectorAll('a.cta-aff[data-tool]').forEach(function(a){if(a.closest('.sticky-cta,.pp,.p-card,.deal-box'))return;var host=a.parentNode;if(host.querySelector(':scope > .pp'))return;var w=pills(a.dataset.tool);a.after(w)})}
+fetch('/data/pricing-map.json').then(function(r){return r.json()}).then(function(j){PM=j;scan();new MutationObserver(function(m){m.forEach(function(x){x.addedNodes.forEach(function(n){if(n.nodeType===1)scan(n)})})}).observe(document.body,{childList:true,subtree:true})}).catch(function(){})})();
