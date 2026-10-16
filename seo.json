@@ -1,0 +1,44 @@
+{
+ "home": [
+  "Best AI Coding Tools 2026, Ranked by Use Case | VibeStack",
+  "Best AI coding tools for 2026 ranked by use case: coding agents, app builders, databases, hosting, AI APIs and agent frameworks. Honest verdicts and links."
+ ],
+ "categories": {
+  "coding-agents": [
+   "Best AI Coding Agents 2026: Claude Code, Cursor, Codex",
+   "Best AI coding agents in 2026, ranked: Claude Code, Cursor, GitHub Copilot, OpenAI Codex and Windsurf. Honest verdicts, pricing notes and who each one fits."
+  ],
+  "app-builders": [
+   "Best AI App Builders 2026: Lovable vs Bolt vs Replit vs v0",
+   "Best AI app builders in 2026, ranked: Lovable, Bolt, Replit and v0. Which to pick for prototypes, full-stack apps or UI, with honest verdicts and pricing notes."
+  ],
+  "databases": [
+   "Best Database for Vibe Coding 2026: Supabase, Neon, More",
+   "Best databases and backends for AI-built apps in 2026: Supabase, Firebase, Neon and Convex ranked, with free-tier notes, trade-offs and who each one suits best."
+  ],
+  "hosting": [
+   "Best Hosting for Vibe-Coded Apps 2026: Vercel vs Netlify",
+   "Where to deploy AI-built apps in 2026: Vercel, Netlify, Cloudflare Pages and Render ranked, with free-tier notes, trade-offs and the best fit for each project."
+  ],
+  "ai-apis": [
+   "Best AI APIs for Developers 2026: OpenAI, Claude, Gemini",
+   "Best AI APIs and model providers for developers in 2026: OpenAI, Anthropic, Google Gemini, OpenRouter and Groq ranked, with pricing notes and when to use each."
+  ],
+  "agent-frameworks": [
+   "Best AI Agent Frameworks 2026: Agents SDK, LangGraph, More",
+   "Best AI agent frameworks in 2026, ranked: OpenAI Agents SDK, LangGraph, Vercel AI SDK, CrewAI and n8n. Honest verdicts on which fits your agent and your stack."
+  ],
+  "vibe-coding": [
+   "Best Vibe Coding Tools 2026: Lovable, Replit, Cursor, Bolt",
+   "Best vibe coding tools in 2026 for building apps by prompting: Lovable, Replit, Cursor and Bolt ranked, with honest verdicts, pricing notes and who each suits."
+  ],
+  "video": [
+   "Best AI Video Generators 2026: Runway, Veo, Kling, HeyGen",
+   "Best AI video generators in 2026, ranked: Runway, Google Veo (Flow), Kling AI and HeyGen. What each is best at, honest verdicts, pricing notes, official links."
+  ],
+  "voice": [
+   "Best AI Voice Tools 2026: ElevenLabs, Realtime API, Vapi",
+   "Best AI voice tools and APIs in 2026, ranked: ElevenLabs, OpenAI Realtime API, Vapi and Deepgram, for text-to-speech, voice agents and transcription use cases."
+  ]
+ }
+}

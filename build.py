@@ -52,6 +52,7 @@ for f in sorted(glob.glob('content/blog/*.md')):
     raw=open(f).read(); fm,body=raw.split('\n---\n',1); meta=dict(l.split(': ',1) for l in fm.strip().splitlines())
     meta['slug']=os.path.basename(f)[:-3]; meta['md']=body; posts.append(meta)
 pbycat={}
+SEO=json.load(open('seo.json')) if os.path.exists('seo.json') else {}
 for p in posts: pbycat.setdefault(p['category'],[]).append(p)
 # categories
 for c in cats:
@@ -59,6 +60,7 @@ for c in cats:
     names=', '.join(t['name'] for t in c['tools'][:3])
     title=f'Best {c["name"]} for vibe coders ({UPD[:4]}): {names}'
     desc=f'{c["q"]} Our ranked picks: '+', '.join(t['name'] for t in c['tools'])+'. Honest verdicts, pricing notes, official links.'
+    if c['id'] in SEO.get('categories',{}): title,desc=SEO['categories'][c['id']]
     top=c['tools'][0]; names=', '.join(t['name'] for t in c['tools'])
     faq_pairs=[
       (c['q'], f'Our ranked picks are {names}. Top pick: {top["name"]} — {top["verdict"]} Pricing note: {top["price"]}.'),
@@ -142,7 +144,7 @@ for p in posts:
     body=(f'<p class="sub"><a href="/blog/">Blog</a>{f" › <a href=/category/{c["id"]}.html>{E(c["name"])}</a>" if c else ""}</p><article class="post"><h1>{E(p["title"])}</h1><p class="sub">By Suraj Kamdev · {p["date"]} · {max(1,words//220)} min read</p>'
       +share(path,p['title'])+htmlbody+share(path,p['title'])+'</article>'+NL+'<div data-promo="sidebar-card"></div><h2>Related posts</h2><ul>'+''.join(f'<li><a href="/blog/{x["slug"]}.html">{E(x["title"])}</a></li>' for x in more[:5])+'</ul>'
       +(f'<p>See the full ranking: <a href="/category/{c["id"]}.html">{E(c["name"])}</a>.</p>' if c else ''))
-    page(path,p['title'],p['description'],body,typ='article',extra=extra,bodyattr=' data-page="post"')
+    page(path,p.get('seo_title',p['title']),p.get('seo_description',p['description']),body,typ='article',extra=extra,bodyattr=' data-page="post"')
 urls.append('/blog/')
 page('/blog/',f'Blog: guides for vibe coders and AI builders · {SITE}','Practical, honest guides on AI coding agents, app builders, databases, hosting, AI APIs, agents, video and voice tools.',
   '<h1>Blog</h1><p class="sub">Practical guides for vibe coders and builders. No invented stats; prices always point to official pages.</p><div class="grid">'
@@ -207,9 +209,12 @@ for f,(path,title,desc) in TOP.items():
     s=open(f).read(); s=re.sub(r'<!--seo-->.*?<!--/seo-->','',s,flags=re.S)
     s=re.sub(r'<header><nav>.*?</nav></header>',NAV,s,count=1,flags=re.S)
     if path:
+        if f=='index.html' and 'home' in SEO: title,desc=SEO['home']
+        s=re.sub(r'<meta name="description" content="[^"]*">','',s)
+        s=re.sub(r'<title>.*?</title>','<title>'+E(title)+'</title>',s,count=1,flags=re.S)
         h=head(title,desc,path); tags=re.search(r'<link rel="canonical".*?(?=<link rel="stylesheet")',h).group(0)
         noidx='<meta name="robots" content="noindex">' if f=='thanks.html' else ''
-        s=s.replace('</title>','</title><!--seo-->'+tags+noidx+'<!--/seo-->',1)
+        s=s.replace('</title>','</title><!--seo--><meta name="description" content="'+E(desc)+'">'+tags+noidx+'<!--/seo-->',1)
         if f=='index.html':
             s=s.replace('</head>','<!--seo-->'+ld({"@context":"https://schema.org","@type":"WebSite","name":SITE,"url":BASE})+'<!--/seo--></head>',1)
             pre='<!--seo-->'+''.join(f'<section class="cat"><h2><a href="/category/{c["id"]}.html">{E(c["name"])} →</a></h2><p class="sub">{E(c["q"])}</p><div class="grid">'+''.join(tcard(t,i+1) for i,t in enumerate(c['tools']))+'</div></section>' for c in cats)+'<!--/seo-->'

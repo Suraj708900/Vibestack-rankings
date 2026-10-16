@@ -3,6 +3,8 @@ keyword: Claude Code tutorial for beginners
 description: A beginner-friendly Claude Code tutorial: what it is, how to install it, running your first task, using CLAUDE.md project memory, permissions, and habits that get better results.
 date: 2026-10-16
 category: coding-agents
+seo_title: Claude Code Tutorial for Beginners (2026 Guide)
+seo_description: A beginner Claude Code tutorial for 2026: install it, run your first task, write a CLAUDE.md, use plan mode, review diffs, and avoid early mistakes.
 ---
 [Claude Code](/tools/claude-code.html) is Anthropic's coding agent that runs in your terminal. You describe what you want, and it explores your project, edits files, runs commands such as tests, and reports back. It ranks near the top of our [Coding agents category](/category/coding-agents.html). This tutorial gets you from zero to a productive first session. Commands and options evolve, so check Anthropic's official Claude Code documentation for the current install steps.
 
