@@ -2,6 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /admin-promos.html
 Disallow: /admin-stats.html
+Disallow: /account
+Disallow: /login
+Disallow: /signup
 Disallow: /api/
 
 Sitemap: https://vibestack-rankings.vercel.app/sitemap.xml

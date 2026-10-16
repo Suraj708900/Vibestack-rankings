@@ -16,7 +16,7 @@ SITE='VibeStack Rankings'; ROOT=os.path.dirname(os.path.abspath(__file__)); os.c
 E=lambda s:html.escape(str(s),quote=True)
 slug=lambda s:re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
 d=json.load(open('tools.json')); cats=d['categories']; UPD=d['updated']
-NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/directory/">Directory</a><a href="/hosting/hostinger.html">Hosting</a><a href="/deals/">Deals</a><a href="/compare.html">Compare</a><a href="/featured.html">Get featured</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header>'
+NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/directory/">Directory</a><a href="/hosting/hostinger.html">Hosting</a><a href="/deals/">Deals</a><a href="/compare.html">Compare</a><a href="/featured.html">Get featured</a><a class="nav-auth" href="/login">Log in</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header>'
 FOOT=('<footer><p><b>Affiliate disclosure:</b> some links may be affiliate links, so we may earn a commission at no extra cost to you. Rankings are never sold; sponsored listings are always labeled.</p>'
  '<p><a href="/blog/">Blog</a> · '+' · '.join(f'<a href="/category/{c["id"]}.html">{E(c["name"])}</a>' for c in cats)+'</p>'
  '<p><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/refund">Refund policy</a> · <a href="/disclaimer">Disclaimer</a></p>'
@@ -34,7 +34,7 @@ def share(path,title):
     return (f'<div class="share" aria-label="Share"><span class="sub">Share:</span> <a href="https://twitter.com/intent/tweet?url={u}&text={t}" target="_blank" rel="noopener">X</a> <a href="https://www.linkedin.com/sharing/share-offsite/?url={u}" target="_blank" rel="noopener">LinkedIn</a> <a href="https://wa.me/?text={t}%20{u}" target="_blank" rel="noopener">WhatsApp</a> <button class="s" data-copy>Copy link</button></div>')
 NL=('<section id="post-newsletter" class="card nl-box"><h2>Get the weekly stack</h2><p class="sub">Rank movers and new AI tools for builders, once a week. Free, no spam, unsubscribe anytime.</p>'
  '<form class="bar nlf"><input type="email" name="email" placeholder="you@example.com" required aria-label="Email"><input name="company" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><button type="submit">Subscribe</button><span class="nlmsg sub" style="align-self:center"></span></form></section>')
-SCRIPTS='<script src="/site.min.js" defer></script><script src="/features.min.js" defer></script><script src="/promos.min.js" defer></script><script src="/feed.min.js" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script>'
+SCRIPTS='<script src="/auth.js" defer></script><script src="/site.min.js" defer></script><script src="/features.min.js" defer></script><script src="/promos.min.js" defer></script><script src="/feed.min.js" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script>'
 def page(path,title,desc,body,typ='website',extra='',bodyattr=''):
     full=os.path.join(ROOT,path.lstrip('/')); full=full+'index.html' if full.endswith('/') else full
     os.makedirs(os.path.dirname(full),exist_ok=True)
@@ -240,18 +240,19 @@ for f,(path,title,desc) in TOP.items():
     s=s.replace('href="/style.css"','href="/style.min.css"')
     for js in ['app','promos','feed']: s=s.replace(f'src="/{js}.js"',f'src="/{js}.min.js"')
     s=re.sub(r'<!--rt-->.*?<!--/rt-->','',s,flags=re.S)
-    s=s.replace('</body>','<!--rt--><script src="/site.min.js" defer></script><script src="/features.min.js" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script><!--/rt--></body>',1)
+    s=s.replace('</body>','<!--rt--><script src="/auth.js" defer></script><script src="/site.min.js" defer></script><script src="/features.min.js" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script><!--/rt--></body>',1)
     if 'preconnect' not in s: s=s.replace('<link rel="stylesheet"','<link rel="preconnect" href="https://www.google.com"><link rel="stylesheet"',1)
     if GSCM and 'google-site-verification' not in s: s=s.replace('</head>',GSCM+'</head>',1)
     open(f,'w').write(s)
 exec(open(os.path.join(ROOT,'build_features.py')).read())  # compare, embed, features.js
+import accounts_build; accounts_build.run(globals())  # /signup /login /account
 import directory_build; directory_build.run(globals())  # /directory/, /t/<slug>, /hosting/
 today=datetime.date.today().isoformat()
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{BASE}{u}</loc><lastmod>{today}</lastmod></url>\n' for u in urls)+'</urlset>\n')
 open(INDEXNOW_KEY+'.txt','w').write(INDEXNOW_KEY)
 # Preserve GSC HTML verification file at site root (not listed in sitemap urls)
 open(GSC_HTML_FILE,'w').write(GSC_HTML_BODY)
-open('robots.txt','w').write(f'User-agent: *\nAllow: /\nDisallow: /admin-promos.html\nDisallow: /admin-stats.html\nDisallow: /api/\n\nSitemap: {BASE}/sitemap.xml\n')
+open('robots.txt','w').write(f'User-agent: *\nAllow: /\nDisallow: /admin-promos.html\nDisallow: /admin-stats.html\nDisallow: /account\nDisallow: /login\nDisallow: /signup\nDisallow: /api/\n\nSitemap: {BASE}/sitemap.xml\n')
 news=d.get('news',[])
 open('llms.txt','w').write(f'# {SITE}\n\n> Opinionated, ranked AI tools for vibe coders and builders, with honest verdicts, pricing notes (always pointing to official pricing) and official links. Sponsored placements are always labelled and never affect rankings.\n\n## Rankings\n'
  +''.join(f'- [{c["name"]}]({BASE}/category/{c["id"]}.html): {c["q"]} Picks: {", ".join(t["name"] for t in c["tools"])}\n' for c in cats)
