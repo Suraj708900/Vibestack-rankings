@@ -9,6 +9,9 @@ BASE=os.environ.get('SITE_BASE','https://vibestack-rankings.vercel.app').rstrip(
 GSC_VERIFICATION=''  # paste Google Search Console token here
 GSCM=f'<meta name="google-site-verification" content="{GSC_VERIFICATION}">' if GSC_VERIFICATION else ''
 INDEXNOW_KEY='4bc94dce2e8b15bfe59f1ffa5e81787b'
+# Google Search Console HTML-file verification (root file; never add to sitemap)
+GSC_HTML_FILE='google90f201efb6ea8dc1.html'
+GSC_HTML_BODY='google-site-verification: google90f201efb6ea8dc1.html'
 SITE='VibeStack Rankings'; ROOT=os.path.dirname(os.path.abspath(__file__)); os.chdir(ROOT)
 E=lambda s:html.escape(str(s),quote=True)
 slug=lambda s:re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
@@ -226,6 +229,8 @@ for f,(path,title,desc) in TOP.items():
 today=datetime.date.today().isoformat()
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{BASE}{u}</loc><lastmod>{today}</lastmod></url>\n' for u in urls)+'</urlset>\n')
 open(INDEXNOW_KEY+'.txt','w').write(INDEXNOW_KEY)
+# Preserve GSC HTML verification file at site root (not listed in sitemap urls)
+open(GSC_HTML_FILE,'w').write(GSC_HTML_BODY)
 open('robots.txt','w').write(f'User-agent: *\nAllow: /\nDisallow: /admin-promos.html\nDisallow: /admin-stats.html\nDisallow: /api/\n\nSitemap: {BASE}/sitemap.xml\n')
 news=d.get('news',[])
 open('llms.txt','w').write(f'# {SITE}\n\n> Opinionated, ranked AI tools for vibe coders and builders, with honest verdicts, pricing notes (always pointing to official pricing) and official links. Sponsored placements are always labelled and never affect rankings.\n\n## Rankings\n'
