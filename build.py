@@ -264,4 +264,13 @@ open('llms.txt','w').write(f'# {SITE}\n\n> Opinionated, ranked AI tools for vibe
  +'\n## Guides\n'+''.join(f'- [{p["title"]}]({BASE}/blog/{p["slug"]}.html): {p["description"]}\n' for p in posts)
  +'\n## Agent Tools\n'+f'- [Agent Tools]({BASE}/agent-tools.html): open-source MCP servers and CLI tools for AI agents\n'+''.join(f'- [{t["name"]}]({t["url"]}): {t["tagline"]}\n' for t in _ATL)
  +f'\n## Data\n- [tools.json]({BASE}/tools.json): full ranking data\n- [New this week page]({BASE}/new.html)\n')
+# cache-bust static assets on every HTML page (?v=<content hash>)
+import hashlib
+_V={a:hashlib.md5(open(a,'rb').read()).hexdigest()[:10] for a in ['style.min.css','style.css','site.min.js','features.min.js','promos.min.js','feed.min.js','app.min.js','auth.js'] if os.path.exists(a)}
+for _f in glob.glob('**/*.html',recursive=True):
+    if _f.startswith(('node_modules','vendor')): continue
+    _s=open(_f).read(); _o=_s
+    for a,h in _V.items(): _s=re.sub(r'(["\'])/'+re.escape(a)+r'(\?v=[0-9a-f]+)?(["\'])',lambda m,a=a,h=h:m.group(1)+'/'+a+'?v='+h+m.group(3),_s)
+    if _s!=_o: open(_f,'w').write(_s)
+print('cache-bust',_V.get('style.min.css'))
 print(f'built {len(cats)} categories, {len(tools)} tools, {len(posts)} posts, {len(urls)} sitemap urls')

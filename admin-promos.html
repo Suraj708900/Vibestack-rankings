@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Promo admin · VibeStack Rankings</title><link rel="preconnect" href="https://www.google.com"><link rel="stylesheet" href="/style.min.css">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Promo admin · VibeStack Rankings</title><link rel="preconnect" href="https://www.google.com"><link rel="stylesheet" href="/style.min.css?v=5d3b35d04f">
 <style>table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:8px;border-bottom:1px solid #222838;text-align:left;vertical-align:top}th{cursor:pointer;color:#9aa1b5}
 form.ed{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}form.ed label{display:flex;flex-direction:column;font-size:12px;color:#9aa1b5;gap:4px}
 .st{font-size:11px;border-radius:6px;padding:2px 6px}.on{background:#163d2e;color:#5be3a8}.off{background:#3a1c24;color:#ff8da1}.sch{background:#2f2a14;color:#f5b942}
@@ -55,4 +55,4 @@ $('exp').onclick=()=>{doc.updated=today;const a=document.createElement('a');a.hr
 $('imp').onchange=async e=>{try{const d=JSON.parse(await e.target.files[0].text());if(!Array.isArray(d.promotions))throw 0;doc=d;save();draw();msg('Imported')}catch{alert('Not a valid promotions.json')}};
 $('reset').onclick=()=>{if(confirm('Discard local edits?')){localStorage.removeItem(KEY);load(true)}};
 load();
-</script><!--rt--><script src="/auth.js" defer></script><script src="/site.min.js" defer></script><script src="/features.min.js" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script><!--/rt--></body></html>
+</script><!--rt--><script src="/auth.js?v=d9817a754a" defer></script><script src="/site.min.js?v=a32539576f" defer></script><script src="/features.min.js?v=aff18f6dc6" defer></script><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script><!--/rt--></body></html>
