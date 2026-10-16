@@ -37,3 +37,8 @@ When a real sponsor books, delete or deactivate the matching `example-*` slot. N
 - Several promos in one slot rotate automatically (every 8 s, priority-ordered).
 - The "Builder tips & tool spotlights" feed (`feed.json`, rendered by `feed.js`) picks 3 posts based on the
   date, so it changes daily without redeploying. Add posts by appending to `feed.json` (`type,title,body,link,logo,tags`).
+
+
+## Optional offer and code fields
+
+Any promotion can carry `"offer"` (short text, e.g. the partner's stated discount) and `"code"` (a real code supplied by the partner). They render inside the slot with a Copy code button; copies are counted in /admin-stats.html. Never add a code or percentage that the partner did not give you in writing.

@@ -1,5 +1,5 @@
 const H=(s)=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const card=(t,i,c)=>`<div class="card"><span class="rank">#${i+1}</span>${c?` <span class="tag">${H(c)}</span>`:''}<h3 style="margin:.4em 0"><a href="${t.url}" data-tool="${t.name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}" target="_blank" rel="noopener sponsored">${H(t.name)} ↗</a></h3><p>${H(t.verdict)}</p><div class="price">${H(t.price)}</div><div style="margin-top:8px">${t.tags.map(x=>`<span class="tag">${H(x)}</span>`).join('')}</div></div>`;
+const card=(t,i,c)=>`<div class="card"><span class="rank">#${i+1}</span>${c?` <span class="tag">${H(c)}</span>`:''}<h3 style="margin:.4em 0"><a href="/go/${t.name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}" data-tool="${t.name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}" target="_blank" rel="sponsored nofollow noopener">${H(t.name)} ↗</a></h3><p>${H(t.verdict)}</p><div class="price">${H(t.price)}</div><div style="margin-top:8px">${t.tags.map(x=>`<span class="tag">${H(x)}</span>`).join('')}</div></div>`;
 fetch('/tools.json').then(r=>r.json()).then(d=>{
  const el=document.getElementById('app'),p=document.body.dataset.page;
  if(p==='home'){

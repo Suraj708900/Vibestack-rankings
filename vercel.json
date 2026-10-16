@@ -32,5 +32,15 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/go/:slug",
+      "destination": "/api/go?slug=:slug"
+    },
+    {
+      "source": "/deals",
+      "destination": "/deals/index.html"
+    }
   ]
 }

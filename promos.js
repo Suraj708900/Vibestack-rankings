@@ -9,7 +9,7 @@ const live=p=>p&&p.active!==false&&(!p.start||p.start<=today)&&(!p.end||p.end>=t
 function html(p,cls){
   const ex=p.example?'<span class="promo-ex">EXAMPLE</span>':'';
   const logo=p.logo?`<img class="promo-logo" src="${H(safeUrl(p.logo))}" alt="" loading="lazy" width="40" height="40">`:'<span class="promo-logo promo-ph">★</span>';
-  return `<div class="promo ${cls}" data-id="${H(p.id)}"><span class="promo-label">Sponsored</span>${ex}${logo}<div class="promo-body"><b>${H(p.tool)}</b><span>${H(p.headline)}</span></div><a class="promo-cta" href="${H(safeUrl(p.link))}" ${/^https?:/.test(p.link)?'target="_blank" rel="noopener sponsored"':''}>${H(p.cta||'Learn more')} →</a></div>`;
+  return `<div class="promo ${cls}" data-id="${H(p.id)}"><span class="promo-label">Sponsored</span>${ex}${logo}<div class="promo-body"><b>${H(p.tool)}</b><span>${H(p.headline)}</span>${p.offer?`<span class="promo-offer">${H(p.offer)}</span>`:''}${p.code?` <code>${H(p.code)}</code> <button type="button" data-code="${H(p.code)}" data-code-id="${H(p.id)}">Copy code</button>`:''}</div><a class="promo-cta" href="${H(safeUrl(p.link))}" ${/^https?:/.test(p.link)?'target="_blank" rel="sponsored nofollow noopener"':''}>${H(p.cta||'Learn more')} →</a></div>`;
 }
 function mount(el,list,cls){
   if(!list.length){el.remove();return}

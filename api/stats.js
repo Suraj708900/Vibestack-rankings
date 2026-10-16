@@ -3,7 +3,7 @@
 const { list } = require('@vercel/blob');
 module.exports = async (req, res) => {
   const days = Math.min(30, Math.max(1, parseInt((req.query && req.query.days) || '7', 10) || 7));
-  const out = { days, since: null, promos: {}, tools: {}, stored: !!process.env.BLOB_READ_WRITE_TOKEN, truncated: false };
+  const out = { days, since: null, promos: {}, tools: {}, aff: {}, codes: {}, stored: !!process.env.BLOB_READ_WRITE_TOKEN, truncated: false };
   res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=600');
   if (!out.stored) return res.status(200).json(out);
   let ops = 0;
@@ -17,6 +17,8 @@ module.exports = async (req, res) => {
           const [, , kind, type, id] = bl.pathname.split('/');
           if (kind === 'promo') { const p = out.promos[id] = out.promos[id] || { impressions: 0, clicks: 0 }; p[type === 'click' ? 'clicks' : 'impressions']++; }
           else if (kind === 'tool' && type === 'click') out.tools[id] = (out.tools[id] || 0) + 1;
+          else if (kind === 'aff') out.aff[id] = (out.aff[id] || 0) + 1;
+          else if (kind === 'code') out.codes[id] = (out.codes[id] || 0) + 1;
         }
         cursor = r.hasMore ? r.cursor : undefined;
         if (ops >= 40) { out.truncated = true; cursor = undefined; d = days; }

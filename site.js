@@ -46,3 +46,5 @@ if(document.body.dataset.page==='post'&&!localStorage.getItem('vs-subscribed')&&
 document.addEventListener('submit',e=>{const f=e.target;if(!f.matches('.nlf'))return;e.preventDefault();const m=f.querySelector('.nlmsg');
  fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:f.email.value,company:f.company.value})}).then(r=>r.json()).then(j=>{m.textContent=j.ok?"You're in! 🎉":j.error;if(j.ok){f.reset();localStorage.setItem('vs-subscribed','1')}}).catch(()=>m.textContent='Something went wrong.')});
 })();
+
+document.addEventListener('click',e=>{const b=e.target.closest('[data-code]');if(!b)return;const c=b.dataset.code;navigator.clipboard&&navigator.clipboard.writeText(c);b.textContent='Copied ✓';setTimeout(()=>b.textContent='Copy code',1500);try{window.VS_TRACK&&VS_TRACK({kind:'code',type:'copy',id:b.dataset.codeId||'unknown'})}catch(_){}});

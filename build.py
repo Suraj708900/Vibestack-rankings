@@ -13,7 +13,7 @@ SITE='VibeStack Rankings'; ROOT=os.path.dirname(os.path.abspath(__file__)); os.c
 E=lambda s:html.escape(str(s),quote=True)
 slug=lambda s:re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
 d=json.load(open('tools.json')); cats=d['categories']; UPD=d['updated']
-NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/featured.html">Get featured</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header>'
+NAV='<header><nav><a class="logo" href="/">VibeStack Rankings</a><a href="/">Rankings</a><a href="/new.html">New this week</a><a href="/blog/">Blog</a><a href="/submit.html">Submit a tool</a><a href="/deals/">Deals</a><a href="/featured.html">Get featured</a><a href="https://devresources-showcase.vercel.app" rel="noopener">Showcase</a><a href="/#newsletter">Newsletter</a><button class="sx-btn" data-search aria-label="Search (Ctrl+K)">🔍 Search <kbd>Ctrl K</kbd></button></nav></header>'
 FOOT=('<footer><p><b>Affiliate disclosure:</b> some links may be affiliate links, so we may earn a commission at no extra cost to you. Rankings are never sold; sponsored listings are always labeled.</p>'
  '<p><a href="/blog/">Blog</a> · '+' · '.join(f'<a href="/category/{c["id"]}.html">{E(c["name"])}</a>' for c in cats)+'</p>'
  '<p>© 2026 VibeStack Rankings by Suraj Kamdev · <a href="mailto:kamdevsuraj03@gmail.com">kamdevsuraj03@gmail.com</a></p></footer>')
@@ -42,7 +42,7 @@ for c in cats:
     for i,t in enumerate(c['tools']):
         s=slug(t['name']); tools.setdefault(s,{'t':t,'ranks':[]})['ranks'].append((c,i+1))
 def tcard(t,i):
-    return f'<div class="card"><span class="rank">#{i}</span><h3 style="margin:.4em 0"><img src="https://www.google.com/s2/favicons?domain={t["url"].split("/")[2]}&sz=64" width="22" height="22" alt="" loading="lazy" decoding="async" style="vertical-align:-4px;border-radius:5px;margin-right:6px"><a href="/tools/{slug(t["name"])}.html">{E(t["name"])}</a></h3><p>{E(t["verdict"])}</p><div class="price">{E(t["price"])}</div><p style="margin:.5em 0 0"><a href="{E(t["url"])}" data-tool="{slug(t["name"])}" target="_blank" rel="noopener sponsored">Official site ↗</a></p></div>'
+    return f'<div class="card"><span class="rank">#{i}</span><h3 style="margin:.4em 0"><img src="https://www.google.com/s2/favicons?domain={t["url"].split("/")[2]}&sz=64" width="22" height="22" alt="" loading="lazy" decoding="async" style="vertical-align:-4px;border-radius:5px;margin-right:6px"><a href="/tools/{slug(t["name"])}.html">{E(t["name"])}</a></h3><p>{E(t["verdict"])}</p><div class="price">{E(t["price"])}</div><p style="margin:.5em 0 0"><a href="/go/{slug(t["name"])}" data-tool="{slug(t["name"])}" target="_blank" rel="sponsored nofollow noopener">Official site ↗</a></p></div>'
 # blog parse
 posts=[]
 for f in sorted(glob.glob('content/blog/*.md')):
@@ -85,10 +85,43 @@ for s,v in tools.items():
     body=(f'<p class="sub"><a href="/">Rankings</a> › <a href="/category/{v["ranks"][0][0]["id"]}.html">{E(v["ranks"][0][0]["name"])}</a> › {E(t["name"])}</p>'
       f'<h1><img src="https://www.google.com/s2/favicons?domain={dom}&sz=64" width="40" height="40" alt="" style="vertical-align:middle;border-radius:8px"> {E(t["name"])}</h1>'
       f'<p class="sub">Ranked {rk}</p>'+share(path,t["name"]+' review · '+SITE)+f'<div class="card"><h2>Verdict</h2><p>{E(t["verdict"])}</p><p class="price">Pricing: {E(t["price"])} (always check the official pricing page)</p>'
-      f'<p>{"".join(f"<span class=tag>{E(x)}</span>" for x in t["tags"])}</p><p><a href="{E(t["url"])}" data-tool="{s}" target="_blank" rel="noopener sponsored">Visit {E(t["name"])} ↗</a></p></div>'
+      f'<p>{"".join(f"<span class=tag>{E(x)}</span>" for x in t["tags"])}</p><p><a href="/go/{s}" data-tool="{s}" target="_blank" rel="sponsored nofollow noopener">Visit {E(t["name"])} ↗</a></p></div>'
       +('<h2>Alternatives</h2><ul>'+''.join(f'<li><a href="/tools/{slug(a["name"])}.html">{E(a["name"])}</a>: {E(a["verdict"])}</li>' for a in alts)+'</ul>' if alts else '')
       +('<h2>Related guides</h2><ul>'+''.join(f'<li><a href="/blog/{p["slug"]}.html">{E(p["title"])}</a></li>' for p in rel)+'</ul>' if rel else '')+'<aside data-promo="sidebar-card"></aside>')
     page(path,f'{t["name"]}: review, pricing notes & alternatives · {SITE}',f'{t["name"]}: {t["verdict"]} Ranked {", ".join(f"#{r} in {c["name"]}" for c,r in v["ranks"])}.',body,extra=ld(sw))
+
+# deals (only real, cited offers; codes only when Suraj adds them to affiliates.json)
+AFF=json.load(open('affiliates.json'))['tools']
+def offer_html(s,a):
+    if a.get('status')=='active' and a.get('discount_code'):
+        return (f'<div class="card"><h3>{E(a["name"])}</h3><p>{E(a.get("discount_text",""))}</p><p><code>{E(a["discount_code"])}</code> <button data-code="{E(a["discount_code"])}" data-code-id="{s}">Copy code</button></p>'
+          +(f'<p class="sub">Valid {E(a.get("start",""))} to {E(a.get("end",""))}</p>' if a.get('end') else '')+f'<a href="/go/{s}" data-tool="{s}" target="_blank" rel="sponsored nofollow noopener">Use on {E(a["name"])} ↗</a></div>')
+    return ''
+VERIFIED=[('n8n','n8n Cloud 14-day free trial','n8n states its Cloud plans come with a 14-day free trial.','https://n8n.io/affiliates/')]
+codes=''.join(offer_html(s,a) for s,a in AFF.items())
+db=('<h1>AI tool deals &amp; discount codes</h1><p class="sub">We only list offers we can verify on a public page, with the source linked. No invented codes or percentages. Last checked '+UPD+'.</p>'
+  +'<h2>Verified public offers</h2><div class="grid">'+''.join(f'<div class="card"><h3><a href="/tools/{s}.html">{E(n)}</a></h3><p>{E(t)}</p><p class="sub">Source: <a href="{E(u)}" rel="noopener nofollow" target="_blank">{E(u.split("/")[2])}</a></p><a href="/go/{s}" data-tool="{s}" target="_blank" rel="sponsored nofollow noopener">Visit ↗</a></div>' for s,n,t,u in VERIFIED)+'</div>'
+  +'<h2>Exclusive codes</h2>'+(f'<div class="grid">{codes}</div>' if codes else '<p class="card">No exclusive codes yet. When we get a real code from a tool\'s partner program it will appear here with its terms. Makers: <a href="/featured.html">get in touch</a>.</p>')
+  +'<h2>Pricing, free trial &amp; alternatives by tool</h2><ul>'+''.join(f'<li><a href="/deals/{s}.html">{E(a["name"])} discount code, pricing &amp; free trial</a></li>' for s,a in AFF.items())+'</ul>')
+page('/deals/',f'AI tool deals, discount codes & free trials · {SITE}','Verified deals, free trials and pricing notes for AI coding, app-builder, video and voice tools. Only real offers with sources.',db); urls.append('/deals/')
+for s,a in AFF.items():
+    if s not in tools: continue
+    t=tools[s]['t']; v=tools[s]; path=f'/deals/{s}.html'; urls.append(path)
+    alts=[x for c,_ in v['ranks'] for x in c['tools'] if x['name']!=t['name']][:5]
+    ver=[x for x in VERIFIED if x[0]==s]; code=offer_html(s,a)
+    dtxt=(f'Yes: {a["discount_text"]} (code shown below).' if code else f'We have not verified any public {t["name"]} discount code. Codes found on coupon sites are often fake or expired; we only list codes we can confirm.')
+    faq=[(f'Is there a {t["name"]} discount code?',dtxt),
+         (f'How much does {t["name"]} cost?',f'Our note: {t["price"]}. Prices change, so check the official {t["name"]} pricing page before buying.'),
+         (f'Does {t["name"]} have a free trial or free tier?',(ver[0][2] if ver else ('Our listing tags it with a free tier; confirm on the official site.' if ('free-tier' in t.get('tags',[]) or 'free' in t.get('price','').lower()) else 'Check the official pricing page; we only state free tiers we can confirm.'))),
+         (f'What are the best {t["name"]} alternatives?',', '.join(x['name'] for x in alts)+'. See the ranked comparison pages for verdicts.' if alts else 'See our category rankings.')]
+    fl={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub('<[^>]+>','',x)}} for q,x in faq]}
+    body=(f'<p class="sub"><a href="/deals/">Deals</a> › {E(t["name"])}</p><h1>{E(t["name"])} discount code, pricing, free trial &amp; alternatives</h1>'+share(path,t["name"]+' deals & pricing · '+SITE)
+      +(code or '<div class="card"><p><b>No verified discount code right now.</b> We never publish made-up codes.</p></div>')
+      +''.join(f'<div class="card"><h3>{E(n)}</h3><p>{E(x)}</p><p class="sub">Source: <a href="{E(u)}" rel="noopener nofollow" target="_blank">{E(u.split("/")[2])}</a></p></div>' for _,n,x,u in ver)
+      +f'<div class="card"><h2>Pricing</h2><p>{E(t["price"])}</p><p>{E(t["verdict"])}</p><p><a href="/go/{s}" data-tool="{s}" target="_blank" rel="sponsored nofollow noopener">Check current {E(t["name"])} pricing ↗</a> · <a href="/tools/{s}.html">Full review</a></p></div>'
+      +('<h2>Alternatives</h2><ul>'+''.join(f'<li><a href="/tools/{slug(x["name"])}.html">{E(x["name"])}</a> (<a href="/deals/{slug(x["name"])}.html">deals</a>): {E(x["verdict"])}</li>' for x in alts)+'</ul>' if alts else '')
+      +'<h2>FAQ</h2>'+''.join(f'<h3>{E(q)}</h3><p>{E(x)}</p>' for q,x in faq))
+    page(path,f'{t["name"]} discount code, pricing & free trial (2026) · {SITE}',f'Is there a {t["name"]} discount code? Honest answer, pricing notes, free trial info and the best {t["name"]} alternatives.',body,extra=ld(fl))
 # blog
 for p in posts:
     path=f'/blog/{p["slug"]}.html'; urls.append(path)
@@ -136,6 +169,8 @@ page('/admin-stats.html',f'Stats · {SITE}','Promo and tool click stats.','''<h1
 <div class="bar"><select id="days"><option value="1">Last 24h</option><option value="7" selected>Last 7 days</option><option value="30">Last 30 days</option></select><button id="rf">Refresh</button><span id="st" class="sub" style="align-self:center"></span></div>
 <h2>Promos</h2><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Promo</th><th>Placement</th><th>Impressions</th><th>Clicks</th><th>CTR</th></tr></thead><tbody id="pt"></tbody></table></div>
 <h2>Trending tools (outbound clicks)</h2><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>#</th><th>Tool</th><th>Clicks</th></tr></thead><tbody id="tt"></tbody></table></div>
+<h2>Outbound /go/ clicks (affiliate links)</h2><p class="sub">Clicks per /go/&lt;slug&gt; link. Conversions and commissions are only visible in each affiliate network's dashboard (Impact, PartnerStack, Rewardful, etc.).</p><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Link</th><th>Clicks</th></tr></thead><tbody id="at"></tbody></table></div>
+<h2>Discount code copies</h2><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Tool</th><th>Copies</th></tr></thead><tbody id="ct"></tbody></table></div>
 <script>
 const H=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 async function load(){const d=document.getElementById('days').value;document.getElementById('st').textContent='Loading…';
@@ -144,6 +179,7 @@ async function load(){const d=document.getElementById('days').value;document.get
  const ids=[...new Set([...Object.keys(s.promos||{}),...Object.keys(meta)])];
  document.getElementById('pt').innerHTML=ids.map(id=>{const c=(s.promos||{})[id]||{impressions:0,clicks:0},m=meta[id]||{};return [id,m,c]}).sort((a,b)=>b[2].impressions-a[2].impressions).map(([id,m,c])=>`<tr><td>${H(m.tool||id)}${m.example?' <span class=tag>EXAMPLE</span>':''}<div class=sub>${H(id)}</div></td><td>${H(m.placement||'')}</td><td>${c.impressions}</td><td>${c.clicks}</td><td>${c.impressions?(100*c.clicks/c.impressions).toFixed(1)+'%':'–'}</td></tr>`).join('');
  const t=Object.entries(s.tools||{}).sort((a,b)=>b[1]-a[1]);
+ const rows=(o,n)=>{const e=Object.entries(o||{}).sort((a,b)=>b[1]-a[1]);return e.length?e.map(([id,c])=>`<tr><td>/go/${H(id)}</td><td>${c}</td></tr>`).join(''):`<tr><td colspan=2 class=sub>${n}</td></tr>`};document.getElementById('at').innerHTML=rows(s.aff,'No /go/ clicks yet.');document.getElementById('ct').innerHTML=rows(s.codes,'No code copies yet.');
  document.getElementById('tt').innerHTML=t.length?t.map(([id,n],i)=>`<tr><td>${i+1}</td><td><a href="/tools/${H(id)}.html">${H(id)}</a></td><td>${n}</td></tr>`).join(''):'<tr><td colspan=3 class=sub>No clicks recorded yet.</td></tr>';
  document.getElementById('st').textContent=s.stored?('Updated '+new Date().toLocaleTimeString()+(s.truncated?' (truncated)':'')):'Storage not configured: counts are not being saved.'}
 document.getElementById('rf').onclick=load;document.getElementById('days').onchange=load;load();
