@@ -1,6 +1,136 @@
 {
   "redirects": [
     {
+      "source": "/compare/claude-code-vs-openai-codex(\\.html)?",
+      "destination": "https://aiuseflow.com/blog/claude-code-vs-codex.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/compare/claude-code-vs-cursor(\\.html)?",
+      "destination": "https://aiuseflow.com/blog/cursor-vs-claude-code.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/compare/cursor-vs-github-copilot(\\.html)?",
+      "destination": "https://aiuseflow.com/blog/github-copilot-vs-cursor.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/compare/cursor-vs-windsurf(\\.html)?",
+      "destination": "https://aiuseflow.com/blog/windsurf-vs-cursor.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/compare/supabase-vs-firebase(\\.html)?",
+      "destination": "https://aiuseflow.com/blog/supabase-vs-firebase.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/auto-gpt(\\.html)?",
+      "destination": "https://aiuseflow.com/t/autogpt.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/avatar-ai(\\.html)?",
+      "destination": "https://aiuseflow.com/t/photo-ai.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/bing-chat(\\.html)?",
+      "destination": "https://aiuseflow.com/t/microsoft-copilot.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/chatgpt-writer(\\.html)?",
+      "destination": "https://aiuseflow.com/t/jetwriter.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/co-here(\\.html)?",
+      "destination": "https://aiuseflow.com/t/cohere.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/codeium(\\.html)?",
+      "destination": "https://aiuseflow.com/t/windsurf.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/codiumai(\\.html)?",
+      "destination": "https://aiuseflow.com/t/qodo.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/eleven-labs(\\.html)?",
+      "destination": "https://aiuseflow.com/t/elevenlabs.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/elevenlabs-api(\\.html)?",
+      "destination": "https://aiuseflow.com/t/elevenlabs.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/headlinesai-pro(\\.html)?",
+      "destination": "https://aiuseflow.com/t/trolly-ai.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/hex-magic(\\.html)?",
+      "destination": "https://aiuseflow.com/t/hex.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/imagine-by-magic-studio(\\.html)?",
+      "destination": "https://aiuseflow.com/t/magic-eraser.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/kilo(\\.html)?",
+      "destination": "https://aiuseflow.com/t/kilo-code.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/klingai(\\.html)?",
+      "destination": "https://aiuseflow.com/t/kling-ai.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/metaphor(\\.html)?",
+      "destination": "https://aiuseflow.com/t/exa.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/mistral(\\.html)?",
+      "destination": "https://aiuseflow.com/t/mistral-ai.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/notion-ai(\\.html)?",
+      "destination": "https://aiuseflow.com/t/notion.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/opendevin(\\.html)?",
+      "destination": "https://aiuseflow.com/t/openhands.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/roocode(\\.html)?",
+      "destination": "https://aiuseflow.com/t/roo-code.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/v0-by-vercel(\\.html)?",
+      "destination": "https://aiuseflow.com/t/v0.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/t/wellsaid(\\.html)?",
+      "destination": "https://aiuseflow.com/t/wellsaid-labs.html",
+      "statusCode": 301
+    },
+    {
       "source": "/category.html",
       "has": [
         {
@@ -9,8 +139,33 @@
           "value": "(?<cat>[a-z0-9-]+)"
         }
       ],
-      "destination": "/category/:cat.html",
-      "permanent": true
+      "destination": "https://aiuseflow.com/category/:cat.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/category.html",
+      "destination": "https://aiuseflow.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.html",
+      "destination": "https://aiuseflow.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/:p(privacy|terms|refund|disclaimer|login|signup|account)(\\.html)?",
+      "destination": "https://aiuseflow.com/:p",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
+      "destination": "https://aiuseflow.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path((?!google90f201efb6ea8dc1\\.html$).*)",
+      "destination": "https://aiuseflow.com/:path",
+      "statusCode": 301
     }
   ],
   "headers": [
