@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "archive_bytes": 220573304,
+  "archive_sha256": "6cc57d8552732a45f7007d2ce00be1cdf66b39b29eda7b691de3fc7f569b59f0",
+  "entries_crc_verified": 12475,
+  "all_entries_extracted": true,
+  "sqlite_integrity_checked": 3,
+  "mysql_import_tables": 21,
+  "mysql_isolated_import_exit_code": 0,
+  "production_database_unchanged_by_backup_test": true
+}

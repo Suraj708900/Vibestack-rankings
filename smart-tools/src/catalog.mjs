@@ -1,0 +1,60 @@
+export const categories=[['pdf','PDF & Documents','PDF और दस्तावेज़','▤'],['image','Image & Photo','इमेज और फ़ोटो','◈'],['business','Business & Invoices','बिज़नेस और इनवॉइस','▣'],['ai','AI & Writing','AI और लेखन','✦'],['developer','SEO & Developer','SEO और डेवलपर','⌘']];
+const rows=[
+['photo-to-pdf','Photo to PDF','फ़ोटो से PDF','pdf','Arrange photos into a private, printable PDF.','photo picture pdf scan images'],
+['pdf-to-jpg','PDF to JPG','PDF से JPG','pdf','Render selected PDF pages as downloadable JPG images.','extract convert pdf pictures'],
+['jpg-to-pdf','JPG to PDF','JPG से PDF','pdf','Turn JPG, PNG and WebP images into a PDF.','jpeg png webp pdf'],
+['merge-pdf','Merge PDF','PDF जोड़ें','pdf','Combine PDF documents in your chosen order.','join combine pdf'],
+['split-pdf','Split PDF','PDF विभाजित करें','pdf','Extract a page range into a new PDF.','extract separate pages'],
+['compress-pdf','Compress PDF','PDF का आकार घटाएँ','pdf','Create a smaller raster PDF with adjustable quality.','reduce pdf size'],
+['rotate-pdf','Rotate PDF Pages','PDF घुमाएँ','pdf','Rotate selected pages without rasterizing your document.','turn orientation pdf'],
+['pdf-page-numbers','Add Page Numbers to PDF','PDF पेज नंबर','pdf','Add page numbers to a copy of your PDF.','number paginate pdf'],
+['pdf-watermark','PDF Watermark Tool','PDF वॉटरमार्क','pdf','Place a text watermark on selected pages.','stamp pdf watermark'],
+['pdf-signature','PDF Signature Tool','PDF हस्ताक्षर','pdf','Add a visible signature image to a PDF page.','sign signature pdf'],
+['image-compressor','Image Compressor','इमेज संपीड़न','image','Reduce photo file size with a quality preview.','compress reduce photo size 50kb make my photo'],
+['image-resizer','Image Resizer','इमेज का आकार बदलें','image','Resize images to precise pixel dimensions.','width height pixels scale'],
+['jpg-to-png','JPG to PNG','JPG से PNG','image','Convert a JPEG image to a PNG file locally.','jpeg png converter'],
+['png-to-webp','PNG to WebP','PNG से WebP','image','Export images to the efficient WebP format.','convert webp png'],
+['image-cropper','Image Cropper','इमेज काटें','image','Crop a photo with exact pixel coordinates.','crop trim photo'],
+['passport-photo','Passport Photo Maker','पासपोर्ट फ़ोटो','image','Crop a photo to common passport aspect ratios.','passport 35 45 2 inch visa'],
+['background-remover','Background Remover','पृष्ठभूमि हटाएँ','image','Remove a connected solid background using a color tolerance.','remove background transparent solid'],
+['photo-size-kb','Photo to 20KB / 50KB / 100KB','फ़ोटो 20/50/100KB','image','Make a JPG fit a target maximum file size.','20kb 50kb 100kb photo size upload form'],
+['image-watermark','Image Watermark Maker','इमेज वॉटरमार्क','image','Add a visible text watermark to a photo.','copyright stamp photo'],
+['image-color-picker','Image Color Picker','इमेज रंग चुनें','image','Click a photo to read its exact RGB and HEX colors.','hex rgb colour color palette'],
+['invoice-generator','Professional Invoice Generator','इनवॉइस जनरेटर','business','Create a polished invoice with accurate totals and PDF export.','bill invoice payment'],
+['gst-invoice','GST Invoice Generator','GST इनवॉइस','business','Prepare an India GST invoice with explicit tax treatment.','gstin cgst sgst igst tax invoice'],
+['quotation-generator','Quotation Generator','कोटेशन जनरेटर','business','Prepare a professional estimate for your customer.','quote estimate proposal'],
+['receipt-generator','Receipt Generator','रसीद जनरेटर','business','Record a received payment in a printable receipt.','paid receipt payment proof'],
+['profit-margin','Profit Margin Calculator','लाभ मार्जिन','business','Calculate profit, margin and markup from cost and price.','profit margin markup loss'],
+['gst-calculator','GST Calculator','GST कैलकुलेटर','business','Calculate inclusive or exclusive GST with clear rounding.','gst tax inclusive exclusive'],
+['discount-calculator','Discount Calculator','छूट कैलकुलेटर','business','Calculate the discount and final price to the minor unit.','sale discount offer price'],
+['freelance-rate','Freelance Rate Calculator','फ्रीलांस दर','business','Find a sustainable hourly rate from annual goals.','hourly freelancer salary rate'],
+['purchase-order','Purchase Order Generator','खरीद आदेश','business','Create an itemized purchase order for a supplier.','po order supplier purchase'],
+['business-name','Business Name Generator','बिज़नेस नाम','business','Generate deterministic naming ideas from your own keywords.','brand company startup name'],
+['ai-resume','AI Resume Builder','AI रिज़्यूमे','ai','Build a resume PDF and optionally improve its wording with live AI.','cv resume career job bio'],
+['ai-cover-letter','AI Cover Letter Writer','AI कवर लेटर','ai','Draft a tailored cover letter from your real experience.','cover letter job application'],
+['ai-email','AI Email Writer','AI ईमेल','ai','Turn your instructions into a clear email draft.','email reply mail professional'],
+['ai-summarizer','AI Text Summarizer','AI सारांश','ai','Summarize supplied text through the existing AI service.','summary summarize shorten text'],
+['ai-grammar','AI Grammar Checker','AI व्याकरण','ai','Review grammar and explain suggested corrections.','grammar spelling correct english'],
+['ai-blog-title','AI Blog Title Generator','AI ब्लॉग शीर्षक','ai','Generate specific, useful title options for your topic.','blog headline title'],
+['ai-product-description','AI Product Description Writer','AI उत्पाद विवरण','ai','Write a description grounded in supplied product facts.','product ecommerce description'],
+['ai-social-caption','AI Social Media Caption Generator','AI सोशल कैप्शन','ai','Draft captions for a chosen audience and platform.','instagram caption social linkedin'],
+['ai-prompt','AI Prompt Generator','AI प्रॉम्प्ट','ai','Turn a goal into an explicit prompt with constraints.','prompt chatgpt instructions'],
+['ai-youtube-description','AI YouTube Description Writer','AI YouTube विवरण','ai','Draft a video description from your actual video outline.','youtube video description'],
+['qr-code','QR Code Generator','QR कोड','developer','Create a scannable QR code as PNG or SVG.','qr code link wifi'],
+['barcode','Barcode Generator','बारकोड','developer','Generate Code 128, EAN-13 or UPC-A barcodes.','barcode ean upc product'],
+['json-formatter','JSON Formatter & Validator','JSON फ़ॉर्मैटर','developer','Validate, format or minify JSON without sending it away.','json pretty format validate minify'],
+['word-counter','Word Counter','शब्द गिनती','developer','Count words, characters, sentences and reading time.','words letters characters count hindi'],
+['password-generator','Secure Password Generator','सुरक्षित पासवर्ड','developer','Generate passwords using the browser cryptographic RNG.','password random secure'],
+['meta-tags','SEO Meta Tag Generator','SEO मेटा टैग','developer','Create escaped title, description and social meta tags.','seo meta og twitter title'],
+['robots-generator','Robots.txt Generator','robots.txt जनरेटर','developer','Create explicit crawler rules and a sitemap reference.','robots crawler disallow'],
+['sitemap-generator','XML Sitemap Generator','XML साइटमैप','developer','Generate a sitemap from a validated list of URLs.','sitemap xml urls google'],
+['utm-builder','UTM Link Builder','UTM लिंक','developer','Add campaign parameters to an HTTP or HTTPS link.','utm campaign tracking url'],
+['schema-generator','Schema Markup Generator','स्कीमा मार्कअप','developer','Generate JSON-LD for a website, organization, article or FAQ.','schema json ld structured data']
+];
+export const tools=rows.map(([id,name,hi,category,description,keywords])=>({id,name,hi,category,description,keywords}));
+export const byId=Object.fromEntries(tools.map(t=>[t.id,t]));
+export function searchTools(query,category='all'){
+ const q=query.toLowerCase().trim();const bits=q.split(/\s+/).filter(Boolean);
+ const intent=/\b(20|50|100)\s*k[bब]/.test(q)?'photo-size-kb':/merge|combine|join|जोड़/.test(q)?'merge-pdf':null;
+ return tools.filter(t=>category==='all'||t.category===category).map(t=>({t,score:!q?1:(t.id===intent?100:0)+bits.reduce((a,b)=>a+(t.name.toLowerCase().includes(b)?8:0)+(t.hi.includes(b)?8:0)+(t.keywords.includes(b)?3:0),0)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).map(x=>x.t);
+}
