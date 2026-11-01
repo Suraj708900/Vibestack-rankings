@@ -30,13 +30,15 @@ Tools privacy/terms supplements are additive `/tools/privacy/` and `/tools/terms
 
 ## Verification
 
-- 16 automated tests pass, including monetary allocation/rounding, GST, negative/zero ratios, markup rounding, URL/markup safety, barcode checksums, CSPRNG, file signatures, PDF round trips and mixed Hindi/Latin/rupee multipage PDF shaping.
+- 17 automated tests pass, including monetary allocation/rounding, GST, negative/zero ratios, markup rounding, URL/markup safety, barcode checksums, CSPRNG, file signatures, PDF round trips and Latin/rupee multipage PDF generation plus browser-only Hindi rendering validation.
 - Dependency audit reports zero known vulnerabilities at audit time.
 - All 53 new staging pages pass HTTP, unique title/description, canonical, single-H1, noindex, CSP and no-ad/analytics-tag checks.
 - Initial first-six browser tests: all six pass after correcting QR CommonJS import/cache versioning.
 - All nine dedicated AI writers and optional resume AI refinement return verified live provider output using generic synthetic facts.
 - QR and Code128 PNGs independently decode to their expected data. Background alpha and GST PDF totals independently verified.
-- PDF.js cleanup API and complex-script font runtime issues were found and fixed. Final full local-tool/extended/layout regression is pending; do not call it complete until final evidence is saved.
+- PDF.js cleanup API corrected. Complex-script fontkit failures avoided by a browser-native raster PDF path for Hindi, visibly disclosed. Three Hindi styles exported successfully and a rendered PDF was visually checked. Resume TXT retains Unicode text.
+- All 102 viewport checks pass: hub + 50 tool pages at 390 and 1280 CSS pixels.
+- Final prepublication regression includes real JPG/PNG/WebP fixtures, logo export, scanned-PDF shrinkage, target byte caps, batch image ZIP and invalid color coordinates.
 
 ## Remaining publication gate / limitations
 
@@ -47,3 +49,7 @@ Background removal supports connected solid colors, not arbitrary AI segmentatio
 ## Operations
 
 Backup/extraction/patch/audit jobs are one-off, idempotent CLI operations. Remove each temporary cron after success and retain existing hourly maintenance. Backup files and upload credentials must never be copied into source/public downloads. Existing production application data and payments are not overwritten or enrolled by this module.
+
+## Final verification checkpoint
+
+All 50 requested basic flows pass across reconciled evidence. Final browser run: 41 local tools + 9 extended tests, zero failures, including real JPG/PNG/WebP, logos, Hindi invoice variants, batch ZIP, noisy-photo target byte caps and scanned-PDF shrinkage. All 102 layout checks pass; all 53 page SEO/header checks pass. Hub intent search, persistent favorites, Back/cross-tab recent synchronization and Hindi controls manually verified. 17 automated tests pass. Public PageSpeed API blocked by HTTP 429; no performance score claimed. Last patch only makes developer/calculator limit descriptions tool-specific. Production publication and live post-deployment verification remain pending owner approval. See COMPLETION_REPORT.md.

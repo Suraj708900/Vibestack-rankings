@@ -1,0 +1,10 @@
+{
+  "intent_search_ranks_photo_size_first": true,
+  "favorites_filter_count": 1,
+  "favorites_persist_after_reload": true,
+  "recent_updates_on_back_navigation": true,
+  "recent_updates_from_other_tab": true,
+  "hindi_heading_and_categories": true,
+  "cleared_synthetic_preferences_after_checks": true,
+  "final_tools_visible": 50
+}

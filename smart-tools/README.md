@@ -22,6 +22,8 @@ The user-facing basic tier is ₹0. No payment enrollment is included. Existing 
 
 ## Important limitations
 
+Hindi PDF exports use browser-rendered image pages for correct complex-script shaping; body text is not selectable. Resume TXT export retains Unicode text for ATS/editing. English document PDFs retain selectable text.
+
 PDF compression creates image-only pages and removes searchable text, forms, links and digital signatures. It may enlarge an already optimized PDF. Visible signatures are not cryptographic signatures. Encrypted PDFs are rejected. Background removal supports solid, edge-connected colors, not general AI segmentation. Passport presets do not guarantee official acceptance. Image conversion can remove metadata/animation. JSON numbers follow JavaScript precision. Local drafts and suggested invoice numbering are per-device, not a business-wide ledger or cloud history. GST templates are not IRN-registered e-invoices or tax returns. AI output needs human review and is subject to the current service quota.
 
 ## Verification

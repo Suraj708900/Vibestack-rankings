@@ -1,0 +1,14 @@
+{
+  "basic_tools_tested": 50,
+  "basic_tools_passed": 50,
+  "optional_live_resume_ai": "passed",
+  "local_tools_final": 41,
+  "extended_checks_final": 9,
+  "final_local_export_failures": 0,
+  "layout_checks_passed": 102,
+  "staging_seo_pages_passed": 53,
+  "automated_tests_passed": 17,
+  "production_application_files_unchanged": 2409,
+  "production_deployed": false,
+  "pagespeed": "blocked: HTTP 429 public API quota/access"
+}

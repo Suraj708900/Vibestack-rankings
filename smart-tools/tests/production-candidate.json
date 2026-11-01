@@ -1,0 +1,13 @@
+{
+  "deployed": false,
+  "requires_owner_approval": true,
+  "zip_bytes": 4123954,
+  "zip_sha256": "fac6372ec9a49085ffff731581498a3c4c07b7a23a98c74c5e0df0fd477eb96c",
+  "files": 280,
+  "scope": [
+    "tools/",
+    "assets/smart-tools-v4/",
+    "tools-sitemap.xml"
+  ],
+  "root_htaccess_overwritten": false
+}
