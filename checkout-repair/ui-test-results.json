@@ -1,0 +1,98 @@
+{
+  "passed": 23,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "390px order form renders before loading the QR library",
+      "passed": true
+    },
+    {
+      "name": "390px no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px honeypot is hidden",
+      "passed": true
+    },
+    {
+      "name": "390px PayPal method and product price shown",
+      "passed": true
+    },
+    {
+      "name": "390px email and name fields required",
+      "passed": true
+    },
+    {
+      "name": "390px ad/consent script retained",
+      "passed": true
+    },
+    {
+      "name": "768px order form renders before loading the QR library",
+      "passed": true
+    },
+    {
+      "name": "768px no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px honeypot is hidden",
+      "passed": true
+    },
+    {
+      "name": "768px PayPal method and product price shown",
+      "passed": true
+    },
+    {
+      "name": "768px email and name fields required",
+      "passed": true
+    },
+    {
+      "name": "768px ad/consent script retained",
+      "passed": true
+    },
+    {
+      "name": "1280px order form renders before loading the QR library",
+      "passed": true
+    },
+    {
+      "name": "1280px no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1280px honeypot is hidden",
+      "passed": true
+    },
+    {
+      "name": "1280px PayPal method and product price shown",
+      "passed": true
+    },
+    {
+      "name": "1280px email and name fields required",
+      "passed": true
+    },
+    {
+      "name": "1280px ad/consent script retained",
+      "passed": true
+    },
+    {
+      "name": "Working contact form replaces mailto-only experience",
+      "passed": true
+    },
+    {
+      "name": "Contact spam field hidden",
+      "passed": true
+    },
+    {
+      "name": "Mobile contact form fits viewport",
+      "passed": true
+    },
+    {
+      "name": "Private tracking page has no analytics/ad scripts",
+      "passed": true
+    },
+    {
+      "name": "Tracking page is noindex and no-referrer",
+      "passed": true
+    }
+  ]
+}

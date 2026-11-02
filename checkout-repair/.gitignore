@@ -1,0 +1,8 @@
+release/
+staging/
+__pycache__/
+*.zip
+*.private.json
+diagnose.php
+publish*.php
+backup-private.php

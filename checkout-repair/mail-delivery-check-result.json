@@ -1,0 +1,16 @@
+{
+  "checkout-mail-smoke-20261103-v1": {
+    "provider_status": 200,
+    "last_event": "delivered",
+    "to": [
+      "contact@aiuseflow.com"
+    ]
+  },
+  "checkout-mail-smoke-gmail-20261103-v1": {
+    "provider_status": 200,
+    "last_event": "delivered",
+    "to": [
+      "kamdevsuraj03@gmail.com"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "php_syntax": {
+    "_ai.php": true,
+    "_boot.php": true,
+    "_commerce.php": true,
+    "_mail.php": true,
+    "_notifications.php": true,
+    "admin.php": true,
+    "advertise.php": true,
+    "checkout.php": true,
+    "contact.php": true,
+    "notification-worker.php": true,
+    "notifications.php": true
+  }
+}

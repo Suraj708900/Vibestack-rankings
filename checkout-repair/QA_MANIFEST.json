@@ -1,0 +1,15 @@
+{
+  "backend_checks": 17,
+  "ui_checks": 23,
+  "additional_regressions": 2,
+  "total_passed": 42,
+  "failed": 0,
+  "owner_email_delivery": [
+    "contact@aiuseflow.com",
+    "kamdevsuraj03@gmail.com"
+  ],
+  "production_published": false,
+  "production_payment_made": false,
+  "subscription_activated": false,
+  "live_prices_changed": false
+}

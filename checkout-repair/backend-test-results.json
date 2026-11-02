@@ -1,0 +1,76 @@
+{
+  "passed": 17,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Order is saved before payment, in isolated sandbox",
+      "passed": true
+    },
+    {
+      "name": "Server ignores client-supplied amount",
+      "passed": true
+    },
+    {
+      "name": "Notifications honestly labelled sandbox",
+      "passed": true
+    },
+    {
+      "name": "UPI contains order ID and authoritative amount",
+      "passed": true
+    },
+    {
+      "name": "Create retries return same tracking ID",
+      "passed": true
+    },
+    {
+      "name": "Wrong tracking key is rejected without customer details",
+      "passed": true
+    },
+    {
+      "name": "Tracking response excludes email, name, UTR and file paths",
+      "passed": true
+    },
+    {
+      "name": "Tracking is not cached",
+      "passed": true
+    },
+    {
+      "name": "Invalid transaction reference rejected",
+      "passed": true
+    },
+    {
+      "name": "Payment reference saved without falsely confirming payment",
+      "passed": true
+    },
+    {
+      "name": "Duplicate payment submission is idempotent",
+      "passed": true
+    },
+    {
+      "name": "Replacing a submitted payment reference is blocked",
+      "passed": true
+    },
+    {
+      "name": "Tracking updates to pending verification",
+      "passed": true
+    },
+    {
+      "name": "Checkout mutation cannot be requested by GET",
+      "passed": true
+    },
+    {
+      "name": "Cross-origin request rejected",
+      "passed": true
+    },
+    {
+      "name": "Notification administration requires existing admin access",
+      "passed": true
+    },
+    {
+      "name": "Contact message saved with reference ID in sandbox",
+      "passed": true
+    }
+  ],
+  "real_payment_submitted": false,
+  "production_orders_modified": false
+}

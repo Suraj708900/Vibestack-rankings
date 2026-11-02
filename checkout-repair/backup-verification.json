@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "backup_id": "checkout-backup-20261102-204814",
+  "source_files": 9,
+  "orders_backed_up": 2,
+  "database_integrity": "ok",
+  "archive_entries_verified": 12,
+  "archive_sha256": "5d1da3d64ee016b71418a4f6e53e5503403a269b31267c9c73f6892e99cda50e",
+  "production_changed": false
+}

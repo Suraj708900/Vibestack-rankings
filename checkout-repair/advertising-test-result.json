@@ -1,0 +1,9 @@
+{
+  "status": 200,
+  "reference_created": true,
+  "notifications": {
+    "owner": "sandbox",
+    "customer": "sandbox"
+  },
+  "passed": true
+}

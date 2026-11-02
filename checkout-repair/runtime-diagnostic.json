@@ -1,0 +1,22 @@
+{
+  "enabled": false,
+  "feature_flag": false,
+  "resend_key_present": true,
+  "mail_from_valid": true,
+  "legacy_resend_from_valid": false,
+  "owner_is_contact": false,
+  "contact_to_is_contact": true,
+  "dry_run": false,
+  "recipient_restriction": false,
+  "owner_allowed": true,
+  "php_mail_available": true,
+  "staging_flag": false,
+  "curl_available": true,
+  "smtp_host_present": false,
+  "smtp_password_present": false,
+  "recent_mail_status": [],
+  "stored_contact_counts": {
+    "total": 0,
+    "unmailed": null
+  }
+}

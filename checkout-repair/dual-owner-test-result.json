@@ -1,0 +1,8 @@
+{
+  "status": 200,
+  "notifications": {
+    "owner": "sandbox",
+    "customer": "sandbox"
+  },
+  "passed": true
+}
