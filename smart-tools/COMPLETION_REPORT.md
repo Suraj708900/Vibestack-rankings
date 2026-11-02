@@ -97,3 +97,8 @@ Ad/consent preservation check: the live homepage retains `/consent.js?v=20261101
 English-only regression: all 41 browser utility forms passed after the text update; all 102 mobile/desktop page checks passed, including the absence of Hindi labels and the removed language toggle. The original 17 automated tests still pass. Multilingual user-entered document text remains supported; no user documents were altered.
 
 The English-only follow-up was published at 2026-11-02T02:05:01Z. All 62 changed module files matched their approved hashes, with 55 original entries backed up and restore-verified. Live browser checks show `lang=en`, no language toggle or Hindi interface text, active decorative animation and a successful QR result with English PNG/SVG download links. No database changes were made. The temporary update cron was removed.
+
+
+## 2 November homepage integration follow-up
+
+The main homepage now embeds all 50 utilities and shared presentation changes are live. See [the homepage completion report](home/COMPLETION_REPORT.md) for deployment, preservation, backup evidence and limitations.

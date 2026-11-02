@@ -1,0 +1,106 @@
+{
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 186616,
+      "url": "https://aiuseflow.com/",
+      "professional_stylesheet": true,
+      "homepage_integrated": true,
+      "klap_preserved": true,
+      "home_script": true
+    },
+    {
+      "path": "/directory/",
+      "status": 200,
+      "bytes": 72002,
+      "url": "https://aiuseflow.com/directory/",
+      "professional_stylesheet": true
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "bytes": 185664,
+      "url": "https://aiuseflow.com/blog/",
+      "professional_stylesheet": true
+    },
+    {
+      "path": "/t/klap/",
+      "status": 200,
+      "bytes": 9341,
+      "url": "https://aiuseflow.com/t/klap/",
+      "professional_stylesheet": true
+    },
+    {
+      "path": "/privacy",
+      "status": 200,
+      "bytes": 16584,
+      "url": "https://aiuseflow.com/privacy",
+      "professional_stylesheet": true
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "bytes": 12285,
+      "url": "https://aiuseflow.com/about",
+      "professional_stylesheet": true
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "bytes": 10031,
+      "url": "https://aiuseflow.com/contact",
+      "professional_stylesheet": true
+    },
+    {
+      "path": "/terms",
+      "status": 200,
+      "bytes": 12712,
+      "url": "https://aiuseflow.com/terms",
+      "professional_stylesheet": true
+    },
+    {
+      "path": "/tools/qr-code/",
+      "status": 200,
+      "bytes": 6804,
+      "url": "https://aiuseflow.com/tools/qr-code/",
+      "professional_stylesheet": true
+    },
+    {
+      "path": "/assets/aiuseflow-home-v4/home.js",
+      "status": 200,
+      "bytes": 18954,
+      "url": "https://aiuseflow.com/assets/aiuseflow-home-v4/home.js"
+    },
+    {
+      "path": "/assets/aiuseflow-home-v4/professional.css",
+      "status": 200,
+      "bytes": 12705,
+      "url": "https://aiuseflow.com/assets/aiuseflow-home-v4/professional.css"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 453,
+      "url": "https://aiuseflow.com/robots.txt"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 43660,
+      "url": "https://aiuseflow.com/sitemap.xml"
+    },
+    {
+      "path": "/ads.txt",
+      "status": 200,
+      "bytes": 59,
+      "url": "https://aiuseflow.com/ads.txt"
+    }
+  ],
+  "live_qr_browser": {
+    "status": "Ready. Review your result before using it.",
+    "download_png_link": true,
+    "remained_on_homepage": true
+  },
+  "note": "HTTP availability and asset checks; not authenticated journey certification."
+}
