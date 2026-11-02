@@ -1,0 +1,74 @@
+{
+  "passed": 17,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "All 11 paid products and 22 checkout links remain",
+      "pass": true
+    },
+    {
+      "name": "Resume intent search",
+      "pass": true
+    },
+    {
+      "name": "Goal-based career discovery",
+      "pass": true
+    },
+    {
+      "name": "Empty results and reset",
+      "pass": true
+    },
+    {
+      "name": "INR price ordering",
+      "pass": true
+    },
+    {
+      "name": "Save product and saved-only filter",
+      "pass": true
+    },
+    {
+      "name": "Compare three products with full displayed prices",
+      "pass": true
+    },
+    {
+      "name": "Fourth comparison choice is rejected with explanation",
+      "pass": true
+    },
+    {
+      "name": "Original descriptions remain expandable",
+      "pass": true
+    },
+    {
+      "name": "Pause animation",
+      "pass": true
+    },
+    {
+      "name": "External catalog sections retained",
+      "pass": true
+    },
+    {
+      "name": "390px light layout",
+      "pass": true
+    },
+    {
+      "name": "390px dark layout",
+      "pass": true
+    },
+    {
+      "name": "768px light layout",
+      "pass": true
+    },
+    {
+      "name": "768px dark layout",
+      "pass": true
+    },
+    {
+      "name": "1280px light layout",
+      "pass": true
+    },
+    {
+      "name": "1280px dark layout",
+      "pass": true
+    }
+  ]
+}
