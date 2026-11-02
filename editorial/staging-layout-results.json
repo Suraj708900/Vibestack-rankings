@@ -1,0 +1,106 @@
+{
+  "passed": 20,
+  "failed": 0,
+  "tests": [
+    {
+      "slug": "make-photo-50kb-without-losing-readability",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "slug": "combine-photos-into-one-pdf-step-by-step",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "slug": "merge-pdf-files-correct-order-checklist",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "slug": "freelance-invoice-pdf-checklist",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "slug": "qr-code-for-business-scan-test-guide",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "slug": "json-formatting-vs-validation-explained",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "slug": "utm-links-naming-convention-small-business",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "slug": "generate-strong-password-browser-safely",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "slug": "add-pdf-watermark-without-covering-text",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "slug": "crop-image-pixels-vs-file-size",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "slug": "make-photo-50kb-without-losing-readability",
+      "width": 1280,
+      "pass": true
+    },
+    {
+      "slug": "combine-photos-into-one-pdf-step-by-step",
+      "width": 1280,
+      "pass": true
+    },
+    {
+      "slug": "merge-pdf-files-correct-order-checklist",
+      "width": 1280,
+      "pass": true
+    },
+    {
+      "slug": "freelance-invoice-pdf-checklist",
+      "width": 1280,
+      "pass": true
+    },
+    {
+      "slug": "qr-code-for-business-scan-test-guide",
+      "width": 1280,
+      "pass": true
+    },
+    {
+      "slug": "json-formatting-vs-validation-explained",
+      "width": 1280,
+      "pass": true
+    },
+    {
+      "slug": "utm-links-naming-convention-small-business",
+      "width": 1280,
+      "pass": true
+    },
+    {
+      "slug": "generate-strong-password-browser-safely",
+      "width": 1280,
+      "pass": true
+    },
+    {
+      "slug": "add-pdf-watermark-without-covering-text",
+      "width": 1280,
+      "pass": true
+    },
+    {
+      "slug": "crop-image-pixels-vs-file-size",
+      "width": 1280,
+      "pass": true
+    }
+  ]
+}
