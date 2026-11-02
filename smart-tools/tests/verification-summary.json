@@ -9,6 +9,15 @@
   "staging_seo_pages_passed": 53,
   "automated_tests_passed": 17,
   "production_application_files_unchanged": 2409,
-  "production_deployed": false,
-  "pagespeed": "blocked: HTTP 429 public API quota/access"
+  "production_deployed": true,
+  "pagespeed": "blocked: HTTP 429 public API quota/access",
+  "live_seo_pages_passed": 53,
+  "live_initial_tools_actual_downloads_passed": 6,
+  "motion_regression_local_tools_passed": 41,
+  "motion_layout_checks_passed": 102,
+  "fresh_publication_backup_restore_check": true,
+  "interface": "English only",
+  "english_local_tools_passed": 41,
+  "english_responsive_checks_passed": 102,
+  "existing_ad_consent_scripts_preserved": true
 }

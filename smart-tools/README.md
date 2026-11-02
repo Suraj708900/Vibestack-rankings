@@ -8,7 +8,7 @@ Use Node 24+, then run `npm ci`, `npm test`, `npm run build` inside `smart-tools
 
 `dist/` is for the existing preview subdomain's **new** `/smart-tools-v4/` folder. The folder has noindex metadata/headers and a staging banner. No existing preview page should be replaced.
 
-`node build.mjs --production` generates an additive, **unpublished** `dist-production/` package: a new `/tools/index.html`, 50 unique tool folders, tool-specific privacy/terms supplements, and namespaced `/assets/smart-tools-v4/` files. Never copy its `.htaccess` over the website root. Production publication requires owner approval, a fresh backup, path conflict checks and rollback preparation. The existing 36 `/tools/*.html` directory pages must remain intact. New utility pages do not load advertising tags.
+`node build.mjs --production` generates an additive `dist-production/` package: a new `/tools/index.html`, 50 unique tool folders, tool-specific privacy/terms supplements, and namespaced `/assets/smart-tools-v4/` files. Never copy its `.htaccess` over the website root. The owner approved production publication. The controlled release performs a fresh backup, path conflict checks, atomic writes and rollback preparation. The existing 36 `/tools/*.html` directory pages must remain intact. New utility pages do not load advertising tags.
 
 ## Functionality and privacy
 
@@ -31,3 +31,9 @@ PDF compression creates image-only pages and removes searchable text, forms, lin
 `tests/core.test.mjs` covers monetary rounding, GST, discounts, margin losses, zero denominators, allocation, page bounds, safe URLs/markup, barcode check digits, CSPRNG character sets, Unicode counts and real PDF round trips. The staging-only `qa.html` generates synthetic inputs, submits each tool's actual form, validates non-empty downloadable outputs, reloads PDFs/images/ZIPs, and exports evidence. It is excluded from the production build.
 
 All browser automation is performed through the supported cloud browser. Mobile checks use a 390-CSS-pixel iframe in Chrome, not a physical Android/iPhone or a claim of all-browser certification. Search rankings and AdSense approval cannot be guaranteed.
+
+## Motion design
+
+The tools hub includes CSS/SVG floating 3D document, image and invoice illustrations, animated gradients, icon motion and a persistent pause/resume control. Decorative elements ignore pointer events and are hidden from assistive technology. Reduced-motion preferences and print styles disable animation; interactive controls remain stationary. No new animation service or runtime dependency is required. The legacy homepage retains Klap as the leading feature and adds a small Smart Tools launch illustration.
+
+English-only follow-up: the owner requested removal of Hindi from the interface and confirmed that existing ad/consent scripts must remain. The new tools interface uses English names, forms, status messages and AI output. Existing ad and consent scripts on the original website are preserved. The 3D illustrations and animation pause control remain.

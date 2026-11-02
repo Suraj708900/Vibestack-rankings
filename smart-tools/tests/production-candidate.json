@@ -9,5 +9,6 @@
     "assets/smart-tools-v4/",
     "tools-sitemap.xml"
   ],
-  "root_htaccess_overwritten": false
+  "root_htaccess_overwritten": false,
+  "historical_prepublication_dry_run": true
 }

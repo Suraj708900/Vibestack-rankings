@@ -1,0 +1,22 @@
+{
+  "status": "published",
+  "release": "aiuseflow4-approved-20261101210314",
+  "time": "2026-11-01T21:19:31+00:00",
+  "new_files": 281,
+  "candidate_files": 281,
+  "backup": {
+    "archive": "v4-release-backups/aiuseflow4-approved-20261101210314/before-production-publish.zip",
+    "bytes": 240189553,
+    "sha256": "f884eec63721eafafb27a51bdcf8ebed0c854d96f53bf780752c06833a0600ef",
+    "entries_crc_verified": 12919,
+    "sqlite_integrity_checks": 3,
+    "critical_restore_test": true,
+    "prior_mysql_snapshot_retained": true
+  },
+  "legacy_files_verified": 14,
+  "klap_home_mentions": 31,
+  "search_entries_added": 53,
+  "root_htaccess_unchanged": true,
+  "payments_activated": false,
+  "url": "https://aiuseflow.com/tools/"
+}
