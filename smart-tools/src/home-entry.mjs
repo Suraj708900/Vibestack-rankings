@@ -1,3 +1,4 @@
+import {animatedIcon} from './animated-icons.mjs';
 import {tools,byId,categories,searchTools} from './catalog.mjs';
 import {esc} from './core.mjs';
 
@@ -9,7 +10,7 @@ if(root){
  const save=(k,v)=>{try{localStorage.setItem('auf-v4-'+k,JSON.stringify(v))}catch{}};
  const favorites=()=>{const f=read('favorites',[]);return Array.isArray(f)?f.filter(id=>byId[id]):[]};
  const recent=()=>{const r=read('recent',[]);return Array.isArray(r)?r.filter(id=>byId[id]):[]};
- const card=t=>`<article class="auf-tool-card"><div class="auf-tool-top"><span class="auf-tool-symbol" data-kind="${t.category}" aria-hidden="true">${categories.find(c=>c[0]===t.category)[3]}</span><button class="auf-favorite" type="button" data-home-favorite="${t.id}" aria-label="${favorites().includes(t.id)?'Remove from':'Add to'} favorites: ${esc(t.name)}" aria-pressed="${favorites().includes(t.id)}">${favorites().includes(t.id)?'★':'☆'}</button></div><h3><a href="/tools/${t.id}/" data-home-open="${t.id}">${esc(t.name)}</a></h3><p>${esc(t.description)}</p><div class="auf-tool-bottom"><span>${t.category==='ai'?'AI / local resume':'On your device'}</span><a href="/tools/${t.id}/" data-home-open="${t.id}" aria-label="Use ${esc(t.name)} on this page">Use tool <span aria-hidden="true">↗</span></a></div></article>`;
+ const card=t=>`<article class="auf-tool-card"><div class="auf-tool-top"><span class="auf-tool-symbol" data-kind="${t.category}" aria-hidden="true">${animatedIcon(t.category)}</span><button class="auf-favorite" type="button" data-home-favorite="${t.id}" aria-label="${favorites().includes(t.id)?'Remove from':'Add to'} favorites: ${esc(t.name)}" aria-pressed="${favorites().includes(t.id)}">${favorites().includes(t.id)?'★':'☆'}</button></div><h3><a href="/tools/${t.id}/" data-home-open="${t.id}">${esc(t.name)}</a></h3><p>${esc(t.description)}</p><div class="auf-tool-bottom"><span>${t.category==='ai'?'AI / local resume':'On your device'}</span><a href="/tools/${t.id}/" data-home-open="${t.id}" aria-label="Use ${esc(t.name)} on this page">Use tool <span aria-hidden="true">↗</span></a></div></article>`;
  function render(){
   let found=searchTools(q.value,category);
   if(!q.value.trim()&&category==='all'){const picks=['photo-to-pdf','image-compressor','invoice-generator','merge-pdf','ai-resume','qr-code','photo-size-kb','json-formatter'];found.sort((a,b)=>{const rank=id=>picks.includes(id)?picks.indexOf(id):100;return rank(a.id)-rank(b.id)})}
@@ -57,5 +58,6 @@ if(root){
  const motion=document.querySelector('[data-home-motion]');function motionState(){const paused=read('motionPaused',false)===true;document.documentElement.classList.toggle('auf-motion-paused',paused);motion.setAttribute('aria-pressed',String(paused));motion.textContent=paused?'Resume motion':'Pause motion'}motion.onclick=()=>{save('motionPaused',read('motionPaused',false)!==true);motionState()};motionState();
  addEventListener('storage',e=>{if(['auf-v4-favorites','auf-v4-recent'].includes(e.key))render();if(e.key==='auf-v4-motionPaused')motionState()});addEventListener('pageshow',render);
  addEventListener('popstate',()=>{const id=location.hash.match(/^#use-tool\/([a-z0-9-]+)$/)?.[1];if(byId[id]&&id!==selected)withSwitch(()=>openTool(id,false))});
+ root.querySelectorAll('[data-home-category]').forEach(button=>{const id=button.dataset.homeCategory;if(id==='all')return;button.replaceChildren();const icon=document.createElement('span');icon.className='auf-category-icon';icon.innerHTML=animatedIcon(id);button.append(icon,document.createTextNode(categories.find(c=>c[0]===id)[1]));});
  render();const initial=location.hash.match(/^#use-tool\/([a-z0-9-]+)$/)?.[1];if(byId[initial])openTool(initial,false);
 }
