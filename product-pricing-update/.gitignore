@@ -1,0 +1,6 @@
+release/
+staging/
+__pycache__/
+*.zip
+updated-smart-source.html
+publish-private.php

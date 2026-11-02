@@ -1,0 +1,216 @@
+{
+ "whatsapp": "",
+ "_note": "Synced from /workspace/products/catalog.json by products_sync.py (prices marked 'suggested - Suraj to confirm' in the catalog). 'file' is the private Blob pathname delivered after payment. paypal_link is a template ({email},{item},{usd},{order}); can be swapped for a PayPal.me link later. All products are paid; the guide book is included with each.",
+ "upi": {
+  "pa": "7260920782@kotakbank",
+  "pn": "Suraj Kamdev"
+ },
+ "download_hours": 72,
+ "products": {
+  "ai-learning-kit": {
+   "name": "AI Learning Kit",
+   "price": 199,
+   "unit": "",
+   "file": "products/ai-learning-kit.zip",
+   "includes": "Guide book included",
+   "price_usd": 2.99,
+   "tagline": "Go from zero to confident AI user for study, jobs and business.",
+   "description": "A practical beginner course in plain English. Learn what AI is, how to use ChatGPT, Claude and Gemini, how to write prompts that work, and how to stay safe. Then build real skill with 50 hands-on exercises, with separate tracks for students, job seekers and small business owners.",
+   "cover": "c-ai-learning-kit",
+   "items": [
+    "AI Learning Kit course PDF (7 parts)",
+    "50 practical exercises with prompts and check steps",
+    "Track guides: students, job seekers, small business owners",
+    "30-day AI habit plan and one-page cheat sheet",
+    "Guide Book PDF: schedules, worked examples, troubleshooting, FAQ",
+    "ai-learning-kit-exercises.csv: all 50 exercises with prompts and check steps",
+    "ai-learning-tracker.xlsx: exercise tracker, 30-day habit log, prompt notebook"
+   ]
+  },
+  "ai-prompt-library": {
+   "name": "AI Prompt Library",
+   "price": 149,
+   "unit": "",
+   "file": "products/ai-prompt-library.zip",
+   "includes": "Guide book included",
+   "price_usd": 1.99,
+   "tagline": "500 ready-to-use prompts for jobs, study, marketing, business and content.",
+   "description": "500 structured, copy-paste AI prompts organised into 5 categories and 50 sub-categories, built for Indian students, job seekers, small business owners and creators. Each prompt includes a role, a precise instruction with output format, and a context line for your details. Includes a searchable CSV.",
+   "cover": "c-ai-prompt-library",
+   "items": [
+    "500 prompts in a designed PDF (5 categories × 10 sub-categories × 10 prompts)",
+    "Searchable CSV with ID, category, sub-category, title, prompt and placeholder list",
+    "Prompt formula and follow-up cheat sheet",
+    "Guide Book PDF: how to search, customise, chain prompts into workflows, FAQ"
+   ]
+  },
+  "ai-knowledge-membership": {
+   "name": "AI Knowledge Membership",
+   "price": 149,
+   "unit": "/month",
+   "file": "products/ai-knowledge-membership.zip",
+   "includes": "Guide book included",
+   "price_usd": 1.99,
+   "tagline": "Issue #1 of the weekly members' digest: new tools, one tutorial, one template.",
+   "description": "A weekly members-only AI digest for Indian students, job seekers, small business owners and solo builders. Each issue covers verified AI launches with plain-English 'should I care?' verdicts, one hands-on tutorial, one ready-to-use template, a prompt of the week and quick wins by audience. Issue #1 covers Gemini 4 Argon, Claude Haiku 5.5, Shopify Canvas, Nemotron 3.5 Bolt and Muse Spark Open, plus a tutorial on building your own reusable AI assistant and the Review-to-Content Machine template.",
+   "cover": "c-ai-knowledge-membership",
+   "items": [
+    "Issue #1 digest PDF (week of 16 Oct 2026)",
+    "5 verified AI launches with audience verdicts and sources",
+    "Tutorial: build a reusable AI assistant (Projects / Gems) in 20 minutes",
+    "Template: Review-to-Content Machine prompt pack + worksheet",
+    "Prompt of the week, quick wins by audience, myth vs reality, action list",
+    "Member Guide Book PDF (bundled with membership)",
+    "issue-01-prompt-pack.txt: Review-to-Content prompts T1-T4 + prompt of the week",
+    "review-to-content-worksheet.xlsx: reviews log, themes, 4-week plan, fixes"
+   ]
+  },
+  "live-ai-training": {
+   "name": "Live AI Training",
+   "price": 299,
+   "unit": " per participant",
+   "file": "products/live-ai-training.zip",
+   "includes": "Guide book included",
+   "price_usd": 3.99,
+   "tagline": "Use AI in Your Business: a 2-hour hands-on workshop workbook and session outline.",
+   "description": "Materials for the paid 2-hour live workshop 'Use AI in Your Business'. Participants get a write-in workbook covering AI basics, the prompt formula, customer reply templates, a 2-week content plan, offers, review replies, quotations and a 30-day action plan. Facilitators get an 18-slide session outline with timings and notes.",
+   "cover": "c-live-ai-training",
+   "items": [
+    "Participant workbook PDF (6 modules, write-in exercises, prompts P1–P6)",
+    "Facilitator session outline PDF: 18 slides with timings, demos and notes, delivery checklist",
+    "Guide Book PDF: participant prep, 7-day follow-through, facilitator steps, FAQ",
+    "Sold only with the live session"
+   ]
+  },
+  "resume-job-hunt-ai-pack": {
+   "name": "Resume & Job Hunt AI Pack",
+   "price": 299,
+   "price_usd": 3.99,
+   "tagline": "ATS resume templates, 60 prompts, an interview bank and a tracker to land your next job.",
+   "description": "A complete AI-assisted job search system for Indian freshers, job seekers and career switchers: ATS-friendly resume templates (fresher and experienced), 60 prompts across resume, applications, LinkedIn, interviews, offers and skills, a 50-question interview bank with approach notes, email templates, a LinkedIn checklist, a 30-day plan and a job application tracker with dashboard.",
+   "file": "products/resume-job-hunt-ai-pack.zip",
+   "cover": "c-resume-job-hunt-ai-pack",
+   "includes": "Guide book included",
+   "unit": "",
+   "items": [
+    "Pack PDF: 30-day plan, resume guide, 60 prompts, 50-question interview bank, LinkedIn checklist, 4 email templates",
+    "ATS resume templates (.docx): fresher + experienced",
+    "Job application tracker (.xlsx) with dashboard and due-date highlighting",
+    "Guide Book PDF: setup in one evening, tailoring workflow, worked example, FAQ"
+   ]
+  },
+  "content-creator-ai-pack": {
+   "name": "Content Creator AI Pack",
+   "price": 399,
+   "price_usd": 4.99,
+   "tagline": "100 hooks, 40 prompts, script frameworks and a planner to create content consistently.",
+   "description": "A practical content system for Indian creators, coaches, students and small brands: find your niche, plan with pillars, script faster with 5 frameworks, grab attention with 100 hook templates, repurpose one idea into many posts, and review analytics, with 40 AI prompts, a 30-day content planner (.xlsx) and a hooks bank (.csv).",
+   "file": "products/content-creator-ai-pack.zip",
+   "cover": "c-content-creator-ai-pack",
+   "includes": "Guide book included",
+   "unit": "",
+   "items": [
+    "Pack PDF: niche & pillars, content system, 5 script frameworks, 100 hook templates, 40 prompts, repurposing, batching, analytics, monetisation basics, 30-day challenge",
+    "content-planner.xlsx: 30-day calendar, idea bank, pillars, monthly summary",
+    "hooks-bank.csv: 100 hook templates by style",
+    "Guide Book PDF: setup, weekly workflow, worked example, FAQ"
+   ]
+  },
+  "ai-business-toolkit": {
+   "name": "AI Business Toolkit",
+   "price": 499,
+   "unit": "",
+   "file": "products/ai-business-toolkit.zip",
+   "includes": "Guide book included",
+   "price_usd": 6.99,
+   "tagline": "WhatsApp replies, marketing prompts, quotations and follow-ups for Indian small businesses.",
+   "description": "A done-for-you toolkit for shops, clinics, salons and restaurants. Answer customers in seconds with 40 WhatsApp templates, create a month of marketing with 30 AI prompts, send professional auto-calculating quotations, and stop losing repeat customers with a colour-coded follow-up system.",
+   "cover": "c-ai-business-toolkit",
+   "items": [
+    "Toolkit PDF: 40 WhatsApp reply templates (shops, clinics, salons, restaurants)",
+    "30 AI marketing prompts + 6 customisation prompts",
+    "4 quotation templates in Excel (auto-calculating) and Word",
+    "Customer follow-up system (.xlsx) with rules, dashboard, colour-coded due dates",
+    "Guide Book PDF: setup in one afternoon, routines, examples, FAQ"
+   ]
+  },
+  "freelancer-ai-proposal-kit": {
+   "name": "Freelancer AI Proposal Kit",
+   "price": 499,
+   "price_usd": 6.99,
+   "tagline": "Win better clients with AI-assisted proposals, pricing and outreach.",
+   "description": "A complete client-winning system for Indian freelancers in design, web, content, social media, marketing and consulting: positioning, outreach templates, discovery questions, proposal anatomy, 3 editable proposal templates, pricing methods with a rate and project calculator, scope protection, onboarding and payment follow-ups, plus 40 AI prompts.",
+   "file": "products/freelancer-ai-proposal-kit.zip",
+   "cover": "c-freelancer-ai-proposal-kit",
+   "includes": "Guide book included",
+   "unit": "",
+   "items": [
+    "Kit PDF: positioning, outreach, discovery, proposal anatomy, pricing, scope, onboarding, payments, 40 prompts, 6 outreach templates",
+    "proposal-templates.docx: website/design project, social media retainer, one-time service/consulting",
+    "pricing-calculator.xlsx: hourly rate calculator, project estimator, 3-tier package builder, invoice",
+    "Guide Book PDF: setup, the client pipeline, worked example, FAQ"
+   ]
+  },
+  "vibe-coding-starter-kit": {
+   "name": "Vibe Coding Starter Kit",
+   "price": 599,
+   "price_usd": 7.99,
+   "tagline": "Build and launch your first web apps with AI, even if you've never coded.",
+   "description": "A beginner-friendly kit for building real web apps by describing them to AI. Learn the honest strengths and limits of vibe coding, choose between chat + single file, AI app builders and AI code editors, follow a repeatable build and debugging loop, customise 5 ready single-file app templates (portfolio, expense tracker, WhatsApp shop order page, appointment request, flashcards), deploy as a static site, and stay safe with keys and user data.",
+   "file": "products/vibe-coding-starter-kit.zip",
+   "cover": "c-vibe-coding-starter-kit",
+   "includes": "Guide book included",
+   "unit": "",
+   "items": [
+    "Kit PDF: what vibe coding is, 3 build paths, setup, build loop, 5 step-by-step projects, debugging routine, deployment, security, 40 prompts, 14-day plan",
+    "5 single-file HTML starter templates: portfolio, expense tracker, WhatsApp shop order page, appointment request, flashcards",
+    "vibe-coding-prompts.md: all 40 prompts in plain text",
+    "project-spec-template.md and launch-checklist.md",
+    "Guide Book PDF: first hour, worked example, troubleshooting, FAQ"
+   ]
+  },
+  "industry-ai-kits": {
+   "name": "Industry AI Kits",
+   "price": 999,
+   "unit": "",
+   "file": "products/industry-ai-kits.zip",
+   "includes": "Guide book included",
+   "price_usd": 12.99,
+   "tagline": "5 mini kits with workflows and prompts for doctors, agents, teachers, shops and agencies.",
+   "description": "Five industry-specific AI mini kits for India: Doctors & Clinics, Real Estate Agents, Teachers & Tutors, Shopkeepers & Retail, and Agencies & Freelancers. Each kit includes professional cautions, 5 step-by-step workflows, 20 mapped prompts, a weekly routine and a 30-day rollout plan. Delivered as one combined PDF plus separate PDFs per kit.",
+   "cover": "c-industry-ai-kits",
+   "items": [
+    "Combined PDF with all 5 kits",
+    "5 separate kit PDFs (doctors, real estate, teachers, shopkeepers, agencies)",
+    "25 step-by-step workflows",
+    "100 industry prompts (20 per kit)",
+    "Professional cautions per industry, weekly routines, 30-day rollout plans",
+    "Guide Book PDF: setup, team training, worked examples, FAQ"
+   ]
+  },
+  "ai-receptionist-setup": {
+   "name": "AI Receptionist Setup",
+   "price": 1999,
+   "unit": "",
+   "file": "products/ai-receptionist-setup.zip",
+   "includes": "Guide book included",
+   "price_usd": 24.99,
+   "tagline": "DIY blueprint to build a 24/7 AI receptionist for WhatsApp and your website.",
+   "description": "A complete do-it-yourself blueprint to set up an AI receptionist that answers FAQs, captures leads, helps with bookings and hands off to a human. Choose from three paths (free WhatsApp Business starter, website AI chat, or WhatsApp AI via the official platform) with an FAQ template, lead form spec, chatbot script, AI system prompt, tool scorecard, testing plan and launch checklist.",
+   "cover": "c-ai-receptionist-setup",
+   "items": [
+    "Blueprint PDF: 3 build paths with step-by-step instructions",
+    "FAQ knowledge base template (40 starter questions) + AI drafting prompt",
+    "Lead capture form spec with routing rules",
+    "Chatbot conversation script (7 flows) + ready AI system prompt",
+    "Tool options by category + selection scorecard",
+    "20-scenario test plan, launch checklist, maintenance routine",
+    "receptionist-faq-and-leads.xlsx (FAQ, Leads, Test log)",
+    "ai-receptionist-system-prompt.txt (copy-paste system prompt)",
+    "Guide Book PDF: 2-week project plan, examples, troubleshooting, FAQ"
+   ]
+  }
+ },
+ "paypal_email": "kamdevsuraj03@gmail.com",
+ "paypal_link": "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business={email}&item_name={item}&amount={usd}&currency_code=USD&invoice={order}"
+}

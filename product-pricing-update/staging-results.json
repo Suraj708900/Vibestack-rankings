@@ -1,0 +1,126 @@
+{
+  "passed": 30,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "All 11 products retained",
+      "passed": true
+    },
+    {
+      "name": "AI Learning Kit listing, review URL and live activity",
+      "passed": true
+    },
+    {
+      "name": "AI Prompt Library listing, review URL and live activity",
+      "passed": true
+    },
+    {
+      "name": "AI Knowledge Membership listing, review URL and live activity",
+      "passed": true
+    },
+    {
+      "name": "Live AI Training listing, review URL and live activity",
+      "passed": true
+    },
+    {
+      "name": "Resume & Job Hunt AI Pack listing, review URL and live activity",
+      "passed": true
+    },
+    {
+      "name": "Content Creator AI Pack listing, review URL and live activity",
+      "passed": true
+    },
+    {
+      "name": "AI Business Toolkit listing, review URL and live activity",
+      "passed": true
+    },
+    {
+      "name": "Freelancer AI Proposal Kit listing, review URL and live activity",
+      "passed": true
+    },
+    {
+      "name": "Vibe Coding Starter Kit listing, review URL and live activity",
+      "passed": true
+    },
+    {
+      "name": "Industry AI Kits listing, review URL and live activity",
+      "passed": true
+    },
+    {
+      "name": "AI Receptionist Setup listing, review URL and live activity",
+      "passed": true
+    },
+    {
+      "name": "Original 22 checkout links retained",
+      "passed": true
+    },
+    {
+      "name": "No fabricated engagement values",
+      "passed": true
+    },
+    {
+      "name": "AI Learning Kit detail price, checkout and review section",
+      "passed": true
+    },
+    {
+      "name": "AI Prompt Library detail price, checkout and review section",
+      "passed": true
+    },
+    {
+      "name": "AI Knowledge Membership detail price, checkout and review section",
+      "passed": true
+    },
+    {
+      "name": "Live AI Training detail price, checkout and review section",
+      "passed": true
+    },
+    {
+      "name": "Resume & Job Hunt AI Pack detail price, checkout and review section",
+      "passed": true
+    },
+    {
+      "name": "Content Creator AI Pack detail price, checkout and review section",
+      "passed": true
+    },
+    {
+      "name": "AI Business Toolkit detail price, checkout and review section",
+      "passed": true
+    },
+    {
+      "name": "Freelancer AI Proposal Kit detail price, checkout and review section",
+      "passed": true
+    },
+    {
+      "name": "Vibe Coding Starter Kit detail price, checkout and review section",
+      "passed": true
+    },
+    {
+      "name": "Industry AI Kits detail price, checkout and review section",
+      "passed": true
+    },
+    {
+      "name": "AI Receptionist Setup detail price, checkout and review section",
+      "passed": true
+    },
+    {
+      "name": "AI Learning Kit checkout ₹499 / $5.27",
+      "passed": true
+    },
+    {
+      "name": "Actual PayPal link uses amount 5.27 and USD",
+      "passed": true
+    },
+    {
+      "name": "All checkout prices match new catalog",
+      "passed": true
+    },
+    {
+      "name": "Mobile layout fits width",
+      "passed": true
+    },
+    {
+      "name": "All mobile card prices and detail links available",
+      "passed": true
+    }
+  ]
+}
