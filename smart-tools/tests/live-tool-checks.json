@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "passed": 6,
+    "failed": 0
+  },
+  "production": true,
+  "synthetic_inputs_only": true,
+  "actual_downloads_parsed": true,
+  "resume_optional_live_ai": "real response and PDF",
+  "intent_search": "make my photo 50KB includes photo-size-kb and Image Compressor",
+  "motion": "computed animation auf-doc-float; pause and persisted resume verified in staging",
+  "tools": {
+    "photo-to-pdf": {
+      "passed": true,
+      "download_bytes": 13569,
+      "pdf_pages": 2
+    },
+    "invoice-generator": {
+      "passed": true,
+      "download_bytes": 12364,
+      "pdf_pages": 1,
+      "expected_total_verified": "INR 180.45"
+    },
+    "merge-pdf": {
+      "passed": true,
+      "download_bytes": 22385,
+      "pdf_pages": 3
+    },
+    "ai-resume": {
+      "passed": true,
+      "download_bytes": 12637,
+      "pdf_pages": 1
+    },
+    "qr-code": {
+      "passed": true,
+      "download_bytes": 8279,
+      "image_dimensions": [
+        512,
+        512
+      ]
+    },
+    "image-compressor": {
+      "passed": true,
+      "download_bytes": 4963,
+      "image_dimensions": [
+        640,
+        480
+      ]
+    }
+  }
+}

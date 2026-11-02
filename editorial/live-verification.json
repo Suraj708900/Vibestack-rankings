@@ -1,0 +1,189 @@
+[
+  {
+    "path": "/blog/make-photo-50kb-without-losing-readability.html",
+    "status": 200,
+    "bytes": 14816,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true
+  },
+  {
+    "path": "/blog/combine-photos-into-one-pdf-step-by-step.html",
+    "status": 200,
+    "bytes": 14712,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true
+  },
+  {
+    "path": "/blog/merge-pdf-files-correct-order-checklist.html",
+    "status": 200,
+    "bytes": 14617,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true
+  },
+  {
+    "path": "/blog/freelance-invoice-pdf-checklist.html",
+    "status": 200,
+    "bytes": 14812,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true
+  },
+  {
+    "path": "/blog/qr-code-for-business-scan-test-guide.html",
+    "status": 200,
+    "bytes": 14718,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true
+  },
+  {
+    "path": "/blog/json-formatting-vs-validation-explained.html",
+    "status": 200,
+    "bytes": 14936,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true
+  },
+  {
+    "path": "/blog/utm-links-naming-convention-small-business.html",
+    "status": 200,
+    "bytes": 14909,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true
+  },
+  {
+    "path": "/blog/generate-strong-password-browser-safely.html",
+    "status": 200,
+    "bytes": 15024,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true
+  },
+  {
+    "path": "/blog/add-pdf-watermark-without-covering-text.html",
+    "status": 200,
+    "bytes": 14657,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true
+  },
+  {
+    "path": "/blog/crop-image-pixels-vs-file-size.html",
+    "status": 200,
+    "bytes": 14701,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true
+  },
+  {
+    "path": "/blog/klap-ai-video-shorts-guide.html",
+    "status": 200,
+    "bytes": 17160,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true,
+    "video": true,
+    "affiliate_preserved": true
+  },
+  {
+    "path": "/t/klap.html",
+    "status": 200,
+    "bytes": 11758,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true,
+    "video": true,
+    "affiliate_preserved": true
+  },
+  {
+    "path": "/blog/",
+    "status": 200,
+    "bytes": 193422,
+    "canonical": true,
+    "image_present": true,
+    "noindex": false,
+    "consent_preserved": true
+  },
+  {
+    "path": "/assets/blog-guides-20261102/blog-guide-qr-code.jpg",
+    "status": 200,
+    "bytes": 67760,
+    "matches_original": false
+  },
+  {
+    "path": "/assets/blog-guides-20261102/blog-guide-klap.jpg",
+    "status": 200,
+    "bytes": 61902,
+    "matches_original": false
+  },
+  {
+    "path": "/assets/blog-guides-20261102/blog-guide-invoice-generator.jpg",
+    "status": 200,
+    "bytes": 79351,
+    "matches_original": false
+  },
+  {
+    "path": "/assets/blog-guides-20261102/blog-guide-pdf-watermark.jpg",
+    "status": 200,
+    "bytes": 84603,
+    "matches_original": false
+  },
+  {
+    "path": "/assets/blog-guides-20261102/blog-guide-json-formatter.jpg",
+    "status": 200,
+    "bytes": 72675,
+    "matches_original": false
+  },
+  {
+    "path": "/assets/blog-guides-20261102/blog-guide-image-cropper.jpg",
+    "status": 200,
+    "bytes": 79775,
+    "matches_original": false
+  },
+  {
+    "path": "/assets/blog-guides-20261102/blog-guide-utm-builder.jpg",
+    "status": 200,
+    "bytes": 76182,
+    "matches_original": false
+  },
+  {
+    "path": "/assets/blog-guides-20261102/blog-guide-photo-to-pdf.jpg",
+    "status": 200,
+    "bytes": 84268,
+    "matches_original": false
+  },
+  {
+    "path": "/assets/blog-guides-20261102/blog-guide-password-generator.jpg",
+    "status": 200,
+    "bytes": 71166,
+    "matches_original": false
+  },
+  {
+    "path": "/assets/blog-guides-20261102/blog-guide-photo-size-kb.jpg",
+    "status": 200,
+    "bytes": 88165,
+    "matches_original": false
+  },
+  {
+    "path": "/assets/blog-guides-20261102/blog-guide-merge-pdf.jpg",
+    "status": 200,
+    "bytes": 72441,
+    "matches_original": false
+  }
+]

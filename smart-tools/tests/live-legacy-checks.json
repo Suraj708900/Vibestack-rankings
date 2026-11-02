@@ -1,0 +1,92 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 148779,
+    "errors": []
+  },
+  {
+    "path": "/t/klap.html",
+    "status": 200,
+    "bytes": 9150,
+    "errors": []
+  },
+  {
+    "path": "/blog/klap-ai-video-shorts-guide.html",
+    "status": 200,
+    "bytes": 14552,
+    "errors": []
+  },
+  {
+    "path": "/account",
+    "status": 200,
+    "bytes": 9814,
+    "errors": []
+  },
+  {
+    "path": "/login",
+    "status": 200,
+    "bytes": 11208,
+    "errors": []
+  },
+  {
+    "path": "/privacy",
+    "status": 200,
+    "bytes": 16471,
+    "errors": []
+  },
+  {
+    "path": "/terms",
+    "status": 200,
+    "bytes": 12599,
+    "errors": []
+  },
+  {
+    "path": "/contact.html",
+    "status": 200,
+    "bytes": 9918,
+    "errors": []
+  },
+  {
+    "path": "/about.html",
+    "status": 200,
+    "bytes": 12172,
+    "errors": []
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "bytes": 453,
+    "errors": []
+  },
+  {
+    "path": "/tools-sitemap.xml",
+    "status": 200,
+    "bytes": 3493,
+    "errors": []
+  },
+  {
+    "path": "/ads.txt",
+    "status": 200,
+    "bytes": 59,
+    "errors": []
+  },
+  {
+    "path": "/directory/",
+    "status": 200,
+    "bytes": 71811,
+    "errors": []
+  },
+  {
+    "path": "/blog/",
+    "status": 200,
+    "bytes": 185551,
+    "errors": []
+  },
+  {
+    "path": "/api/auth.php",
+    "errors": [],
+    "status": 405,
+    "expected_method_rejection": true
+  }
+]

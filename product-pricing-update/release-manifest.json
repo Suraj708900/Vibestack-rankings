@@ -1,0 +1,62 @@
+{
+  "checkout.html": {
+    "before": "ded777e8e1e17f937a348700b99918d1fb059aaf18fdd8fa69b1fb3e12cc85e9",
+    "after": "659e3aac1376b69d0d10282c858e094c4404c34c2341067e211ba01f7aadd49c"
+  },
+  "index.html": {
+    "before": "f5cccc48267b629886b95ec9d01c9ba5f91a1f0a5b9545af68a81fefcb831cfc",
+    "after": "3f1d5382d7df2879aee0d65bc1fcd5e358fa35682899f31774dcf02e21d3664c"
+  },
+  "products.html": {
+    "before": "01e433a06538e81d871ff1f053c19a129cedf1e7c822ee6dd9d66c370c136842",
+    "after": "369a7acaabbdc7aad04250ef3185a2db9547b02fd5967c13c01e8e6d86999220"
+  },
+  "data/products-config.json": {
+    "before": "7cc762bad4873576c5088630bffb10485cc2df7a3fefe7e82858612bb1768e08",
+    "after": "21276099f239e25dc8268f4191cd80730aee93f18b9e995cc7261a85ef25a27b"
+  },
+  "product/ai-receptionist-setup.html": {
+    "before": "45c4b743fb3dd28c9bc7d74a2d28b830017e79c8a4a054d0ddab12a3f2876a44",
+    "after": "0d2475bbe09e6b419efceae8f8bedc8f3490e4538bd4e71f130d3e67cde632c1"
+  },
+  "product/ai-learning-kit.html": {
+    "before": "1f8eb546f9cc7346c7609d3b5751e49cc3251c6224bec2f0e2ac6ee708558e80",
+    "after": "d6b87766dc0c9b8be8cca50020e5d91f42cb1d4bf3047cb13c95b14bc2318b2c"
+  },
+  "product/industry-ai-kits.html": {
+    "before": "76e31f56a8d3ae4f95fb2050c06e129ae1429eb127b85e4d83bfb6b42735dda9",
+    "after": "4868c97c0c4b19b96fb18cce2ff474c5856e7636b86c3817a8c0e89d3e5bb8c0"
+  },
+  "product/ai-business-toolkit.html": {
+    "before": "533ab83a455c456ea8013c551d22e640240f121832a12d4226d9b2e3ce0cfa11",
+    "after": "3e52a2a087ae2c3fa0cba69b64542b203d18ebae71c3bf3d6c85b93b833477d7"
+  },
+  "product/live-ai-training.html": {
+    "before": "8e23723e12d3f3fa3021a60ccbcfa6d5b28c0deb29a60c3160b470180bad7e3b",
+    "after": "b6558ba6b0a3210dc966936d1421c2f7ae21da1c62d964dfc7dd64b9086985f8"
+  },
+  "product/content-creator-ai-pack.html": {
+    "before": "90bd98a5fa26c4eb2fbc59bb040ec039101e41b4bbf0a2c6d2d1c9dab3d408df",
+    "after": "26a002009c5314d5aa2a3fa6444e05b02169c3a86e4b11bc3215bd468b886525"
+  },
+  "product/freelancer-ai-proposal-kit.html": {
+    "before": "283ce0397d5b87f01fd1af955fa5b9ad7d046d9185f5337ddf1071cd49d797ed",
+    "after": "e596fa1fb3514df88fed6089b0f25c6bf83102d50bb643aec2f7d5fbea47e7e0"
+  },
+  "product/ai-prompt-library.html": {
+    "before": "17e87d62d01cace06721b7ca8d80943ef815f5c17e642b78523e0f1000e0bb1f",
+    "after": "2b09a32fa21a50f781bf5181355999ecb409f6fa0be7230f129528d831a4bc73"
+  },
+  "product/ai-knowledge-membership.html": {
+    "before": "7635e243e9243b37abe172dbd00f86622b9dcd0473d52b9b504084e39f44e556",
+    "after": "4ce52c24cd3170e275594e9607d695142d5a8c18d1386d4bb006bffabe8a6e4b"
+  },
+  "product/resume-job-hunt-ai-pack.html": {
+    "before": "ebe6e1d01822f4dd77c52c771b5cd895e50f78f0081be90b6a29958db08b17d0",
+    "after": "3085511e607ea263f2ce4241ff154c94fcb8952ce09718f66ebbf331228a47be"
+  },
+  "product/vibe-coding-starter-kit.html": {
+    "before": "6c8b195bde332a6d824a1c4b6d8133d4c96ba742820349993418f426cc5c79a4",
+    "after": "f204aaa791c818a09602b69b6e7d9e25f67df7dca9b745b545354a87abcae413"
+  }
+}

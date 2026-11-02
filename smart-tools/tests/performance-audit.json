@@ -1,0 +1,5 @@
+{
+  "status": "blocked",
+  "http": 429,
+  "reason": "Public PageSpeed API quota/access unavailable; no API key or paid service enabled."
+}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+dist-production/
+test-output/
+private/
+*.sql
+*.sqlite
+*.zip
+*.log
+
+public/fonts/*.ttf

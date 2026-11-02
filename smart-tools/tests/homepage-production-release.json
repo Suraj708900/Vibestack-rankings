@@ -1,0 +1,22 @@
+{
+  "status": "homepage-integrated",
+  "version": "4f059cf67797",
+  "time": "2026-11-02T02:51:32+00:00",
+  "inline_tools": 50,
+  "html_pages_updated": 1258,
+  "metadata_preserved_pages": 1258,
+  "existing_scripts_preserved": 14004,
+  "protected_services_verified": 8,
+  "database_changed": false,
+  "backup": {
+    "relative_archive": "v4-release-backups/professional-home-20261102025101/before-homepage-integration.zip",
+    "bytes": 247264299,
+    "sha256": "d800944083ddcf00d22d1f4af112bd90947412db02af2b0a005133e861873613",
+    "entries_crc_verified": 13252,
+    "sqlite_snapshots": 3,
+    "critical_restore_checks": 10,
+    "prior_verified_mysql_snapshot_retained": true
+  },
+  "payments_activated": false,
+  "url": "https://aiuseflow.com/"
+}

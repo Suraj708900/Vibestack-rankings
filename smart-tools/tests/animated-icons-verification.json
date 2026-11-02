@@ -1,0 +1,14 @@
+{
+  "version": "c03e787d19eb",
+  "staging": {
+    "tool_icons": 50,
+    "category_icons": 5,
+    "css_animation": "auf-icon-sway",
+    "pause_animation": "none",
+    "horizontal_overflow": false
+  },
+  "preservation": "Only two homepage asset references changed; all other bytes retained.",
+  "backup": "Hosted .private/icons-release/backup-index.html read back and matched the original homepage exactly.",
+  "deployment": "One-time TUS upload; recurring publisher cron rejected and not created.",
+  "scope": "Homepage tool cards and category buttons; no ad or consent script changes."
+}

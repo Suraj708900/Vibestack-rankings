@@ -1,0 +1,69 @@
+{
+  "time": "2026-11-01T19:26:13.285Z",
+  "tests": [
+    {
+      "id": "compress-pdf-scan",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "compress-pdf.pdf: 85248 bytes"
+      ]
+    },
+    {
+      "id": "photo-size-kb-20kb",
+      "status": "passed",
+      "checks": [
+        "1200\u00d7900 image",
+        "photo-20kb.jpg: 19943 bytes"
+      ]
+    },
+    {
+      "id": "photo-size-kb-100kb",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "photo-100kb.jpg: 9613 bytes"
+      ]
+    },
+    {
+      "id": "passport-photo-2inch",
+      "status": "passed",
+      "checks": [
+        "600\u00d7600 image",
+        "passport-photo.jpg: 9808 bytes"
+      ]
+    },
+    {
+      "id": "image-compressor-batch",
+      "status": "passed",
+      "checks": [
+        "ZIP CRC verified",
+        "compressed-images.zip: 11764 bytes"
+      ]
+    },
+    {
+      "id": "invoice-generator-Classic",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "invoice-INV-2026-0012.pdf: 88452 bytes"
+      ]
+    },
+    {
+      "id": "invoice-generator-Modern",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "invoice-INV-2026-0013.pdf: 88568 bytes"
+      ]
+    },
+    {
+      "id": "invoice-generator-Minimal",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "invoice-INV-2026-0014.pdf: 88143 bytes"
+      ]
+    }
+  ]
+}

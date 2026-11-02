@@ -1,0 +1,381 @@
+{
+  "summary": {
+    "pages": 53,
+    "passed": 53,
+    "duplicate_titles": 0,
+    "failures": []
+  },
+  "pages": [
+    {
+      "path": "/tools/ai-blog-title/",
+      "status": 200,
+      "title": "AI Blog Title Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/ai-blog-title/",
+      "errors": []
+    },
+    {
+      "path": "/tools/ai-cover-letter/",
+      "status": 200,
+      "title": "AI Cover Letter Writer \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/ai-cover-letter/",
+      "errors": []
+    },
+    {
+      "path": "/tools/ai-email/",
+      "status": 200,
+      "title": "AI Email Writer \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/ai-email/",
+      "errors": []
+    },
+    {
+      "path": "/tools/ai-grammar/",
+      "status": 200,
+      "title": "AI Grammar Checker \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/ai-grammar/",
+      "errors": []
+    },
+    {
+      "path": "/tools/ai-product-description/",
+      "status": 200,
+      "title": "AI Product Description Writer \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/ai-product-description/",
+      "errors": []
+    },
+    {
+      "path": "/tools/ai-prompt/",
+      "status": 200,
+      "title": "AI Prompt Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/ai-prompt/",
+      "errors": []
+    },
+    {
+      "path": "/tools/ai-resume/",
+      "status": 200,
+      "title": "AI Resume Builder \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/ai-resume/",
+      "errors": []
+    },
+    {
+      "path": "/tools/ai-social-caption/",
+      "status": 200,
+      "title": "AI Social Media Caption Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/ai-social-caption/",
+      "errors": []
+    },
+    {
+      "path": "/tools/ai-summarizer/",
+      "status": 200,
+      "title": "AI Text Summarizer \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/ai-summarizer/",
+      "errors": []
+    },
+    {
+      "path": "/tools/ai-youtube-description/",
+      "status": 200,
+      "title": "AI YouTube Description Writer \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/ai-youtube-description/",
+      "errors": []
+    },
+    {
+      "path": "/tools/background-remover/",
+      "status": 200,
+      "title": "Background Remover \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/background-remover/",
+      "errors": []
+    },
+    {
+      "path": "/tools/barcode/",
+      "status": 200,
+      "title": "Barcode Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/barcode/",
+      "errors": []
+    },
+    {
+      "path": "/tools/business-name/",
+      "status": 200,
+      "title": "Business Name Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/business-name/",
+      "errors": []
+    },
+    {
+      "path": "/tools/compress-pdf/",
+      "status": 200,
+      "title": "Compress PDF \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/compress-pdf/",
+      "errors": []
+    },
+    {
+      "path": "/tools/discount-calculator/",
+      "status": 200,
+      "title": "Discount Calculator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/discount-calculator/",
+      "errors": []
+    },
+    {
+      "path": "/tools/freelance-rate/",
+      "status": 200,
+      "title": "Freelance Rate Calculator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/freelance-rate/",
+      "errors": []
+    },
+    {
+      "path": "/tools/gst-calculator/",
+      "status": 200,
+      "title": "GST Calculator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/gst-calculator/",
+      "errors": []
+    },
+    {
+      "path": "/tools/gst-invoice/",
+      "status": 200,
+      "title": "GST Invoice Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/gst-invoice/",
+      "errors": []
+    },
+    {
+      "path": "/tools/image-color-picker/",
+      "status": 200,
+      "title": "Image Color Picker \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/image-color-picker/",
+      "errors": []
+    },
+    {
+      "path": "/tools/image-compressor/",
+      "status": 200,
+      "title": "Image Compressor \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/image-compressor/",
+      "errors": []
+    },
+    {
+      "path": "/tools/image-cropper/",
+      "status": 200,
+      "title": "Image Cropper \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/image-cropper/",
+      "errors": []
+    },
+    {
+      "path": "/tools/image-resizer/",
+      "status": 200,
+      "title": "Image Resizer \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/image-resizer/",
+      "errors": []
+    },
+    {
+      "path": "/tools/image-watermark/",
+      "status": 200,
+      "title": "Image Watermark Maker \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/image-watermark/",
+      "errors": []
+    },
+    {
+      "path": "/tools/",
+      "status": 200,
+      "title": "Free Smart Tools Hub \u2014 PDF, Images, Invoices & AI | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/",
+      "errors": []
+    },
+    {
+      "path": "/tools/invoice-generator/",
+      "status": 200,
+      "title": "Professional Invoice Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/invoice-generator/",
+      "errors": []
+    },
+    {
+      "path": "/tools/jpg-to-pdf/",
+      "status": 200,
+      "title": "JPG to PDF \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/jpg-to-pdf/",
+      "errors": []
+    },
+    {
+      "path": "/tools/jpg-to-png/",
+      "status": 200,
+      "title": "JPG to PNG \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/jpg-to-png/",
+      "errors": []
+    },
+    {
+      "path": "/tools/json-formatter/",
+      "status": 200,
+      "title": "JSON Formatter & Validator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/json-formatter/",
+      "errors": []
+    },
+    {
+      "path": "/tools/merge-pdf/",
+      "status": 200,
+      "title": "Merge PDF \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/merge-pdf/",
+      "errors": []
+    },
+    {
+      "path": "/tools/meta-tags/",
+      "status": 200,
+      "title": "SEO Meta Tag Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/meta-tags/",
+      "errors": []
+    },
+    {
+      "path": "/tools/passport-photo/",
+      "status": 200,
+      "title": "Passport Photo Maker \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/passport-photo/",
+      "errors": []
+    },
+    {
+      "path": "/tools/password-generator/",
+      "status": 200,
+      "title": "Secure Password Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/password-generator/",
+      "errors": []
+    },
+    {
+      "path": "/tools/pdf-page-numbers/",
+      "status": 200,
+      "title": "Add Page Numbers to PDF \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/pdf-page-numbers/",
+      "errors": []
+    },
+    {
+      "path": "/tools/pdf-signature/",
+      "status": 200,
+      "title": "PDF Signature Tool \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/pdf-signature/",
+      "errors": []
+    },
+    {
+      "path": "/tools/pdf-to-jpg/",
+      "status": 200,
+      "title": "PDF to JPG \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/pdf-to-jpg/",
+      "errors": []
+    },
+    {
+      "path": "/tools/pdf-watermark/",
+      "status": 200,
+      "title": "PDF Watermark Tool \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/pdf-watermark/",
+      "errors": []
+    },
+    {
+      "path": "/tools/photo-size-kb/",
+      "status": 200,
+      "title": "Photo to 20KB / 50KB / 100KB \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/photo-size-kb/",
+      "errors": []
+    },
+    {
+      "path": "/tools/photo-to-pdf/",
+      "status": 200,
+      "title": "Photo to PDF \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/photo-to-pdf/",
+      "errors": []
+    },
+    {
+      "path": "/tools/png-to-webp/",
+      "status": 200,
+      "title": "PNG to WebP \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/png-to-webp/",
+      "errors": []
+    },
+    {
+      "path": "/tools/privacy/",
+      "status": 200,
+      "title": "Smart Tools Privacy | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/privacy/",
+      "errors": []
+    },
+    {
+      "path": "/tools/profit-margin/",
+      "status": 200,
+      "title": "Profit Margin Calculator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/profit-margin/",
+      "errors": []
+    },
+    {
+      "path": "/tools/purchase-order/",
+      "status": 200,
+      "title": "Purchase Order Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/purchase-order/",
+      "errors": []
+    },
+    {
+      "path": "/tools/qr-code/",
+      "status": 200,
+      "title": "QR Code Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/qr-code/",
+      "errors": []
+    },
+    {
+      "path": "/tools/quotation-generator/",
+      "status": 200,
+      "title": "Quotation Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/quotation-generator/",
+      "errors": []
+    },
+    {
+      "path": "/tools/receipt-generator/",
+      "status": 200,
+      "title": "Receipt Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/receipt-generator/",
+      "errors": []
+    },
+    {
+      "path": "/tools/robots-generator/",
+      "status": 200,
+      "title": "Robots.txt Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/robots-generator/",
+      "errors": []
+    },
+    {
+      "path": "/tools/rotate-pdf/",
+      "status": 200,
+      "title": "Rotate PDF Pages \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/rotate-pdf/",
+      "errors": []
+    },
+    {
+      "path": "/tools/schema-generator/",
+      "status": 200,
+      "title": "Schema Markup Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/schema-generator/",
+      "errors": []
+    },
+    {
+      "path": "/tools/sitemap-generator/",
+      "status": 200,
+      "title": "XML Sitemap Generator \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/sitemap-generator/",
+      "errors": []
+    },
+    {
+      "path": "/tools/split-pdf/",
+      "status": 200,
+      "title": "Split PDF \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/split-pdf/",
+      "errors": []
+    },
+    {
+      "path": "/tools/terms/",
+      "status": 200,
+      "title": "Smart Tools Terms | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/terms/",
+      "errors": []
+    },
+    {
+      "path": "/tools/utm-builder/",
+      "status": 200,
+      "title": "UTM Link Builder \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/utm-builder/",
+      "errors": []
+    },
+    {
+      "path": "/tools/word-counter/",
+      "status": 200,
+      "title": "Word Counter \u2014 Free Online Tool | AIUseFlow",
+      "canonical": "https://aiuseflow.com/tools/word-counter/",
+      "errors": []
+    }
+  ]
+}

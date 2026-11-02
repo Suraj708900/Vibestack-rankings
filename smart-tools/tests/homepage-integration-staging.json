@@ -1,0 +1,256 @@
+{
+  "summary": {
+    "passed": 62,
+    "failed": 0
+  },
+  "tests": [
+    {
+      "name": "Homepage discovery and preserved features",
+      "pass": true
+    },
+    {
+      "name": "Intent search",
+      "pass": true
+    },
+    {
+      "name": "All 50 tools remain reachable",
+      "pass": true
+    },
+    {
+      "name": "Favorites",
+      "pass": true
+    },
+    {
+      "name": "Pause motion",
+      "pass": true
+    },
+    {
+      "name": "Inline photo-to-pdf",
+      "pass": true
+    },
+    {
+      "name": "Inline image-compressor",
+      "pass": true
+    },
+    {
+      "name": "Inline invoice-generator",
+      "pass": true
+    },
+    {
+      "name": "Inline merge-pdf",
+      "pass": true
+    },
+    {
+      "name": "Inline ai-resume",
+      "pass": true
+    },
+    {
+      "name": "Inline qr-code",
+      "pass": true
+    },
+    {
+      "name": "Inline photo-size-kb",
+      "pass": true
+    },
+    {
+      "name": "Inline json-formatter",
+      "pass": true
+    },
+    {
+      "name": "Inline pdf-to-jpg",
+      "pass": true
+    },
+    {
+      "name": "Inline jpg-to-pdf",
+      "pass": true
+    },
+    {
+      "name": "Inline split-pdf",
+      "pass": true
+    },
+    {
+      "name": "Inline compress-pdf",
+      "pass": true
+    },
+    {
+      "name": "Inline rotate-pdf",
+      "pass": true
+    },
+    {
+      "name": "Inline pdf-page-numbers",
+      "pass": true
+    },
+    {
+      "name": "Inline pdf-watermark",
+      "pass": true
+    },
+    {
+      "name": "Inline pdf-signature",
+      "pass": true
+    },
+    {
+      "name": "Inline image-resizer",
+      "pass": true
+    },
+    {
+      "name": "Inline jpg-to-png",
+      "pass": true
+    },
+    {
+      "name": "Inline png-to-webp",
+      "pass": true
+    },
+    {
+      "name": "Inline image-cropper",
+      "pass": true
+    },
+    {
+      "name": "Inline passport-photo",
+      "pass": true
+    },
+    {
+      "name": "Inline background-remover",
+      "pass": true
+    },
+    {
+      "name": "Inline image-watermark",
+      "pass": true
+    },
+    {
+      "name": "Inline image-color-picker",
+      "pass": true
+    },
+    {
+      "name": "Inline gst-invoice",
+      "pass": true
+    },
+    {
+      "name": "Inline quotation-generator",
+      "pass": true
+    },
+    {
+      "name": "Inline receipt-generator",
+      "pass": true
+    },
+    {
+      "name": "Inline profit-margin",
+      "pass": true
+    },
+    {
+      "name": "Inline gst-calculator",
+      "pass": true
+    },
+    {
+      "name": "Inline discount-calculator",
+      "pass": true
+    },
+    {
+      "name": "Inline freelance-rate",
+      "pass": true
+    },
+    {
+      "name": "Inline purchase-order",
+      "pass": true
+    },
+    {
+      "name": "Inline business-name",
+      "pass": true
+    },
+    {
+      "name": "Inline ai-cover-letter",
+      "pass": true
+    },
+    {
+      "name": "Inline ai-email",
+      "pass": true
+    },
+    {
+      "name": "Inline ai-summarizer",
+      "pass": true
+    },
+    {
+      "name": "Inline ai-grammar",
+      "pass": true
+    },
+    {
+      "name": "Inline ai-blog-title",
+      "pass": true
+    },
+    {
+      "name": "Inline ai-product-description",
+      "pass": true
+    },
+    {
+      "name": "Inline ai-social-caption",
+      "pass": true
+    },
+    {
+      "name": "Inline ai-prompt",
+      "pass": true
+    },
+    {
+      "name": "Inline ai-youtube-description",
+      "pass": true
+    },
+    {
+      "name": "Inline barcode",
+      "pass": true
+    },
+    {
+      "name": "Inline word-counter",
+      "pass": true
+    },
+    {
+      "name": "Inline password-generator",
+      "pass": true
+    },
+    {
+      "name": "Inline meta-tags",
+      "pass": true
+    },
+    {
+      "name": "Inline robots-generator",
+      "pass": true
+    },
+    {
+      "name": "Inline sitemap-generator",
+      "pass": true
+    },
+    {
+      "name": "Inline utm-builder",
+      "pass": true
+    },
+    {
+      "name": "Inline schema-generator",
+      "pass": true
+    },
+    {
+      "name": "Homepage 390px light",
+      "pass": true
+    },
+    {
+      "name": "Homepage 390px dark",
+      "pass": true
+    },
+    {
+      "name": "Homepage 768px light",
+      "pass": true
+    },
+    {
+      "name": "Homepage 768px dark",
+      "pass": true
+    },
+    {
+      "name": "Homepage 1280px light",
+      "pass": true
+    },
+    {
+      "name": "Homepage 1280px dark",
+      "pass": true
+    },
+    {
+      "name": "QR result inside homepage",
+      "pass": true
+    }
+  ]
+}

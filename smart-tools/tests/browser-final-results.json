@@ -1,0 +1,391 @@
+{
+  "time": "2026-11-01T19:40:34.078Z",
+  "tests": [
+    {
+      "id": "photo-to-pdf",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "photo-to-pdf.pdf: 20459 bytes"
+      ]
+    },
+    {
+      "id": "pdf-to-jpg",
+      "status": "passed",
+      "checks": [
+        "ZIP CRC verified",
+        "pdf-pages.zip: 6337 bytes"
+      ]
+    },
+    {
+      "id": "jpg-to-pdf",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "jpg-to-pdf.pdf: 18532 bytes"
+      ]
+    },
+    {
+      "id": "merge-pdf",
+      "status": "passed",
+      "checks": [
+        "4 valid PDF pages",
+        "merge-pdf.pdf: 1516 bytes"
+      ]
+    },
+    {
+      "id": "split-pdf",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "split-pdf.pdf: 883 bytes"
+      ]
+    },
+    {
+      "id": "compress-pdf",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "compress-pdf.pdf: 7050 bytes"
+      ]
+    },
+    {
+      "id": "rotate-pdf",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "rotate-pdf.pdf: 1105 bytes"
+      ]
+    },
+    {
+      "id": "pdf-page-numbers",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "pdf-page-numbers.pdf: 1639 bytes"
+      ]
+    },
+    {
+      "id": "pdf-watermark",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "pdf-watermark.pdf: 1797 bytes"
+      ]
+    },
+    {
+      "id": "pdf-signature",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "pdf-signature.pdf: 7998 bytes"
+      ]
+    },
+    {
+      "id": "image-compressor",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "image-compressor.jpg: 5761 bytes"
+      ]
+    },
+    {
+      "id": "image-resizer",
+      "status": "passed",
+      "checks": [
+        "1200\u00d7800 image",
+        "image-resizer.jpg: 15678 bytes"
+      ]
+    },
+    {
+      "id": "jpg-to-png",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "jpg-to-png.png: 29877 bytes"
+      ]
+    },
+    {
+      "id": "png-to-webp",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "png-to-webp.webp: 2830 bytes"
+      ]
+    },
+    {
+      "id": "image-cropper",
+      "status": "passed",
+      "checks": [
+        "400\u00d7400 image",
+        "image-cropper.jpg: 4832 bytes"
+      ]
+    },
+    {
+      "id": "passport-photo",
+      "status": "passed",
+      "checks": [
+        "413\u00d7531 image",
+        "passport-photo.jpg: 6535 bytes"
+      ]
+    },
+    {
+      "id": "background-remover",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "background-remover.png: 13402 bytes"
+      ]
+    },
+    {
+      "id": "photo-size-kb",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "photo-50kb.jpg: 9613 bytes"
+      ]
+    },
+    {
+      "id": "image-watermark",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "image-watermark.jpg: 7528 bytes"
+      ]
+    },
+    {
+      "id": "image-color-picker",
+      "status": "passed",
+      "checks": []
+    },
+    {
+      "id": "invoice-generator",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "invoice-INV-2026-0015.pdf: 20463 bytes"
+      ]
+    },
+    {
+      "id": "gst-invoice",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "tax-invoice-INV-2026-0016.pdf: 21270 bytes"
+      ]
+    },
+    {
+      "id": "quotation-generator",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "quotation-INV-2026-0017.pdf: 20506 bytes"
+      ]
+    },
+    {
+      "id": "receipt-generator",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "payment-receipt-INV-2026-0018.pdf: 20619 bytes"
+      ]
+    },
+    {
+      "id": "profit-margin",
+      "status": "passed",
+      "checks": [
+        "profit-margin.txt: 37 bytes"
+      ]
+    },
+    {
+      "id": "gst-calculator",
+      "status": "passed",
+      "checks": [
+        "gst-calculator.txt: 87 bytes"
+      ]
+    },
+    {
+      "id": "discount-calculator",
+      "status": "passed",
+      "checks": [
+        "discount-calculator.txt: 36 bytes"
+      ]
+    },
+    {
+      "id": "freelance-rate",
+      "status": "passed",
+      "checks": [
+        "freelance-rate.txt: 120 bytes"
+      ]
+    },
+    {
+      "id": "purchase-order",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "purchase-order-INV-2026-0019.pdf: 20513 bytes"
+      ]
+    },
+    {
+      "id": "business-name",
+      "status": "passed",
+      "checks": [
+        "business-name.txt: 97 bytes"
+      ]
+    },
+    {
+      "id": "ai-resume",
+      "status": "passed",
+      "checks": [
+        "resume.txt: 178 bytes",
+        "1 valid PDF pages",
+        "resume.pdf: 11163 bytes"
+      ]
+    },
+    {
+      "id": "qr-code",
+      "status": "passed",
+      "checks": [
+        "512\u00d7512 image",
+        "aiuseflow-qr.png: 8279 bytes",
+        "aiuseflow-qr.svg: 1238 bytes"
+      ]
+    },
+    {
+      "id": "barcode",
+      "status": "passed",
+      "checks": [
+        "375\u00d7215 image",
+        "barcode.png: 7469 bytes",
+        "barcode.svg: 10559 bytes"
+      ]
+    },
+    {
+      "id": "json-formatter",
+      "status": "passed",
+      "checks": [
+        "formatted.json: 22 bytes"
+      ]
+    },
+    {
+      "id": "word-counter",
+      "status": "passed",
+      "checks": [
+        "word-count.json: 98 bytes"
+      ]
+    },
+    {
+      "id": "password-generator",
+      "status": "passed",
+      "checks": [
+        "password.txt: 20 bytes"
+      ]
+    },
+    {
+      "id": "meta-tags",
+      "status": "passed",
+      "checks": [
+        "meta-tags.html: 345 bytes"
+      ]
+    },
+    {
+      "id": "robots-generator",
+      "status": "passed",
+      "checks": [
+        "robots.txt: 93 bytes"
+      ]
+    },
+    {
+      "id": "sitemap-generator",
+      "status": "passed",
+      "checks": [
+        "sitemap.xml: 205 bytes"
+      ]
+    },
+    {
+      "id": "utm-builder",
+      "status": "passed",
+      "checks": [
+        "campaign-link.txt: 79 bytes"
+      ]
+    },
+    {
+      "id": "schema-generator",
+      "status": "passed",
+      "checks": [
+        "schema.html: 188 bytes"
+      ]
+    },
+    {
+      "id": "image-color-picker-invalid-pixel",
+      "status": "passed",
+      "checks": [
+        "Invalid pixel yields visible validation"
+      ]
+    },
+    {
+      "id": "compress-pdf-scan",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "compress-pdf.pdf: 85247 bytes"
+      ]
+    },
+    {
+      "id": "photo-size-kb-20kb",
+      "status": "passed",
+      "checks": [
+        "1200\u00d7900 image",
+        "photo-20kb.jpg: 19943 bytes"
+      ]
+    },
+    {
+      "id": "photo-size-kb-100kb",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "photo-100kb.jpg: 9613 bytes"
+      ]
+    },
+    {
+      "id": "passport-photo-2inch",
+      "status": "passed",
+      "checks": [
+        "600\u00d7600 image",
+        "passport-photo.jpg: 9808 bytes"
+      ]
+    },
+    {
+      "id": "image-compressor-batch",
+      "status": "passed",
+      "checks": [
+        "ZIP CRC verified",
+        "compressed-images.zip: 11764 bytes"
+      ]
+    },
+    {
+      "id": "invoice-generator-Classic",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "invoice-INV-2026-0020.pdf: 89269 bytes"
+      ]
+    },
+    {
+      "id": "invoice-generator-Modern",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "invoice-INV-2026-0021.pdf: 89317 bytes"
+      ]
+    },
+    {
+      "id": "invoice-generator-Minimal",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "invoice-INV-2026-0022.pdf: 88891 bytes"
+      ]
+    }
+  ]
+}

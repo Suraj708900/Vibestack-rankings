@@ -1,0 +1,112 @@
+[
+  {
+    "asset": "blog-guide-qr-code.jpg",
+    "decoded": true,
+    "dimensions": [
+      1348,
+      926
+    ],
+    "same_pixels": false,
+    "byte_identical": false
+  },
+  {
+    "asset": "blog-guide-klap.jpg",
+    "decoded": true,
+    "dimensions": [
+      1348,
+      926
+    ],
+    "same_pixels": false,
+    "byte_identical": false
+  },
+  {
+    "asset": "blog-guide-invoice-generator.jpg",
+    "decoded": true,
+    "dimensions": [
+      1348,
+      926
+    ],
+    "same_pixels": false,
+    "byte_identical": false
+  },
+  {
+    "asset": "blog-guide-pdf-watermark.jpg",
+    "decoded": true,
+    "dimensions": [
+      1348,
+      926
+    ],
+    "same_pixels": false,
+    "byte_identical": false
+  },
+  {
+    "asset": "blog-guide-json-formatter.jpg",
+    "decoded": true,
+    "dimensions": [
+      1348,
+      926
+    ],
+    "same_pixels": false,
+    "byte_identical": false
+  },
+  {
+    "asset": "blog-guide-image-cropper.jpg",
+    "decoded": true,
+    "dimensions": [
+      1348,
+      926
+    ],
+    "same_pixels": false,
+    "byte_identical": false
+  },
+  {
+    "asset": "blog-guide-utm-builder.jpg",
+    "decoded": true,
+    "dimensions": [
+      1348,
+      926
+    ],
+    "same_pixels": false,
+    "byte_identical": false
+  },
+  {
+    "asset": "blog-guide-photo-to-pdf.jpg",
+    "decoded": true,
+    "dimensions": [
+      1348,
+      926
+    ],
+    "same_pixels": false,
+    "byte_identical": false
+  },
+  {
+    "asset": "blog-guide-password-generator.jpg",
+    "decoded": true,
+    "dimensions": [
+      1348,
+      926
+    ],
+    "same_pixels": false,
+    "byte_identical": false
+  },
+  {
+    "asset": "blog-guide-photo-size-kb.jpg",
+    "decoded": true,
+    "dimensions": [
+      1348,
+      926
+    ],
+    "same_pixels": false,
+    "byte_identical": false
+  },
+  {
+    "asset": "blog-guide-merge-pdf.jpg",
+    "decoded": true,
+    "dimensions": [
+      1348,
+      926
+    ],
+    "same_pixels": false,
+    "byte_identical": false
+  }
+]

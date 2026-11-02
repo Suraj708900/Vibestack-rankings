@@ -1,0 +1,435 @@
+{
+  "time": "2026-11-01T18:52:26.397Z",
+  "tests": [
+    {
+      "id": "photo-to-pdf",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "photo-to-pdf.pdf: 17676 bytes"
+      ]
+    },
+    {
+      "id": "invoice-generator",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "invoice-INV-2026-0001.pdf: 13834 bytes"
+      ]
+    },
+    {
+      "id": "image-compressor",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "image-compressor.jpg: 5761 bytes"
+      ]
+    },
+    {
+      "id": "merge-pdf",
+      "status": "passed",
+      "checks": [
+        "4 valid PDF pages",
+        "merge-pdf.pdf: 1516 bytes"
+      ]
+    },
+    {
+      "id": "ai-resume",
+      "status": "passed",
+      "checks": [
+        "resume.txt: 178 bytes",
+        "1 valid PDF pages",
+        "resume.pdf: 11162 bytes"
+      ]
+    },
+    {
+      "id": "qr-code",
+      "status": "passed",
+      "checks": [
+        "512\u00d7512 image",
+        "aiuseflow-qr.png: 8279 bytes",
+        "aiuseflow-qr.svg: 1238 bytes"
+      ]
+    },
+    {
+      "id": "photo-to-pdf",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "photo-to-pdf.pdf: 17675 bytes"
+      ]
+    },
+    {
+      "id": "pdf-to-jpg",
+      "status": "failed",
+      "error": "m.destroy is not a function"
+    },
+    {
+      "id": "jpg-to-pdf",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "jpg-to-pdf.pdf: 17676 bytes"
+      ]
+    },
+    {
+      "id": "merge-pdf",
+      "status": "passed",
+      "checks": [
+        "4 valid PDF pages",
+        "merge-pdf.pdf: 1516 bytes"
+      ]
+    },
+    {
+      "id": "split-pdf",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "split-pdf.pdf: 883 bytes"
+      ]
+    },
+    {
+      "id": "compress-pdf",
+      "status": "failed",
+      "error": "m.destroy is not a function"
+    },
+    {
+      "id": "rotate-pdf",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "rotate-pdf.pdf: 1103 bytes"
+      ]
+    },
+    {
+      "id": "pdf-page-numbers",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "pdf-page-numbers.pdf: 1639 bytes"
+      ]
+    },
+    {
+      "id": "pdf-watermark",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "pdf-watermark.pdf: 1797 bytes"
+      ]
+    },
+    {
+      "id": "pdf-signature",
+      "status": "passed",
+      "checks": [
+        "2 valid PDF pages",
+        "pdf-signature.pdf: 8000 bytes"
+      ]
+    },
+    {
+      "id": "image-compressor",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "image-compressor.jpg: 5761 bytes"
+      ]
+    },
+    {
+      "id": "image-resizer",
+      "status": "passed",
+      "checks": [
+        "1200\u00d7800 image",
+        "image-resizer.jpg: 15678 bytes"
+      ]
+    },
+    {
+      "id": "jpg-to-png",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "jpg-to-png.png: 13401 bytes"
+      ]
+    },
+    {
+      "id": "png-to-webp",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "png-to-webp.webp: 2830 bytes"
+      ]
+    },
+    {
+      "id": "image-cropper",
+      "status": "passed",
+      "checks": [
+        "400\u00d7400 image",
+        "image-cropper.jpg: 4832 bytes"
+      ]
+    },
+    {
+      "id": "passport-photo",
+      "status": "passed",
+      "checks": [
+        "413\u00d7531 image",
+        "passport-photo.jpg: 6535 bytes"
+      ]
+    },
+    {
+      "id": "background-remover",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "background-remover.png: 13402 bytes"
+      ]
+    },
+    {
+      "id": "photo-size-kb",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "photo-50kb.jpg: 9613 bytes"
+      ]
+    },
+    {
+      "id": "image-watermark",
+      "status": "passed",
+      "checks": [
+        "640\u00d7480 image",
+        "image-watermark.jpg: 7528 bytes"
+      ]
+    },
+    {
+      "id": "image-color-picker",
+      "status": "passed",
+      "checks": []
+    },
+    {
+      "id": "invoice-generator",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "invoice-INV-2026-0002.pdf: 13835 bytes"
+      ]
+    },
+    {
+      "id": "gst-invoice",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "tax-invoice-INV-2026-0003.pdf: 14507 bytes"
+      ]
+    },
+    {
+      "id": "quotation-generator",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "quotation-INV-2026-0004.pdf: 13886 bytes"
+      ]
+    },
+    {
+      "id": "receipt-generator",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "payment-receipt-INV-2026-0005.pdf: 13941 bytes"
+      ]
+    },
+    {
+      "id": "profit-margin",
+      "status": "passed",
+      "checks": [
+        "profit-margin.txt: 37 bytes"
+      ]
+    },
+    {
+      "id": "gst-calculator",
+      "status": "passed",
+      "checks": [
+        "gst-calculator.txt: 87 bytes"
+      ]
+    },
+    {
+      "id": "discount-calculator",
+      "status": "passed",
+      "checks": [
+        "discount-calculator.txt: 36 bytes"
+      ]
+    },
+    {
+      "id": "freelance-rate",
+      "status": "passed",
+      "checks": [
+        "freelance-rate.txt: 120 bytes"
+      ]
+    },
+    {
+      "id": "purchase-order",
+      "status": "passed",
+      "checks": [
+        "1 valid PDF pages",
+        "purchase-order-INV-2026-0006.pdf: 13890 bytes"
+      ]
+    },
+    {
+      "id": "business-name",
+      "status": "passed",
+      "checks": [
+        "business-name.txt: 97 bytes"
+      ]
+    },
+    {
+      "id": "ai-resume",
+      "status": "passed",
+      "checks": [
+        "resume.txt: 178 bytes",
+        "1 valid PDF pages",
+        "resume.pdf: 11162 bytes"
+      ]
+    },
+    {
+      "id": "qr-code",
+      "status": "passed",
+      "checks": [
+        "512\u00d7512 image",
+        "aiuseflow-qr.png: 8279 bytes",
+        "aiuseflow-qr.svg: 1238 bytes"
+      ]
+    },
+    {
+      "id": "barcode",
+      "status": "passed",
+      "checks": [
+        "375\u00d7215 image",
+        "barcode.png: 7469 bytes",
+        "barcode.svg: 10559 bytes"
+      ]
+    },
+    {
+      "id": "json-formatter",
+      "status": "passed",
+      "checks": [
+        "formatted.json: 22 bytes"
+      ]
+    },
+    {
+      "id": "word-counter",
+      "status": "passed",
+      "checks": [
+        "word-count.json: 98 bytes"
+      ]
+    },
+    {
+      "id": "password-generator",
+      "status": "passed",
+      "checks": [
+        "password.txt: 20 bytes"
+      ]
+    },
+    {
+      "id": "meta-tags",
+      "status": "passed",
+      "checks": [
+        "meta-tags.html: 345 bytes"
+      ]
+    },
+    {
+      "id": "robots-generator",
+      "status": "passed",
+      "checks": [
+        "robots.txt: 93 bytes"
+      ]
+    },
+    {
+      "id": "sitemap-generator",
+      "status": "passed",
+      "checks": [
+        "sitemap.xml: 205 bytes"
+      ]
+    },
+    {
+      "id": "utm-builder",
+      "status": "passed",
+      "checks": [
+        "campaign-link.txt: 79 bytes"
+      ]
+    },
+    {
+      "id": "schema-generator",
+      "status": "passed",
+      "checks": [
+        "schema.html: 188 bytes"
+      ]
+    },
+    {
+      "id": "ai-cover-letter",
+      "status": "passed",
+      "checks": [
+        "ai-cover-letter.txt: 1017 bytes"
+      ]
+    },
+    {
+      "id": "ai-email",
+      "status": "passed",
+      "checks": [
+        "ai-email.txt: 725 bytes"
+      ]
+    },
+    {
+      "id": "ai-summarizer",
+      "status": "passed",
+      "checks": [
+        "ai-summarizer.txt: 180 bytes"
+      ]
+    },
+    {
+      "id": "ai-grammar",
+      "status": "passed",
+      "checks": [
+        "ai-grammar.txt: 300 bytes"
+      ]
+    },
+    {
+      "id": "ai-blog-title",
+      "status": "passed",
+      "checks": [
+        "ai-blog-title.txt: 768 bytes"
+      ]
+    },
+    {
+      "id": "ai-product-description",
+      "status": "passed",
+      "checks": [
+        "ai-product-description.txt: 126 bytes"
+      ]
+    },
+    {
+      "id": "ai-social-caption",
+      "status": "passed",
+      "checks": [
+        "ai-social-caption.txt: 973 bytes"
+      ]
+    },
+    {
+      "id": "ai-prompt",
+      "status": "passed",
+      "checks": [
+        "ai-prompt.txt: 1435 bytes"
+      ]
+    },
+    {
+      "id": "ai-youtube-description",
+      "status": "passed",
+      "checks": [
+        "ai-youtube-description.txt: 1100 bytes"
+      ]
+    },
+    {
+      "id": "ai-resume-live",
+      "status": "passed",
+      "checks": [
+        "Live free-provider reply returned",
+        "948 characters"
+      ]
+    }
+  ]
+}

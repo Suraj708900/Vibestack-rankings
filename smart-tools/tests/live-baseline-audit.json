@@ -1,0 +1,116 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "final": "https://aiuseflow.com/",
+    "bytes": 146198,
+    "contact_present": true,
+    "robots": null,
+    "adsense_publisher": null
+  },
+  {
+    "path": "/about.html",
+    "status": 200,
+    "final": "https://aiuseflow.com/about.html",
+    "bytes": 11984,
+    "contact_present": true,
+    "robots": null,
+    "adsense_publisher": null
+  },
+  {
+    "path": "/contact.html",
+    "status": 200,
+    "final": "https://aiuseflow.com/contact.html",
+    "bytes": 9730,
+    "contact_present": true,
+    "robots": null,
+    "adsense_publisher": null
+  },
+  {
+    "path": "/privacy",
+    "status": 200,
+    "final": "https://aiuseflow.com/privacy",
+    "bytes": 16283,
+    "contact_present": true,
+    "robots": null,
+    "adsense_publisher": null
+  },
+  {
+    "path": "/terms",
+    "status": 200,
+    "final": "https://aiuseflow.com/terms",
+    "bytes": 12411,
+    "contact_present": true,
+    "robots": null,
+    "adsense_publisher": null
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "final": "https://aiuseflow.com/robots.txt",
+    "bytes": 404,
+    "contact_present": false,
+    "robots": null,
+    "adsense_publisher": null
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "final": "https://aiuseflow.com/sitemap.xml",
+    "bytes": 38685,
+    "contact_present": false,
+    "robots": null,
+    "adsense_publisher": null
+  },
+  {
+    "path": "/ads.txt",
+    "status": 200,
+    "final": "https://aiuseflow.com/ads.txt",
+    "bytes": 59,
+    "contact_present": false,
+    "robots": null,
+    "adsense_publisher": [
+      "pub-5844991183992728"
+    ]
+  },
+  {
+    "path": "/directory/",
+    "status": 200,
+    "final": "https://aiuseflow.com/directory/",
+    "bytes": 71623,
+    "contact_present": true,
+    "robots": null,
+    "adsense_publisher": null
+  },
+  {
+    "path": "/blog/",
+    "status": 200,
+    "final": "https://aiuseflow.com/blog/",
+    "bytes": 185363,
+    "contact_present": true,
+    "robots": null,
+    "adsense_publisher": null
+  },
+  {
+    "path": "/login",
+    "status": 200,
+    "final": "https://aiuseflow.com/login",
+    "bytes": 11020,
+    "contact_present": true,
+    "robots": "noindex, nofollow",
+    "adsense_publisher": null
+  },
+  {
+    "path": "/dashboard.html",
+    "status": 404
+  },
+  {
+    "path": "/api/ai",
+    "status": 200,
+    "final": "https://aiuseflow.com/api/ai",
+    "bytes": 206,
+    "contact_present": false,
+    "robots": "noindex",
+    "adsense_publisher": null
+  }
+]

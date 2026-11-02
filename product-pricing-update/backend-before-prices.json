@@ -1,0 +1,48 @@
+{
+  "prices": {
+    "ai-learning-kit": {
+      "price": 199,
+      "price_usd": 2.99
+    },
+    "ai-prompt-library": {
+      "price": 149,
+      "price_usd": 1.99
+    },
+    "ai-knowledge-membership": {
+      "price": 149,
+      "price_usd": 1.99
+    },
+    "live-ai-training": {
+      "price": 299,
+      "price_usd": 3.99
+    },
+    "resume-job-hunt-ai-pack": {
+      "price": 299,
+      "price_usd": 3.99
+    },
+    "content-creator-ai-pack": {
+      "price": 399,
+      "price_usd": 4.99
+    },
+    "ai-business-toolkit": {
+      "price": 499,
+      "price_usd": 6.99
+    },
+    "freelancer-ai-proposal-kit": {
+      "price": 499,
+      "price_usd": 6.99
+    },
+    "vibe-coding-starter-kit": {
+      "price": 599,
+      "price_usd": 7.99
+    },
+    "industry-ai-kits": {
+      "price": 999,
+      "price_usd": 12.99
+    },
+    "ai-receptionist-setup": {
+      "price": 1999,
+      "price_usd": 24.99
+    }
+  }
+}

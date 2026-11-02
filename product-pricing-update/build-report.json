@@ -1,0 +1,91 @@
+{
+  "prices": {
+    "ai-learning-kit": {
+      "name": "AI Learning Kit",
+      "inr": 499,
+      "usd": 5.27,
+      "unit": ""
+    },
+    "ai-prompt-library": {
+      "name": "AI Prompt Library",
+      "inr": 349,
+      "usd": 3.69,
+      "unit": ""
+    },
+    "ai-knowledge-membership": {
+      "name": "AI Knowledge Membership",
+      "inr": 399,
+      "usd": 4.21,
+      "unit": "/month"
+    },
+    "live-ai-training": {
+      "name": "Live AI Training",
+      "inr": 999,
+      "usd": 10.55,
+      "unit": " per participant"
+    },
+    "resume-job-hunt-ai-pack": {
+      "name": "Resume & Job Hunt AI Pack",
+      "inr": 699,
+      "usd": 7.38,
+      "unit": ""
+    },
+    "content-creator-ai-pack": {
+      "name": "Content Creator AI Pack",
+      "inr": 799,
+      "usd": 8.44,
+      "unit": ""
+    },
+    "ai-business-toolkit": {
+      "name": "AI Business Toolkit",
+      "inr": 1299,
+      "usd": 13.71,
+      "unit": ""
+    },
+    "freelancer-ai-proposal-kit": {
+      "name": "Freelancer AI Proposal Kit",
+      "inr": 1499,
+      "usd": 15.82,
+      "unit": ""
+    },
+    "vibe-coding-starter-kit": {
+      "name": "Vibe Coding Starter Kit",
+      "inr": 1799,
+      "usd": 18.98,
+      "unit": ""
+    },
+    "industry-ai-kits": {
+      "name": "Industry AI Kits",
+      "inr": 2499,
+      "usd": 26.37,
+      "unit": ""
+    },
+    "ai-receptionist-setup": {
+      "name": "AI Receptionist Setup",
+      "inr": 3499,
+      "usd": 36.93,
+      "unit": ""
+    }
+  },
+  "html_pages_checked": [
+    "checkout.html",
+    "index.html",
+    "product/ai-business-toolkit.html",
+    "product/ai-knowledge-membership.html",
+    "product/ai-learning-kit.html",
+    "product/ai-prompt-library.html",
+    "product/ai-receptionist-setup.html",
+    "product/content-creator-ai-pack.html",
+    "product/freelancer-ai-proposal-kit.html",
+    "product/industry-ai-kits.html",
+    "product/live-ai-training.html",
+    "product/resume-job-hunt-ai-pack.html",
+    "product/vibe-coding-starter-kit.html",
+    "products.html"
+  ],
+  "all_links_images_and_nonprice_scripts_preserved": true,
+  "review_links_unique": true,
+  "activity_counts": "Existing live API, no fabricated or seeded counts",
+  "existing_orders_changed": false,
+  "subscriptions_activated": false
+}

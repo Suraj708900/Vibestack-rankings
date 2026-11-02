@@ -1,0 +1,20 @@
+{
+  "status": "production-updated",
+  "interface": "English only",
+  "files": 62,
+  "backup_restore_entries": 55,
+  "backup_sha256": "f6aa0e6f68bcf7b97f8cd4a72d489ab7a0b574556b1e1e40ec354835864b58c9",
+  "time": "2026-11-02T02:05:01+00:00",
+  "database_changed": false,
+  "browser_verified": true,
+  "live_hub_language": "en",
+  "live_hub_hindi_text": false,
+  "live_language_toggle_present": false,
+  "live_animation": "auf-doc-float",
+  "live_qr_status": "Ready. Review your result before using it.",
+  "live_qr_downloads": [
+    "Download PNG",
+    "Download SVG"
+  ],
+  "existing_ad_consent_preserved": true
+}
