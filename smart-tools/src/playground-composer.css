@@ -1,0 +1,21 @@
+/* AIUseFlow's own chat UI. Existing request, mode and consent behavior is retained. */
+#playground .hpg-card{border-radius:24px;overflow:hidden;background:var(--card,#111420);box-shadow:0 16px 50px #19122b0c;border:1px solid var(--bd2,#d7dbe5)}
+#playground .hpg-bar{padding:16px 18px;background:transparent;border-bottom:1px solid var(--bd,#e9eaf0)}
+#playground .hpg-modes{border-radius:13px;padding:4px;gap:3px}#playground .hpg-modes button{display:inline-flex;align-items:center;gap:7px;border-radius:10px;min-height:36px;padding:7px 13px}
+#playground .hpg-ui-icon{width:17px;height:17px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+#playground .hpg-modes [aria-selected=true] .hpg-ui-icon{animation:hpg-icon-breathe 4s ease-in-out infinite}
+#playground .hpg-log{padding:20px 18px;min-height:210px;background:transparent;scrollbar-width:thin}#playground .pg-m{border-radius:17px;padding:12px 15px;line-height:1.7;max-width:95%;overflow-wrap:anywhere}
+#playground .hpg-chips{display:flex;flex-wrap:wrap;gap:7px;padding:10px 18px 16px}#playground .hpg-chips button{text-align:left;border-radius:14px;white-space:normal;line-height:1.5;padding:9px 12px;min-height:38px;border:1px solid var(--bd2,#d8dce8);background:var(--bg,#f8f9fc);color:var(--tx2,#536078);font-size:11px;transition:border-color .2s,transform .2s}
+#playground .hpg-chips button:hover,#playground .hpg-chips button:focus-visible{border-color:#9f89ee;transform:translateY(-2px)}
+#playground .hpg-form{display:flex;align-items:flex-end;gap:9px;margin:0 16px;padding:10px 11px 10px 17px;border:1px solid var(--bd2,#d7dbe5);border-radius:27px;background:var(--bg,#fff);box-shadow:0 3px 12px #20122e09;transition:border-color .2s,box-shadow .2s}
+#playground .hpg-form:focus-within{border-color:#9980e5;box-shadow:0 0 0 3px #9e83ed15}
+#playground #hpg-in{flex:1;min-width:0;width:100%;min-height:43px;max-height:145px;resize:vertical;align-self:center;padding:11px 0;margin:0;border:0!important;outline:0!important;background:transparent!important;box-shadow:none!important;border-radius:0;font:inherit;font-size:14px;line-height:1.5;color:var(--tx,#212535)}
+#playground .hpg-form button[type=submit]{display:grid;place-items:center;width:43px;min-width:43px;height:43px;min-height:43px;margin:0;padding:0;border:0;border-radius:50%;background:linear-gradient(135deg,#7455ee,#9b7df1);color:#fff;box-shadow:0 4px 12px #7755dc30;transition:transform .2s,filter .2s}
+#playground .hpg-form button[type=submit]:hover:not(:disabled){transform:translateY(-2px);filter:brightness(1.08)}#playground .hpg-form button[type=submit]:disabled{opacity:.55;cursor:wait}#playground .hpg-form button[type=submit] svg{width:21px;height:21px}
+#playground .hpg-fine{padding:11px 22px 16px;margin:0;text-align:center;line-height:1.65;font-size:10px;color:var(--tx3,#7a8193)}#playground .hpg-ai-note{display:block;margin-bottom:4px;color:var(--tx2,#697285);font-size:11px}
+#playground .hpg-form button:focus-visible,#playground .hpg-modes button:focus-visible,#playground .hpg-chips button:focus-visible{outline:2px solid #8c70e0;outline-offset:3px}
+@keyframes hpg-icon-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.auf-motion-paused #playground .hpg-ui-icon{animation:none!important}.auf-motion-paused #playground .hpg-chips button,.auf-motion-paused #playground .hpg-form button{transition:none!important}
+@media(max-width:520px){#playground .hpg-card{border-radius:20px}#playground .hpg-bar{padding:12px}#playground .hpg-log{padding:16px 12px;min-height:180px}#playground .hpg-chips{padding:8px 12px 13px}#playground .hpg-chips button{font-size:10px}#playground .hpg-form{margin-inline:10px;padding-left:13px;gap:7px}#playground #hpg-in{font-size:13px}#playground .hpg-fine{padding-inline:14px}}
+@media(prefers-reduced-motion:reduce){#playground .hpg-ui-icon{animation:none!important}#playground .hpg-chips button,#playground .hpg-form,#playground .hpg-form button{transition:none!important}}
+#playground .hpg-form[hidden],#playground .hpg-chips[hidden]{display:none!important}

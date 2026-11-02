@@ -1,0 +1,21 @@
+{
+  "staging": {
+    "message_submitted": true,
+    "actual_reply": "Hey!",
+    "agent_mode_switch": true,
+    "chat_mode_switch": true,
+    "composer_radius": "27px",
+    "send_svg": true
+  },
+  "preserved": [
+    "all original script blocks",
+    "title",
+    "description",
+    "canonical",
+    "Chat/Agent API behavior",
+    "free-use limits",
+    "ad and consent integration"
+  ],
+  "backup": "Original live index read back exactly from .private/playground-composer-backup.html",
+  "design": "Rounded composer, circular send arrow, animated mode icons, suggestion chips, AI accuracy note. No new microphone or upload capability introduced."
+}
