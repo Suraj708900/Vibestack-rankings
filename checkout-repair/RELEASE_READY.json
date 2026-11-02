@@ -1,0 +1,36 @@
+{
+  "source_commit": "0854e9ca56eb311a24b16f34ea9ffa1642db8511",
+  "branch": "checkout-notifications-repair",
+  "production_published": false,
+  "approval_pending": true,
+  "archive": ".private/checkout-ready-20261103.zip",
+  "archive_sha256": "d9163f8a127611b243a2df967447456505197821382a663e4d5ffd8efadef8dd",
+  "files": {
+    "order-status.html": "fca6ef2ef423e8693ebfd8221b994aa5a985b53dbe5e20b453ed22838466b9d4",
+    "advertise.html": "8402951746d277d443c3cf1c1c961eebb8817879289e9939817400f168ae4980",
+    "checkout.html": "67a945f2c73be440b4c56392e607690e174cfbced242a5f10660002091ddf956",
+    "contact.html": "3eb6b4e1e49da98eba2bc496d8defa00acae7bb2facb9a32affd61073f6059d4",
+    "api/checkout.php": "822407177cbce173d50effebe3caea57081dfd3c0f420e079a7ebdfa9b9322cc",
+    "api/notification-worker.php": "19787436d55e8c1bf6a21705686fcc0daaf927dca0dfc256695ab2eddc2ab034",
+    "api/_notifications.php": "c8a920a41cbf1647a71d4420ffca38b7f7fd472ee52d3831dfa341a672043a26",
+    "api/contact.php": "df6c35269bd46010380a4ffd477c334826eb1d8ec4595ccb4d225f74f3aff72d",
+    "api/admin.php": "ec5f22d22a0f4cf13b5a028c4cbd92f4ed0eb9315729a29db6c6b652d174a650",
+    "api/_commerce.php": "8f324d0146f614cdea3aa9e7f06e45eeee5477175fa58cb886443878ec9a11ad",
+    "api/advertise.php": "46a8adcb96e9f25d74296652554c65fe1e90d77406174cc35845902746cf6135",
+    "api/notifications.php": "62f5e29450f84f992df56eb31c675df706ea2ac97c13163e8a5e4e4ec84f5ecc",
+    "assets/checkout-v2/ui.css": "82c511fd9949d698934a2c808dccb10a7b0a7d575c44c7a5134b476846be59d4",
+    "assets/checkout-v2/contact.js": "a54ea41b25784af6caaea84360a315c2a1963ecc4676975c31dcf352500e392a",
+    "assets/checkout-v2/order-status.js": "2ee362877906843eea37e5b0de4d79243fda65060ab04a65c45d1788e971d883",
+    "assets/checkout-v2/checkout.js": "b5a9b597ba1a9289497df7f9b7010436133b3df5ba987f58474478725e24021c"
+  },
+  "backup": {
+    "ok": true,
+    "backup_id": "checkout-backup-20261102-204814",
+    "source_files": 9,
+    "orders_backed_up": 2,
+    "database_integrity": "ok",
+    "archive_entries_verified": 12,
+    "archive_sha256": "5d1da3d64ee016b71418a4f6e53e5503403a269b31267c9c73f6892e99cda50e",
+    "production_changed": false
+  }
+}
