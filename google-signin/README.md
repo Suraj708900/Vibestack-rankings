@@ -5,6 +5,13 @@ Prepared configuration for AIUseFlow using the supplied public Google OAuth Clie
 ## Scope
 Three PHP files only: new public Client ID helper, providers configuration, and Google credential endpoint. Existing private configuration overrides the public fallback. No changes to account storage, passwords, checkout, prices, ad/consent scripts, or website design.
 
+## Verified in staging
+- Backup archive: seven entries restored in memory and checked against SHA-256; SQLite integrity check passed.
+- Thirteen server checks passed, including valid signed fixture, invalid audiences/issuers/algorithms, expiration, key lookup, and live Google public-key retrieval.
+- Six HTTP checks passed: provider configuration, GET rejection, missing Origin, missing/invalid credential, and live provider still disabled.
+- Official Google button renders in staging.
+- Staging does not create customer accounts or sessions.
+
 ## Validation still required
 - Verify fresh hosting backup and restoration before production changes.
 - Parse PHP and test staging providers, rejected invalid credentials and existing email login.

@@ -1,0 +1,32 @@
+[
+  {
+    "test": "providers",
+    "status": 200,
+    "passed": true
+  },
+  {
+    "test": "get_rejected",
+    "status": 405,
+    "passed": true
+  },
+  {
+    "test": "missing_origin",
+    "status": 403,
+    "passed": true
+  },
+  {
+    "test": "missing_credential",
+    "status": 400,
+    "passed": true
+  },
+  {
+    "test": "invalid_credential",
+    "status": 401,
+    "passed": true
+  },
+  {
+    "test": "live_still_disabled",
+    "status": 200,
+    "passed": true
+  }
+]
