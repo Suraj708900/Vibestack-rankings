@@ -1,0 +1,27 @@
+[
+  {
+    "test": "providers",
+    "status": 200,
+    "passed": true
+  },
+  {
+    "test": "google_get",
+    "status": 405,
+    "passed": true
+  },
+  {
+    "test": "missing_origin",
+    "status": 403,
+    "passed": true
+  },
+  {
+    "test": "invalid_credential",
+    "status": 401,
+    "passed": true
+  },
+  {
+    "test": "anonymous_session",
+    "status": 200,
+    "passed": true
+  }
+]

@@ -20,4 +20,4 @@ Three PHP files only: new public Client ID helper, providers configuration, and 
 - Check Google Cloud Audience publishing/test user settings.
 - Obtain explicit approval before production deployment.
 
-Production has not been changed by this preparation.
+Production deployment approved by the owner and completed on 3 November 2026. Three configuration files published with a fresh checksum-verified backup and SQLite integrity check. Five live HTTP checks passed. Real-account Google sign-in is pending owner testing. Existing cached provider responses may persist for up to five minutes.
