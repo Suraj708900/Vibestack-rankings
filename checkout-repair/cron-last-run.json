@@ -1,0 +1,10 @@
+{
+  "cron_uid": "Js12nCH6Ts",
+  "schedule": "*/5 * * * *",
+  "last_execution": {
+    "attempted": 0,
+    "accepted_by_provider": 0
+  },
+  "execution_completed_without_error": true,
+  "pending_test_emails": 0
+}
