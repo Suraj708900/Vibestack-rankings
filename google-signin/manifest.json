@@ -1,0 +1,14 @@
+{
+  "api/google.php": {
+    "before": "561fb703a38038d9e536ef872ff46300a2d768c9c0105ebd4192692f301bf808",
+    "after": "9b4ef2f1f24d8bed0435a4846081d4cc41f9e20540b3e79f828ee21c6817cb70"
+  },
+  "api/auth.php": {
+    "before": "52c7f9b9f6c7e1091f7a655fcca519cba5bf02684b70e9244fc1a41f0bea18bd",
+    "after": "7f3dbb1b8a9eb653430447d042221df9f4228fb8d7e5ac81f5eab6efb90b0ab8"
+  },
+  "api/_google-config.php": {
+    "before": null,
+    "after": "5e14dc0a2cc6cfba2bbee9ecb024e1d9c365b9402d7c15d7584ba1f775fe7c9c"
+  }
+}
