@@ -1,0 +1,34 @@
+{
+  "files": {
+    "order-status.html": true,
+    "advertise.html": true,
+    "checkout.html": true,
+    "contact.html": true,
+    "api/checkout.php": true,
+    "api/notification-worker.php": true,
+    "api/_notifications.php": true,
+    "api/contact.php": true,
+    "api/admin.php": true,
+    "api/_commerce.php": true,
+    "api/advertise.php": true,
+    "api/notifications.php": true,
+    "assets/checkout-v2/ui.css": true,
+    "assets/checkout-v2/contact.js": true,
+    "assets/checkout-v2/order-status.js": true,
+    "assets/checkout-v2/checkout.js": true
+  },
+  "mail": {
+    "contact@aiuseflow.com": {
+      "state": "sent",
+      "provider_status": 200,
+      "last_event": "delivered"
+    },
+    "kamdevsuraj03@gmail.com": {
+      "state": "sent",
+      "provider_status": 200,
+      "last_event": "delivered"
+    }
+  },
+  "all_release_files_match": true,
+  "existing_order_count": 2
+}

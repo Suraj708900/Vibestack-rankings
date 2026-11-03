@@ -1,8 +1,9 @@
 {
   "source_commit": "0854e9ca56eb311a24b16f34ea9ffa1642db8511",
   "branch": "checkout-notifications-repair",
-  "production_published": false,
-  "approval_pending": true,
+  "production_published": true,
+  "approval_pending": false,
+  "approval_received": "live kar do",
   "archive": ".private/checkout-ready-20261103.zip",
   "archive_sha256": "d9163f8a127611b243a2df967447456505197821382a663e4d5ffd8efadef8dd",
   "files": {
@@ -23,14 +24,23 @@
     "assets/checkout-v2/order-status.js": "2ee362877906843eea37e5b0de4d79243fda65060ab04a65c45d1788e971d883",
     "assets/checkout-v2/checkout.js": "b5a9b597ba1a9289497df7f9b7010436133b3df5ba987f58474478725e24021c"
   },
-  "backup": {
+  "production_deployment": {
     "ok": true,
-    "backup_id": "checkout-backup-20261102-204814",
-    "source_files": 9,
-    "orders_backed_up": 2,
+    "files_published": 16,
+    "backup_id": "checkout-approved-backup-20261103-022839",
+    "backup_entries_verified": 9,
     "database_integrity": "ok",
-    "archive_entries_verified": 12,
-    "archive_sha256": "5d1da3d64ee016b71418a4f6e53e5503403a269b31267c9c73f6892e99cda50e",
-    "production_changed": false
-  }
+    "existing_orders_preserved": 2,
+    "release_checksums_verified": true,
+    "prices_changed": false,
+    "subscriptions_activated": false,
+    "utc": "2026-11-03T02:28:39+00:00"
+  },
+  "email_retry_cron": {
+    "uid": "Js12nCH6Ts",
+    "username": "u788467405",
+    "time": "*/5 * * * *",
+    "command": "/usr/bin/php /home/u788467405/domains/aiuseflow.com/public_html/api/notification-worker.php"
+  },
+  "recurring_cost_note": "Existing hosting and Resend account; no paid service or upgrade activated. Existing quotas apply."
 }

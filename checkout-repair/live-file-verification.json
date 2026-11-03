@@ -1,0 +1,70 @@
+{
+  "public_files": [
+    {
+      "file": "order-status.html",
+      "status": 200,
+      "release_matches": true
+    },
+    {
+      "file": "advertise.html",
+      "status": 200,
+      "release_matches": true
+    },
+    {
+      "file": "checkout.html",
+      "status": 200,
+      "release_matches": true
+    },
+    {
+      "file": "contact.html",
+      "status": 200,
+      "release_matches": true
+    },
+    {
+      "file": "assets/checkout-v2/ui.css",
+      "status": 200,
+      "release_matches": true
+    },
+    {
+      "file": "assets/checkout-v2/contact.js",
+      "status": 200,
+      "release_matches": true
+    },
+    {
+      "file": "assets/checkout-v2/order-status.js",
+      "status": 200,
+      "release_matches": true
+    },
+    {
+      "file": "assets/checkout-v2/checkout.js",
+      "status": 200,
+      "release_matches": true
+    },
+    {
+      "file": "api/checkout.php",
+      "status": 405,
+      "expected_status": 405,
+      "passed": true
+    },
+    {
+      "file": "api/notifications.php",
+      "status": 401,
+      "expected_status": 401,
+      "passed": true
+    },
+    {
+      "file": "api/notification-worker.php",
+      "status": 404,
+      "expected_status": 404,
+      "passed": true
+    },
+    {
+      "file": "api/_commerce.php",
+      "status": 403,
+      "expected_status": 403,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "no_real_payment_submitted": true
+}

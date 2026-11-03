@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "files_published": 16,
+  "backup_id": "checkout-approved-backup-20261103-022839",
+  "backup_entries_verified": 9,
+  "database_integrity": "ok",
+  "existing_orders_preserved": 2,
+  "release_checksums_verified": true,
+  "prices_changed": false,
+  "subscriptions_activated": false,
+  "utc": "2026-11-03T02:28:39+00:00"
+}

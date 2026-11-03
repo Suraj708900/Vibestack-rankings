@@ -1,1 +1,21 @@
-{"production_published":false,"approval_required":true,"price_changes_included":false,"owner_recipients":["contact@aiuseflow.com","kamdevsuraj03@gmail.com"],"cron_to_add_after_approval":{"minute":"*/5","hour":"*","day":"*","month":"*","weekday":"*","command":"/usr/bin/php /home/u788467405/domains/aiuseflow.com/public_html/api/notification-worker.php"},"existing_hourly_maintenance_cron_preserved":true}
+{
+  "production_published": true,
+  "approval_required": false,
+  "price_changes_included": false,
+  "owner_recipients": [
+    "contact@aiuseflow.com",
+    "kamdevsuraj03@gmail.com"
+  ],
+  "existing_hourly_maintenance_cron_preserved": true,
+  "approval_received": "live kar do",
+  "cron_enabled": true,
+  "cron_uid": "Js12nCH6Ts",
+  "cron_enabled_configuration": {
+    "minute": "*/5",
+    "hour": "*",
+    "day": "*",
+    "month": "*",
+    "weekday": "*",
+    "command": "/usr/bin/php /home/u788467405/domains/aiuseflow.com/public_html/api/notification-worker.php"
+  }
+}

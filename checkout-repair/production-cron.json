@@ -1,0 +1,6 @@
+{
+  "uid": "Js12nCH6Ts",
+  "username": "u788467405",
+  "time": "*/5 * * * *",
+  "command": "/usr/bin/php /home/u788467405/domains/aiuseflow.com/public_html/api/notification-worker.php"
+}

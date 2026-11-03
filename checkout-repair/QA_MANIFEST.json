@@ -8,8 +8,16 @@
     "contact@aiuseflow.com",
     "kamdevsuraj03@gmail.com"
   ],
-  "production_published": false,
+  "production_published": true,
   "production_payment_made": false,
   "subscription_activated": false,
-  "live_prices_changed": false
+  "live_prices_changed": false,
+  "approval_pending": false,
+  "live_release_files_verified": 16,
+  "email_retry_cron_enabled": true,
+  "existing_orders_preserved": 2,
+  "live_email_test_delivered_to": [
+    "contact@aiuseflow.com",
+    "kamdevsuraj03@gmail.com"
+  ]
 }
