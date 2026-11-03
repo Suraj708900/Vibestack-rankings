@@ -21,3 +21,7 @@ Three PHP files only: new public Client ID helper, providers configuration, and 
 - Obtain explicit approval before production deployment.
 
 Production deployment approved by the owner and completed on 3 November 2026. Three configuration files published with a fresh checksum-verified backup and SQLite integrity check. Five live HTTP checks passed. Real-account Google sign-in is pending owner testing. Existing cached provider responses may persist for up to five minutes.
+
+
+## Final login page correction
+A scoped CSS rule on login.html and signup.html now honors hidden attributes for unconfigured providers. This hides GitHub and Facebook until configured and leaves Google and email login available. Original page content, metadata, scripts and forms are byte-identical after removing this one added rule. A second fresh backup was verified before publication.

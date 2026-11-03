@@ -1,0 +1,10 @@
+{
+  "login.html": {
+    "before": "120d43f77d1e490c2c804c2fc7a3c3a1f77205f61bca5de3997dd195216818f8",
+    "after": "1dc4302bd2f68af5429c275c7195481b3ab20c1c6e85d09e21062b2dcc32522b"
+  },
+  "signup.html": {
+    "before": "7bfc12da2fcdbb42a32f385290ab6b21afe0a411413ec9d9393e3faf1a50bd22",
+    "after": "46984860154a572a961cf5a7d8c432d0795fae9d101ed738bb83b144e0087b5a"
+  }
+}
